@@ -3,14 +3,14 @@ layout: LandingPage
 ms.topic: landing-page
 title: Documentação de scripts do Office
 description: Recursos para aprender sobre os scripts do Office no Excel na web, incluindo tutoriais, artigos conceituais e exemplos de código.
-ms.date: 01/22/2020
+ms.date: 10/30/2020
 localization_priority: Priority
-ms.openlocfilehash: 238f61adc48974714a110943f7e36e0d2040784c
-ms.sourcegitcommit: e9a8ef5f56177ea9a3d2fc5ac636368e5bdae1f4
+ms.openlocfilehash: 60eb5340e424617a3be87fea9d2a7ece3ca69c3b
+ms.sourcegitcommit: 82d3c0ef1e187bcdeceb2b5fc3411186674fe150
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321597"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49342826"
 ---
 # <a name="office-scripts-documentation-preview"></a>Documentação de scripts do Office (visualização)
 
@@ -73,24 +73,8 @@ Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias.
 ---
 
 <h2>Outros recursos</h2>
-<p>Use os seguintes recursos para saber mais sobre as APIs que os scripts do Office usam para interagir com as pastas de trabalho no Excel na Web; faça perguntas sobre os scripts do Office no Excel na Web ou solicite recursos para eles.</p>
+<p>Use os seguintes recursos para saber mais sobre as APIs que os Scripts do Office usam para interagir com as pastas de trabalho no Excel na Web; faça perguntas sobre os Scripts do Office no Excel na Web ou solicite recursos para eles.</p>
 <ul class="panelContent cardsF cols cols3" style="display:flex!important;">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <a href="/microsoft-365/admin/manage/manage-office-scripts-settings" target="_blank"><img src="images/index-landing-page/i_upgrade.svg" alt="Enable Office Scripts" /></a>
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <a href="/microsoft-365/admin/manage/manage-office-scripts-settings" target="_blank"><h3>Habilitar scripts do Office</h3></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -117,7 +101,23 @@ Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias.
                         </div>
                     </div>
                     <div class="cardText">
-                        <a href="resources/excel-samples.md" target="_blank"><h3>Exemplos de scripts.</h3></a>
+                        <a href="resources/excel-samples.md" target="_blank"><h3>Exemplos de scripts</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <a href="/microsoft-365/admin/manage/manage-office-scripts-settings" target="_blank"><img src="images/index-landing-page/i_upgrade.svg" alt="Admin settings"/></a>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <a href="/microsoft-365/admin/manage/manage-office-scripts-settings" target="_blank"><h3>Configurações do administrador</h3></a>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@ Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias.
                         </div>
                     </div>
                     <div class="cardText">
-                        <a href="https://stackoverflow.com/questions/tagged/office-scripts" target="_blank"><h3>Tire dúvidas</h3></a>
+                        <a href="https://stackoverflow.com/questions/tagged/office-scripts" target="_blank"><h3>Tirar dúvidas</h3></a>
                     </div>
                 </div>
             </div>
