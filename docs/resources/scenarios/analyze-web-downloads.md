@@ -3,12 +3,12 @@ title: 'Cenário de exemplo de scripts do Office: analisar downloads da Web'
 description: Um exemplo que obtém dados brutos de tráfego da Internet em uma pasta de trabalho do Excel e determina o local de origem, antes de organizá-las em uma tabela.
 ms.date: 07/10/2020
 localization_priority: Normal
-ms.openlocfilehash: 20c52c4f26b5939fb5de5e04df504e6672dd4200
-ms.sourcegitcommit: ebd1079c7e2695ac0e7e4c616f2439975e196875
+ms.openlocfilehash: adc2cb401830b66b245c0dfcc4441b7ac9c8c61f
+ms.sourcegitcommit: 009935c5773761c5833e5857491af47e2c95d851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45160450"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49408963"
 ---
 # <a name="office-scripts-sample-scenario-analyze-web-downloads"></a>Cenário de exemplo de scripts do Office: analisar downloads da Web
 
@@ -182,8 +182,8 @@ Este exemplo foi demonstrado como parte da chamada da comunidade de desenvolvedo
         formula1: "=TRUE",
         operator: ExcelScript.ConditionalCellValueOperator.equalTo
       });
-      conditionalFormatTrue.getCellValue().getFormat().getFill().setColor("#F8CCAD");
-      conditionalFormatTrue.getCellValue().setRule({
+      conditionalFormatFalse.getCellValue().getFormat().getFill().setColor("#F8CCAD");
+      conditionalFormatFalse.getCellValue().setRule({
         formula1: "=FALSE",
         operator: ExcelScript.ConditionalCellValueOperator.equalTo
       });
@@ -224,7 +224,7 @@ Este exemplo foi demonstrado como parte da chamada da comunidade de desenvolvedo
 
 ## <a name="running-the-script"></a>Executando o script
 
-Navegue até qualquer uma das planilhas **semana \* \* ** e execute o script de **análise de downloads da Web** . O script aplicará a formatação condicional e o rótulo de local na planilha atual. Ele também atualizará a planilha de **Resumo** .
+Navegue até qualquer uma das planilhas **semana \* \*** e execute o script de **análise de downloads da Web** . O script aplicará a formatação condicional e o rótulo de local na planilha atual. Ele também atualizará a planilha de **Resumo** .
 
 ### <a name="before-running-the-script"></a>Antes de executar o script
 
