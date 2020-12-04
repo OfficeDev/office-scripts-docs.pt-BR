@@ -1,14 +1,14 @@
 ---
 title: 'Cenário de exemplo de scripts do Office: lembretes de tarefas automatizadas'
 description: Um exemplo que usa os cartões automatizados de energia e adaptável automatizar lembretes de tarefas em uma planilha de gerenciamento de projetos.
-ms.date: 06/09/2020
+ms.date: 11/30/2020
 localization_priority: Normal
-ms.openlocfilehash: f764c37dafdd964e9435d504770d10b1608428b8
-ms.sourcegitcommit: aec3c971c6640429f89b6bb99d2c95ea06725599
+ms.openlocfilehash: 90769eca0201e450e25778db0eb5c62284b9feb0
+ms.sourcegitcommit: af487756dffea0f8f0cd62710c586842cb08073c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44878721"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49571436"
 ---
 # <a name="office-scripts-sample-scenario-automated-task-reminders"></a>Cenário de exemplo de scripts do Office: lembretes de tarefas automatizadas
 
@@ -65,7 +65,7 @@ Este cenário usa [automatização de energia](https://flow.microsoft.com) e [o 
         let row = bodyRangeValues[i];
         if (row[STATUS_REPORT_INDEX] === "") {
           // Save the email to return.
-          people.push({ name: row[NAME_INDEX], email: row[EMAIL_INDEX] });
+          people.push({ name: row[NAME_INDEX].toString(), email: row[EMAIL_INDEX].toString() });
         }
       }
 
@@ -158,7 +158,7 @@ Este cenário usa [automatização de energia](https://flow.microsoft.com) e [o 
 
     - **Localização**: OneDrive for Business
     - **Biblioteca de Documentos**: OneDrive
-    - **Arquivo**: task-reminders.xlsx
+    - **Arquivo**: task-reminders.xlsx *(escolhido através do navegador de arquivos)*
     - **Script**: obter pessoas
 
     ![A etapa de fluxo de script da primeira execução.](../../images/scenario-task-reminders-first-flow-step.png)
@@ -217,7 +217,7 @@ Este cenário usa [automatização de energia](https://flow.microsoft.com) e [o 
 
     - **Localização**: OneDrive for Business
     - **Biblioteca de Documentos**: OneDrive
-    - **Arquivo**: task-reminders.xlsx
+    - **Arquivo**: task-reminders.xlsx *(escolhido através do navegador de arquivos)*
     - **Script**: salvar status
     - **senderEmail**: email *(conteúdo dinâmico do Excel)*
     - **statusReportResponse**: resposta *(conteúdo dinâmico do Teams)*
