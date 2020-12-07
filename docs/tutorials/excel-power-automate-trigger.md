@@ -1,14 +1,14 @@
 ---
 title: Passar dados para scripts numa execução automática do fluxo no Power Automate.
 description: Tutorial sobre executar os Scripts do Office para Excel na Web por meio do Power Automate quando emails são recebidos e transmitidos para o script.
-ms.date: 07/24/2020
+ms.date: 11/30/2020
 localization_priority: Priority
-ms.openlocfilehash: f6842e27686909bad92138e6d2f9ac1892cac891
-ms.sourcegitcommit: ce72354381561dc167ea0092efd915642a9161b3
+ms.openlocfilehash: b73f40c70669fedbe8a0adcf346995cb20b62d37
+ms.sourcegitcommit: af487756dffea0f8f0cd62710c586842cb08073c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48319676"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49571476"
 ---
 # <a name="pass-data-to-scripts-in-an-automatically-run-power-automate-flow-preview"></a>Passar dados para scripts em modo de execução automático no fluxo do Power Automate (visualização)
 
@@ -25,13 +25,13 @@ Este tutorial ensina como usar um script do Office para Excel na Web fluxo autom
 
 O Power Automate não pode usar[referências relativas](../develop/power-automate-integration.md#avoid-using-relative-references)como`Workbook.getActiveWorksheet`acessar componentes da pasta de trabalho. Portanto, precisamos de uma pasta de trabalho e planilha com nomes consistentes para que o Power Automate possa consultar.
 
-1. Criar um nome para a pasta de trabalho**MyWorkbook**.
+1. Criar um nome para a pasta de trabalho **MyWorkbook**.
 
-2. Vá para a guia **Automatizar**e selecione**Editor de Códigos**.
+2. Vá para a guia **Automatizar** e selecione **Editor de Códigos**.
 
-3. Selecione**Novo script**.
+3. Selecione **Novo script**.
 
-4. Substitua o código existente pelo seguinte script e pressione**Executar**. Isso instalará a pasta de trabalho com nomes consistentes de planilhas, tabela e tabela dinâmica.
+4. Substitua o código existente pelo seguinte script e pressione **Executar**. Isso instalará a pasta de trabalho com nomes consistentes de planilhas, tabela e tabela dinâmica.
 
     ```TypeScript
     function main(workbook: ExcelScript.Workbook) {
@@ -58,7 +58,7 @@ O Power Automate não pode usar[referências relativas](../develop/power-automat
 
 ## <a name="create-an-office-script"></a>Criar um Script do Office
 
-Vamos criar um script que registre as informações de um email. Gostaríamos de saber como quais dias da semana recebemos a maioria dos emails e quantos remetentes exclusivos estão enviando esses emails. Nossa pasta de trabalho tem uma tabela com **Data**, **Dia da semana**, **Endereços de email** e**Colunas de assunto**. Nossa planilha também tem uma tabela dinâmica que está sendo dinamizada no **Dia da semana**e**Endereços de email**(essas são as hierarquias de linha). A contagem de **assuntos exclusivos** são as informações agregadas que estão sendo exibidas (a hierarquia de dados). Faremos com que o nosso script atualize essa tabela dinâmica depois de atualizar a tabela de email.
+Vamos criar um script que registre as informações de um email. Gostaríamos de saber como quais dias da semana recebemos a maioria dos emails e quantos remetentes exclusivos estão enviando esses emails. Nossa pasta de trabalho tem uma tabela com **Data**, **Dia da semana**, **Endereços de email** e **Colunas de assunto**. Nossa planilha também tem uma tabela dinâmica que está sendo dinamizada no **Dia da semana** e **Endereços de email**(essas são as hierarquias de linha). A contagem de **assuntos exclusivos** são as informações agregadas que estão sendo exibidas (a hierarquia de dados). Faremos com que o nosso script atualize essa tabela dinâmica depois de atualizar a tabela de email.
 
 1. Do **Editor de Código**, selecione **Novo Script**.
 
@@ -116,7 +116,7 @@ Vamos criar um script que registre as informações de um email. Gostaríamos de
     pivotTable.refresh();
     ```
 
-8. Renomeie seu script **Registre o email**e pressione **Salvar script**.
+8. Renomeie seu script **Registre o email** e pressione **Salvar script**.
 
 O seu script já está pronto para um fluxo de trabalho automatizado. Ele deverá ser semelhante ao script a seguir:
 
@@ -162,7 +162,7 @@ function main(
 
     ![A opção de fluxo automatizado em Power Automate.](../images/power-automate-params-tutorial-1.png)
 
-4. Na caixa de diálogo exibida, insira o nome para seu fluxo na **caixa de texto**Nome de Fluxo. Em seguida, selecione**Quando um novo email chegar**da lista de opções em **escolha o gatilho de fluxo**. Talvez seja necessário procurar pela opção usando a caixa de pesquisa. Por fim, pressione **criar**.
+4. Na caixa de diálogo exibida, insira o nome para seu fluxo na **caixa de texto** Nome de Fluxo. Em seguida, selecione **Quando um novo email chegar** da lista de opções em **escolha o gatilho de fluxo**. Talvez seja necessário procurar pela opção usando a caixa de pesquisa. Por fim, pressione **criar**.
 
     ![Parte da janela Criar Uma Fluxo Automatizado no Power Automate, que mostra a opção "novo email recebido".](../images/power-automate-params-tutorial-2.png)
 
@@ -183,8 +183,8 @@ function main(
 
     - **Localização**: OneDrive for Business
     - **Biblioteca de Documentos**: OneDrive
-    - **Arquivo**: MyWorkbook.xlsx
-    - **De**: Gravar Email
+    - **Arquivo**: MyWorkbook.xlsx *(Escolhido por meio do navegador de arquivos)*
+    - **Script**: Gravar Email
     - **De**: De *(conteúdo dinâmico do Outlook)*
     - **DateReceived**: Hora Recebida *(conteúdo dinâmico do Outlook)*
     - **assunto**: Assunto *(conteúdo dinâmico do Outlook)*
