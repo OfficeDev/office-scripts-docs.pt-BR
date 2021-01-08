@@ -1,14 +1,14 @@
 ---
 title: Passar dados para scripts numa execução automática do fluxo no Power Automate.
 description: Tutorial sobre executar os Scripts do Office para Excel na Web por meio do Power Automate quando emails são recebidos e transmitidos para o script.
-ms.date: 11/30/2020
+ms.date: 12/28/2020
 localization_priority: Priority
-ms.openlocfilehash: b73f40c70669fedbe8a0adcf346995cb20b62d37
-ms.sourcegitcommit: af487756dffea0f8f0cd62710c586842cb08073c
+ms.openlocfilehash: 3f81ac13b0827f27adc611895d6bb090df10da5c
+ms.sourcegitcommit: 9df67e007ddbfec79a7360df9f4ea5ac6c86fb08
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49571476"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49772989"
 ---
 # <a name="pass-data-to-scripts-in-an-automatically-run-power-automate-flow-preview"></a>Passar dados para scripts em modo de execução automático no fluxo do Power Automate (visualização)
 
@@ -23,11 +23,11 @@ Este tutorial ensina como usar um script do Office para Excel na Web fluxo autom
 
 ## <a name="prepare-the-workbook"></a>Preparar a pasta de trabalho
 
-O Power Automate não pode usar[referências relativas](../develop/power-automate-integration.md#avoid-using-relative-references)como`Workbook.getActiveWorksheet`acessar componentes da pasta de trabalho. Portanto, precisamos de uma pasta de trabalho e planilha com nomes consistentes para que o Power Automate possa consultar.
+O Power Automate não pode usar[referências relativas](../testing/power-automate-troubleshooting.md#avoid-using-relative-references)como`Workbook.getActiveWorksheet`acessar componentes da pasta de trabalho. Portanto, precisamos de uma pasta de trabalho e planilha com nomes consistentes para que o Power Automate possa consultar.
 
 1. Criar um nome para a pasta de trabalho **MyWorkbook**.
 
-2. Vá para a guia **Automatizar** e selecione **Editor de Códigos**.
+2. Vá até a guia **Automatizar** e selecione **Todos os Scripts**.
 
 3. Selecione **Novo script**.
 
@@ -60,7 +60,7 @@ O Power Automate não pode usar[referências relativas](../develop/power-automat
 
 Vamos criar um script que registre as informações de um email. Gostaríamos de saber como quais dias da semana recebemos a maioria dos emails e quantos remetentes exclusivos estão enviando esses emails. Nossa pasta de trabalho tem uma tabela com **Data**, **Dia da semana**, **Endereços de email** e **Colunas de assunto**. Nossa planilha também tem uma tabela dinâmica que está sendo dinamizada no **Dia da semana** e **Endereços de email**(essas são as hierarquias de linha). A contagem de **assuntos exclusivos** são as informações agregadas que estão sendo exibidas (a hierarquia de dados). Faremos com que o nosso script atualize essa tabela dinâmica depois de atualizar a tabela de email.
 
-1. Do **Editor de Código**, selecione **Novo Script**.
+1. No painel de tarefas **Editor de código**, selecione **Novo Script**.
 
 2. O fluxo que criaremos depois no tutorial enviará a informação do nosso script sobre cada email recebido. O script precisa aceitar essa entrada pelos parâmetros na `main`função. Substitua o script padrão com o script seguinte:
 
@@ -156,15 +156,15 @@ function main(
 
 2. No menu exibido do lado esquerdo da tela, pressione **Criar**. Isso o conduzirá a uma lista de maneiras de criar novos fluxos de trabalho.
 
-    ![O botão Criar no Power Automate.](../images/power-automate-tutorial-1.png)
+    ![Botão Criar no Power Automate.](../images/power-automate-tutorial-1.png)
 
 3. Na seção **Começar no espaço em branco**, selecione **Fluxo automático**. Isso cria um fluxo de trabalho iniciado por um evento, como o recebimento de emails.
 
-    ![A opção de fluxo automatizado em Power Automate.](../images/power-automate-params-tutorial-1.png)
+    ![A opção de fluxo automatizado no Power Automate.](../images/power-automate-params-tutorial-1.png)
 
 4. Na caixa de diálogo exibida, insira o nome para seu fluxo na **caixa de texto** Nome de Fluxo. Em seguida, selecione **Quando um novo email chegar** da lista de opções em **escolha o gatilho de fluxo**. Talvez seja necessário procurar pela opção usando a caixa de pesquisa. Por fim, pressione **criar**.
 
-    ![Parte da janela Criar Uma Fluxo Automatizado no Power Automate, que mostra a opção "novo email recebido".](../images/power-automate-params-tutorial-2.png)
+    ![Parte da janela Construir um Fluxo Automatizado no Power Automate que mostra a opção "chegou um novo email".](../images/power-automate-params-tutorial-2.png)
 
     > [!NOTE]
     > Este tutorial usa o Outlook. Sinta-se à vontade para usar o seu serviço de email preferido, embora algumas opções possam ser diferentes.
@@ -173,11 +173,11 @@ function main(
 
 6. Selecione a guia **Padrão** e, em seguida, selecione **Excel Online (Business)**.
 
-    ![A opção do Power Automate para Excel Online (Business)](../images/power-automate-tutorial-4.png)
+    ![Opção do Excel Online (Business) no Power Automate](../images/power-automate-tutorial-4.png)
 
 7. Em **Ações**, selecione **executar script (visualização)**.
 
-    ![Opção de ação do Power Automate para Executar script (visualização).](../images/power-automate-tutorial-5.png)
+    ![Execute a opção de ação de script (visualização) no Power Automate](../images/power-automate-tutorial-5.png)
 
 8. Depois, você selecionará a pasta de trabalho, o script e os argumentos de entrada do script para usar na etapa do fluxo. Para o tutorial, você fará o uso da pasta de trabalho criada no seu OneDrive, mas é possível usar qualquer pasta de trabalho em um site OneDrive ou no Microsoft Office SharePoint Online. Especifique as seguintes configurações para o conector **Executar Script**:
 
@@ -191,7 +191,7 @@ function main(
 
     *Observe que os parâmetros para o script só aparecerão quando o script for selecionado.*
 
-    ![Opção de ação dos parâmetros do Power Automate para Executar script (visualização).](../images/power-automate-params-tutorial-3.png)
+    ![Parâmetros da opção de ação Executar script (visualização) no Power Automate](../images/power-automate-params-tutorial-3.png)
 
 9. Pressione **Salvar**.
 
@@ -201,7 +201,7 @@ Agora, o fluxo está habilitado. O seu script será automaticamente executado se
 
 1. Na página principal do Power Automate, selecione **Meus fluxos**.
 
-    ![Botão Meus fluxos no Power Automate.](../images/power-automate-tutorial-7.png)
+    ![Botão Meus fluxos no Power Automate](../images/power-automate-tutorial-7.png)
 
 2. Selecione o seu fluxo. Aqui você pode ver o histórico de execução. Você pode atualizar a página ou pressionar o botão atualizar **Executar Todos** para atualizar o histórico. O fluxo será disparado logo após o recebimento de um email. Testar o fluxo enviando a si mesmo um email.
 
@@ -209,10 +209,10 @@ Quando o fluxo é acionado e executa seu script com sucesso, você deverá ver a
 
 ![A tabela de email após o fluxo ter sido executado algumas vezes.](../images/power-automate-params-tutorial-4.png)
 
-![A tabela dinâmica após o fluxo ter sido executado algumas vezes.](../images/power-automate-params-tutorial-5.png)
+![A Tabela Dinâmica depois que o fluxo foi executado algumas vezes](../images/power-automate-params-tutorial-5.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Visite [executar os Scripts do Office com o Power Automate](../develop/power-automate-integration.md) para saber mais sobre como conectar Scripts do Office com o Power Automate.
+Complete o tutorial [Retornar dados de um script para um fluxo de execução automática do Power Automate](excel-power-automate-returns.md). Ele ensina como retornar dados de um script para o fluxo.
 
 Você também pode conferir o exemplo de [lembretes automáticos de tarefas](../resources/scenarios/task-reminders.md) para aprender a combinar os Scripts do Office e Power Automate com as placas adaptáveis de equipes.

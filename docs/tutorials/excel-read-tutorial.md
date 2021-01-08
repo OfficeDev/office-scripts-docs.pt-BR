@@ -1,14 +1,14 @@
 ---
 title: Ler os dados da pasta de trabalho com scripts do Office no Excel na Web.
 description: Um tutorial de scripts do Office sobre a leitura de dados de pastas de trabalho e avaliação desses dados no script.
-ms.date: 07/20/2020
+ms.date: 01/06/2021
 localization_priority: Priority
-ms.openlocfilehash: cdd09f13bb53cfff8c051360f2306cdb6956d86d
-ms.sourcegitcommit: ff7fde04ce5a66d8df06ed505951c8111e2e9833
+ms.openlocfilehash: 0848a24e7333842b5b3b1f82ec8f270514c34d2f
+ms.sourcegitcommit: 9df67e007ddbfec79a7360df9f4ea5ac6c86fb08
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46616701"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49772965"
 ---
 # <a name="read-workbook-data-with-office-scripts-in-excel-on-the-web"></a>Ler os dados da pasta de trabalho com scripts do Office no Excel na Web.
 
@@ -42,7 +42,7 @@ No resto do tutorial, normalizaremos os dados usando um script. Primeiro, vamos 
     |25/10/2019 |Verificando |Ideal para sua empresa de produtos orgânicos | -85.64 | |
     |01/11/2019 |Verificando |Depósito externo | |1000 |
 
-3. Abra o **Editor de códigos** e escolha **Novo script**.
+3. Abra **Todos os Scripts** e selecione **Novo Script**.
 4. Vamos limpar a formatação. Este é um documento financeiro, iremos alterar a formatação dos números nas colunas **Débito** e **Crédito** para mostrar os valores em dólares. Também iremos ajustar a largura da coluna para os dados.
 
     Substitua o conteúdo do script pelo código a seguir:
@@ -73,21 +73,22 @@ No resto do tutorial, normalizaremos os dados usando um script. Primeiro, vamos 
 8. Quando uma matriz bidimensional é registrada no console, ela agrupa os valores de coluna em cada linha. Expanda o log de matriz pressionando o triângulo azul.
 9. Expanda o segundo nível da matriz, pressionando o triângulo azul exibido recentemente. Agora, você deverá ver isto:
 
-    ![O log do console mostrando a saída "-20.05", aninhada sob duas matrizes.](../images/tutorial-4.png)
+    ![O log do console exibindo a saída "20.05", aninhada em duas matrizes](../images/tutorial-4.png)
 
 ## <a name="modify-the-value-of-a-cell"></a>Modificar o valor de uma célula
 
 Agora que podemos ler os dados, usaremos eles para modificar a pasta de trabalho. Deixaremos o valor da célula **D2** positivo com a função `Math.abs`. O objeto [Matemática](https://developer.mozilla.org/docs/web/javascript/reference/global_objects/math) contém várias funções às quais seus scripts têm acesso. É possível encontrar mais informações sobre `Math` e outros objetos internos [Usando objetos JavaScript internos nos scripts do Office](../develop/javascript-objects.md).
 
-1. Adicione o seguinte código ao final do script:
+1. Usaremos os métodos `getValue` e `setValue` para alterar o valor da célula. Esses métodos funcionam em uma única célula. Ao lidar com intervalos de várias células, use `getValues` e `setValues`. Adicione o seguinte código ao final do script:
 
     ```TypeScript
     // Run the `Math.abs` function with the value at D2 and apply that value back to D2.
-    let positiveValue = Math.abs(range.getValue());
+    let positiveValue = Math.abs(range.getValue() as number);
     range.setValue(positiveValue);
     ```
 
-    Observe que estamos usando `getValue` e `setValue`. Esses métodos funcionam em uma única célula. Ao lidar com intervalos de várias células, use `getValues` e `setValues`.
+    > [!NOTE]
+    > Estamos [lançando](https://www.typescripttutorial.net/typescript-tutorial/type-casting/) o valor retornado de `range.getValue()` para um `number` usando a palavra-chave `as`. Isso é necessário porque um intervalo pode ser cadeias de caracteres, números ou booleanas. Nesta instância, precisamos explicitamente de um número.
 
 2. O valor da célula **D2** agora deverá ser positivo.
 
@@ -124,13 +125,13 @@ Agora que sabemos ler e escrever em uma única célula, vamos generalizar o scri
     for (let i = 1; i < rowCount; i++) {
         // The column at index 3 is column "4" in the worksheet.
         if (rangeValues[i][3] != 0) {
-            let positiveValue = Math.abs(rangeValues[i][3]);
+            let positiveValue = Math.abs(rangeValues[i][3] as number);
             selectedSheet.getCell(i, 3).setValue(positiveValue);
         }
 
         // The column at index 4 is column "5" in the worksheet.
         if (rangeValues[i][4] != 0) {
-            let positiveValue = Math.abs(rangeValues[i][4]);
+            let positiveValue = Math.abs(rangeValues[i][4] as number);
             selectedSheet.getCell(i, 4).setValue(positiveValue);
         }
     }

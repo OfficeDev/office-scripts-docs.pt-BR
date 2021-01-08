@@ -1,14 +1,14 @@
 ---
 title: Comece a usar scripts de um fluxo manual do Power Automate
 description: Um tutorial sobre o uso de Scripts do Office no Power Automate por meio de um acionamento manual.
-ms.date: 11/30/2020
+ms.date: 12/28/2020
 localization_priority: Priority
-ms.openlocfilehash: 831812f5ead549ee3ea3b8c643fc16d5467edbe8
-ms.sourcegitcommit: af487756dffea0f8f0cd62710c586842cb08073c
+ms.openlocfilehash: 763a61f65afbdbb55346bb3d99f216da33e8419c
+ms.sourcegitcommit: 9df67e007ddbfec79a7360df9f4ea5ac6c86fb08
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49571469"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49772982"
 ---
 # <a name="call-scripts-from-a-manual-power-automate-flow-preview"></a>Comece a usar scripts de um fluxo manual do Power Automate (pré-visualização)
 
@@ -23,7 +23,7 @@ Este tutorial ensina como executar um Script do Office para o Excel na web por m
 
 ## <a name="prepare-the-workbook"></a>Preparar a pasta de trabalho
 
-O Power Automate não consegue usar referências relativas como `Workbook.getActiveWorksheet` para acessar os componentes da pasta de trabalho. Portanto, precisamos de uma pasta de trabalho e de uma planilha com nomes consistentes que o Power Automate consiga consultar.
+O Power Automate não pode usar[referências relativas](../testing/power-automate-troubleshooting.md#avoid-using-relative-references)como`Workbook.getActiveWorksheet`acessar componentes da pasta de trabalho. Portanto, precisamos de uma pasta de trabalho e de uma planilha com nomes consistentes que o Power Automate consiga consultar.
 
 1. Crie uma pasta de trabalho intitulada **MyWorkbook**.
 
@@ -31,7 +31,7 @@ O Power Automate não consegue usar referências relativas como `Workbook.getAct
 
 ## <a name="create-an-office-script"></a>Criar um Script do Office
 
-1. Vá para a guia **Automatizar** e selecione **Editor de Códigos**.
+1. Vá até a guia **Automatizar** e selecione **Todos os Scripts**.
 
 2. Selecione **Novo Script**.
 
@@ -71,11 +71,11 @@ O Power Automate não consegue usar referências relativas como `Workbook.getAct
 
 3. Na seção **Começar no espaço em branco**, selecione **Fluxo instantâneo**. Isso irá criar um fluxo de trabalho ativado manualmente.
 
-    ![Opção Fluxo instantâneo para criar um novo fluxo de trabalho.](../images/power-automate-tutorial-2.png)
+    ![Opção de fluxo instantâneo para criar um novo fluxo de trabalho](../images/power-automate-tutorial-2.png)
 
 4. Na janela da caixa de diálogo que aparece, insira um nome para o seu fluxo na caixa de texto **Nome do fluxo**; selecione **Acionar um fluxo manualmente** na lista de opções em **Escolher como acionar o fluxo**, e pressione **Criar**.
 
-    ![Opção acionamento manual para a criação de um novo fluxo instantâneo.](../images/power-automate-tutorial-3.png)
+    ![A opção de acionamento manual para criar um novo fluxo instantâneo](../images/power-automate-tutorial-3.png)
 
     Observe que o fluxo acionado manualmente é apenas um entre os diversos tipos de fluxo. No tutorial a seguir, você criará um fluxo que é executado automaticamente quando você recebe um email.
 
@@ -83,11 +83,11 @@ O Power Automate não consegue usar referências relativas como `Workbook.getAct
 
 6. Selecione a guia **Padrão** e, em seguida, selecione **Excel Online (Business)**.
 
-    ![A opção do Power Automate para Excel Online (Business)](../images/power-automate-tutorial-4.png)
+    ![Opção do Excel Online (Business) no Power Automate](../images/power-automate-tutorial-4.png)
 
 7. Em **Ações**, selecione **executar script (visualização)**.
 
-    ![Opção de ação do Power Automate para Executar script (visualização).](../images/power-automate-tutorial-5.png)
+    ![Execute a opção de ação de script (visualização) no Power Automate](../images/power-automate-tutorial-5.png)
 
 8. Depois, você selecionará a pasta de trabalho e o script que será utilizado na etapa do fluxo. Para o tutorial, você fará o uso da pasta de trabalho criada no seu OneDrive, mas é possível usar qualquer pasta de trabalho em um site OneDrive ou no Microsoft Office SharePoint Online. Especifique as seguintes configurações para o conector **Executar Script**:
 
@@ -106,7 +106,7 @@ Seu fluxo agora está pronto para ser executado por meio do Power Automate. Voc�
 
 1. Na página principal do Power Automate, selecione **Meus fluxos**.
 
-    ![Botão Meus fluxos no Power Automate.](../images/power-automate-tutorial-7.png)
+    ![Botão Meus fluxos no Power Automate](../images/power-automate-tutorial-7.png)
 
 2. Selecione **Fluxo do meu tutorial** na lista de fluxos exibida na guia **Meus fluxos**. Isso irá lhe mostrar os detalhes do fluxo que criamos anteriormente.
 

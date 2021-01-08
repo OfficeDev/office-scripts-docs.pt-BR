@@ -1,4 +1,4 @@
-Antes de começar este tutorial, você precisará acessar os seguintes aplicativos:
+Antes de iniciar este tutorial, você precisará ter acesso ao seguinte:
 
 - [Power Automate](/power-automate/organization-q-and-a).
 - [Excel na Web](https://www.office.com/launch/excel).
