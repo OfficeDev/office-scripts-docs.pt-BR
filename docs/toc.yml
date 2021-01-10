@@ -1,60 +1,67 @@
-- name: Documentação de scripts do Office
-  href: index.md
-- name: Scripts do Office no Excel na Web
-  items:
-    - name: Visão geral
-      href: overview/excel.md
-    - name: Tutoriais
-      items:
-        - name: Aprenda as noções básicas de scripts do Office
-          href: tutorials/excel-tutorial.md
-        - name: Ler dados da pasta de trabalho com um script
-          href: tutorials/excel-read-tutorial.md
-        - name: Ligue scripts de um fluxo manual do Power Automate
-          href: tutorials/excel-power-automate-manual.md
-        - name: Passar dados para scripts numa execução automática do fluxo do Power Automate
-          href: tutorials/excel-power-automate-trigger.md
-    - name: Fundamentos de script
-      href: develop/scripting-fundamentals.md
-    - name: Conceitos
-      items:
-        - name: Objetos internos do JavaScript
-          href: develop/javascript-objects.md
-        - name: Ambiente do editor de códigos
-          href: overview/code-editor-environment.md
-        - name: Diferenças entre os scripts do Office e Macros VBA
-          href: resources/vba-differences.md
-        - name: Diferenças entre os scripts do Office e os suplementos do Office
-          href: resources/add-ins-differences.md
-        - name: Chamada de API externa nos Scripts do Office
-          href: develop/external-calls.md
-        - name: Armazenamento de arquivos e propriedade
-          href: overview/script-storage.md
-        - name: Executar scripts com Power Automate
-          href: develop/power-automate-integration.md
-    - name: Solução de problemas
-      items:
-        - name: Noções básicas de solução de problemas
-          href: testing/troubleshooting.md
-        - name: Melhorar o desempenho do script
-          href: develop/web-client-performance.md
-        - name: Limites da plataforma
-          href: testing/platform-limits.md
-        - name: Desfazer os efeitos de um script do Office
-          href: testing/undo.md
-        - name: Suporte os Scripts do Office mais antigos
-          href: develop/excel-async-model.md
-    - name: Exemplos
-      items:
-        - name: Exemplos de scripts
-          href: resources/excel-samples.md
-        - name: Cenários
-          items:
-            - name: Visão geral
-              href: resources/scenarios/sample-scenario-overview.md
-            - name: Analisar downloads da Web
-              href: resources/scenarios/analyze-web-downloads.md
-            - name: Calculadora de notas
-              href: resources/scenarios/grade-calculator.md
-            - name: Lembretes de tarefas (com Power Automate)
-              href: resources/scenarios/task-reminders.md
+items:
+  - name: Documentação de scripts do Office
+    href: index.md
+  - name: Scripts do Office no Excel na Web
+    items:
+      - name: Visão geral
+        href: overview/excel.md
+      - name: Tutoriais
+        items:
+          - name: Aprenda as noções básicas de scripts do Office
+            href: tutorials/excel-tutorial.md
+          - name: Ler dados da pasta de trabalho com um script
+            href: tutorials/excel-read-tutorial.md
+          - name: Ligue scripts de um fluxo manual do Power Automate
+            href: tutorials/excel-power-automate-manual.md
+          - name: Usar dados em um script de um fluxo do Power Automate executado automaticamente
+            href: tutorials/excel-power-automate-trigger.md
+          - name: Passar dados de um script para o fluxo do Power Automate
+            href: tutorials/excel-power-automate-returns.md
+      - name: Fundamentos de script
+        href: develop/scripting-fundamentals.md
+      - name: Conceitos
+        items:
+          - name: Objetos internos do JavaScript
+            href: develop/javascript-objects.md
+          - name: Ambiente do editor de códigos
+            href: overview/code-editor-environment.md
+          - name: Diferenças entre os scripts do Office e Macros VBA
+            href: resources/vba-differences.md
+          - name: Diferenças entre os scripts do Office e os suplementos do Office
+            href: resources/add-ins-differences.md
+          - name: Chamada de API externa nos scripts do Office
+            href: develop/external-calls.md
+          - name: Armazenamento de arquivos e propriedade
+            href: overview/script-storage.md
+          - name: Executar scripts com Power Automate
+            href: develop/power-automate-integration.md
+      - name: Solução de problemas
+        items:
+          - name: Noções básicas de solução de problemas
+            href: testing/troubleshooting.md
+          - name: Solução de problemas com o Power Automate
+            href: testing/power-automate-troubleshooting.md
+          - name: Melhorar o desempenho do script
+            href: develop/web-client-performance.md
+          - name: Limites da plataforma
+            href: testing/platform-limits.md
+          - name: Desfazer os efeitos de um script do Office
+            href: testing/undo.md
+          - name: Suporte os Scripts do Office mais antigos
+            href: develop/excel-async-model.md
+      - name: Exemplos
+        items:
+          - name: Exemplos de scripts
+            href: resources/excel-samples.md
+          - name: Cenários
+            items:
+              - name: Visão geral
+                href: resources/scenarios/sample-scenario-overview.md
+              - name: Analisar downloads da Web
+                href: resources/scenarios/analyze-web-downloads.md
+              - name: Calculadora de notas
+                href: resources/scenarios/grade-calculator.md
+              - name: Dados gráficos do nível de água de NOAA
+                href: resources/scenarios/noaa-data-fetch.md
+              - name: Lembretes de tarefas (com Power Automate)
+                href: resources/scenarios/task-reminders.md
