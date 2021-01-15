@@ -1,16 +1,16 @@
 ---
 title: 'Cenário de exemplo de scripts do Office: dados em nível de água do Graph do NOAA'
 description: Um exemplo que busca dados JSON de um banco de dados NOAA e os usa para criar um gráfico.
-ms.date: 01/05/2021
+ms.date: 01/11/2021
 localization_priority: Normal
-ms.openlocfilehash: d2afcd05125ea66c028d8e21bcc878371c20fcc3
-ms.sourcegitcommit: 30c4b731dc8d18fca5aa74ce59e18a4a63eb4ffc
+ms.openlocfilehash: 5b0b4e3675cbe053368f63123d819f0dab626e60
+ms.sourcegitcommit: 7580dcb8f2f97974c2a9cce25ea30d6526730e28
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784176"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867874"
 ---
-# <a name="office-scripts-sample-scenario-graph-water-level-data-from-noaa"></a>Cenário de exemplo de scripts do Office: dados em nível de água do Graph do NOAA
+# <a name="office-scripts-sample-scenario-fetch-and-graph-water-level-data-from-noaa"></a>Cenário de exemplo de scripts do Office: buscar e gráfico dados no nível d'água do NOAA
 
 Neste cenário, você precisa plotar o nível de água na estação de Seattle da Administração Nacional do Oceano e da Administração [Administrativa DeSuce.](https://tidesandcurrents.noaa.gov/stationhome.html?id=9447130) Você usará dados externos para preencher uma planilha e criar um gráfico.
 
