@@ -3,12 +3,12 @@ title: Fundamentos de script para scripts do Office no Excel na Web
 description: Informações sobre o modelo de objeto e outros fundamentos para saber mais antes de escrever scripts do Office.
 ms.date: 07/08/2020
 localization_priority: Priority
-ms.openlocfilehash: 6c02f4fb986e6a0ed1dd7afb099aaa1c9d1ea276
-ms.sourcegitcommit: ebd1079c7e2695ac0e7e4c616f2439975e196875
+ms.openlocfilehash: acbeec69a5d9ae9e3ebfa95c9070033d1cca2265
+ms.sourcegitcommit: e7e019ba36c2f49451ec08c71a1679eb6dba4268
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45160471"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49933270"
 ---
 # <a name="scripting-fundamentals-for-office-scripts-in-excel-on-the-web-preview"></a>Fundamentos de script para scripts do Office no Excel na Web (visualização)
 
@@ -18,7 +18,7 @@ Este artigo apresentará os aspectos técnicos dos scripts do Office. Você sabe
 
 ## <a name="main-function"></a>função `main`
 
-Cada Script do Office precisa incluir uma função `main` tendo o tipo de `ExcelScript.Workbook` como seu primeiro parâmetro. Quando a função é executada, o aplicativo Excel chama essa função `main` fornecendo a pasta de trabalho como seu primeiro parâmetro. Portanto, é importante não modificar a assinatura básica da função `main` depois de gravar o script ou criar um script a partir do editor de código.
+Cada Script do Office precisa incluir uma função `main` tendo o tipo de `ExcelScript.Workbook` como seu primeiro parâmetro. Quando a função é executada, o aplicativo Excel invoca esta função `main` fornecendo a pasta de trabalho como seu primeiro parâmetro. Portanto, é importante não modificar a assinatura básica da função `main` depois de gravar o script ou criar um script a partir do editor de código.
 
 ```typescript
 function main(workbook: ExcelScript.Workbook) {
