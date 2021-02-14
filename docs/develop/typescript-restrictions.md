@@ -1,14 +1,14 @@
 ---
 title: Restrições de TypeScript em scripts do Office
 description: As especificidades do compilador TypeScript e linter usados pelo Editor de Código de Scripts do Office.
-ms.date: 01/29/2021
+ms.date: 02/05/2021
 localization_priority: Normal
-ms.openlocfilehash: d67e208561ce6ddd706d4c80cf29d2f013a32032
-ms.sourcegitcommit: 98c7bc26f51dc8427669c571135c503d73bcee4c
+ms.openlocfilehash: 87a070b9f342fa5a1f5109fa647bba591832e0cf
+ms.sourcegitcommit: 345f1dd96d80471b246044b199fe11126a192a88
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50125931"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242015"
 ---
 # <a name="typescript-restrictions-in-office-scripts"></a>Restrições de TypeScript em scripts do Office
 
@@ -20,7 +20,7 @@ Escrever [tipos](https://www.typescriptlang.org/docs/handbook/typescript-in-5-mi
 
 ### <a name="explicit-any"></a>Explícito `any`
 
-Você não pode declarar explicitamente uma variável para ser do `any` tipo em Scripts do Office (ou seja, `let someVariable: any;` ). O `any` tipo causa problemas quando processado pelo Excel. Por exemplo, `Range` um precisa saber que um valor é um , ou `string` `number` `boolean` . Você receberá um erro em tempo de compilação (um erro antes de executar o script) se qualquer variável for explicitamente definida como o `any` tipo no script.
+Você não pode declarar explicitamente uma variável para ser do `any` tipo em Scripts do Office (ou seja, `let someVariable: any;` ). O `any` tipo causa problemas quando processado pelo Excel. Por exemplo, `Range` um precisa saber que um valor é um , ou `string` `number` `boolean` . Você receberá um erro de tempo de compilação (um erro antes de executar o script) se qualquer variável for explicitamente definida como o tipo `any` no script.
 
 ![A mensagem explícita no texto de foco do editor de código](../images/explicit-any-editor-message.png)
 
@@ -32,7 +32,7 @@ Para se livrar desse problema, defina sempre o tipo da variável. Se você não 
 
 ### <a name="implicit-any"></a>Implícito `any`
 
-Tipos de variável TypeScript podem ser [definidos implicitamente.](https://www.typescriptlang.org/docs/handbook/type-inference.html) Se o compilador typeScript não puder determinar o tipo de uma variável (porque o tipo não é definido explicitamente ou a inferência de tipo não é possível), então é um implícito e você receberá um erro de tempo de `any` compilação.
+Tipos de variável TypeScript podem ser [definidos implicitamente.](https://www.typescriptlang.org/docs/handbook/type-inference.html) Se o compilador typeScript não puder determinar o tipo de uma variável (porque o tipo não é definido explicitamente ou a inferência de tipo não é possível), então ele é implícito e você receberá um erro de tempo de `any` compilação.
 
 O caso mais comum em qualquer `any` implícito está em uma declaração de variável, como `let value;` . Há duas maneiras de evitar isso:
 
@@ -61,6 +61,23 @@ As palavras a seguir não podem ser usadas como identificadores em um script. El
 * `Excel`
 * `ExcelScript`
 * `console`
+
+## <a name="only-arrow-functions-in-array-callbacks"></a>Somente funções de seta em retornos de chamada de matriz
+
+Seus scripts só podem usar [funções de seta](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/Arrow_functions) ao fornecer argumentos de retorno de chamada para [métodos Array.](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) Você não pode passar qualquer tipo de identificador ou função "tradicional" para esses métodos.
+
+```typescript
+const myArray = [1, 2, 3, 4, 5, 6];
+let filteredArray = myArray.filter((x) => {
+  return x % 2 === 0;
+});
+/*
+  The following code generates a compiler error in the Office Scripts Code Editor.
+  filteredArray = myArray.filter(function (x) {
+    return x % 2 === 0;
+  });
+*/
+```
 
 ## <a name="performance-warnings"></a>Avisos de desempenho
 
