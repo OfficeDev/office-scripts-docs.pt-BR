@@ -1,14 +1,14 @@
 ---
 title: Grave, edite e crie scripts do Office no Excel na Web
 description: Um tutorial sobre o básico dos scripts do Office, incluindo a gravação de scripts com o Gravador de ações e a gravação de dados em uma pasta de trabalho.
-ms.date: 07/21/2020
+ms.date: 01/06/2021
 localization_priority: Priority
-ms.openlocfilehash: 96bdc286883d87249de260666c7c8ffe2c94cc0f
-ms.sourcegitcommit: ff7fde04ce5a66d8df06ed505951c8111e2e9833
+ms.openlocfilehash: fa2fec54cdb0289590868ee6848a942401f21665
+ms.sourcegitcommit: 9df67e007ddbfec79a7360df9f4ea5ac6c86fb08
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46616770"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49772975"
 ---
 # <a name="record-edit-and-create-office-scripts-in-excel-on-the-web"></a>Grave, edite e crie scripts do Office no Excel na Web
 
@@ -78,7 +78,7 @@ O script anterior coloriu a linha "Laranjas" para ficar laranja. Vamos adicionar
 
 4. Teste o script pressionando **Executar**. Sua pasta de trabalho já deve ter esta aparência:
 
-    ![Uma linha de dados de vendas de frutas com a linha "Laranjas" é realçada em laranja e a linha "Limões" é realçada em amarelo.](../images/tutorial-2.png)
+    ![Uma linha de dados de vendas de frutas com a linha "Laranjas" destacada em laranja e a linha "Limões" destacada em amarelo](../images/tutorial-2.png)
 
 ## <a name="create-a-table"></a>Crie uma tabela
 
@@ -100,7 +100,7 @@ Vamos converter esses dados de vendas de frutas em uma tabela. Usaremos nosso sc
 
     ```TypeScript
     function main(workbook: ExcelScript.Workbook) {
-        // Set fill color to FFC000 for range Sheet12!A2:C2
+        // Set fill color to FFC000 for range Sheet1!A2:C2
         let selectedSheet = workbook.getActiveWorksheet();
         selectedSheet.getRange("A2:C2").getFormat().getFill().setColor("FFC000");
         selectedSheet.getRange("A3:C3").getFormat().getFill().setColor("yellow");
@@ -113,7 +113,7 @@ Vamos converter esses dados de vendas de frutas em uma tabela. Usaremos nosso sc
 
 3. Execute o script. Você deve visualizar uma tabela como esta:
 
-    ![Uma tabela de vendas de frutas sortidas.](../images/tutorial-3.png)
+    ![Uma tabela ordenada de venda de frutas](../images/tutorial-3.png)
 
     > [!NOTE]
     > Se você executar novamente o script, receberá um erro. Isso ocorre porque você não pode criar uma tabela em cima de outra tabela. No entanto, você pode executar o script em uma planilha ou pasta de trabalho diferente.
