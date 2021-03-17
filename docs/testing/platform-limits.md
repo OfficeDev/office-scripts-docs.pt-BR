@@ -1,33 +1,33 @@
 ---
 title: Limites e requisitos de plataforma com scripts do Office
-description: Limites de recurso e suporte de navegador para scripts do Office quando usados com o Excel na Web
-ms.date: 10/23/2020
+description: Limites de recursos e suporte ao navegador para Scripts do Office quando usados com o Excel na Web
+ms.date: 03/12/2021
 localization_priority: Normal
-ms.openlocfilehash: 61f5c55be278ae056014d3b01e4176354d913f87
-ms.sourcegitcommit: d3e7681e262bdccc281fcb7b3c719494202e846b
+ms.openlocfilehash: 93307b6204f409f26c77b5ead33188205d5c4b4d
+ms.sourcegitcommit: 5bde455b06ee2ed007f3e462d8ad485b257774ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930075"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50837262"
 ---
 # <a name="platform-limits-and-requirements-with-office-scripts"></a>Limites e requisitos de plataforma com scripts do Office
 
-Há algumas limitações de plataforma das quais você deve estar ciente ao desenvolver scripts do Office. Este artigo detalha o suporte do navegador e os limites de dados para scripts do Office para Excel na Web.
+Há algumas limitações de plataforma que você deve estar ciente ao desenvolver scripts do Office. Este artigo detalha o suporte ao navegador e os limites de dados para Scripts do Office para Excel na Web.
 
 ## <a name="browser-support"></a>Suporte do navegador
 
-Os scripts do Office funcionam em qualquer navegador que [ofereça suporte para o Office para a Web](https://support.microsoft.com/office/ad1303e0-a318-47aa-b409-d3a5eb44e452). No entanto, alguns recursos JavaScript não são compatíveis com o Internet Explorer 11 (IE 11). Quaisquer recursos introduzidos no [ES6 ou posterior](https://www.w3schools.com/Js/js_es6.asp) não funcionarão com o IE 11. Se as pessoas na sua organização ainda usarem esse navegador, certifique-se de testar seus scripts nesse ambiente ao compartilhá-los.
+Os Scripts do Office funcionam em qualquer navegador [compatível com o Office para a Web.](https://support.microsoft.com/office/ad1303e0-a318-47aa-b409-d3a5eb44e452) No entanto, alguns recursos JavaScript não são suportados no Internet Explorer 11 (IE 11). Quaisquer recursos introduzidos [no ES6 ou posterior](https://www.w3schools.com/Js/js_es6.asp) não funcionarão com o IE 11. Se as pessoas em sua organização ainda usarem esse navegador, teste seus scripts nesse ambiente ao compartilhar.
 
 [!INCLUDE [Teams support note](../includes/teams-support-note.md)]
 
 ### <a name="third-party-cookies"></a>Cookies de terceiros
 
-Seu navegador precisa de cookies de terceiros habilitados para mostrar a guia **automatizada** no Excel na Web. Verifique as configurações do navegador se a guia não estiver sendo exibida. Se você estiver usando uma sessão privada do navegador, talvez seja necessário habilitar novamente essa configuração a cada vez.
+Seu navegador precisa de cookies de terceiros habilitados para mostrar a guia **Automatizar** no Excel na Web. Verifique as configurações do navegador se a guia não está sendo exibida. Se você estiver usando uma sessão privada do navegador, talvez seja necessário reabilitar essa configuração sempre.
 
 > [!NOTE]
-> Alguns navegadores se referem a essa configuração como "todos os cookies", em vez de "cookies terceirizados".
+> Alguns navegadores referem-se a essa configuração como "todos os cookies", em vez de "cookies de terceiros".
 
-#### <a name="instructions-for-adjusting-cookie-settings-in-popular-browsers"></a>Instruções para ajustar as configurações de cookies em navegadores populares
+#### <a name="instructions-for-adjusting-cookie-settings-in-popular-browsers"></a>Instruções para ajustar configurações de cookie em navegadores populares
 
 - [Chrome](https://support.google.com/chrome/answer/95647)
 - [Borda](https://support.microsoft.com/microsoft-edge/temporarily-allow-cookies-and-site-data-in-microsoft-edge-597f04f2-c0ce-f08c-7c2b-541086362bd2)
@@ -36,26 +36,29 @@ Seu navegador precisa de cookies de terceiros habilitados para mostrar a guia **
 
 ## <a name="data-limits"></a>Limites de dados
 
-Há limites para a quantidade de dados do Excel que podem ser transferidos ao mesmo tempo e quantas transações de automatização de energia individuais podem ser conduzidas.
+Há limites sobre a quantidade de dados do Excel que podem ser transferidos de uma só vez e quantas transações individuais do Power Automate podem ser conduzidas.
 
 ### <a name="excel"></a>Excel
 
-O Excel para a Web tem as seguintes limitações ao fazer chamadas para a pasta de trabalho por meio de um script:
+O Excel para a Web tem as seguintes limitações ao fazer chamadas para a planilha por meio de um script:
 
-- As solicitações e respostas são limitadas a **5 MB**.
-- Um intervalo é limitado a **5 milhões células**.
+- Solicitações e respostas são limitadas a **5 MB**.
+- Um intervalo é limitado a **cinco milhões de células**.
 
-Se você estiver encontrando erros ao lidar com grandes conjuntos de grandes, tente usar vários intervalos menores em vez de intervalos maiores. Você também pode APIs como [Range. getSpecialCells](/javascript/api/office-scripts/excelscript/excelscript.range#getspecialcells-celltype--cellvaluetype-) para direcionar células específicas em vez de intervalos grandes.
+Se você estiver encontrando erros ao lidar com conjuntos de dados grandes, tente usar vários intervalos menores em vez de intervalos maiores. Você também pode APIs como [Range.getSpecialCells](/javascript/api/office-scripts/excelscript/excelscript.range#getspecialcells-celltype--cellvaluetype-) para direcionar células específicas em vez de intervalos grandes.
 
-### <a name="power-automate"></a>Power Automate
+### <a name="power-automate"></a>Ligar/Desligar Automação
 
-Ao usar scripts do Office com a automatização de energia, você está limitado a **200 chamadas por dia**. Esse limite é redefinido às 12:00 AM UTC.
+Ao usar scripts do Office com o Power Automate, cada usuário é limitado a **200 chamadas por dia.** Esse limite é redefinido às 00:00 UTC.
 
-A plataforma de automatização de energia também tem limitações de uso, que podem ser encontradas no artigo [limites e configuração da energia automatizada](/power-automate/limits-and-config).
+A plataforma Power Automate também tem limitações de uso, que podem ser encontradas nos seguintes artigos:
+
+- [Limites e configuração no Power Automate](/power-automate/limits-and-config)
+- [Problemas conhecidos e limitações para o conector do Excel Online (Business)](/connectors/excelonlinebusiness/#known-issues-and-limitations)
 
 ## <a name="see-also"></a>Confira também
 
 - [Solução de problemas dos scripts do Office](troubleshooting.md)
 - [Desfazer os efeitos de um script do Office](undo.md)
 - [Melhorar o desempenho dos scripts do Office](../develop/web-client-performance.md)
-- [Conceitos básicos de script para scripts do Office no Excel na Web](../develop/scripting-fundamentals.md)
+- [Scripts básicos para scripts do Office no Excel na Web](../develop/scripting-fundamentals.md)
