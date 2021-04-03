@@ -5,12 +5,12 @@ title: Documentação de scripts do Office
 description: Recursos para aprender sobre os scripts do Office no Excel na web, incluindo tutoriais, artigos conceituais e exemplos de código.
 ms.date: 10/30/2020
 localization_priority: Priority
-ms.openlocfilehash: 60eb5340e424617a3be87fea9d2a7ece3ca69c3b
-ms.sourcegitcommit: 82d3c0ef1e187bcdeceb2b5fc3411186674fe150
+ms.openlocfilehash: 2e31cc52c9dbc5ebe23428773aa686fc93207d29
+ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49342826"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570266"
 ---
 # <a name="office-scripts-documentation-preview"></a>Documentação de scripts do Office (visualização)
 
@@ -73,7 +73,7 @@ Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias.
 ---
 
 <h2>Outros recursos</h2>
-<p>Use os seguintes recursos para saber mais sobre as APIs que os Scripts do Office usam para interagir com as pastas de trabalho no Excel na Web; faça perguntas sobre os Scripts do Office no Excel na Web ou solicite recursos para eles.</p>
+<p>Use os seguintes recursos para saber mais sobre as APIs que os scripts do Office usam para interagir com as pastas de trabalho no Excel na Web; faça perguntas sobre os scripts do Office no Excel na Web ou solicite recursos para eles.</p>
 <ul class="panelContent cardsF cols cols3" style="display:flex!important;">
     <li>
         <div class="cardSize">
@@ -101,7 +101,7 @@ Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias.
                         </div>
                     </div>
                     <div class="cardText">
-                        <a href="resources/excel-samples.md" target="_blank"><h3>Exemplos de scripts</h3></a>
+                        <a href="resources/excel-samples.md" target="_blank"><h3>Exemplos de scripts.</h3></a>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@ Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias.
                         </div>
                     </div>
                     <div class="cardText">
-                        <a href="https://stackoverflow.com/questions/tagged/office-scripts" target="_blank"><h3>Tirar dúvidas</h3></a>
+                        <a href="https://stackoverflow.com/questions/tagged/office-scripts" target="_blank"><h3>Tire dúvidas</h3></a>
                     </div>
                 </div>
             </div>
@@ -145,11 +145,11 @@ Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <a href="https://excel.uservoice.com/forums/274580-excel-for-the-web?category_id=143439" target="_blank"><img src="images/index-landing-page/i_feedback.svg" alt="Feature requests" /></a>
+                            <a href="/answers/products/m365" target="_blank"><img src="images/index-landing-page/i_feedback.svg" alt="Feature requests" /></a>
                         </div>
                     </div>
                     <div class="cardText">
-                        <a href="https://excel.uservoice.com/forums/274580-excel-for-the-web?category_id=143439" target="_blank"><h3>Solicitar recursos</h3></a>
+                        <a href="/answers/products/m365" target="_blank"><h3>Solicitar recursos</h3></a>
                     </div>
                 </div>
             </div>
