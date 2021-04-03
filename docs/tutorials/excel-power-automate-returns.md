@@ -3,12 +3,12 @@ title: Retorna dados de um script para um fluxo do Power Automate executado auto
 description: Um tutorial que mostra como enviar emails de lembrete executando Scripts do Office para o Excel na web através do Power Automate.
 ms.date: 12/15/2020
 localization_priority: Priority
-ms.openlocfilehash: 1925a95938837707eacddff6832180b12cd2011c
-ms.sourcegitcommit: 5f79e5ba9935edb8a890012f2cde3b89fe80faa0
+ms.openlocfilehash: 31ba31ddbfb36f20087be6aa7d83b1b896a698d1
+ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "49727046"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570527"
 ---
 # <a name="return-data-from-a-script-to-an-automatically-run-power-automate-flow-preview"></a>Retorna dados de um script para um fluxo do Power Automate executado automaticamente (visualização)
 
@@ -48,14 +48,14 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
 
 1. Agora você deve ter um script vazio. Queremos usar o roteiro para obter um endereço de email da planilha. Altere `main` para retornar uma cadeia de caracteres, como esta:
 
-    ```typescript
+    ```TypeScript
     function main(workbook: ExcelScript.Workbook) : string {
     }
     ```
 
 1. Em seguida, precisamos obter todos os dados da tabela. Isso nos permite examinar cada linha com o script. Adicione o seguinte código dentro da função `main`.
 
-    ```typescript
+    ```TypeScript
     // Get the H1 worksheet.
     let worksheet = workbook.getWorksheet("H1");
 
@@ -68,7 +68,7 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
 
 1. As datas na tabela são armazenadas usando o [Número de série da data do Excel ](https://support.microsoft.com/office/date-systems-in-excel-e7fe7167-48a9-4b96-bb53-5612a800b487). Precisamos converter essas datas para datas JavaScript a fim de compará-las. Adicionaremos uma função auxiliar ao nosso script. Adicione o seguinte código fora da função `main`:
 
-    ```typescript
+    ```TypeScript
     // Convert the Excel date to a JavaScript Date object.
     function convertDate(excelDateValue: number) {
         let javaScriptDate = new Date(Math.round((excelDateValue - 25569) * 86400 * 1000));
@@ -78,7 +78,7 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
 
 1. Agora, precisamos descobrir qual pessoa está de plantão agora. A linha deles terá uma data de início e de término em torno da data atual. Escreveremos um script para assumir que apenas uma pessoa está de plantão por vez. Os scripts podem retornar matrizes para lidar com múltiplos valores, mas por enquanto retornaremos o primeiro endereço de email correspondente. Adicione o seguinte código ao final da função `main`.
 
-    ```typescript
+    ```TypeScript
     // Look for the first row where today's date is between the row's start and end dates.
     let currentDate = new Date();
     for (let row = 0; row < tableValues.length; row++) {
@@ -93,7 +93,7 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
 
 1. O script final deve ser semelhante a este:
 
-    ```typescript
+    ```TypeScript
     function main(workbook: ExcelScript.Workbook) : string {
         // Get the H1 worksheet.
         let worksheet = workbook.getWorksheet("H1");

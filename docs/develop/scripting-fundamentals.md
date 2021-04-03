@@ -3,12 +3,12 @@ title: Fundamentos de script para scripts do Office no Excel na Web
 description: Informações sobre o modelo de objeto e outros fundamentos para saber mais antes de escrever scripts do Office.
 ms.date: 07/08/2020
 localization_priority: Priority
-ms.openlocfilehash: acbeec69a5d9ae9e3ebfa95c9070033d1cca2265
-ms.sourcegitcommit: e7e019ba36c2f49451ec08c71a1679eb6dba4268
+ms.openlocfilehash: 4609dce617d18f7a7c9d2868a24792c51fb048c6
+ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933270"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570231"
 ---
 # <a name="scripting-fundamentals-for-office-scripts-in-excel-on-the-web-preview"></a>Fundamentos de script para scripts do Office no Excel na Web (visualização)
 
@@ -20,7 +20,7 @@ Este artigo apresentará os aspectos técnicos dos scripts do Office. Você sabe
 
 Cada Script do Office precisa incluir uma função `main` tendo o tipo de `ExcelScript.Workbook` como seu primeiro parâmetro. Quando a função é executada, o aplicativo Excel invoca esta função `main` fornecendo a pasta de trabalho como seu primeiro parâmetro. Portanto, é importante não modificar a assinatura básica da função `main` depois de gravar o script ou criar um script a partir do editor de código.
 
-```typescript
+```TypeScript
 function main(workbook: ExcelScript.Workbook) {
   // Your code goes here
 }
@@ -48,7 +48,7 @@ Todo script é fornecido com um `workbook` objeto do tipo `Workbook` pela funç�
 
 O script a seguir obtém a planilha ativa da pasta de trabalho e registra seu nome.
 
-```typescript
+```TypeScript
 function main(workbook: ExcelScript.Workbook) {
     // Get the active worksheet.
     let sheet = workbook.getActiveWorksheet();
@@ -169,7 +169,7 @@ Depois que a coleção é recuperada, você pode usar operações regulares de m
 
 O script a seguir obtém todas as tabelas na pasta de trabalho. Em seguida, garante que os cabeçalhos sejam exibidos, os botões de filtro estejam visíveis e o estilo da tabela seja definido como "TableStyleLight1".
 
-```typescript
+```TypeScript
 function main(workbook: ExcelScript.Workbook) {
   /* Get table collection */
   const tables = workbook.getTables();
@@ -191,7 +191,7 @@ Você pode adicionar programaticamente objetos de documento, como tabelas ou gr�
 
 O script a seguir cria, no Excel, uma tabela na primeira planilha da pasta de trabalho. Observe que a tabela criada é enviada de volta pelo método `addTable`.
 
-```typescript
+```TypeScript
 function main(workbook: ExcelScript.Workbook) {
     // Get the first worksheet.
     let sheet = workbook.getWorksheets()[0];
@@ -213,7 +213,7 @@ Para excluir um objeto, chame o método `delete` do objeto.
 
 O script a seguir remove a primeira planilha da pasta de trabalho.
 
-```typescript
+```TypeScript
 function main(workbook: ExcelScript.Workbook) {
     // Get first worksheet.
     let sheet = workbook.getWorksheets()[0];
