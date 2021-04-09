@@ -3,12 +3,13 @@ title: Iniciando com scripts do Office
 description: Noções básicas sobre scripts do Office, incluindo o acesso, o ambiente e os padrões de script.
 ms.date: 04/01/2021
 localization_priority: Normal
-ms.openlocfilehash: f954ee67aa486e4b8185047738ef3d15319a94ae
-ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
+ROBOTS: NOINDEX
+ms.openlocfilehash: c1c4675b2fdc1f5ebd9e86f04f5fb011c27a3f1b
+ms.sourcegitcommit: 190ae1c071243f4638d0d650e35f1425914b0156
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571050"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650364"
 ---
 # <a name="getting-started"></a>Introdução
 
@@ -775,7 +776,7 @@ function updateTargetRange(
 
 *Aviso:* o `try..catch` uso dentro de um loop diminuirá o script. Evite usar isso dentro ou ao redor de loops.
 
-## <a name="range-basics"></a>Noções básicas de intervalo
+## <a name="range-basics"></a>Noções básicas
 
 Confira [Noções básicas de intervalo antes](range-basics.md) de ir mais longe em sua jornada.
 
