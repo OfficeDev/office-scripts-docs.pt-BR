@@ -3,12 +3,12 @@ title: Fundamentos de script para scripts do Office no Excel na Web
 description: Informações sobre o modelo de objeto e outros fundamentos para saber mais antes de escrever scripts do Office.
 ms.date: 07/08/2020
 localization_priority: Priority
-ms.openlocfilehash: 4609dce617d18f7a7c9d2868a24792c51fb048c6
-ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
+ms.openlocfilehash: 2c2fd683e77a0dfbfd3e9df8c79db31e78ceee8b
+ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570231"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755060"
 ---
 # <a name="scripting-fundamentals-for-office-scripts-in-excel-on-the-web-preview"></a>Fundamentos de script para scripts do Office no Excel na Web (visualização)
 
@@ -109,7 +109,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 Executar este script cria os seguintes dados na planilha atual:
 
-![Um registro de vendas mostrando as linhas de valores, uma coluna de fórmulas e cabeçalhos formatados.](../images/range-sample.png)
+:::image type="content" source="../images/range-sample.png" alt-text="Uma planilha contendo um registro de vendas composto por linhas de valor, uma coluna de fórmulas e os cabeçalhos formatados.":::
 
 ### <a name="charts-tables-and-other-data-objects"></a>Gráficos, tabelas e outros objetos de dados
 
@@ -133,7 +133,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 Executar esse script na planilha com os dados anteriores cria a tabela a seguir:
 
-![Uma tabela criada a partir do registro de vendas anterior.](../images/table-sample.png)
+:::image type="content" source="../images/table-sample.png" alt-text="Uma planilha contendo uma tabela feita do registro de vendas anterior.":::
 
 #### <a name="creating-a-chart"></a>Criar um gráfico
 
@@ -159,7 +159,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 Executar este script na planilha com a tabela anterior cria o seguinte gráfico:
 
-![Um gráfico de colunas mostrando as quantidades de três itens do registro de vendas anterior.](../images/chart-sample.png)
+:::image type="content" source="../images/chart-sample.png" alt-text="Um gráfico de colunas mostrando as quantidades de três itens do registro de vendas anterior.":::
 
 ### <a name="collections-and-other-object-relations"></a>Coleções e outras relações de objeto
 
