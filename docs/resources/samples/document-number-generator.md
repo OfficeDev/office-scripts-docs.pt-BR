@@ -3,12 +3,12 @@ title: Gerar um identificador exclusivo em uma workbook
 description: Saiba como usar scripts do Office para gerar um identificador exclusivo e adicionar uma linha a uma tabela e intervalo.
 ms.date: 03/18/2021
 localization_priority: Normal
-ms.openlocfilehash: 219aaf5894ee81112e12c44e828beefc74886794
-ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
+ms.openlocfilehash: c75eba551cc1c05426db613c78d41431b5177842
+ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571072"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51754835"
 ---
 # <a name="generate-a-unique-identifier-in-a-workbook"></a>Gerar um identificador exclusivo em uma workbook
 
@@ -20,21 +20,21 @@ Há duas versões do exemplo para este cenário.
 
     _Antes que a nova linha seja adicionada_
 
-    ![Captura de tela mostrando o intervalo antes que a linha seja adicionada](../../images/document-number-generator-range-before.png)
+    :::image type="content" source="../../images/document-number-generator-range-before.png" alt-text="Uma planilha mostrando um intervalo de dados antes da linha ser adicionada.":::
 
     _Depois que a nova linha é adicionada_
 
-    ![Captura de tela mostrando o intervalo depois que a linha é adicionada](../../images/document-number-generator-range-after.png)
+    :::image type="content" source="../../images/document-number-generator-range-after.png" alt-text="Uma planilha mostrando um intervalo de dados depois que a linha é adicionada.":::
 
 * [Versão 2: ler e adicionar uma linha a uma tabela](#sample-code-generate-key-and-add-row-to-table)
 
     _Antes que a nova linha seja adicionada_
 
-    ![Captura de tela mostrando tabela antes que a linha seja adicionada](../../images/document-number-generator-table-before.png)
+    :::image type="content" source="../../images/document-number-generator-table-before.png" alt-text="Uma planilha mostrando uma tabela antes de uma linha ser adicionada.":::
 
     _Depois que a nova linha é adicionada_
 
-    ![Captura de tela mostrando tabela depois que a linha é adicionada](../../images/document-number-generator-table-after.png)
+    :::image type="content" source="../../images/document-number-generator-table-after.png" alt-text="Uma planilha mostrando uma tabela depois que uma linha é adicionada.":::
 
 ## <a name="sample-excel-file"></a>Exemplo de arquivo do Excel
 

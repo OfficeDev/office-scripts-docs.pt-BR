@@ -1,37 +1,37 @@
 ---
-title: 'Cenário de exemplo de scripts do Office: calculadora de série'
-description: Um exemplo que determina a porcentagem e as classificações de uma classe de alunos.
-ms.date: 07/24/2020
+title: 'Cenário de exemplo de scripts do Office: calculadora de notas'
+description: Um exemplo que determina a porcentagem e as notas de carta para uma classe de alunos.
+ms.date: 12/17/2020
 localization_priority: Normal
-ms.openlocfilehash: 4e488c6cc67bda9122b88c55070654632d9c7fa2
-ms.sourcegitcommit: ff7fde04ce5a66d8df06ed505951c8111e2e9833
+ms.openlocfilehash: b8c45ad405c06a943c75e76391c1160ecb1bd18e
+ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46616735"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755025"
 ---
-# <a name="office-scripts-sample-scenario-grade-calculator"></a>Cenário de exemplo de scripts do Office: calculadora de série
+# <a name="office-scripts-sample-scenario-grade-calculator"></a>Cenário de exemplo de scripts do Office: calculadora de notas
 
-Neste cenário, você é um instrutor tallyingndo notas finais de todos os alunos. Você está inserindo as pontuações para suas atribuições e testes enquanto vai. Agora, é hora de determinar os Fates dos alunos.
+Nesse cenário, você é um instrutor que depende das notas de fim de semestre de cada aluno. Você está inserindo as pontuações para suas atribuições e testes à medida que vai. Agora, é hora de determinar os destinos dos alunos.
 
-Você desenvolverá um script que totaliza as notas para cada categoria de ponto. Em seguida, ele atribuirá uma nota de carta a cada aluno com base no total. Para ajudar a garantir a precisão, você adicionará algumas verificações para ver se alguma Pontuação individual é muito baixa ou alta. Se a pontuação de um aluno for menor do que zero ou maior do que o valor de ponto possível, o script sinalizará a célula com um preenchimento vermelho e não fará o total dos pontos do aluno. Essa será uma indicação clara de quais registros você precisa fazer uma verificação dupla. Você também adicionará alguma formatação básica às notas para que possa exibir rapidamente a parte superior e a parte inferior da classe.
+Você desenvolverá um script que totaliza as notas para cada categoria de ponto. Em seguida, ele atribuirá uma nota de carta a cada aluno com base no total. Para ajudar a garantir a precisão, você adicionará algumas verificações para ver se as pontuações individuais são muito baixas ou altas. Se a pontuação de um aluno for menor que zero ou mais do que o valor de ponto possível, o script sinaliza a célula com um preenchimento vermelho e não totaliza os pontos do aluno. Isso será uma indicação clara de quais registros você precisa verificar duas vezes. Você também adicionará algumas formatações básicas às notas para poder exibir rapidamente a parte superior e inferior da classe.
 
 ## <a name="scripting-skills-covered"></a>Habilidades de script abordadas
 
-- Formatação de célula
+- Formatação de células
 - Verificação de erros
 - Expressões regulares
 - Formatação condicional
 
-## <a name="setup-instructions"></a>Instruções de configuração
+## <a name="setup-instructions"></a>Instruções de instalação
 
-1. Baixe <a href="grade-calculator.xlsx">grade-calculator.xlsx</a> para o onedrive.
+1. Baixe <a href="grade-calculator.xlsx">grade-calculator.xlsx</a> para o OneDrive.
 
-2. Abra a pasta de trabalho com o Excel para a Web.
+2. Abra a planilha com o Excel para a Web.
 
-3. Na guia **automatizar** , abra o **Editor de código**.
+3. Na guia **Automatizar,** abra **Todos os Scripts.**
 
-4. No painel de tarefas **Editor de código** , pressione **novo script** e cole o script a seguir no editor.
+4. No painel de tarefas Editor de **Código,** pressione **Novo Script** e colar o seguinte script no editor.
 
     ```TypeScript
     function main(workbook: ExcelScript.Workbook) {
@@ -51,9 +51,9 @@ Você desenvolverá um script que totaliza as notas para cada categoria de ponto
 
       // Use regular expressions to read the max score from the assignment, mid-term, and final scores columns.
       let maxScores: string[] = [];
-      const assignmentMaxMatches = studentData[0][1].match(/\d+/);
-      const midtermMaxMatches = studentData[0][2].match(/\d+/);
-      const finalMaxMatches = studentData[0][3].match(/\d+/);
+      const assignmentMaxMatches = (studentData[0][1] as string).match(/\d+/);
+      const midtermMaxMatches = (studentData[0][2] as string).match(/\d+/);
+      const finalMaxMatches = (studentData[0][3] as string).match(/\d+/);
 
       // Check the matches happened before proceeding.
       if (!(assignmentMaxMatches && midtermMaxMatches && finalMaxMatches)) {
@@ -89,7 +89,7 @@ Você desenvolverá um script que totaliza as notas para cada categoria de ponto
           studentData[i][3] > maxScores[2]) {
           continue;
         }
-        const total = studentData[i][1] + studentData[i][2] + studentData[i][3];
+        const total = (studentData[i][1] as number) + (studentData[i][2] as number) + (studentData[i][3] as number);
         let grade: string;
         switch (true) {
           case total < 60:
@@ -108,7 +108,7 @@ Você desenvolverá um script que totaliza as notas para cada categoria de ponto
             grade = "A";
             break;
         }
-
+    
         // Set total score formula.
         studentsRangeFormulas[i][0] = '=RC[-2]+RC[-1]';
         // Set grade cell.
@@ -166,24 +166,24 @@ Você desenvolverá um script que totaliza as notas para cada categoria de ponto
       }
 
       // Apply conditional formatting.
-      let conditionalFormatting : ExcelScript.ConditionalFormat;
+      let conditionalFormatting: ExcelScript.ConditionalFormat;
       conditionalFormatting = range.addConditionalFormat(ExcelScript.ConditionalFormatType.cellValue);
       conditionalFormatting.getCellValue().getFormat().getFont().setColor(fontColor);
       conditionalFormatting.getCellValue().getFormat().getFill().setColor(fillColor);
-      conditionalFormatting.getCellValue().setRule({formula1, operator});
+      conditionalFormatting.getCellValue().setRule({ formula1, operator });
     }
     ```
 
-5. Renomeie o script para fazer a **grade** e salve-o.
+5. Renomeie o script para **Calculadora de Notas** e salve-o.
 
 ## <a name="running-the-script"></a>Executando o script
 
-Execute o script de **calculadora de nota** na planilha única. O script totaliza as notas e atribui a cada aluno uma letra de nota. Se qualquer nota individual tiver mais pontos do que a atribuição ou o teste for importante, a classificação transgressor será marcada como vermelho e o total não será calculado. Além disso, todas as notas ' A ' são realçadas em verde, enquanto as notas ' e ' F ' são realçadas em amarelo.
+Execute o **script Calculadora** de Notas na única planilha. O script totaliza as notas e atribui a cada aluno uma nota de carta. Se qualquer nota individual tiver mais pontos do que a atribuição ou teste valerá, a nota ofensiva será marcada em vermelho e o total não será calculado. Além disso, todas as notas 'A' são realçadas em verde, enquanto as notas 'D' e 'F' são realçadas em amarelo.
 
 ### <a name="before-running-the-script"></a>Antes de executar o script
 
-![Uma planilha que mostra linhas de Pontuação para estudantes.](../../images/scenario-grade-calculator-before.png)
+:::image type="content" source="../../images/scenario-grade-calculator-before.png" alt-text="Uma planilha que mostra linhas de pontuações para alunos.":::
 
-### <a name="after-running-the-script"></a>Após executar o script
+### <a name="after-running-the-script"></a>Depois de executar o script
 
-![Uma planilha que mostra os dados da Pontuação do aluno com células inválidas em totais vermelhos para linhas de aluno válidas.](../../images/scenario-grade-calculator-after.png)
+:::image type="content" source="../../images/scenario-grade-calculator-after.png" alt-text="Uma planilha que mostra os dados de pontuação do aluno com células inválidas em totais vermelhos para linhas de alunos válidas.":::

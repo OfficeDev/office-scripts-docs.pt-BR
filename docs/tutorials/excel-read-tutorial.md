@@ -3,12 +3,12 @@ title: Ler os dados da pasta de trabalho com scripts do Office no Excel na Web.
 description: Um tutorial de scripts do Office sobre a leitura de dados de pastas de trabalho e avaliação desses dados no script.
 ms.date: 01/06/2021
 localization_priority: Priority
-ms.openlocfilehash: 0848a24e7333842b5b3b1f82ec8f270514c34d2f
-ms.sourcegitcommit: 9df67e007ddbfec79a7360df9f4ea5ac6c86fb08
+ms.openlocfilehash: d6321cb91a425da3fd45329d5171f1d5694b2b99
+ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49772965"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51754850"
 ---
 # <a name="read-workbook-data-with-office-scripts-in-excel-on-the-web"></a>Ler os dados da pasta de trabalho com scripts do Office no Excel na Web.
 
@@ -73,7 +73,7 @@ No resto do tutorial, normalizaremos os dados usando um script. Primeiro, vamos 
 8. Quando uma matriz bidimensional é registrada no console, ela agrupa os valores de coluna em cada linha. Expanda o log de matriz pressionando o triângulo azul.
 9. Expanda o segundo nível da matriz, pressionando o triângulo azul exibido recentemente. Agora, você deverá ver isto:
 
-    ![O log do console exibindo a saída "20.05", aninhada em duas matrizes](../images/tutorial-4.png)
+    :::image type="content" source="../images/tutorial-4.png" alt-text="O log do console exibindo a saída &quot;-20.05&quot;, aninhada em duas matrizes":::
 
 ## <a name="modify-the-value-of-a-cell"></a>Modificar o valor de uma célula
 
@@ -143,7 +143,7 @@ Agora que sabemos ler e escrever em uma única célula, vamos generalizar o scri
 
     Seu extrato bancário agora deverá ter a seguinte aparência:
 
-    ![O extrato bancário como uma tabela formatada apenas com valores positivos.](../images/tutorial-5.png)
+    :::image type="content" source="../images/tutorial-5.png" alt-text="Uma planilha mostrando o extrato bancário como uma tabela formatada apenas com valores positivos.":::
 
 ## <a name="next-steps"></a>Próximas etapas
 

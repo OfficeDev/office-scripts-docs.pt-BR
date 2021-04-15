@@ -3,12 +3,12 @@ title: Fazer chamadas de API externas em Scripts do Office
 description: Saiba como fazer chamadas de API externas em Scripts do Office.
 ms.date: 03/30/2021
 localization_priority: Normal
-ms.openlocfilehash: d0abfa0bb1adedc7535059ed359b8053d9f1c84d
-ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
+ms.openlocfilehash: 0ed57ed3b97309dbb7ea196695dcc347e133b3cf
+ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571098"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51754800"
 ---
 # <a name="external-api-calls-from-office-scripts"></a>Chamadas de API externas de Scripts do Office
 
@@ -40,8 +40,6 @@ Scripts do Office permitem [suporte limitado a chamada de API externa](../../dev
 ## <a name="scenario"></a>Cenário
 
 Este script obtém informações básicas sobre repositórios do GitHub do usuário.
-
-![Obter exemplo de informações de repositórios](../../images/git.png)
 
 ## <a name="resources-used-in-the-sample"></a>Recursos usados no exemplo
 

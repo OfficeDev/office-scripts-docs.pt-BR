@@ -3,12 +3,12 @@ title: Grave, edite e crie scripts do Office no Excel na Web
 description: Um tutorial sobre o básico dos scripts do Office, incluindo a gravação de scripts com o Gravador de ações e a gravação de dados em uma pasta de trabalho.
 ms.date: 01/06/2021
 localization_priority: Priority
-ms.openlocfilehash: fa2fec54cdb0289590868ee6848a942401f21665
-ms.sourcegitcommit: 9df67e007ddbfec79a7360df9f4ea5ac6c86fb08
+ms.openlocfilehash: ae864cc08453a9c8a2538f15ceee1275e131725d
+ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49772975"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51754842"
 ---
 # <a name="record-edit-and-create-office-scripts-in-excel-on-the-web"></a>Grave, edite e crie scripts do Office no Excel na Web
 
@@ -49,7 +49,7 @@ Primeiro, precisaremos de alguns dados e um pequeno script inicial.
 
     Sua planilha deve ficar assim (não se preocupe se a cor for diferente):
 
-    ![Uma linha de dados de vendas de frutas com a linha "Laranjas" destacada em laranja.](../images/tutorial-1.png)
+    :::image type="content" source="../images/tutorial-1.png" alt-text="Uma planilha mostrando a linha de dados das vendas de frutas com a linha contendo &quot;Laranjas&quot; realçada na cor laranja.":::
 
 ## <a name="edit-an-existing-script"></a>Edite um script existente
 
@@ -78,7 +78,7 @@ O script anterior coloriu a linha "Laranjas" para ficar laranja. Vamos adicionar
 
 4. Teste o script pressionando **Executar**. Sua pasta de trabalho já deve ter esta aparência:
 
-    ![Uma linha de dados de vendas de frutas com a linha "Laranjas" destacada em laranja e a linha "Limões" destacada em amarelo](../images/tutorial-2.png)
+    :::image type="content" source="../images/tutorial-2.png" alt-text="Uma planilha mostrando a linha de dados das vendas de frutas com a linha &quot;Laranjas&quot; realçada na cor laranja, e a linha &quot;Limões&quot; realçada na cor amarela.":::
 
 ## <a name="create-a-table"></a>Crie uma tabela
 
@@ -113,7 +113,7 @@ Vamos converter esses dados de vendas de frutas em uma tabela. Usaremos nosso sc
 
 3. Execute o script. Você deve visualizar uma tabela como esta:
 
-    ![Uma tabela ordenada de venda de frutas](../images/tutorial-3.png)
+    :::image type="content" source="../images/tutorial-3.png" alt-text="Uma planilha mostrando a tabela ordenada de vendas de frutas.":::
 
     > [!NOTE]
     > Se você executar novamente o script, receberá um erro. Isso ocorre porque você não pode criar uma tabela em cima de outra tabela. No entanto, você pode executar o script em uma planilha ou pasta de trabalho diferente.

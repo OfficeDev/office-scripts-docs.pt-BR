@@ -1,62 +1,62 @@
 ---
-title: Executar scripts do Office com automatização de energia
-description: Como obter scripts do Office para Excel na Web trabalhando com um fluxo de trabalho automatizado de energia.
-ms.date: 07/24/2020
+title: Executar scripts do Office com o Power Automate
+description: Como obter scripts do Office para Excel na Web trabalhando com um fluxo de trabalho do Power Automate.
+ms.date: 12/16/2020
 localization_priority: Normal
-ms.openlocfilehash: 87bd4e15ef7680a7456077494e3fda8208d6b9d8
-ms.sourcegitcommit: e9a8ef5f56177ea9a3d2fc5ac636368e5bdae1f4
+ms.openlocfilehash: 1ca9aa14efe7cf2c91100a32fbc9a69054012f06
+ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321569"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755067"
 ---
-# <a name="run-office-scripts-with-power-automate"></a>Executar scripts do Office com automatização de energia
+# <a name="run-office-scripts-with-power-automate"></a>Executar scripts do Office com o Power Automate
 
-A [automatização de energia](https://flow.microsoft.com) permite que você adicione scripts do Office a um fluxo de trabalho maior e automatizado. Você pode usar a automatização de energia, como adicionar o conteúdo de um email à tabela de uma planilha ou criar ações em suas ferramentas de gerenciamento de projeto com base nos comentários da pasta de trabalho.
+[O Power Automate](https://flow.microsoft.com) permite adicionar Scripts do Office a um fluxo de trabalho maior e automatizado. Você pode usar o Power Automate para fazer coisas como adicionar o conteúdo de um email à tabela de uma planilha ou criar ações em suas ferramentas de gerenciamento de projeto com base nos comentários da pasta de trabalho.
 
-## <a name="getting-started"></a>Começar a usar
+## <a name="getting-started"></a>Introdução
 
-Se você for novo para a automatização de energia, recomendamos [a visita de introdução à automatização de energia](/power-automate/getting-started). Lá, você pode saber mais sobre todas as possibilidades de automação disponíveis para você. Os documentos aqui se concentram em como os scripts do Office trabalham com a automatização de energia e como isso pode ajudar a melhorar a experiência do Excel.
+Se você for novo no Power Automate, recomendamos visitar [Começar a usar o Power Automate.](/power-automate/getting-started) Lá, você pode saber mais sobre todas as possibilidades de automação disponíveis para você. Os documentos aqui se concentram em como os Scripts do Office funcionam com o Power Automate e como isso pode ajudar a melhorar sua experiência do Excel.
 
-Para começar a combinar os scripts do Office e automatizados de energia, siga o tutorial [começar a usar scripts com a automatização de energia](../tutorials/excel-power-automate-manual.md). Isso ensina como criar um fluxo que chama um script simples. Após concluir o tutorial e a passagem dos [dados para scripts em um tutorial de fluxo automático automatizado de energia automatizada](../tutorials/excel-power-automate-trigger.md) , retorne aqui para obter informações detalhadas sobre como conectar scripts do Office para automatizar fluxos de energia.
+Para começar a combinar Power Automate e Scripts do Office, siga o tutorial [Iniciar usando scripts com o Power Automate](../tutorials/excel-power-automate-manual.md). Isso ensinará como criar um fluxo que chama um script simples. Depois de concluir esse tutorial e o Passar dados para scripts em um tutorial de fluxo do Power Automate executado automaticamente, retorne aqui para obter informações detalhadas sobre como conectar scripts do Office aos fluxos do Power [Automate.](../tutorials/excel-power-automate-trigger.md)
 
-## <a name="excel-online-business-connector"></a>Conector do Excel online (comercial)
+## <a name="excel-online-business-connector"></a>Conector do Excel Online (Business)
 
-Os [conectores](/connectors/connectors) são as pontes entre automatização e aplicativos. O [conector do Excel online (Business)](/connectors/excelonlinebusiness) fornece aos seus fluxos acesso às pastas de trabalho do Excel. A ação "executar script" permite chamar qualquer script do Office acessível por meio da pasta de trabalho selecionada. Você também pode fornecer seus parâmetros de entrada de scripts para que os dados possam ser fornecidos pelo fluxo ou que o script retorne informações para etapas posteriores no fluxo.
+[Conectores](/connectors/connectors) são as pontes entre o Power Automate e os aplicativos. O [conector do Excel Online (Business)](/connectors/excelonlinebusiness) fornece aos fluxos acesso às planilhas do Excel. A ação "Executar script" permite chamar qualquer Script do Office acessível por meio da workbook selecionada. Você também pode dar aos seus scripts parâmetros de entrada para que os dados possam ser fornecidos pelo fluxo ou fazer com que seu script retorne informações para etapas posteriores no fluxo.
 
 > [!IMPORTANT]
-> A ação "executar script" fornece às pessoas que usam o conector Excel acesso significativo à sua pasta de trabalho e seus dados. Além disso, há riscos de segurança com scripts que fazem chamadas à API externa, conforme explicado em [chamadas externas da automatização de energia](external-calls.md). Se seu administrador estiver preocupado com a exposição de dados altamente confidenciais, eles poderão desativar o conector do Excel online ou restringir o acesso a scripts do Office por meio dos [controles de administrador de scripts do Office](/microsoft-365/admin/manage/manage-office-scripts-settings).
+> A ação "Executar script" oferece às pessoas que usam o conector do Excel acesso significativo à sua planilha e seus dados. Além disso, há riscos de segurança com scripts que fazem chamadas de API externas, conforme explicado em [Chamadas externas do Power Automate](external-calls.md). Se o administrador estiver preocupado com a exposição de dados altamente confidenciais, ele poderá desativar o conector do Excel Online ou restringir o acesso aos Scripts do Office por meio dos controles de administrador [de Scripts do Office.](/microsoft-365/admin/manage/manage-office-scripts-settings)
 
 ## <a name="data-transfer-in-flows-for-scripts"></a>Transferência de dados em fluxos para scripts
 
-A automatização de energia permite que você passe dados entre as etapas do seu fluxo. Os scripts podem ser configurados para aceitar qualquer tipo de informação que você precisa e retornar qualquer coisa da sua pasta de trabalho que você deseja em seu fluxo. A entrada para o seu script é especificada adicionando parâmetros à `main` função (além de `workbook: ExcelScript.Workbook` ). A saída do script é declarada pela adição de um tipo de retorno a `main` .
+O Power Automate permite que você passe partes de dados entre etapas do seu fluxo. Os scripts podem ser configurados para aceitar qualquer tipo de informação que você precisa e retornar qualquer coisa da sua workbook que você deseja em seu fluxo. A entrada para o script é especificada adicionando parâmetros à `main` função (além de `workbook: ExcelScript.Workbook` ). A saída do script é declarada adicionando um tipo de retorno a `main` .
 
 > [!NOTE]
-> Quando você cria um bloco de "script de execução" em seu fluxo, os parâmetros aceitos e os tipos retornados são preenchidos. Se você alterar os parâmetros ou retornar tipos de seu script, será necessário refazer o bloco "executar script" do seu fluxo. Isso garante que os dados estão sendo analisados corretamente.
+> Quando você cria um bloco "Executar Script" em seu fluxo, os parâmetros aceitos e os tipos retornados são preenchidos. Se você alterar os parâmetros ou retornar tipos de script, precisará refazer o bloco "Executar script" do seu fluxo. Isso garante que os dados estão sendo analisados corretamente.
 
-As seções a seguir abrangem os detalhes de entrada e saída para scripts usados na automatização de energia. Se você gostaria de obter uma abordagem prática para aprender este tópico, experimente os dados de [passagem para scripts em um tutorial de fluxo automático automatizado de fluxo](../tutorials/excel-power-automate-trigger.md) automático ou explore o cenário de exemplo de [lembretes automáticos de tarefas](../resources/scenarios/task-reminders.md) .
+As seções a seguir abrangem os detalhes de entrada e saída para scripts usados no Power Automate. Se você quiser uma abordagem prática para aprender este tópico, experimente o passar dados para scripts em um tutorial de fluxo do [Power Automate](../tutorials/excel-power-automate-trigger.md) executado automaticamente ou explore o cenário de exemplo lembretes de tarefas [automatizados.](../resources/scenarios/task-reminders.md)
 
-### <a name="main-parameters-passing-data-to-a-script"></a>`main` Parâmetros: passagem de dados para um script
+### <a name="main-parameters-passing-data-to-a-script"></a>`main` Parâmetros: passar dados para um script
 
-Todas as entradas de script são especificadas como parâmetros adicionais para a `main` função. Por exemplo, se você quisesse que um script aceita um `string` que representa um nome como entrada, você alteraria a `main` assinatura para `function main(workbook: ExcelScript.Workbook, name: string)` .
+Todas as entradas de script são especificadas como parâmetros adicionais para a `main` função. Por exemplo, se você quisesse que um script aceitasse um nome que representasse um nome como entrada, você `string` alteraria a `main` assinatura para `function main(workbook: ExcelScript.Workbook, name: string)` .
 
-Quando você estiver configurando um fluxo em automatização de energia, poderá especificar a entrada de script como valores estáticos, [expressões](/power-automate/use-expressions-in-conditions)ou conteúdo dinâmico. Os detalhes sobre o conector de um serviço individual podem ser encontrados na [documentação do conector automatizado de energia](/connectors/).
+Ao configurar um fluxo no Power Automate, você pode especificar a entrada de script como valores [estáticos, expressões](/power-automate/use-expressions-in-conditions)ou conteúdo dinâmico. Os detalhes sobre o conector de um serviço individual podem ser encontrados na documentação [do Power Automate Connector.](/connectors/)
 
-Ao adicionar parâmetros de entrada para a função de um script `main` , considere as seguintes permissões e restrições.
+Ao adicionar parâmetros de entrada à função de um `main` script, considere as seguintes restrições e concessões.
 
-1. O primeiro parâmetro deve ser do tipo `ExcelScript.Workbook` . O nome do parâmetro não importa.
+1. O primeiro parâmetro deve ser do tipo `ExcelScript.Workbook` . Seu nome de parâmetro não importa.
 
-2. Todo parâmetro deve ter um tipo (como `string` ou `number` ).
+2. Cada parâmetro deve ter um tipo (como `string` ou `number` ).
 
-3. Os tipos básicos,,,,, `string` `number` `boolean` `any` `unknown` `object` e `undefined` são suportados.
+3. Os tipos `string` `number` básicos , `boolean` , , , , e são `any` `unknown` `object` `undefined` suportados.
 
 4. Há suporte para matrizes dos tipos básicos listados anteriormente.
 
-5. Há suporte para matrizes aninhadas como parâmetros (mas não como tipos de retorno).
+5. As matrizes aninhadas são suportadas como parâmetros (mas não como tipos de retorno).
 
-6. Os tipos de União são permitidos se eles forem uma União de literais pertencentes a um único tipo (como `"Left" | "Right"` ). Também há suporte para as undefined de um tipo com suporte, como, por exemplo, `string | undefined` .
+6. Os tipos de união são permitidos se eles são uma união de literais pertencentes a um único tipo (como `"Left" | "Right"` ). Também há suporte para uniões de um tipo com suporte indefinido (como `string | undefined` ).
 
-7. Os tipos de objeto são permitidos se contiverem Propriedades de tipo `string` , `number` , `boolean` matrizes com suporte ou outros objetos com suporte. O exemplo a seguir mostra objetos aninhados suportados como tipos de parâmetros:
+7. Os tipos de objeto são permitidos se eles contêm propriedades do tipo , , matrizes com `string` suporte ou outros objetos com `number` `boolean` suporte. O exemplo a seguir mostra objetos aninhados com suporte como tipos de parâmetro:
 
     ```TypeScript
     // Office Scripts can return an Employee object because Position only contains strings and numbers.
@@ -71,55 +71,37 @@ Ao adicionar parâmetros de entrada para a função de um script `main` , consid
     }
     ```
 
-8. Os objetos devem ter sua definição de interface ou de classe definida no script. Um objeto também pode ser definido de forma anônima, como no exemplo a seguir:
+8. Os objetos devem ter sua interface ou definição de classe definida no script. Um objeto também pode ser definido anonimamente em linha, como no exemplo a seguir:
 
     ```TypeScript
     function main(workbook: ExcelScript.Workbook): {name: string, email: string}
     ```
 
-9. Parâmetros opcionais são permitidos e podem ser indicados por meio do modificador opcional `?` (por exemplo, `function main(workbook: ExcelScript.Workbook, Name?: string)` ).
+9. Parâmetros opcionais são permitidos e podem ser denodos como tal usando o modificador opcional `?` (por exemplo, `function main(workbook: ExcelScript.Workbook, Name?: string)` ).
 
-10. Os valores de parâmetro padrão são permitidos (por exemplo `async function main(workbook: ExcelScript.Workbook, Name: string = 'Jane Doe')` .
+10. Os valores de parâmetro padrão são permitidos (por `async function main(workbook: ExcelScript.Workbook, Name: string = 'Jane Doe')` exemplo.
 
-### <a name="returning-data-from-a-script"></a>Retornar dados de um script
+### <a name="returning-data-from-a-script"></a>Retornando dados de um script
 
-Os scripts podem retornar dados da pasta de trabalho para serem usados como conteúdo dinâmico em um fluxo automatizado de energia. Como nos parâmetros de entrada, a automatização de energia coloca algumas restrições no tipo de retorno.
+Os scripts podem retornar dados da caixa de trabalho a serem usados como conteúdo dinâmico em um fluxo do Power Automate. Assim como nos parâmetros de entrada, o Power Automate coloca algumas restrições no tipo de retorno.
 
-1. Os tipos básicos `string` , `number` , `boolean` , `void` e `undefined` são suportados.
+1. Os tipos `string` básicos `number` , , e são `boolean` `void` `undefined` suportados.
 
-2. Tipos de União usados como tipos de retorno seguem as mesmas restrições que eles fazem quando usados como parâmetros de script.
+2. Os tipos de união usados como tipos de retorno seguem as mesmas restrições que fazem quando usados como parâmetros de script.
 
-3. Tipos de matriz são permitidos se forem do tipo `string` , `number` ou `boolean` . Eles também são permitidos se o tipo for um tipo de União ou tipo literal suportado.
+3. Os tipos de matriz são permitidos se eles são do tipo `string` `number` , ou `boolean` . Eles também são permitidos se o tipo for uma união com suporte ou um tipo literal com suporte.
 
-4. Tipos de objeto usados como tipos de retorno seguem as mesmas restrições que eles fazem quando usados como parâmetros de script.
+4. Os tipos de objeto usados como tipos de retorno seguem as mesmas restrições que fazem quando usados como parâmetros de script.
 
-5. Há suporte para digitação implícita, embora seja necessário seguir as mesmas regras que um tipo definido.
-
-## <a name="avoid-using-relative-references"></a>Evitar o uso de referências relativas
-
-A automatização de energia executa o script na pasta de trabalho do Excel escolhida em seu nome. A pasta de trabalho pode ser fechada quando isso acontecer. Qualquer API que se baseia no estado atual do usuário, como `Workbook.getActiveWorksheet` , falhará quando for executada através da automatização de energia. Ao projetar seus scripts, certifique-se de usar referências absolutas para planilhas e intervalos.
-
-Os métodos a seguir gerarão um erro e falharão quando chamados de um script em um fluxo automatizado de energia.
-
-| Classe | Método |
-|--|--|
-| [Gráfico](/javascript/api/office-scripts/excelscript/excelscript.chart) | `activate` |
-| [Range](/javascript/api/office-scripts/excelscript/excelscript.range) | `select` |
-| [Pasta de trabalho](/javascript/api/office-scripts/excelscript/excelscript.workbook) | `getActiveCell` |
-| [Pasta de trabalho](/javascript/api/office-scripts/excelscript/excelscript.workbook) | `getActiveChart` |
-| [Pasta de trabalho](/javascript/api/office-scripts/excelscript/excelscript.workbook) | `getActiveSlicer` |
-| [Pasta de trabalho](/javascript/api/office-scripts/excelscript/excelscript.workbook) | `getActiveWorksheet` |
-| [Pasta de trabalho](/javascript/api/office-scripts/excelscript/excelscript.workbook) | `getSelectedRange` |
-| [Pasta de trabalho](/javascript/api/office-scripts/excelscript/excelscript.workbook) | `getSelectedRanges` |
-| [Planilha](/javascript/api/office-scripts/excelscript/excelscript.workbook) | `activate` |
+5. A digitação implícita é suportada, embora ela deve seguir as mesmas regras de um tipo definido.
 
 ## <a name="example"></a>Exemplo
 
-A captura de tela a seguir mostra um fluxo automatizado de energia que é disparado sempre que um problema do [GitHub](https://github.com/) é atribuído a você. O fluxo executa um script que adiciona o problema a uma tabela em uma pasta de trabalho do Excel. Se houver cinco ou mais problemas nessa tabela, o fluxo enviará um lembrete por email.
+A captura de tela a seguir mostra um fluxo do Power Automate que é acionado sempre que um problema [do GitHub](https://github.com/) é atribuído a você. O fluxo executa um script que adiciona o problema a uma tabela em uma planilha do Excel. Se houver cinco ou mais problemas nessa tabela, o fluxo enviará um lembrete de email.
 
-![O fluxo de exemplo mostrado no editor de fluxo automatizar energia.](../images/power-automate-parameter-return-sample.png)
+:::image type="content" source="../images/power-automate-parameter-return-sample.png" alt-text="O editor de fluxo do Power Automate mostrando o fluxo de exemplo.":::
 
-A `main` função do script especifica a ID do problema e o título do problema como parâmetros de entrada, e o script retorna o número de linhas na tabela de saída.
+A função do script especifica a ID do problema e o título do problema como parâmetros de entrada, e o script retorna o número de linhas `main` na tabela de problemas.
 
 ```TypeScript
 function main(
@@ -142,8 +124,9 @@ function main(
 
 ## <a name="see-also"></a>Confira também
 
-- [Executar scripts do Office no Excel na Web com a automatização de energia](../tutorials/excel-power-automate-manual.md)
+- [Executar scripts do Office no Excel na Web com o Power Automate](../tutorials/excel-power-automate-manual.md)
 - [Passar dados para scripts numa execução automática do fluxo no Power Automate.](../tutorials/excel-power-automate-trigger.md)
-- [Fundamentos de script para scripts do Office no Excel na Web](scripting-fundamentals.md)
+- [Retorna dados de um script para um fluxo do Power Automate executado automaticamente](../tutorials/excel-power-automate-returns.md)
+- [Solução de problemas de informações para o Power Automate com scripts do Office](../testing/power-automate-troubleshooting.md)
 - [Começar a usar o Power Automate](/power-automate/getting-started)
-- [Documentação de referência do conector do Excel online (Business)](/connectors/excelonlinebusiness/)
+- [Documentação de referência do conector do Excel Online (Business)](/connectors/excelonlinebusiness/)

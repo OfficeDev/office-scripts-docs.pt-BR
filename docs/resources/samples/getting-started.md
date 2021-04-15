@@ -4,12 +4,12 @@ description: Noções básicas sobre scripts do Office, incluindo o acesso, o am
 ms.date: 04/01/2021
 localization_priority: Normal
 ROBOTS: NOINDEX
-ms.openlocfilehash: c1c4675b2fdc1f5ebd9e86f04f5fb011c27a3f1b
-ms.sourcegitcommit: 190ae1c071243f4638d0d650e35f1425914b0156
+ms.openlocfilehash: 42b71a21470ac38535e3e95f091ec6267806e54a
+ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650364"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755053"
 ---
 # <a name="getting-started"></a>Introdução
 
@@ -97,7 +97,7 @@ Portanto, em resumo:
 * A `main` função é o ponto de entrada para qualquer script. Quando a função é executada, o aplicativo excel invoca essa função principal fornecendo a planilha como seu primeiro parâmetro.
 * É importante manter o primeiro argumento e `workbook` sua declaração de tipo como ele aparece. Você pode adicionar novos argumentos à função (consulte a próxima seção), mas mantenha o `main` primeiro argumento como está.
 
-![A função principal é o ponto de entrada do script](../../images/getting-started-main-introduction.png)
+:::image type="content" source="../../images/getting-started-main-introduction.png" alt-text="A função principal é o ponto de entrada do script":::
 
 #### <a name="send-or-receive-data-from-other-apps"></a>Enviar ou receber dados de outros aplicativos
 
@@ -105,13 +105,13 @@ Você pode conectar o Excel a outras partes da sua organização executando scri
 
 A maneira de receber ou enviar dados de e para o Excel é por meio da `main` função. Pense nele como o gateway de informações que permite que os dados de entrada e de saída sejam descritos e usados no script. Você pode receber dados de fora do script usando o tipo de dados e retornar quaisquer dados reconhecidos pelo TypeScript, como , , ou quaisquer objetos na forma de interfaces que você `string` `string` definir no `number` `boolean` script.
 
-![As entradas e saídas de um script](../../images/getting-started-data-in-out.png)
+:::image type="content" source="../../images/getting-started-data-in-out.png" alt-text="As entradas e saídas de um script":::
 
 #### <a name="use-functions-to-organize-and-reuse-code"></a>Usar funções para organizar e reutilizar código
 
 Você pode usar funções para organizar e reutilizar código em seu script.
 
-![Usando funções em um script](../../images/getting-started-use-functions.png)
+:::image type="content" source="../../images/getting-started-use-functions.png" alt-text="Usando funções em um script":::
 
 ### <a name="objects-hierarchy-methods-properties-collections"></a>Objetos, hierarquia, métodos, propriedades, coleções
 
@@ -496,9 +496,9 @@ let someVariable: any;
 
 O `any` tipo apresenta desafios à maneira como os Scripts do Office processam as APIs do Excel. Causa problemas quando as variáveis são enviadas para APIs do Excel para processamento. Conhecer o tipo de variáveis usadas no script é essencial para o processamento do script e, portanto, a definição explícita de qualquer variável com `any` tipo é proibida. Você receberá um erro de tempo de compilação (erro antes de executar o script) se houver qualquer variável com o tipo `any` declarado no script. Você também verá um erro no editor.
 
-![Erro explícito de "qualquer"](../../images/getting-started-eanyi.png)
+:::image type="content" source="../../images/getting-started-eanyi.png" alt-text="Erro explícito de &quot;qualquer&quot;":::
 
-![Erro explícito 'qualquer' mostrado em Output](../../images/getting-started-expany.png)
+:::image type="content" source="../../images/getting-started-expany.png" alt-text="Erro explícito 'qualquer' mostrado em Output":::
 
 No código exibido na imagem anterior, indica que a linha 5 coluna `[5, 16] Explicit Any is not allowed` 16 declara o `any` tipo. Isso ajuda você a localizar a linha de código que contém o erro.
 
@@ -529,7 +529,7 @@ Esse tipo de inferência ocorre ao inicializar variáveis e membros, definir val
 
 Um script requer os tipos das variáveis usadas para serem declaradas explicitamente ou implicitamente. Se o compilador TypeScript não conseguir determinar o tipo de uma variável (porque o tipo não é declarado explicitamente ou a inferência de tipo não é possível), você receberá um erro de tempo de compilação (erro antes de executar o script). Você também verá um erro no editor.
 
-![Erro implícito "qualquer" mostrado no editor](../../images/getting-started-iany.png)
+:::image type="content" source="../../images/getting-started-iany.png" alt-text="O erro implícito &quot;qualquer&quot; mostrado no editor.":::
 
 Os scripts a seguir têm erros de tempo de compilação porque as variáveis são declaradas sem tipos e TypeScript não pode determinar o tipo no momento da declaração.
 
@@ -590,15 +590,15 @@ O erro de Scripts do Office pode ser classificado em uma das seguintes categoria
 
 Os avisos do editor podem ser identificados usando os sublinhados vermelho ondulados no editor:
 
-![Aviso de tempo de compilação mostrado no editor](../../images/getting-started-eanyi.png)
+:::image type="content" source="../../images/getting-started-eanyi.png" alt-text="Aviso de tempo de compilação mostrado no editor":::
 
 Às vezes, você também pode ver sublinhados de aviso laranja e mensagens informativas cinza. Eles devem ser examinados de perto, embora não causem erros.
 
 Não é possível distinguir entre erros de tempo de compilação e tempo de execução, pois ambas as mensagens de erro são idênticas. Ambos ocorrem quando você realmente executa o script. As imagens a seguir mostram exemplos de um erro de tempo de compilação e um erro de tempo de execução.
 
-![Exemplo de um erro em tempo de compilação](../../images/getting-started-expany.png)
+:::image type="content" source="../../images/getting-started-expany.png" alt-text="Exemplo de um erro em tempo de compilação":::
 
-![Exemplo de um erro de tempo de execução](../../images/getting-started-error-basic.png)
+:::image type="content" source="../../images/getting-started-error-basic.png" alt-text="Exemplo de um erro de tempo de execução":::
 
 Em ambos os casos, você verá o número da linha onde ocorreu o erro. Em seguida, você pode examinar o código, corrigir o problema e executar novamente.
 

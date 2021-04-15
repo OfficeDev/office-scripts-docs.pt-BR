@@ -1,36 +1,36 @@
 ---
-title: Armazenamento e propriedade de arquivos de scripts do Office
-description: Informações sobre como os scripts do Office são armazenados no Microsoft OneDrive e transferidos entre proprietários.
+title: Armazenamento e propriedade de arquivos do Office Scripts
+description: Informações sobre como os Scripts do Office são armazenados no Microsoft OneDrive e transferidos entre proprietários.
 ms.date: 11/13/2020
 localization_priority: Normal
-ms.openlocfilehash: 648f3b2cf7e7d8d3bab2cf07a090e116e267a99a
-ms.sourcegitcommit: 82d3c0ef1e187bcdeceb2b5fc3411186674fe150
+ms.openlocfilehash: bd868c1dbfd0b33d3cd9fc4ee774c654d86f9b07
+ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49346858"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755102"
 ---
-# <a name="office-scripts-file-storage-and-ownership"></a>Armazenamento e propriedade de arquivos de scripts do Office
+# <a name="office-scripts-file-storage-and-ownership"></a>Armazenamento e propriedade de arquivos do Office Scripts
 
-Os scripts do Office são armazenados como arquivos **. OSTs** no Microsoft onedrive. Isso permite que seus scripts existam fora de qualquer pasta de trabalho específica. Suas configurações do OneDrive controlam o acesso compartilhado e as permissões para todos os arquivos script **. OSTs** ; independente de qualquer configuração do Excel.
+Os Scripts do Office são armazenados como **arquivos .osts** no Microsoft OneDrive. Isso permite que seus scripts existam fora de qualquer workbook específico. As configurações do OneDrive controlam o acesso compartilhado e as permissões de todos os arquivos **.osts de** script; independente de qualquer configuração do Excel.
 
 ## <a name="file-storage"></a>Armazenamento de arquivos
 
-Os scripts do Office são armazenados em seu OneDrive. Os arquivos **. OSTs** são encontrados na pasta **scripts//Documents/Office** . Quaisquer edições feitas nesses arquivos **. OSTs** , como renomear ou excluir arquivos, serão refletidas no editor de código e na Galeria de scripts.
+Os Scripts do Office são armazenados no OneDrive. Os **arquivos .osts** são encontrados na **pasta /Documents/Office Scripts/.** Todas as edições feitas nesses **arquivos .osts,** como renomeação ou exclusão de arquivos, serão refletidas no Editor de Código e na Galeria de Scripts.
 
-Scripts que são compartilhados com uma de suas pastas de trabalho permanecem no OneDrive do criador do script. Eles não são copiados para nenhuma de suas pastas locais ou do OneDrive quando você executa o script compartilhado no Excel. O botão **fazer uma cópia** do editor de código salva uma cópia separada do script em seu onedrive. As alterações na cópia não afetam o script original.
+Os scripts compartilhados com uma de suas guias de trabalho permanecem no OneDrive do criador do script. Eles não são copiados para nenhuma pasta local ou do OneDrive quando você executar o script compartilhado no Excel. O **botão Fazer uma Cópia** do Editor de Código salva uma cópia separada do script no OneDrive. As alterações na cópia não afetam o script original.
 
 ### <a name="script-folders"></a>Pastas de script
 
-A adição de pastas ao OneDrive ajuda a manter seus scripts organizados. Quaisquer pastas em **scripts do/Documents/Office/** são exibidas na seção **meus scripts** do editor de código. Observe que essas pastas não podem ser criadas ou excluídas usando o editor de código. Da mesma forma, os scripts não podem ser colocados em pastas ou movidos entre pastas usando o editor de código.
+Adicionar pastas ao OneDrive ajuda a manter os scripts organizados. Todas as pastas em **/Documents/Office Scripts/** são exibidas na seção **Meus Scripts** do Editor de Código. Observe que essas pastas não podem ser criadas ou excluídas usando o Editor de Código. Da mesma forma, os scripts não podem ser colocados em pastas ou movidos entre pastas usando o Editor de Código.
 
-![Alguns scripts contidos em pastas, conforme exibido no painel de tarefas do editor de código](../images/script-folders.png)
+:::image type="content" source="../images/script-folders.png" alt-text="A caixa de diálogo Novo Script no Editor de Código mostrando scripts contidos em pastas, conforme exibido no painel de tarefas.":::
 
-## <a name="file-ownership-and-retention"></a>Propriedade e retenção de arquivo
+## <a name="file-ownership-and-retention"></a>Propriedade e retenção de arquivos
 
-Os scripts do Office são armazenados no OneDrive de um usuário. Eles seguem as políticas de retenção e exclusão especificadas pelo Microsoft OneDrive. Para saber como lidar com os scripts criados e compartilhados por um usuário que está sendo removido da sua organização, confira [retenção e exclusão do OneDrive](/onedrive/retention-and-deletion).
+Os Scripts do Office são armazenados no OneDrive de um usuário. Eles seguem as políticas de retenção e exclusão especificadas pelo Microsoft OneDrive. Para saber como lidar com os scripts criados e compartilhados por um usuário que está sendo removido da sua organização, confira [retenção e exclusão do OneDrive](/onedrive/retention-and-deletion).
 
-## <a name="see-also"></a>Também consulte
+## <a name="see-also"></a>Confira também
 
 - [Compartilhando scripts do Office no Excel para a Web](https://support.microsoft.com/office/sharing-office-scripts-in-excel-for-the-web-226eddbc-3a44-4540-acfe-fccda3d1122b)
 - [Solução de problemas dos scripts do Office](../testing/troubleshooting.md)

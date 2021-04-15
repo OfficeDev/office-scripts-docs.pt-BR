@@ -3,12 +3,12 @@ title: Restrições TypeScript em Scripts do Office
 description: Os detalhes do compilador TypeScript e linter usados pelo Editor de Código de Scripts do Office.
 ms.date: 02/05/2021
 localization_priority: Normal
-ms.openlocfilehash: 8c9d1beafb236e7ba10dedf00fab944c40fb954d
-ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
+ms.openlocfilehash: 88d0b5873a2f7350f88417d2e340343dbd183606
+ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570273"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755046"
 ---
 # <a name="typescript-restrictions-in-office-scripts"></a>Restrições TypeScript em Scripts do Office
 
@@ -22,11 +22,11 @@ Os [tipos de](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minut
 
 Não é possível declarar explicitamente que uma variável seja do tipo em Scripts do `any` Office (ou seja, `let someVariable: any;` ). O `any` tipo causa problemas quando processado pelo Excel. Por exemplo, um `Range` precisa saber que um valor é um , ou `string` `number` `boolean` . Você receberá um erro em tempo de compilação (um erro antes de executar o script) se qualquer variável for explicitamente definida como o `any` tipo no script.
 
-![A mensagem explícita no texto de foco do editor de código](../images/explicit-any-editor-message.png)
+:::image type="content" source="../images/explicit-any-editor-message.png" alt-text="A mensagem explícita &quot;qualquer&quot; no texto de foco do editor de código":::
 
-![O erro explícito na janela do console](../images/explicit-any-error-message.png)
+:::image type="content" source="../images/explicit-any-error-message.png" alt-text="O erro Explícito Qualquer na janela do console.":::
 
-Na captura de tela acima `[5, 16] Explicit Any is not allowed` indica que a linha #5, a coluna #16 define o `any` tipo. Isso ajuda a localizar o erro.
+Na captura de tela anterior indica que a linha #5, a coluna `[5, 16] Explicit Any is not allowed` #16 define o `any` tipo. Isso ajuda a localizar o erro.
 
 Para se livrar desse problema, sempre defina o tipo da variável. Se você não tiver certeza sobre o tipo de uma variável, poderá usar um tipo [de união](https://www.typescriptlang.org/docs/handbook/unions-and-intersections.html). Isso pode ser útil para variáveis que mantém valores, que podem ser do tipo , ou (o tipo para valores é `Range` `string` uma `number` `boolean` `Range` união dessas: `string | number | boolean` ).
 

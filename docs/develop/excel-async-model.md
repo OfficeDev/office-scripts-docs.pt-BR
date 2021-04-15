@@ -3,12 +3,12 @@ title: Suporte a scripts do Office mais antigos que usam as APIs assíncronas
 description: Uma cartilha nas APIs assíncronas de Scripts do Office e como usar o padrão de carga/sincronização para scripts mais antigos.
 ms.date: 02/08/2021
 localization_priority: Normal
-ms.openlocfilehash: d61a5d8affae2077b23e140645c19dac977ff0d2
-ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
+ms.openlocfilehash: 143f52a7ffefb4f19ee36ba4343fd7c2f1cbdffe
+ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570280"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755074"
 ---
 # <a name="support-older-office-scripts-that-use-the-async-apis"></a>Suporte a scripts do Office mais antigos que usam as APIs assíncronas
 
@@ -42,7 +42,7 @@ Como o seu script e a pasta de trabalho são executados em locais diferentes, qu
 
 A imagem a seguir mostra um exemplo de fluxo de controle entre o script e a pasta de trabalho:
 
-![Um diagrama mostrando operações de leitura e gravação saindo do script e indo para a pasta de trabalho.](../images/load-sync.png)
+:::image type="content" source="../images/load-sync.png" alt-text="Um diagrama mostrando operações de leitura e gravação saindo do script e indo para a pasta de trabalho.":::
 
 ### <a name="sync"></a>Sincronizar
 

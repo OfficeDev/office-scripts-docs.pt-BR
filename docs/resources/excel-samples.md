@@ -3,12 +3,12 @@ title: Scripts básicos para scripts do Office no Excel na Web
 description: Uma coleção de exemplos de código a ser usado com scripts do Office no Excel na Web.
 ms.date: 04/01/2021
 localization_priority: Normal
-ms.openlocfilehash: f52500f480b7e7fa637a606b99de035da326a4ba
-ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
+ms.openlocfilehash: 32c380a2abdb0596bbfdb387768735fbfdcf7c08
+ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570513"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755088"
 ---
 # <a name="basic-scripts-for-office-scripts-in-excel-on-the-web"></a>Scripts básicos para scripts do Office no Excel na Web
 
@@ -20,7 +20,7 @@ Os exemplos a seguir são scripts simples para você experimentar suas próprias
 4. Substitua o script inteiro pelo exemplo de sua escolha.
 5. Pressione **Executar** no painel de tarefas do Editor de Código.
 
-## <a name="scripting-basics"></a>Noções básicas de script
+## <a name="scripting-basics"></a>Noções básicas de scripts
 
 Esses exemplos demonstram blocos de construção fundamentais para scripts do Office. Adicione-os aos scripts para estender sua solução e resolver problemas comuns.
 
@@ -296,7 +296,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 Este exemplo localiza a primeira Tabela Dinâmica na lista de trabalho e registra os valores nas células "Grand Total" (conforme realçado em verde na imagem abaixo).
 
-![Uma tabela dinâmica de vendas de frutas com a linha Grand Total realçada verde.](../images/sample-pivottable-grand-total-row.png)
+:::image type="content" source="../images/sample-pivottable-grand-total-row.png" alt-text="Uma tabela dinâmica mostrando vendas de frutas com a linha Grand Total realçada verde.":::
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -324,7 +324,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 Esse script cria uma lista de seleção listada para uma célula. Ele usa os valores existentes do intervalo selecionado como as opções da lista.
 
-![Um conjunto de capturas de tela antes e depois que mostra três palavras em um intervalo e, em seguida, essas mesmas palavras em uma lista lista listada.](../images/sample-data-validation.png)
+:::image type="content" source="../images/sample-data-validation.png" alt-text="Uma planilha mostrando um intervalo de três células que contêm opções de cores &quot;vermelho, azul, verde&quot; e ao lado dela, as mesmas opções mostradas em uma lista lista listada.":::
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {

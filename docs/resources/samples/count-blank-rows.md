@@ -3,12 +3,12 @@ title: Contar linhas em branco em planilhas
 description: Saiba como usar scripts do Office para detectar se há linhas em branco em vez de dados em planilhas e, em seguida, relatar a contagem de linhas em branco a ser usada em um fluxo do Power Automate.
 ms.date: 03/31/2021
 localization_priority: Normal
-ms.openlocfilehash: 1f52b9c4d538d5d3e64dc61dae3e27d046b56862
-ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
+ms.openlocfilehash: 088ab97c686484ca5c13c875b80431ac28d20736
+ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571074"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51754828"
 ---
 # <a name="count-blank-rows-on-sheets"></a>Contar linhas em branco em planilhas
 
@@ -22,11 +22,11 @@ Este projeto inclui dois scripts:
 
 _Esta planilha retorna a contagem de 4 linhas em branco_
 
-![Dados com linhas em branco](../../images/blank-rows.png)
+:::image type="content" source="../../images/blank-rows.png" alt-text="Uma planilha mostrando dados com linhas em branco.":::
 
 _Esta planilha retorna a contagem de 0 linhas em branco (todas as linhas têm alguns dados)_
 
-![Dados sem linhas em branco](../../images/no-blank-rows.png)
+:::image type="content" source="../../images/no-blank-rows.png" alt-text="Uma planilha mostrando dados sem linhas em branco.":::
 
 ## <a name="sample-code-count-blank-rows-on-a-given-sheet"></a>Código de exemplo: Contar linhas em branco em uma determinada planilha
 
@@ -92,4 +92,4 @@ function main(workbook: ExcelScript.Workbook): number
 
 ## <a name="use-with-power-automate"></a>Usar com o Power Automate
 
-![Captura de tela mostrando como configurar no Power Automate](../../images/use-in-power-automate.png)
+:::image type="content" source="../../images/use-in-power-automate.png" alt-text="Um fluxo do Power Automate mostrando como configurar para executar um Script do Office.":::

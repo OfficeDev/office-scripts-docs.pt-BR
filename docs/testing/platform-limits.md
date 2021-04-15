@@ -3,12 +3,12 @@ title: Limites e requisitos de plataforma com scripts do Office
 description: Limites de recursos e suporte ao navegador para Scripts do Office quando usados com o Excel na Web
 ms.date: 03/12/2021
 localization_priority: Normal
-ms.openlocfilehash: 93307b6204f409f26c77b5ead33188205d5c4b4d
-ms.sourcegitcommit: 5bde455b06ee2ed007f3e462d8ad485b257774ef
+ms.openlocfilehash: ef733562fb3caa8261fbbd8382923927a46cb7d4
+ms.sourcegitcommit: 5ca286615a11d282e3f80023d22d36a039800eed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50837262"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689763"
 ---
 # <a name="platform-limits-and-requirements-with-office-scripts"></a>Limites e requisitos de plataforma com scripts do Office
 
@@ -47,9 +47,9 @@ O Excel para a Web tem as seguintes limitações ao fazer chamadas para a planil
 
 Se você estiver encontrando erros ao lidar com conjuntos de dados grandes, tente usar vários intervalos menores em vez de intervalos maiores. Você também pode APIs como [Range.getSpecialCells](/javascript/api/office-scripts/excelscript/excelscript.range#getspecialcells-celltype--cellvaluetype-) para direcionar células específicas em vez de intervalos grandes.
 
-### <a name="power-automate"></a>Ligar/Desligar Automação
+### <a name="power-automate"></a>Power Automate
 
-Ao usar scripts do Office com o Power Automate, cada usuário é limitado a **200 chamadas por dia.** Esse limite é redefinido às 00:00 UTC.
+Ao usar scripts do Office com o Power Automate, cada usuário é limitado a **400** chamadas para a ação Executar Script por dia . Esse limite é redefinido às 00:00 UTC.
 
 A plataforma Power Automate também tem limitações de uso, que podem ser encontradas nos seguintes artigos:
 
