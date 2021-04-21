@@ -25,7 +25,7 @@ Se seu problema não estiver relacionado à documentação scripts do Office, po
 
 - Para fazer uma pergunta sobre como projetar scripts do Office ou a API Office.js que executa scripts do Office, poste sua pergunta em Stack Overflow e marque-a com a marca "office-scripts" ( https://stackoverflow.com/questions/tagged/office-scripts) .
 - Para relatar um problema com a API Office.js, crie o problema no repositório [officeDev/office-js](https://github.com/OfficeDev/office-js), que membros da equipe do produto monitoram para problemas relatados pelo cliente.
-- Para enviar uma solicitação de recurso para Scripts do Office, poste sua ideia no [Microsoft Q&A](https://docs.microsoft.com/answers/products/m365), ou se a solicitação de recurso já existir lá, adicione seu voto a ela. Certifique-se de usar a marca "Office-Scripts-Dev" ao pedir seu recurso.
+- Para enviar uma solicitação de recurso para Scripts do Office, poste sua ideia em nossa página do [User Voice](https://excel.uservoice.com/forums/274580-excel-for-the-web?category_id=143439)ou se a solicitação de recurso já existir lá, adicione seu voto a ela ou, se a solicitação de recurso já existir, adicione seu voto a ela. Certifique-se de arquivar a solicitação em Excel para a Web na categoria "Macros, Scripts e Complementos".
 
 ## <a name="copyright"></a>Direitos autorais
 
