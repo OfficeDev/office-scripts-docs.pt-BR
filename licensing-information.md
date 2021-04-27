@@ -990,9 +990,9 @@ ESTE SOFTWARE É FORNECIDO PELOS PROPRIETÁRIOS DE DIREITOS AUTORAIS E COLABORAD
 
 @hapi/endereço 2.1.4 - BSD-3-Clause https://github.com/hapijs/address#readme
 
-Copyright (c) 2019, Colaboradores do Project Copyright (c) 2008-2019, Eli Skeggs, Dominic Sayers, GlobeSherpa
+Copyright (c) 2019, Project colaboradores Copyright (c) 2008-2019, Eli Skeggs, Dominic Sayers, GlobeSherpa
 
-Copyright (c) 2019, Colaboradores do Project Todos os direitos reservados.
+Copyright (c) 2019, Project colaboradores Todos os direitos reservados.
 
 A redistribuição e o uso em formulários de origem e binários, com ou sem modificação, são permitidos desde que as seguintes condições sejam atendidas:
  * As redistribuição do código-fonte devem manter o aviso de direitos autorais acima, esta lista de condições e o aviso de isenção de responsabilidade a seguir.
@@ -4011,7 +4011,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *,* SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados no Fluent UI React está sujeito aos termos listados em https://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados na interface do usuário do Fluent React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -4036,7 +4036,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *,* SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados no Fluent UI React está sujeito aos termos listados em https://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados na interface do usuário do Fluent React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -4061,7 +4061,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *,* SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados no Fluent UI React está sujeito aos termos listados em https://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados na interface do usuário do Fluent React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -4473,7 +4473,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *,* SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados no Fluent UI React está sujeito aos termos listados em https://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados na interface do usuário do Fluent React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -4484,7 +4484,7 @@ Observação: o uso das fontes e ícones referenciados no Fluent UI React está 
 
 Copyright (c) Microsoft Corporation
 
-Fluent UI React - ícones
+Interface do usuário do Fluent React - ícones
 
 Copyright (c) Microsoft Corporation
 
@@ -4498,7 +4498,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *,* SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados no Fluent UI React está sujeito aos termos listados em https://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados na interface do usuário do Fluent React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -4509,7 +4509,7 @@ Observação: o uso das fontes e ícones referenciados no Fluent UI React está 
 
 Copyright (c) Microsoft Corporation.
 
-Fluent UI React - merge-styles
+Interface do usuário do Fluent React - estilos de mesclagem
 
 Copyright (c) Microsoft Corporation
 
@@ -4523,7 +4523,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *,* SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados no Fluent UI React está sujeito aos termos listados em https://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados na interface do usuário do Fluent React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -4548,7 +4548,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *,* SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados no Fluent UI React está sujeito aos termos listados em https://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados na interface do usuário do Fluent React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -4573,7 +4573,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *,* SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados no Fluent UI React está sujeito aos termos listados em https://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados na interface do usuário do Fluent React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -4584,7 +4584,7 @@ Observação: o uso das fontes e ícones referenciados no Fluent UI React está 
 
 Copyright (c) Microsoft Corporation
 
-Fluent UI React - estilo
+Interface do usuário do Fluent React - estilo
 
 Copyright (c) Microsoft Corporation
 
@@ -4598,7 +4598,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *,* SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados no Fluent UI React está sujeito aos termos listados em https://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados na interface do usuário do Fluent React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -4609,7 +4609,7 @@ Observação: o uso das fontes e ícones referenciados no Fluent UI React está 
 
 Copyright (c) Microsoft Corporation
 
-Fluent UI React - utilitários
+Interface do usuário do Fluent React - utilitários
 
 Copyright (c) Microsoft Corporation
 
@@ -4623,7 +4623,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *,* SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados no Fluent UI React está sujeito aos termos listados em https://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados na interface do usuário do Fluent React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -8035,11 +8035,11 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 eventsource 1.0.7 - MIT http://github.com/EventSource/eventsource
 
-Copyright (c) EventSource GitHub Copyright Joyent, Inc. and other Node contributors.
+Copyright (c) EventSource GitHub Copyright Joyent, Inc. e outros colaboradores do Node.
 
 A licença do MIT
 
-Evento (c) CopyrightSource Organização do GitHub
+Copyright (c) EventSource GitHub organização
 
 A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software seja fornecido para fazer isso, sujeitas às seguintes condições:
 
@@ -9012,11 +9012,11 @@ Copyright (c) 2015 [Charlike Make Também](http://j.mp/1stW47C)
 
 histórico 4.10.1 - MIT https://github.com/ReactTraining/history#readme
 
-Copyright (c) React Training 2016-2018
+Copyright (c) React Treinamento 2016-2018
 
 Licença do MIT
 
-Copyright (c) React Training 2016-2018
+Copyright (c) React Treinamento 2016-2018
 
 A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software seja fornecido para fazer isso, sujeitas às seguintes condições:
 
@@ -11397,7 +11397,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-editor de mônaco 0.18.1 - MIT https://github.com/Microsoft/monaco-editor#readme
+editor de mônaco 0.20.0 - MIT https://github.com/Microsoft/monaco-editor#readme
 
 Copyright (c) 2015 Copyright (c) Joshaven Potter Copyright (c) 2014 Taylor Hakes Copyright (c) Artyom Shalkhakov.
 Copyright (c) 2015 David Owens II Copyright (c) 2014 Forbes Lindesay Copyright (c) 2015 Nicolas Bevacqua Copyright (c) Microsoft Corporation.
@@ -11423,7 +11423,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-editor de mônaco 0.20.0 - MIT https://github.com/Microsoft/monaco-editor#readme
+editor de mônaco 0.18.1 - MIT https://github.com/Microsoft/monaco-editor#readme
 
 Copyright (c) 2015 Copyright (c) Joshaven Potter Copyright (c) 2014 Taylor Hakes Copyright (c) Artyom Shalkhakov.
 Copyright (c) 2015 David Owens II Copyright (c) 2014 Forbes Lindesay Copyright (c) 2015 Nicolas Bevacqua Copyright (c) Microsoft Corporation.
@@ -12018,7 +12018,7 @@ office-ui-fabric-react 7.115.1 - MIT https://github.com/microsoft/fluentui#readm
 Copyright (c) Microsoft.
 Copyright (c) Microsoft Corporation.
 
-Fluent UI React
+Interface do usuário React
 
 Copyright (c) Microsoft Corporation
 
@@ -12032,7 +12032,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *,* SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados no Fluent UI React está sujeito aos termos listados em https://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados na interface do usuário do Fluent React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -13576,6 +13576,54 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
+mais bonito 2.0.5 - MIT https://prettier.io/
+
+Copyright Google Inc. Copyright (c) 2014-2016 Teambition Copyright (c) Microsoft Corporation.
+Copyright (c) 2014-2015, Jon Schlinkert.
+Copyright (c) 2014-2016, Jon Schlinkert.
+Copyright (c) 2014-2017, Jon Schlinkert.
+Copyright (c) 2015-2017, Jon Schlinkert.
+Copyright (c) James Long e colaboradores Copyright (c) 2014-present, Jon Schlinkert.
+Copyright (c) Facebook, Inc. e suas afiliadas.
+Copyright (c) 2014Van Nikulin <ifaaan@gmail.com> Copyright 2014, 2015, 2016, 2017, 2018 Simon Lydell Copyright (c) 2013 Yusuke Suzuki <utatane.tea@gmail.com> Copyright (c) 2013-2014 Yusuke Suzuki <utatane.tea@gmail.com>
+
+Copyright © James Long e colaboradores
+
+A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software seja fornecido para fazer isso, sujeitas às seguintes condições:
+
+O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
+
+O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
+
+
+---------------------------------------------------------
+
+---------------------------------------------------------
+
+mais bonito 2.2.1 - MIT https://prettier.io/
+
+(c) bv u Copyright Google LLC Copyright Google Inc. (c) bv(u,t),function t,r (c) Kr Cr t,zr Cr a,your Cr (c) Kr Tr t,zr Tr a,your Tr Copyright (c) Microsoft Corporation.
+Copyright (c) 2014-2015, Jon Schlinkert.
+Copyright (c) 2014-2016, Jon Schlinkert.
+Copyright (c) 2014-2017, Jon Schlinkert.
+Copyright (c) 2015-2017, Jon Schlinkert.
+Copyright (c) James Long e colaboradores Copyright (c) 2014-present, Jon Schlinkert.
+Copyright (c) Facebook, Inc. e suas afiliadas.
+Copyright (c) 2014Van Nikulin <ifaaan@gmail.com> Copyright 2014, 2015, 2016, 2017, 2018 Simon Lydell Copyright (c) 2013 Yusuke Suzuki <utatane.tea@gmail.com> Copyright (c) 2013-2014 Yusuke Suzuki <utatane.tea@gmail.com>
+
+Copyright © James Long e colaboradores
+
+A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software seja fornecido para fazer isso, sujeitas às seguintes condições:
+
+O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
+
+O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
+
+
+---------------------------------------------------------
+
+---------------------------------------------------------
+
 pretty-bytes 5.3.0 - MIT https://github.com/sindresorhus/pretty-bytes#readme
 
 (c) Sindre Sorhus ( https://sindresorhus.com) Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
@@ -14141,7 +14189,7 @@ react-router 5.2.0 - MIT https://github.com/ReactTraining/react-router#readme
 
 Licença do MIT
 
-Copyright (c) React Training 2016-2018
+Copyright (c) React Treinamento 2016-2018
 
 A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software seja fornecido para fazer isso, sujeitas às seguintes condições:
 
@@ -14160,7 +14208,7 @@ react-router-dom 5.2.0 - MIT https://github.com/ReactTraining/react-router#readm
 
 Licença do MIT
 
-Copyright (c) React Training 2016-2018
+Copyright (c) React Treinamento 2016-2018
 
 A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software seja fornecido para fazer isso, sujeitas às seguintes condições:
 
@@ -16622,7 +16670,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-url-polyfill 1.1.9 - MIT https://github.com/lifaon74/url-polyfill#readme
+url-polyfill 1.1.12 - MIT https://github.com/lifaon74/url-polyfill#readme
 
 Copyright (c) 2017 Valentin Richard
 
