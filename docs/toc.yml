@@ -58,15 +58,13 @@ items:
           - name: Noções básicas
             items:
               - name: Noções básicas de scripts
-                href: resources/excel-samples.md
-              - name: Noções básicas
-                href: resources/samples/range-basics.md
-          - name: Além do básico
-            items:
+                href: resources/samples/excel-samples.md
               - name: Adicionar comentários
                 href: resources/samples/add-excel-comments.md
               - name: Copiar várias tabelas em uma única tabela
                 href: resources/samples/copy-tables-combine.md
+          - name: Além do básico
+            items:
               - name: Contar linhas em branco em planilhas
                 href: resources/samples/count-blank-rows.md
               - name: Fazer referência cruzada e formatar arquivos do Excel
