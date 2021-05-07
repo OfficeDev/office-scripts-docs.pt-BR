@@ -1,14 +1,14 @@
 ---
 title: Gerar um identificador exclusivo em uma workbook
-description: Saiba como usar scripts do Office para gerar um identificador exclusivo e adicionar uma linha a uma tabela e intervalo.
+description: Saiba como usar Office Scripts para gerar um identificador exclusivo e adicionar uma linha a uma tabela e intervalo.
 ms.date: 03/18/2021
 localization_priority: Normal
-ms.openlocfilehash: c75eba551cc1c05426db613c78d41431b5177842
-ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
+ms.openlocfilehash: 62c930bfc638dc46b36daf81b6d1ec976c90a8d0
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51754835"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232477"
 ---
 # <a name="generate-a-unique-identifier-in-a-workbook"></a>Gerar um identificador exclusivo em uma workbook
 
@@ -20,23 +20,23 @@ Há duas versões do exemplo para este cenário.
 
     _Antes que a nova linha seja adicionada_
 
-    :::image type="content" source="../../images/document-number-generator-range-before.png" alt-text="Uma planilha mostrando um intervalo de dados antes da linha ser adicionada.":::
+    :::image type="content" source="../../images/document-number-generator-range-before.png" alt-text="Uma planilha mostrando um intervalo de dados antes que a linha seja adicionada":::
 
     _Depois que a nova linha é adicionada_
 
-    :::image type="content" source="../../images/document-number-generator-range-after.png" alt-text="Uma planilha mostrando um intervalo de dados depois que a linha é adicionada.":::
+    :::image type="content" source="../../images/document-number-generator-range-after.png" alt-text="Uma planilha mostrando um intervalo de dados depois que a linha é adicionada":::
 
 * [Versão 2: ler e adicionar uma linha a uma tabela](#sample-code-generate-key-and-add-row-to-table)
 
     _Antes que a nova linha seja adicionada_
 
-    :::image type="content" source="../../images/document-number-generator-table-before.png" alt-text="Uma planilha mostrando uma tabela antes de uma linha ser adicionada.":::
+    :::image type="content" source="../../images/document-number-generator-table-before.png" alt-text="Uma planilha mostrando uma tabela antes de uma linha ser adicionada":::
 
     _Depois que a nova linha é adicionada_
 
-    :::image type="content" source="../../images/document-number-generator-table-after.png" alt-text="Uma planilha mostrando uma tabela depois que uma linha é adicionada.":::
+    :::image type="content" source="../../images/document-number-generator-table-after.png" alt-text="Uma planilha mostrando uma tabela depois que uma linha é adicionada":::
 
-## <a name="sample-excel-file"></a>Exemplo de arquivo do Excel
+## <a name="sample-excel-file"></a>Exemplo Excel arquivo
 
 Baixe o arquivo <a href="document-number-generator.xlsx">document-number-generator.xlsx</a> usado nesta solução para experimentar você mesmo!
 

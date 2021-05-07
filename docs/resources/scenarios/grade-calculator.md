@@ -1,16 +1,16 @@
 ---
-title: 'Cenário de exemplo de scripts do Office: calculadora de notas'
+title: 'Office Cenário de exemplo de scripts: calculadora de notas'
 description: Um exemplo que determina a porcentagem e as notas de carta para uma classe de alunos.
 ms.date: 12/17/2020
 localization_priority: Normal
-ms.openlocfilehash: b8c45ad405c06a943c75e76391c1160ecb1bd18e
-ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
+ms.openlocfilehash: e2ef6e7522fc88219bf6ba40900a1ecceecb263b
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755025"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232694"
 ---
-# <a name="office-scripts-sample-scenario-grade-calculator"></a>Cenário de exemplo de scripts do Office: calculadora de notas
+# <a name="office-scripts-sample-scenario-grade-calculator"></a>Office Cenário de exemplo de scripts: calculadora de notas
 
 Nesse cenário, você é um instrutor que depende das notas de fim de semestre de cada aluno. Você está inserindo as pontuações para suas atribuições e testes à medida que vai. Agora, é hora de determinar os destinos dos alunos.
 
@@ -25,9 +25,9 @@ Você desenvolverá um script que totaliza as notas para cada categoria de ponto
 
 ## <a name="setup-instructions"></a>Instruções de instalação
 
-1. Baixe <a href="grade-calculator.xlsx">grade-calculator.xlsx</a> para o OneDrive.
+1. Baixe <a href="grade-calculator.xlsx">grade-calculator.xlsx</a> para seu OneDrive.
 
-2. Abra a planilha com o Excel para a Web.
+2. Abra a workbook com Excel para a Web.
 
 3. Na guia **Automatizar,** abra **Todos os Scripts.**
 
@@ -182,8 +182,8 @@ Execute o **script Calculadora** de Notas na única planilha. O script totaliza 
 
 ### <a name="before-running-the-script"></a>Antes de executar o script
 
-:::image type="content" source="../../images/scenario-grade-calculator-before.png" alt-text="Uma planilha que mostra linhas de pontuações para alunos.":::
+:::image type="content" source="../../images/scenario-grade-calculator-before.png" alt-text="Uma planilha que mostra linhas de pontuações para alunos":::
 
 ### <a name="after-running-the-script"></a>Depois de executar o script
 
-:::image type="content" source="../../images/scenario-grade-calculator-after.png" alt-text="Uma planilha que mostra os dados de pontuação do aluno com células inválidas em totais vermelhos para linhas de alunos válidas.":::
+:::image type="content" source="../../images/scenario-grade-calculator-after.png" alt-text="Uma planilha que mostra os dados de pontuação do aluno com células inválidas em totais vermelhos para linhas de alunos válidas":::

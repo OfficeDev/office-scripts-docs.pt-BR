@@ -3,12 +3,12 @@ title: Retorna dados de um script para um fluxo do Power Automate executado auto
 description: Um tutorial que mostra como enviar emails de lembrete executando Scripts do Office para o Excel na web através do Power Automate.
 ms.date: 12/15/2020
 localization_priority: Priority
-ms.openlocfilehash: 0c8d8f308147d727a0a5880c11c9c0d924149fb2
-ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
+ms.openlocfilehash: 54fcfc773d4d2a8d352f7bd22593ac817e7ded0e
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51754898"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232876"
 ---
 # <a name="return-data-from-a-script-to-an-automatically-run-power-automate-flow-preview"></a>Retorna dados de um script para um fluxo do Power Automate executado automaticamente (visualização)
 
@@ -36,9 +36,9 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
     > [!IMPORTANT]
     > O roteiro que você vai escrever utiliza a primeira entrada correspondente na tabela, portanto, certifique-se de que seu nome esteja acima de qualquer linha com a semana atual.
 
-    :::image type="content" source="../images/power-automate-return-tutorial-1.png" alt-text="Uma planilha contendo os dados da tabela de rotação chamada.":::
+    :::image type="content" source="../images/power-automate-return-tutorial-1.png" alt-text="Uma planilha contendo os dados da tabela de rotação de plantão":::
 
-## <a name="create-an-office-script"></a>Crie um Script do Office
+## <a name="create-an-office-script"></a>Criar um Script do Office
 
 1. Vá até a guia **Automatizar** e selecione **Todos os Scripts**.
 
@@ -142,7 +142,7 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
     - **Repetir a cada**: 1 Semana
     - **Nesses dias**: M
 
-    :::image type="content" source="../images/power-automate-return-tutorial-3.png" alt-text="A caixa de diálogo &quot;Criar um fluxo de nuvem agendado&quot; do Power Automate mostrando opções. As opções incluem nome do fluxo, hora de início, frequência de repetição e um dia da semana para executar o fluxo.":::
+    :::image type="content" source="../images/power-automate-return-tutorial-3.png" alt-text="O Diálogo &quot;Construa um fluxo de nuvens programado&quot; do Power Automate mostrando opções. As opções incluem nome do fluxo, hora para começar, quantas vezes repetir e qual dia da semana executar o fluxo":::
 
 1. Pressione **Criar**.
 
@@ -152,7 +152,7 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
 
     :::image type="content" source="../images/power-automate-tutorial-4.png" alt-text="Opção do Excel Online (Business) no Power Automate":::
 
-1. Em **Ações**, selecione **executar script (visualização)**.
+1. Em **Ações**, selecione **Executar script (visualização)**.
 
     :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Execute a opção de ação de script (visualização) no Power Automate":::
 
@@ -163,16 +163,16 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
     - **Arquivo**: on-call-rotation.xlsx *(Escolhido através do navegador de arquivos)*
     - **Script**: Obter uma Pessoa de Plantão
 
-    :::image type="content" source="../images/power-automate-return-tutorial-4.png" alt-text="As configurações do conector do Power Automate para executar um script.":::
+    :::image type="content" source="../images/power-automate-return-tutorial-4.png" alt-text="As configurações do conector do Power Automate para executar um script":::
 
 1. Pressione **Nova etapa**.
 
 1. Terminaremos o fluxo enviando o email de lembrete. Selecione **Enviar um email (V2)** usando a barra de pesquisa do conector. Use o controle **Adicionar conteúdo dinâmico** para adicionar o endereço de email retornado pelo script. Ele será rotulado como **resultado** com o ícone do Excel próximo a ele. Você pode fornecer qualquer assunto e corpo de texto que desejar.
 
-    :::image type="content" source="../images/power-automate-return-tutorial-5.png" alt-text="As configurações do conector do Outlook do Power Automate Outlook para o envio de email. As opções incluem o arquivo a ser enviado, o assunto e o corpo do email, além das opções avançadas."::: 
+    :::image type="content" source="../images/power-automate-return-tutorial-5.png" alt-text="As configurações do conector Power Automate Outlook para enviar um e-mail. As opções incluem o arquivo a ser enviado, o assunto do e-mail e o corpo do e-mail, assim como opções avançadas"::: 
 
     > [!NOTE]
-    > Este tutorial usa o Outlook. Sinta-se à vontade para usar o seu serviço de email preferido, embora algumas opções possam ser diferentes.
+    > Este tutorial usa o Outlook. Sinta-se à vontade para usar seu serviço de e-mail preferido, embora algumas opções possam ser diferentes.
 
 1. Pressione **Salvar**.
 

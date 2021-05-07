@@ -3,12 +3,12 @@ title: Grave, edite e crie scripts do Office no Excel na Web
 description: Um tutorial sobre o básico dos scripts do Office, incluindo a gravação de scripts com o Gravador de ações e a gravação de dados em uma pasta de trabalho.
 ms.date: 01/06/2021
 localization_priority: Priority
-ms.openlocfilehash: ae864cc08453a9c8a2538f15ceee1275e131725d
-ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
+ms.openlocfilehash: 9f1b2e29d60ec0e370bdb29fde0f04be831a222b
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51754842"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232862"
 ---
 # <a name="record-edit-and-create-office-scripts-in-excel-on-the-web"></a>Grave, edite e crie scripts do Office no Excel na Web
 
@@ -78,7 +78,7 @@ O script anterior coloriu a linha "Laranjas" para ficar laranja. Vamos adicionar
 
 4. Teste o script pressionando **Executar**. Sua pasta de trabalho já deve ter esta aparência:
 
-    :::image type="content" source="../images/tutorial-2.png" alt-text="Uma planilha mostrando a linha de dados das vendas de frutas com a linha &quot;Laranjas&quot; realçada na cor laranja, e a linha &quot;Limões&quot; realçada na cor amarela.":::
+    :::image type="content" source="../images/tutorial-2.png" alt-text="Uma planilha mostrando a linha de dados das vendas de frutas com a linha &quot;Laranjas&quot; realçada na cor laranja, e a linha &quot;Limões&quot; realçada na cor amarela":::
 
 ## <a name="create-a-table"></a>Crie uma tabela
 
@@ -111,7 +111,7 @@ Vamos converter esses dados de vendas de frutas em uma tabela. Usaremos nosso sc
 
     As tabelas possuem um objeto`TableSort`, acessado por meio do método `Table.getSort`. Você pode aplicar critérios de classificação a esse objeto. O `apply` método utiliza uma matriz de `SortField` objetos. Nesse caso, só temos um critério de classificação, por isso só usamos um. `SortField`. `key: 0` define a coluna com os valores que determinam a classificação como "0" (que nesse caso, é a primeira coluna na tabela **A** ). `ascending: true` classifica os dados em ordem crescente (em vez de ordem decrescente).
 
-3. Execute o script. Você deve visualizar uma tabela como esta:
+3. Execute o script. Você deverá ver uma tabela como essa:
 
     :::image type="content" source="../images/tutorial-3.png" alt-text="Uma planilha mostrando a tabela ordenada de vendas de frutas.":::
 

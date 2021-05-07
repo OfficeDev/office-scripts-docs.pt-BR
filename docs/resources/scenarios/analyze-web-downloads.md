@@ -1,16 +1,16 @@
 ---
-title: 'Cenário de exemplo de Scripts do Office: Analisar downloads da Web'
-description: Um exemplo que coleta dados brutos de tráfego da Internet em uma planilha do Excel e determina o local de origem, antes de organizar essas informações em uma tabela.
-ms.date: 12/17/2020
+title: 'Office Cenário de exemplo de scripts: Analisar downloads da Web'
+description: Um exemplo que coleta dados brutos de tráfego da Internet em uma Excel de trabalho e determina o local de origem, antes de organizar essas informações em uma tabela.
+ms.date: 04/27/2021
 localization_priority: Normal
-ms.openlocfilehash: e351cd6c4a12e83a07a2f4ce5678d7aa10625118
-ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
+ms.openlocfilehash: 6c5958e9957ca49c370ae34456236bdd15f41c44
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755032"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232708"
 ---
-# <a name="office-scripts-sample-scenario-analyze-web-downloads"></a>Cenário de exemplo de Scripts do Office: Analisar downloads da Web
+# <a name="office-scripts-sample-scenario-analyze-web-downloads"></a>Office Cenário de exemplo de scripts: Analisar downloads da Web
 
 Nesse cenário, você tem a tarefa de analisar relatórios de download do site da sua empresa. O objetivo dessa análise é determinar se o tráfego da Web está vindo dos Estados Unidos ou de qualquer outro lugar do mundo.
 
@@ -25,20 +25,11 @@ Você desenvolverá um script que analisa os dados de downloads semanais na plan
 - Formatação condicional
 - Tabelas
 
-## <a name="demo-video"></a>Vídeo de demonstração
-
-Este exemplo foi rebaixado como parte da chamada da comunidade de desenvolvedores de complementos do Office para fevereiro de 2020.
-
-> [!VIDEO https://www.youtube.com/embed/vPEqbb7t6-Y?start=154]
-
-> [!NOTE]
-> O código mostrado neste vídeo usa um modelo de API mais antigo (as [APIs Async scripts do Office](../../develop/excel-async-model.md)). O exemplo apresentado nesta página foi atualizado, mas o código parece um pouco diferente da gravação. As alterações não afetam o comportamento do script ou do outro conteúdo na demonstração do apresentador.
-
 ## <a name="setup-instructions"></a>Instruções de instalação
 
-1. Baixe <a href="analyze-web-downloads.xlsx">analyze-web-downloads.xlsx</a> para o OneDrive.
+1. Baixe <a href="analyze-web-downloads.xlsx">analyze-web-downloads.xlsx</a> para seu OneDrive.
 
-2. Abra a planilha com o Excel para a Web.
+2. Abra a workbook com Excel para a Web.
 
 3. Na guia **Automatizar,** abra **Todos os Scripts.**
 
@@ -226,10 +217,10 @@ Navegue até qualquer uma **das planilhas \* \* semanais** e execute o script An
 
 ### <a name="before-running-the-script"></a>Antes de executar o script
 
-:::image type="content" source="../../images/scenario-analyze-web-downloads-before.png" alt-text="Uma planilha que mostra dados brutos de tráfego da Web.":::
+:::image type="content" source="../../images/scenario-analyze-web-downloads-before.png" alt-text="Uma planilha que mostra dados brutos de tráfego da Web":::
 
 ### <a name="after-running-the-script"></a>Depois de executar o script
 
-:::image type="content" source="../../images/scenario-analyze-web-downloads-after.png" alt-text="Uma planilha que mostra informações de localização IP formatada com as linhas de tráfego da Web anteriores.":::
+:::image type="content" source="../../images/scenario-analyze-web-downloads-after.png" alt-text="Uma planilha que mostra informações de localização IP formatada com as linhas de tráfego da Web anteriores":::
 
-:::image type="content" source="../../images/scenario-analyze-web-downloads-table.png" alt-text="A tabela de resumo e o gráfico que resume as planilhas nas quais o script foi executado.":::
+:::image type="content" source="../../images/scenario-analyze-web-downloads-table.png" alt-text="A tabela de resumo e o gráfico que resume as planilhas nas quais o script foi executado":::

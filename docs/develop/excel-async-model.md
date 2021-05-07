@@ -1,18 +1,18 @@
 ---
-title: Suporte a scripts do Office mais antigos que usam as APIs assíncronas
-description: Uma cartilha nas APIs assíncronas de Scripts do Office e como usar o padrão de carga/sincronização para scripts mais antigos.
+title: Dar suporte Office scripts mais antigos que usam as APIs assíncronas
+description: Uma cartilha nas APIs Office Scripts Async e como usar o padrão de carga/sincronização para scripts mais antigos.
 ms.date: 02/08/2021
 localization_priority: Normal
-ms.openlocfilehash: 143f52a7ffefb4f19ee36ba4343fd7c2f1cbdffe
-ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
+ms.openlocfilehash: 437fb2e389d6d3963f93cdb44c5529749c4d3569
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755074"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232407"
 ---
-# <a name="support-older-office-scripts-that-use-the-async-apis"></a>Suporte a scripts do Office mais antigos que usam as APIs assíncronas
+# <a name="support-older-office-scripts-that-use-the-async-apis"></a>Dar suporte Office scripts mais antigos que usam as APIs assíncronas
 
-Este artigo ensinará como manter e atualizar scripts que usam ASIs assíncronas do modelo mais antigo. Essas APIs têm a mesma funcionalidade principal que as APIs de Scripts do Office agora padrão, mas exigem que seu script controle a sincronização de dados entre o script e a workbook.
+Este artigo ensinará como manter e atualizar scripts que usam ASIs assíncronas do modelo mais antigo. Essas APIs têm a mesma funcionalidade principal que as APIs de Scripts Office padrão agora padrão, mas exigem que seu script controle a sincronização de dados entre o script e a workbook.
 
 > [!IMPORTANT]
 > O modelo assíncrono só pode ser usado com scripts criados antes da implementação do modelo [de API atual.](scripting-fundamentals.md) Os scripts são permanentemente bloqueados para o modelo de API que eles têm após a criação. Isso também significa que, se você quiser converter um script antigo para o novo modelo, deverá criar um novo script. Recomendamos que você atualize seus scripts antigos para o novo modelo ao fazer alterações, já que o modelo atual é mais fácil de usar. A [seção Converter scripts assíncronos para o modelo](#converting-async-scripts-to-the-current-model) atual tem conselhos sobre como fazer essa transição.
@@ -42,7 +42,7 @@ Como o seu script e a pasta de trabalho são executados em locais diferentes, qu
 
 A imagem a seguir mostra um exemplo de fluxo de controle entre o script e a pasta de trabalho:
 
-:::image type="content" source="../images/load-sync.png" alt-text="Um diagrama mostrando operações de leitura e gravação saindo do script e indo para a pasta de trabalho.":::
+:::image type="content" source="../images/load-sync.png" alt-text="Um diagrama mostrando operações de leitura e gravação indo para a área de trabalho do script":::
 
 ### <a name="sync"></a>Sincronizar
 
@@ -55,7 +55,7 @@ await context.sync();
 > [!NOTE]
 > `context.sync()` é chamado implicitamente quando um script termina.
 
-Após a conclusão da operação `sync`, a pasta de trabalho será atualizada para refletir as operações de gravação especificados por esse script. Uma operação de gravação está definindo qualquer propriedade em um objeto excel (por exemplo, ) ou chamando um método que altera `range.format.fill.color = "red"` uma propriedade (por exemplo, `range.format.autoFitColumns()` ). A `sync` operação também lê todos os valores da pasta de trabalho que o script solicitou usando uma `load` operação ou um método que retorna a `ClientResult` (conforme discutido nas próximas seções).
+Após a conclusão da operação `sync`, a pasta de trabalho será atualizada para refletir as operações de gravação especificados por esse script. Uma operação de gravação está definindo qualquer propriedade em um objeto Excel (por exemplo, ) ou chamando um método que altera uma `range.format.fill.color = "red"` propriedade (por exemplo, `range.format.autoFitColumns()` ). A `sync` operação também lê todos os valores da pasta de trabalho que o script solicitou usando uma `load` operação ou um método que retorna a `ClientResult` (conforme discutido nas próximas seções).
 
 A sincronização do seu script com a pasta de trabalho pode demorar, dependendo da sua rede. Minimize o número de `sync` chamadas para ajudar seu script a executar rapidamente. Caso contrário, as APIs assíncronas não são mais rápidas que as APIs padrão e síncrona.
 
@@ -149,8 +149,8 @@ O modelo de API atual não usa `load` , `sync` ou um `RequestContext` . Isso tor
 
 4. Classes de coleção foram substituídas por matrizes. Os métodos e dessas classes de coleção foram movidos para o objeto que possuía a coleção, portanto, suas referências devem `add` `get` ser atualizadas de acordo. Por exemplo, para obter um gráfico chamado "MyChart" da primeira planilha da pasta de trabalho, use o seguinte código: `workbook.getWorksheets()[0].getChart("MyChart");` . Observe o `[0]` para acessar o primeiro valor do retornado por `Worksheet[]` `getWorksheets()` .
 
-5. Alguns métodos foram renomeados para clareza e adicionados por conveniência. Consulte a referência [da API de Scripts do Office](/javascript/api/office-scripts/overview) para obter mais detalhes.
+5. Alguns métodos foram renomeados para clareza e adicionados por conveniência. Consulte a referência [da API Office Scripts](/javascript/api/office-scripts/overview) para obter mais detalhes.
 
-## <a name="office-scripts-async-api-reference-documentation"></a>Documentação de referência da API assíncrona de Scripts do Office
+## <a name="office-scripts-async-api-reference-documentation"></a>Office Documentação de referência da API assíncrona de scripts
 
-As APIs assíncronas são equivalentes às usadas em Complementos do Office. A documentação de referência é encontrada na seção Excel da referência da API JavaScript de [Complementos do Office.](/javascript/api/excel?view=excel-js-online&preserve-view=true)
+As APIs assíncronas são equivalentes às usadas em Office de complementos. A documentação de referência é encontrada na seção Excel da referência da API JavaScript de Office de [complementos.](/javascript/api/excel?view=excel-js-online&preserve-view=true)

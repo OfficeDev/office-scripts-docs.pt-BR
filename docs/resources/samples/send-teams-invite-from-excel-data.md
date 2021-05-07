@@ -1,37 +1,37 @@
 ---
-title: Enviar uma reunião do Teams a partir de dados do Excel
-description: Saiba como usar scripts do Office para enviar uma reunião do Teams a partir de dados do Excel.
-ms.date: 03/30/2021
+title: Enviar uma Teams de dados Excel dados
+description: Saiba como usar Office scripts para enviar uma reunião Teams de Excel dados.
+ms.date: 04/28/2021
 localization_priority: Normal
-ms.openlocfilehash: 807c9228049504c089c8dafe63a5d9ccaab94399
-ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
+ms.openlocfilehash: b0a3d5732727fd399fe34f3645336840ba4c156d
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571159"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232729"
 ---
-# <a name="send-teams-meeting-from-excel-data"></a>Enviar reunião do Teams a partir de dados do Excel
+# <a name="send-teams-meeting-from-excel-data"></a>Enviar Teams reunião de Excel dados
 
-Esta solução mostra como usar scripts do Office e ações do Power Automate para selecionar linhas do arquivo do Excel e usá-la para enviar um convite de reunião do Teams e atualizar o Excel.
+Esta solução mostra como usar Office scripts e ações Power Automate para selecionar linhas do arquivo Excel e usá-lo para enviar um convite de reunião Teams e atualizar Excel.
 
 ## <a name="example-scenario"></a>Cenário de exemplo
 
-* Um recrutador de RH gerencia o agendamento de entrevistas de candidatos em um arquivo do Excel.
-* O recrutador precisa enviar o convite de reunião do Teams para o candidato e os entrevistadores. As regras de negócios são para selecionar:
+* Um recrutador de RH gerencia o cronograma de entrevista de candidatos em um arquivo Excel de dados.
+* O recrutador precisa enviar o Teams de reunião para o candidato e os entrevistadores. As regras de negócios são para selecionar:
 
     (a) Convida apenas aqueles para os quais o convite ainda não foi enviado conforme registrado na coluna de arquivo.
 
     (b) Datas de entrevista no futuro (sem datas passadas).
 
-* O recrutador precisa atualizar o arquivo do Excel com a confirmação de que todas as reuniões do Teams foram enviadas para os registros qualificados.
+* O recrutador precisa atualizar o arquivo Excel com a confirmação de que todas as reuniões Teams foram enviadas para os registros qualificados.
 
 A solução tem 3 partes:
 
-1. Script do Office para extrair dados de uma tabela com base em condições e retorna uma matriz de objetos como dados JSON.
-1. Os dados são enviados para a ação Criar uma reunião **do Teams** para enviar convites. Envie uma reunião do Teams por instância na matriz JSON.
-1. Envie os mesmos dados JSON para outro Script do Office para atualizar o status do convite.
+1. Office Script para extrair dados de uma tabela com base em condições e retorna uma matriz de objetos como dados JSON.
+1. Os dados são enviados para o Teams **Criar uma ação de Teams de** reunião para enviar convites. Envie uma Teams por instância na matriz JSON.
+1. Envie os mesmos dados JSON para outro script Office para atualizar o status do convite.
 
-## <a name="sample-excel-file"></a>Exemplo de arquivo do Excel
+## <a name="sample-excel-file"></a>Exemplo Excel arquivo
 
 Baixe o arquivo <a href="hr-schedule.xlsx">hr-schedule.xlsx</a> usado nesta solução e experimente você mesmo!
 
@@ -228,6 +228,6 @@ interface InterviewInvite  {
 }
 ```
 
-## <a name="training-video-send-a-teams-meeting-from-excel-data"></a>Vídeo de treinamento: Enviar uma reunião do Teams a partir de dados do Excel
+## <a name="training-video-send-a-teams-meeting-from-excel-data"></a>Vídeo de treinamento: enviar uma reunião Teams de dados Excel dados
 
-[![Assista ao vídeo passo a passo sobre como enviar uma reunião do Teams a partir de dados do Excel](../../images/teams-invite-vid.jpg)](https://youtu.be/HyBdx52NOE8 "Vídeo passo a passo sobre como enviar uma reunião do Teams a partir de dados do Excel")
+[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/HyBdx52NOE8).

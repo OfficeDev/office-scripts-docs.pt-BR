@@ -1,14 +1,14 @@
 ---
-title: Mover linhas entre tabelas usando Scripts do Office
+title: Mover linhas entre tabelas usando Office Scripts
 description: Saiba como mover linhas entre tabelas salvando filtros e, em seguida, processamento e reaplicação dos filtros.
-ms.date: 03/30/2021
+ms.date: 04/28/2021
 localization_priority: Normal
-ms.openlocfilehash: 1adaeee1c8307d7775529496df115563831aed4d
-ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
+ms.openlocfilehash: 959fb002b0ba485b43f4de7de3004e1074f768a7
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755039"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232750"
 ---
 # <a name="move-rows-across-tables-by-saving-filters-then-processing-and-reapplying-the-filters"></a>Mover linhas entre tabelas salvando filtros e, em seguida, processamento e reaplicação dos filtros
 
@@ -25,7 +25,7 @@ Há dois scripts nesta solução. A principal diferença é como as linhas são 
 * Na primeira [variante](#sample-code-move-rows-using-table-filter), as linhas são selecionadas aplicando o filtro de tabela e lendo o intervalo visível.
 * No [segundo](#sample-code-move-rows-using-range-values), as linhas são selecionadas lendo os valores e extraindo os valores da linha.
 
-## <a name="sample-excel-file"></a>Exemplo de arquivo do Excel
+## <a name="sample-excel-file"></a>Exemplo Excel arquivo
 
 Baixe o arquivo <a href="input-table-filters.xlsx">input-table-filters.xlsx</a> usado nesta solução para experimentar você mesmo!
 
@@ -249,4 +249,4 @@ function reApplyFilters(sourceTable: ExcelScript.Table, columnNameFilteredOn: st
 
 ## <a name="training-video-move-rows-across-tables"></a>Vídeo de treinamento: Mover linhas entre tabelas
 
-[![Assista ao vídeo passo a passo sobre como mover linhas entre tabelas](../../images/move-rows-filters-vid.jpg)](https://youtu.be/_3t3Pk4i2L0 "Vídeo passo a passo sobre como mover linhas entre tabelas")
+[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/_3t3Pk4i2L0).

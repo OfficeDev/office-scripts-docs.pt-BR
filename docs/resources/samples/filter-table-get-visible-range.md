@@ -1,18 +1,18 @@
 ---
-title: Filtrar tabela do Excel e obter intervalo visível
-description: Saiba como usar scripts do Office para filtrar uma tabela do Excel e obter o intervalo visível como uma matriz de objetos.
-ms.date: 03/16/2021
+title: Filtrar Excel tabela e obter intervalo visível
+description: Saiba como usar Office Scripts para filtrar uma tabela Excel e obter o intervalo visível como uma matriz de objetos.
+ms.date: 04/28/2021
 localization_priority: Normal
-ms.openlocfilehash: c0a5842af4a62162225e3fc10203c261b91e010a
-ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
+ms.openlocfilehash: a310857e6055b3da57c353dc7ad78a6fbdd86d4e
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571097"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232372"
 ---
-# <a name="filter-excel-table-and-get-visible-range-as-a-json-object"></a>Filtrar a tabela do Excel e obter o intervalo visível como um objeto JSON
+# <a name="filter-excel-table-and-get-visible-range-as-a-json-object"></a>Filtrar Excel tabela e obter intervalo visível como um objeto JSON
 
-Este exemplo filtra uma tabela do Excel e retorna o intervalo visível como um objeto JSON. Esse JSON pode ser fornecido a um fluxo do Power Automate como parte de uma solução maior.
+Este exemplo filtra uma Excel e retorna o intervalo visível como um objeto JSON. Esse JSON poderia ser fornecido para um fluxo Power Automate como parte de uma solução maior.
 
 ## <a name="example-scenario"></a>Cenário de exemplo
 
@@ -83,43 +83,43 @@ Cada chave representa um valor exclusivo de uma tabela. Cada instância de matri
     "Shift": "Morning",
     "Date": "27-Oct-20",
     "Responsible": "Debra Berger",
-    "Reason": ""
+    "Reason&quot;: &quot;"
   }, {
     "Station": "Station-1",
     "Shift": "Afternoon",
     "Date": "27-Oct-20",
     "Responsible": "Delia Dennis",
-    "Reason": ""
+    "Reason&quot;: &quot;"
   }, {
     "Station": "Station-1",
     "Shift": "Afternoon",
     "Date": "28-Oct-20",
     "Responsible": "Lidia Holloway",
-    "Reason": ""
+    "Reason&quot;: &quot;"
   }],
   "Station-2": [{
     "Station": "Station-2",
     "Shift": "Morning",
     "Date": "27-Oct-20",
     "Responsible": "Gerhart Moller",
-    "Reason": ""
+    "Reason&quot;: &quot;"
   }, {
     "Station": "Station-2",
     "Shift": "Afternoon",
     "Date": "28-Oct-20",
     "Responsible": "Grady Archie",
-    "Reason": ""
+    "Reason&quot;: &quot;"
   }],
   "Station-3": [{
     "Station": "Station-3",
     "Shift": "Morning",
     "Date": "27-Oct-20",
     "Responsible": "Isaiah Langer",
-    "Reason": ""
+    "Reason&quot;: &quot;"
   }]
 }
 ```
 
-## <a name="training-video-filter-an-excel-table-and-get-the-visible-range"></a>Vídeo de treinamento: filtrar uma tabela do Excel e obter o intervalo visível
+## <a name="training-video-filter-an-excel-table-and-get-the-visible-range"></a>Vídeo de treinamento: filtrar uma Excel e obter o intervalo visível
 
-[![Assista ao vídeo passo a passo sobre como filtrar uma tabela do Excel e obter o intervalo visível](../../images/visible-range-as-objects-vid.jpg)](https://youtu.be/Mv7BrvPq84A "Vídeo passo a passo sobre como filtrar uma tabela do Excel e obter o intervalo visível")
+[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/Mv7BrvPq84A).

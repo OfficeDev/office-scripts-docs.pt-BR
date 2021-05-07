@@ -1,14 +1,14 @@
 ---
 title: Contar linhas em branco em planilhas
-description: Saiba como usar scripts do Office para detectar se há linhas em branco em vez de dados em planilhas e, em seguida, relatar a contagem de linhas em branco a ser usada em um fluxo do Power Automate.
+description: Saiba como usar Office Scripts para detectar se há linhas em branco em vez de dados em planilhas e, em seguida, relatar a contagem de linhas em branco a ser usada em um fluxo Power Automate.
 ms.date: 03/31/2021
 localization_priority: Normal
-ms.openlocfilehash: 088ab97c686484ca5c13c875b80431ac28d20736
-ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
+ms.openlocfilehash: db84f2446c168f867c325a05129fe982c9645731
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51754828"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232582"
 ---
 # <a name="count-blank-rows-on-sheets"></a>Contar linhas em branco em planilhas
 
@@ -22,11 +22,11 @@ Este projeto inclui dois scripts:
 
 _Esta planilha retorna a contagem de 4 linhas em branco_
 
-:::image type="content" source="../../images/blank-rows.png" alt-text="Uma planilha mostrando dados com linhas em branco.":::
+:::image type="content" source="../../images/blank-rows.png" alt-text="Uma planilha mostrando dados com linhas em branco":::
 
 _Esta planilha retorna a contagem de 0 linhas em branco (todas as linhas têm alguns dados)_
 
-:::image type="content" source="../../images/no-blank-rows.png" alt-text="Uma planilha mostrando dados sem linhas em branco.":::
+:::image type="content" source="../../images/no-blank-rows.png" alt-text="Uma planilha mostrando dados sem linhas em branco":::
 
 ## <a name="sample-code-count-blank-rows-on-a-given-sheet"></a>Código de exemplo: Contar linhas em branco em uma determinada planilha
 
@@ -90,6 +90,6 @@ function main(workbook: ExcelScript.Workbook): number
 }
 ```
 
-## <a name="use-with-power-automate"></a>Usar com o Power Automate
+## <a name="use-with-power-automate"></a>Use com Power Automate
 
-:::image type="content" source="../../images/use-in-power-automate.png" alt-text="Um fluxo do Power Automate mostrando como configurar para executar um Script do Office.":::
+:::image type="content" source="../../images/use-in-power-automate.png" alt-text="Um Power Automate que mostra como configurar para executar um script de Office":::

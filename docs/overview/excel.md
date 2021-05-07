@@ -3,12 +3,12 @@ title: Scripts do Office no Excel na Web
 description: Uma breve introdução ao Gravador de ação e ao Editor de códigos de scripts do Office.
 ms.date: 11/13/2020
 localization_priority: Priority
-ms.openlocfilehash: 726d5e2ea44f6e61708c9692826f37a526250670
-ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
+ms.openlocfilehash: 233baf33648f5fc8358b2aa8ce063ad5cdd68499
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755123"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232659"
 ---
 # <a name="office-scripts-in-excel-on-the-web-preview"></a>Scripts do Office no Excel na Web (visualização)
 
@@ -50,13 +50,13 @@ Como exemplo, digamos que você comece seu dia de trabalho abrindo um arquivo .c
 
 ## <a name="action-recorder"></a>Gravador de ações
 
-:::image type="content" source="../images/action-recorder-intro.png" alt-text="Uma lista de ações gravada pelo Gravador de Ações.":::
+:::image type="content" source="../images/action-recorder-intro.png" alt-text="Uma lista de ações gravada pelo Gravador de Ações":::
 
 O Gravador de Ações registra as ações que você executa no Excel e as salva na forma de um script. Com o Gravador de ações em execução, você pode capturar as ações do Excel enquanto edita células, altera a formatação e cria tabelas. O script resultante pode ser executado em outras planilhas e pastas de trabalho para recriar suas ações originais.
 
 ## <a name="code-editor"></a>Editor de códigos
 
-:::image type="content" source="../images/code-editor-intro.png" alt-text="O Editor de Código mostrando o código de script usado neste tutorial.":::
+:::image type="content" source="../images/code-editor-intro.png" alt-text="O Editor de Código exibindo o código de script usado neste tutorial":::
 
 Todos os scripts gravados com o Gravador de ações podem ser editados através do Editor de códigos. Isso permite que você ajuste e personalize o script para melhor atender às suas necessidades. Você também pode adicionar lógica e funcionalidade que não são acessíveis de forma direta pela interface do usuário do Excel, como instruções condicionais (se/senão) e loops.
 
@@ -64,7 +64,7 @@ Uma maneira fácil de começar a aprender sobre os recursos dos scripts do Offic
 
 ## <a name="sharing-scripts"></a>Scripts de compartilhamento
 
-:::image type="content" source="../images/script-sharing.png" alt-text="A página de detalhes do script mostrando a opção &quot;Compartilhar com outras pessoas nesta pasta de trabalho&quot;.":::
+:::image type="content" source="../images/script-sharing.png" alt-text="A página Detalhes do script exibindo a opção 'Compartilhar com outras pessoas nesta pasta de trabalho'":::
 
 Os scripts do Office podem ser compartilhados com outros usuários de uma pasta de trabalho do Excel. Quando você compartilha um script com outras pessoas em uma pasta de trabalho, o script é anexado àquela pasta. Seus scripts são armazenados no OneDrive e, quando você compartilha um, é possível criar um link para ele na pasta de trabalho que você abriu.
 

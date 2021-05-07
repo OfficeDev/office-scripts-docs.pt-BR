@@ -1,34 +1,34 @@
 ---
-title: Dados de saída do Excel como JSON
-description: Saiba como saída de dados de tabela do Excel como JSON para usar no Power Automate.
+title: Saída Excel dados como JSON
+description: Saiba como Excel dados de tabela como JSON a ser usado Power Automate.
 ms.date: 03/18/2021
 localization_priority: Normal
-ms.openlocfilehash: db6eb8f8645079eebc369e0a0622539075853953
-ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
+ms.openlocfilehash: c6b033a68fdbde2b053f65d1a54db58da6c93b2e
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51754793"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232533"
 ---
-# <a name="output-excel-table-data-as-json-for-usage-in-power-automate"></a>Dados da tabela de saída do Excel como JSON para uso no Power Automate
+# <a name="output-excel-table-data-as-json-for-usage-in-power-automate"></a>Dados Excel de tabela de saída como JSON para uso em Power Automate
 
-Os dados da tabela do Excel podem ser representados como uma matriz de objetos na forma de JSON. Cada objeto representa uma linha na tabela. Isso ajuda a extrair os dados do Excel em um formato consistente que é visível para o usuário. Em seguida, os dados podem ser dados para outros sistemas por meio de fluxos do Power Automate.
+Excel dados de tabela podem ser representados como uma matriz de objetos na forma de JSON. Cada objeto representa uma linha na tabela. Isso ajuda a extrair os dados Excel em um formato consistente que é visível para o usuário. Em seguida, os dados podem ser dados a outros sistemas por meio Power Automate fluxos.
 
 _Dados da tabela de entrada_
 
-:::image type="content" source="../../images/table-input.png" alt-text="Uma planilha mostrando dados da tabela de entrada.":::
+:::image type="content" source="../../images/table-input.png" alt-text="Uma planilha mostrando dados da tabela de entrada":::
 
 Uma variação desse exemplo também inclui os hiperlinks em uma das colunas da tabela. Isso permite que níveis adicionais de dados de células sejam a superfície no JSON.
 
 _Dados da tabela de entrada que incluem hiperlinks_
 
-:::image type="content" source="../../images/table-hyperlink-view.png" alt-text="Uma planilha mostrando uma coluna de dados de tabela formatados como hiperlinks.":::
+:::image type="content" source="../../images/table-hyperlink-view.png" alt-text="Uma planilha mostrando uma coluna de dados de tabela formatados como hiperlinks":::
 
 _Caixa de diálogo para editar hiperlink_
 
-:::image type="content" source="../../images/table-hyperlink-edit.png" alt-text="A caixa de diálogo Editar Hiperlink exibe opções para alterar hiperlinks.":::
+:::image type="content" source="../../images/table-hyperlink-edit.png" alt-text="A caixa de diálogo Editar Hiperlink exibindo opções para alterar hiperlinks":::
 
-## <a name="sample-excel-file"></a>Exemplo de arquivo do Excel
+## <a name="sample-excel-file"></a>Exemplo Excel arquivo
 
 Baixe o arquivo <a href="table-data-with-hyperlinks.xlsx">table-data-with-hyperlinks.xlsx</a> usado nesses exemplos e experimente você mesmo!
 
@@ -255,4 +255,4 @@ interface TableData {
 
 ## <a name="use-in-power-automate"></a>Usar no Power Automate
 
-Para saber como usar esse script no Power Automate, consulte [Create a automated workflow with Power Automate](../../tutorials/excel-power-automate-returns.md#create-an-automated-workflow-with-power-automate).
+Para saber como usar esse script em Power Automate, consulte [Create a automated workflow with Power Automate](../../tutorials/excel-power-automate-returns.md#create-an-automated-workflow-with-power-automate).

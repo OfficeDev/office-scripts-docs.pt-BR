@@ -1,16 +1,16 @@
 ---
-title: Adicionar comentários no Excel
-description: Saiba como usar scripts do Office para adicionar comentários em uma planilha.
-ms.date: 03/29/2021
+title: Adicionar comentários em Excel
+description: Saiba como usar Office scripts para adicionar comentários em uma planilha.
+ms.date: 04/28/2021
 localization_priority: Normal
-ms.openlocfilehash: aaaf26df6973bd081290b0fbb67edecad8627e53
-ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
+ms.openlocfilehash: d592b37c3af8e475c81e8650dda44921fee7aeaf
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571158"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232505"
 ---
-# <a name="add-comments-in-excel"></a>Adicionar comentários no Excel
+# <a name="add-comments-in-excel"></a>Adicionar comentários em Excel
 
 Este exemplo mostra como adicionar comentários a uma célula, [incluindo @mentioning](https://support.microsoft.com/office/90701709-5dc1-41c7-aa48-b01d4a46e8c7) um colega.
 
@@ -72,4 +72,4 @@ function main(workbook: ExcelScript.Workbook) {
 
 ## <a name="training-video-add-comments"></a>Vídeo de treinamento: Adicionar comentários
 
-[![Assista a um vídeo passo a passo sobre como adicionar comentários em um arquivo do Excel](../../images/comments-vid.jpg)](https://youtu.be/CpR78nkaOFw "Vídeo passo a passo sobre como adicionar comentários em um arquivo do Excel")
+[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/CpR78nkaOFw).

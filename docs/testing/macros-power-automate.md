@@ -1,28 +1,30 @@
 ---
-title: Usar arquivos de macro em fluxos do Power Automate
-description: Saiba como usar arquivos de macro ou arquivos xlsm em fluxos do Power Automate.
-ms.date: 03/18/2021
+title: Usar arquivos de macro em Power Automate fluxos
+description: Saiba como usar arquivos de macro ou arquivos xlsm Power Automate fluxos.
+ms.date: 04/28/2021
 localization_priority: Normal
-ms.openlocfilehash: a7929fc485ae2118d30a4f2783538d0e04deca2a
-ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
+ms.openlocfilehash: b232a1d31a7ff6e28016c5e28fd8a83c8d3f1859
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755011"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232652"
 ---
-# <a name="how-to-use-macro-files-in-power-automate-flows"></a>Como usar arquivos de macro em fluxos do Power Automate
+# <a name="how-to-use-macro-files-in-power-automate-flows"></a>Como usar arquivos de macro em fluxos Power Automate fluxos
 
-[Fluxos do Power Automate](https://flow.microsoft.com/) fornecem conectores do Excel para ajudar a conectar arquivos do Excel com o restante de seus dados e aplicativos organizacionais, como Teams, Outlook e SharePoint. [](https://flow.microsoft.com/connectors/shared_excelonlinebusiness/excel-online-business/)
+[Power Automate fluxos](https://flow.microsoft.com/) fornecem conectores Excel para ajudar Excel a conectar arquivos Excel com o restante de seus dados organizacionais e [aplicativos,](https://flow.microsoft.com/connectors/shared_excelonlinebusiness/excel-online-business/) como Teams, Outlook e SharePoint.
 
 No entanto, os arquivos de macro não podem ser selecionados no menu suspenso do arquivo (consulte um exemplo na captura de tela a seguir).
 
-:::image type="content" source="../images/no-xlsm.png" alt-text="A ação de script Power Automate Run mostrando nenhum arquivo de macro selecionado. O erro mostrado é 'Arquivo' é necessário.":::
+:::image type="content" source="../images/no-xlsm.png" alt-text="A Power Automate executar script mostrando nenhum arquivo de macro selecionado. O erro mostrado é 'Arquivo' é necessário":::
 
-Uma maneira de se livrar desse problema é incluir a ação "Obter Metadados de Arquivo" (OneDrive ou SharePoint) e usar a propriedade ID na ação "Executar Script", conforme mostrado na captura de tela a seguir.
+Uma maneira de se livrar desse problema é incluir a ação "Obter metadados de arquivo" (OneDrive ou SharePoint) e usar a propriedade ID na ação "Executar Script", conforme mostrado na captura de tela a seguir.
 
-:::image type="content" source="../images/xlsm-in-pa.png" alt-text="A ação de script Executar do Power Automate mostrando o arquivo de macro selecionado e nenhum erro de script executar.":::
+:::image type="content" source="../images/xlsm-in-pa.png" alt-text="A Power Automate executar script mostrando o arquivo de macro selecionado e nenhum erro executar script":::
 
 > [!NOTE]
-> Alguns XLSM (especialmente aqueles com controles ActiveX/Formulário) podem não funcionar no conector online do Excel. Certifique-se de testar antes de implantar sua solução.
+> Alguns XLSM (especialmente aqueles com controles ActiveX/Formulário) podem não funcionar no conector Excel online. Certifique-se de testar antes de implantar sua solução.
 
-[![Assista a um vídeo sobre como usar XLSM na ação Executar Script](../images/xlsm-vid.png)](https://youtu.be/o-H9BbywJQQ "Vídeo sobre como usar XLSM na ação Executar Script")
+## <a name="other-resources"></a>Outros recursos
+
+Assista ao vídeo do [YouTube de Sudhi Ramamurthy](https://youtu.be/o-H9BbywJQQ)sobre como usar um arquivo .xlsm em uma ação Executar Script.

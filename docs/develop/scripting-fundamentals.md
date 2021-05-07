@@ -3,12 +3,12 @@ title: Fundamentos de script para scripts do Office no Excel na Web
 description: Informações sobre o modelo de objeto e outros fundamentos para saber mais antes de escrever scripts do Office.
 ms.date: 07/08/2020
 localization_priority: Priority
-ms.openlocfilehash: 2c2fd683e77a0dfbfd3e9df8c79db31e78ceee8b
-ms.sourcegitcommit: 45ffe3dbd2c834b78592ad35928cf8096f5e80bc
+ms.openlocfilehash: 685f83952fa6aecc660524a95dec57e149522820
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755060"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232386"
 ---
 # <a name="scripting-fundamentals-for-office-scripts-in-excel-on-the-web-preview"></a>Fundamentos de script para scripts do Office no Excel na Web (visualização)
 
@@ -109,7 +109,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 Executar este script cria os seguintes dados na planilha atual:
 
-:::image type="content" source="../images/range-sample.png" alt-text="Uma planilha contendo um registro de vendas composto por linhas de valor, uma coluna de fórmulas e os cabeçalhos formatados.":::
+:::image type="content" source="../images/range-sample.png" alt-text="Uma planilha contendo um registro de vendas composto de linhas de valor, uma coluna de fórmula e cabeçalhos formatados":::
 
 ### <a name="charts-tables-and-other-data-objects"></a>Gráficos, tabelas e outros objetos de dados
 
@@ -117,7 +117,7 @@ Os scripts podem criar e manipular estruturas de dados e visualizações no Exce
 
 #### <a name="creating-a-table"></a>Criar uma tabela
 
-Criar tabelas usando intervalos de dados preenchidos. Controles de formatação e tabela (por exemplo, filtros) são aplicados automaticamente ao intervalo.
+Crie tabelas usando intervalos preenchidos com dados. A formatação e os controles de tabela (como filtros) são automaticamente aplicados ao intervalo.
 
 O script a seguir cria uma tabela usando os intervalos do exemplo anterior.
 
@@ -133,7 +133,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 Executar esse script na planilha com os dados anteriores cria a tabela a seguir:
 
-:::image type="content" source="../images/table-sample.png" alt-text="Uma planilha contendo uma tabela feita do registro de vendas anterior.":::
+:::image type="content" source="../images/table-sample.png" alt-text="Uma planilha contendo uma tabela feita com base no registro de vendas anterior":::
 
 #### <a name="creating-a-chart"></a>Criar um gráfico
 
@@ -159,7 +159,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 Executar este script na planilha com a tabela anterior cria o seguinte gráfico:
 
-:::image type="content" source="../images/chart-sample.png" alt-text="Um gráfico de colunas mostrando as quantidades de três itens do registro de vendas anterior.":::
+:::image type="content" source="../images/chart-sample.png" alt-text="Um gráfico de colunas exibindo a quantidade de três itens do registro de vendas anterior":::
 
 ### <a name="collections-and-other-object-relations"></a>Coleções e outras relações de objeto
 
@@ -167,7 +167,7 @@ Qualquer objeto filho pode ser acessado através do objeto pai. Por exemplo, voc
 
 Depois que a coleção é recuperada, você pode usar operações regulares de matriz, como obter seus `length` ou usar `for`, `for..of`, `while` loops para iteração ou métodos de matriz TypeScript como `map`, `forEach`. Você também pode acessar objetos individuais na coleção usando o valor do índice da matriz. Por exemplo, `workbook.getTables()[0]` retorna a primeira tabela da coleção. Leia a seção [Trabalhando com coleções de Usando objetos JavaScript nos Scripts do Office](javascript-objects.md#working-with-collections) para aprender mais sobre o uso da funcionalidade de matriz incorporada com a estrutura de Scripts do Office.
 
-O script a seguir obtém todas as tabelas na pasta de trabalho. Em seguida, garante que os cabeçalhos sejam exibidos, os botões de filtro estejam visíveis e o estilo da tabela seja definido como "TableStyleLight1".
+O seguinte roteiro recebe todas as tabelas na pasta de trabalho. Assim, ele garante que os cabeçalhos sejam exibidos, os botões de filtro sejam visíveis e o estilo da tabela seja definido como "TableStyleLight1".
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {

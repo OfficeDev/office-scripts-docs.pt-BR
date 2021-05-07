@@ -1,16 +1,16 @@
 ---
-title: Remover hiperlinks de cada célula em uma planilha do Excel
-description: Saiba como usar scripts do Office para remover hiperlinks de cada célula em uma planilha do Excel.
-ms.date: 03/18/2021
+title: Remover hiperlinks de cada célula em uma Excel de trabalho
+description: Saiba como usar Office Scripts para remover hiperlinks de cada célula em uma Excel de trabalho.
+ms.date: 04/28/2021
 localization_priority: Normal
-ms.openlocfilehash: 07b670aac3368e38b9b93283404befee608391a7
-ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
+ms.openlocfilehash: eb5f486cb5228e639727c5ee7e6c335d5e94239f
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571039"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232743"
 ---
-# <a name="remove-hyperlinks-from-each-cell-in-an-excel-worksheet"></a>Remover hiperlinks de cada célula em uma planilha do Excel
+# <a name="remove-hyperlinks-from-each-cell-in-an-excel-worksheet"></a>Remover hiperlinks de cada célula em uma Excel de trabalho
 
  Este exemplo limpa todos os hiperlinks da planilha atual. Ele percorre a planilha e, se houver algum hiperlink associado à célula, ele limpará o hiperlink e ainda manterá o valor da célula como está. Também registra o tempo necessário para concluir a transição.
 
@@ -80,6 +80,6 @@ function removeHyperLink(targetRange: ExcelScript.Range): void {
 }
 ```
 
-## <a name="training-video-remove-hyperlinks-from-each-cell-in-an-excel-worksheet"></a>Vídeo de treinamento: Remover hiperlinks de cada célula em uma planilha do Excel
+## <a name="training-video-remove-hyperlinks-from-each-cell-in-an-excel-worksheet"></a>Vídeo de treinamento: Remover hiperlinks de cada célula em uma Excel de trabalho
 
-[![Assista a um vídeo passo a passo sobre como remover hiperlinks de cada célula em uma planilha do Excel](../../images/hyperlinks-vid.jpg)](https://youtu.be/v20fdinxpHU "Vídeo passo a passo sobre como remover hiperlinks de cada célula em uma planilha do Excel")
+[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/v20fdinxpHU).

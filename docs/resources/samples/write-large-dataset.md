@@ -1,20 +1,20 @@
 ---
 title: Otimização de desempenho ao escrever um grande conjuntos de dados
-description: Saiba como otimizar o desempenho ao escrever um grande conjuntos de dados em Scripts do Office.
-ms.date: 03/04/2021
+description: Saiba como otimizar o desempenho ao escrever um grande conjuntos de dados em Office Scripts.
+ms.date: 04/28/2021
 localization_priority: Normal
-ms.openlocfilehash: 190072e58238be95a2939f73dcda077ed91db848
-ms.sourcegitcommit: 5d24e77df70aa2c1c982275d53213c2a9323ff86
+ms.openlocfilehash: dcbcf156ef624c4c5ce35c44d501286d507d9c40
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571146"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232715"
 ---
 # <a name="performance-optimization-when-writing-a-large-dataset"></a>Otimização de desempenho ao escrever um grande conjuntos de dados
 
 ## <a name="basic-performance-optimization"></a>Otimização básica de desempenho
 
-Para obter noções básicas de desempenho em Scripts do Office, consulte a seção [de](getting-started.md#basic-performance-considerations) desempenho do artigo Getting Started.
+Para obter noções básicas Office scripts, consulte a seção [de](getting-started.md#basic-performance-considerations) desempenho do artigo Getting Started.
 
 ## <a name="sample-code-optimize-performance-of-a-large-dataset"></a>Código de exemplo: otimizar o desempenho de um grande conjuntos de dados
 
@@ -153,4 +153,4 @@ function getRandomString(length: number): string {
 
 ## <a name="training-video-optimize-performance-when-writing-a-large-dataset"></a>Vídeo de treinamento: otimizar o desempenho ao escrever um grande conjuntos de dados
 
-[![Assista a um vídeo sobre como otimizar o desempenho ao escrever um grande conjuntos de dados](../../images/largedata-vid.png)](https://youtu.be/BP9Kp0Ltj7U "Vídeo sobre como otimizar o desempenho ao escrever um grande conjuntos de dados")
+[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/BP9Kp0Ltj7U).
