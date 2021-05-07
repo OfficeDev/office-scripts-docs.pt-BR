@@ -1,24 +1,24 @@
 ---
-title: Usar chamadas de busca externas Office Scripts
+title: Usar chamadas de busca externa em Scripts do Office
 description: Saiba como fazer chamadas de API externas Office Scripts.
-ms.date: 04/05/2021
+ms.date: 04/28/2021
 localization_priority: Normal
-ms.openlocfilehash: a77ceb61c2ff46a7b6226b798462b7be2c8e1c54
-ms.sourcegitcommit: 1f003c9924e651600c913d84094506125f1055ab
+ms.openlocfilehash: 721bfa39eea1e9973efc7fd13efa5bac734b76dd
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52026988"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232519"
 ---
-# <a name="use-external-fetch-calls-in-office-scripts"></a><span data-ttu-id="bf1df-103">Usar chamadas de busca externas Office Scripts</span><span class="sxs-lookup"><span data-stu-id="bf1df-103">Use external fetch calls in Office Scripts</span></span>
+# <a name="use-external-fetch-calls-in-office-scripts"></a><span data-ttu-id="cad17-103">Usar chamadas de busca externa em Scripts do Office</span><span class="sxs-lookup"><span data-stu-id="cad17-103">Use external fetch calls in Office Scripts</span></span>
 
-<span data-ttu-id="bf1df-104">Este script obtém informações básicas sobre os repositórios de GitHub do usuário.</span><span class="sxs-lookup"><span data-stu-id="bf1df-104">This script gets basic information about a user's GitHub repositories.</span></span> <span data-ttu-id="bf1df-105">Ele mostra como usar `fetch` em um cenário simples.</span><span class="sxs-lookup"><span data-stu-id="bf1df-105">It shows how to use `fetch` in a simple scenario.</span></span>
+<span data-ttu-id="cad17-104">Este script obtém informações básicas sobre os repositórios de GitHub do usuário.</span><span class="sxs-lookup"><span data-stu-id="cad17-104">This script gets basic information about a user's GitHub repositories.</span></span> <span data-ttu-id="cad17-105">Ele mostra como usar `fetch` em um cenário simples.</span><span class="sxs-lookup"><span data-stu-id="cad17-105">It shows how to use `fetch` in a simple scenario.</span></span>
 
-<span data-ttu-id="bf1df-106">Você pode saber mais sobre as APIs GItHub que estão sendo usadas na [referência GitHub API.](https://docs.github.com/rest/reference/repos#list-repositories-for-a-user)</span><span class="sxs-lookup"><span data-stu-id="bf1df-106">You can learn more about the GItHub APIs being used in the [GitHub API reference](https://docs.github.com/rest/reference/repos#list-repositories-for-a-user).</span></span> <span data-ttu-id="bf1df-107">Você também pode ver a saída de chamada de API bruta visitando um navegador da Web (certifique-se de substituir o espaço reservado `https://api.github.com/users/{USERNAME}/repos` {USERNAME} pela ID do Github).</span><span class="sxs-lookup"><span data-stu-id="bf1df-107">You can also see the raw API call output by visiting `https://api.github.com/users/{USERNAME}/repos` in a web browser (be sure to replace the {USERNAME} placeholder with your Github ID).</span></span>
+<span data-ttu-id="cad17-106">Você pode saber mais sobre as APIs GItHub que estão sendo usadas na [referência GitHub API.](https://docs.github.com/rest/reference/repos#list-repositories-for-a-user)</span><span class="sxs-lookup"><span data-stu-id="cad17-106">You can learn more about the GItHub APIs being used in the [GitHub API reference](https://docs.github.com/rest/reference/repos#list-repositories-for-a-user).</span></span> <span data-ttu-id="cad17-107">Você também pode ver a saída de chamada de API bruta visitando um navegador da Web (certifique-se de substituir o espaço reservado `https://api.github.com/users/{USERNAME}/repos` {USERNAME} pela ID do Github).</span><span class="sxs-lookup"><span data-stu-id="cad17-107">You can also see the raw API call output by visiting `https://api.github.com/users/{USERNAME}/repos` in a web browser (be sure to replace the {USERNAME} placeholder with your Github ID).</span></span>
 
 ![Obter exemplo de informações de repositórios](../../images/git.png)
 
-## <a name="sample-code-get-basic-information-about-users-github-repositories"></a><span data-ttu-id="bf1df-109">Código de exemplo: obter informações básicas sobre os repositórios GitHub do usuário</span><span class="sxs-lookup"><span data-stu-id="bf1df-109">Sample code: Get basic information about user's GitHub repositories</span></span>
+## <a name="sample-code-get-basic-information-about-users-github-repositories"></a><span data-ttu-id="cad17-109">Código de exemplo: obter informações básicas sobre os repositórios GitHub do usuário</span><span class="sxs-lookup"><span data-stu-id="cad17-109">Sample code: Get basic information about user's GitHub repositories</span></span>
 
 ```TypeScript
 async function main(workbook: ExcelScript.Workbook) {
@@ -49,6 +49,6 @@ interface License {
 }
 ```
 
-## <a name="training-video-how-to-make-external-api-calls"></a><span data-ttu-id="bf1df-110">Vídeo de treinamento: como fazer chamadas de API externas</span><span class="sxs-lookup"><span data-stu-id="bf1df-110">Training video: How to make external API calls</span></span>
+## <a name="training-video-how-to-make-external-api-calls"></a><span data-ttu-id="cad17-110">Vídeo de treinamento: como fazer chamadas de API externas</span><span class="sxs-lookup"><span data-stu-id="cad17-110">Training video: How to make external API calls</span></span>
 
-<span data-ttu-id="bf1df-111">[![Assista a um vídeo sobre como fazer chamadas de API externas](../../images/api-vid.png)](https://youtu.be/fulP29J418E "Vídeo sobre como fazer chamadas de API externas")</span><span class="sxs-lookup"><span data-stu-id="bf1df-111">[![Watch video on how to make external API calls](../../images/api-vid.png)](https://youtu.be/fulP29J418E "Video on how to make external API calls")</span></span>
+<span data-ttu-id="cad17-111">[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/fulP29J418E).</span><span class="sxs-lookup"><span data-stu-id="cad17-111">[Watch Sudhi Ramamurthy walk through this sample on YouTube](https://youtu.be/fulP29J418E).</span></span>

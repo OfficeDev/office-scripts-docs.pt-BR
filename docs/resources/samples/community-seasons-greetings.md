@@ -1,26 +1,26 @@
 ---
 title: Saudações de estação
 description: Saiba como usar Office scripts para mostrar uma árvore de canto em Excel na Web.
-ms.date: 04/02/2021
+ms.date: 04/28/2021
 localization_priority: Normal
-ms.openlocfilehash: d0f50cf32c3b5c9b098813b3e8dc07dbb4367c25
-ms.sourcegitcommit: 1f003c9924e651600c913d84094506125f1055ab
+ms.openlocfilehash: a328ba66fedc245ff73300d7f47cd339ec87234f
+ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52026909"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232575"
 ---
-# <a name="seasons-greetings"></a><span data-ttu-id="8ecb9-103">Saudações de estação</span><span class="sxs-lookup"><span data-stu-id="8ecb9-103">Seasons greetings</span></span>
+# <a name="seasons-greetings"></a><span data-ttu-id="3c315-103">Saudações de estação</span><span class="sxs-lookup"><span data-stu-id="3c315-103">Seasons greetings</span></span>
 
-<span data-ttu-id="8ecb9-104">Este script foi contribuído [por Leslie Black](https://www.linkedin.com/in/lesblackconsultant/) no espírito da estação de feriado!</span><span class="sxs-lookup"><span data-stu-id="8ecb9-104">This script was contributed by [Leslie Black](https://www.linkedin.com/in/lesblackconsultant/) in the spirit of the holiday season!</span></span> <span data-ttu-id="8ecb9-105">É um script divertido que mostra uma árvore de canto no Excel na Web usando Office Scripts.</span><span class="sxs-lookup"><span data-stu-id="8ecb9-105">It's a fun script that shows a singing tree in Excel on the web using Office Scripts.</span></span>
+<span data-ttu-id="3c315-104">Este script foi contribuído [por Leslie Black](https://www.linkedin.com/in/lesblackconsultant/) no espírito da estação de feriado!</span><span class="sxs-lookup"><span data-stu-id="3c315-104">This script was contributed by [Leslie Black](https://www.linkedin.com/in/lesblackconsultant/) in the spirit of the holiday season!</span></span> <span data-ttu-id="3c315-105">É um script divertido que mostra uma árvore de canto no Excel na Web usando Office Scripts.</span><span class="sxs-lookup"><span data-stu-id="3c315-105">It's a fun script that shows a singing tree in Excel on the web using Office Scripts.</span></span>
 
-<span data-ttu-id="8ecb9-106">Aproveite!</span><span class="sxs-lookup"><span data-stu-id="8ecb9-106">Enjoy!</span></span>
+<span data-ttu-id="3c315-106">Aproveite!</span><span class="sxs-lookup"><span data-stu-id="3c315-106">Enjoy!</span></span>
 
-<span data-ttu-id="8ecb9-107">[![Assista ao script de saudações de estações em ação](../../images/community-seasons.png)](https://youtu.be/HBiGEkzmkgo "Script de saudações de estações em ação!")</span><span class="sxs-lookup"><span data-stu-id="8ecb9-107">[![Watch the Seasons greetings script in action](../../images/community-seasons.png)](https://youtu.be/HBiGEkzmkgo "Seasons greetings script in action!")</span></span>
+<span data-ttu-id="3c315-107">Assista ao script de saudações de estações [em ação no canal do YouTube "Blog de TI do Les".](https://youtu.be/HBiGEkzmkgo)</span><span class="sxs-lookup"><span data-stu-id="3c315-107">[Watch the Seasons greetings script in action on the "Les's IT Blog" YouTube channel](https://youtu.be/HBiGEkzmkgo).</span></span>
 
-## <a name="script"></a><span data-ttu-id="8ecb9-108">Script</span><span class="sxs-lookup"><span data-stu-id="8ecb9-108">Script</span></span>
+## <a name="script"></a><span data-ttu-id="3c315-108">Script</span><span class="sxs-lookup"><span data-stu-id="3c315-108">Script</span></span>
 
-<span data-ttu-id="8ecb9-109">Baixe o arquivo <a href="happy-tree.xlsx">happy-tree.xlsx</a> usado nesta solução para experimentar você mesmo!</span><span class="sxs-lookup"><span data-stu-id="8ecb9-109">Download the file <a href="happy-tree.xlsx">happy-tree.xlsx</a> used in this solution to try it out yourself!</span></span>
+<span data-ttu-id="3c315-109">Baixe o arquivo <a href="happy-tree.xlsx">happy-tree.xlsx</a> usado nesta solução para experimentar você mesmo!</span><span class="sxs-lookup"><span data-stu-id="3c315-109">Download the file <a href="happy-tree.xlsx">happy-tree.xlsx</a> used in this solution to try it out yourself!</span></span>
 
 ```TypeScript
 /* Original version by Leslie Black.  */
