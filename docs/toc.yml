@@ -69,8 +69,6 @@ items:
                 href: resources/samples/count-blank-rows.md
               - name: Fazer referência cruzada e formatar arquivos do Excel
                 href: resources/samples/excel-cross-reference.md
-              - name: Gerador de números de documento
-                href: resources/samples/document-number-generator.md
               - name: Imagens de email de gráfico e tabela
                 href: resources/samples/email-images-chart-table.md
               - name: Filtrar tabela e obter um intervalo visível
