@@ -1,14 +1,14 @@
 ---
 title: Office Exemplos de scripts
 description: Exemplos Office scripts e cenários disponíveis.
-ms.date: 04/28/2021
+ms.date: 05/07/2021
 localization_priority: Normal
-ms.openlocfilehash: 625db792763606e8db77abdc4665b7db2732892f
-ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
+ms.openlocfilehash: 6df28f3b9d88f202b3b16661a36296bb8bee6c73
+ms.sourcegitcommit: 763d341857bcb209b2f2c278a82fdb63d0e18f0a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232736"
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "52285840"
 ---
 # <a name="office-scripts-samples-and-scenarios"></a>Office Exemplos e cenários de scripts
 
@@ -41,7 +41,6 @@ Confira o seguinte projeto de ponta a ponta que automatiza cenários de exemplo,
 | [Imagens de gráfico de email e tabela](email-images-chart-table.md) | Este exemplo usa Office scripts e ações Power Automate para criar um gráfico e enviar esse gráfico como uma imagem por email. |
 | [Chamadas de busca externas](external-fetch-calls.md) | Este exemplo usa `fetch` para obter informações do GitHub para o script. |
 | [Filtrar Excel tabela e obter intervalo visível](filter-table-get-visible-range.md) | Este exemplo filtra uma Excel e retorna o intervalo visível como um objeto JSON. Esse JSON poderia ser fornecido para um fluxo Power Automate como parte de uma solução maior. |
-| [Gerar um identificador exclusivo em uma workbook](document-number-generator.md) | Esse cenário ajuda um usuário a gerar um número de documento exclusivo com um formato específico e a adicionar uma entrada a um intervalo ou tabela. |
 | [Gerenciar o modo de cálculo Excel](excel-calculation.md) | Este exemplo mostra como usar o modo de cálculo e calcular métodos em Excel na Web usando Office Scripts. |
 | [Mover linhas entre tabelas](move-rows-across-tables.md) | Este exemplo mostra como mover linhas entre tabelas salvando filtros e, em seguida, processamento e reaplicação dos filtros. |
 | [Saída Excel dados como JSON](get-table-data.md) | Esta solução mostra como Excel dados de tabela como JSON a ser usado Power Automate. |
