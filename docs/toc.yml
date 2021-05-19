@@ -21,6 +21,8 @@ items:
         href: develop/scripting-fundamentals.md
       - name: Conceitos
         items:
+          - name: Práticas recomendadas no Scripts do Office
+            href: develop/best-practices.md
           - name: Objetos internos do JavaScript
             href: develop/javascript-objects.md
           - name: Ambiente do editor de códigos
@@ -47,7 +49,7 @@ items:
             href: testing/platform-limits.md
           - name: TypeScript restrictions
             href: develop/typescript-restrictions.md
-          - name: Desfazer os efeitos de um script do Office
+          - name: Desfazer os efeitos do Scripts do Office
             href: testing/undo.md
           - name: Suporte os Scripts do Office mais antigos
             href: develop/excel-async-model.md
@@ -61,14 +63,14 @@ items:
                 href: resources/samples/excel-samples.md
               - name: Adicionar comentários
                 href: resources/samples/add-excel-comments.md
+              - name: Adicionar imagens a uma pasta de trabalho
+                href: resources/samples/add-image-to-workbook.md
               - name: Copiar várias tabelas em uma única tabela
                 href: resources/samples/copy-tables-combine.md
           - name: Além do básico
             items:
               - name: Contar linhas em branco em planilhas
                 href: resources/samples/count-blank-rows.md
-              - name: Fazer referência cruzada e formatar arquivos do Excel
-                href: resources/samples/excel-cross-reference.md
               - name: Imagens de email de gráfico e tabela
                 href: resources/samples/email-images-chart-table.md
               - name: Filtrar tabela e obter um intervalo visível
@@ -83,10 +85,10 @@ items:
                 href: resources/samples/remove-hyperlinks-from-cells.md
               - name: Executar um script em todos os arquivos do Excel em uma pasta
                 href: resources/samples/automate-tasks-on-all-excel-files-in-folder.md
-              - name: Enviar convite do Teams a partir de dados do Excel
-                href: resources/samples/send-teams-invite-from-excel-data.md
               - name: Usar chamadas de busca externa em Scripts do Office
                 href: resources/samples/external-fetch-calls.md
+              - name: Escrever um grande conjuntos de dados
+                href: resources/samples/write-large-dataset.md
           - name: Cenários
             items:
               - name: Analisar downloads da Web
