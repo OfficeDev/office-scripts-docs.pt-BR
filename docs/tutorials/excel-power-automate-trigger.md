@@ -3,14 +3,14 @@ title: Passar dados para scripts numa execução automática do fluxo no Power A
 description: Tutorial sobre executar os Scripts do Office para Excel na Web por meio do Power Automate quando emails são recebidos e transmitidos para o script.
 ms.date: 12/28/2020
 localization_priority: Priority
-ms.openlocfilehash: f5ee8ef2243aaf597d6022634248403c57597bd8
-ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
+ms.openlocfilehash: 79686eacf4d38bd5db5e082a9bfb73edc969451d
+ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232883"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52545833"
 ---
-# <a name="pass-data-to-scripts-in-an-automatically-run-power-automate-flow-preview"></a>Passar dados para scripts em modo de execução automático no fluxo do Power Automate (visualização)
+# <a name="pass-data-to-scripts-in-an-automatically-run-power-automate-flow"></a>Passar dados para scripts numa execução automática do fluxo no Power Automate.
 
 Este tutorial ensina como usar um script do Office para Excel na Web fluxo automatizado[ do Power Automate](https://flow.microsoft.com). Seu script irá automaticamente ser executado toda vez que você receber um email, gravando informações do email em uma pasta de trabalho do Excel. Ser capaz de passar os dados de outros aplicativos para um Script do Office oferece a você uma grande flexibilidade e liberdade nos seus processos automatizados.
 
@@ -23,7 +23,7 @@ Este tutorial ensina como usar um script do Office para Excel na Web fluxo autom
 
 ## <a name="prepare-the-workbook"></a>Preparar a pasta de trabalho
 
-O Power Automate não pode usar[referências relativas](../testing/power-automate-troubleshooting.md#avoid-using-relative-references)como`Workbook.getActiveWorksheet`acessar componentes da pasta de trabalho. Portanto, precisamos de uma pasta de trabalho e planilha com nomes consistentes para que o Power Automate possa consultar.
+O Power Automate não pode usar[referências relativas](../testing/power-automate-troubleshooting.md#avoid-relative-references)como`Workbook.getActiveWorksheet`acessar componentes da pasta de trabalho. Portanto, precisamos de uma pasta de trabalho e planilha com nomes consistentes para que o Power Automate possa consultar.
 
 1. Criar um nome para a pasta de trabalho **MyWorkbook**.
 
@@ -58,7 +58,7 @@ O Power Automate não pode usar[referências relativas](../testing/power-automat
 
 ## <a name="create-an-office-script"></a>Criar um Script do Office
 
-Vamos criar um script que registre as informações de um email. Gostaríamos de saber como quais dias da semana recebemos a maioria dos emails e quantos remetentes exclusivos estão enviando esses emails. Nossa pasta de trabalho tem uma tabela com **Data**, **Dia da semana**, **Endereços de email** e **Colunas de assunto**. Nossa planilha também tem uma tabela dinâmica que está sendo dinamizada no **Dia da semana** e **Endereços de email**(essas são as hierarquias de linha). A contagem de **assuntos exclusivos** são as informações agregadas que estão sendo exibidas (a hierarquia de dados). Faremos com que o nosso script atualize essa tabela dinâmica depois de atualizar a tabela de email.
+Vamos criar um script que registre as informações de um email. Gostaríamos de saber em quais dias da semana recebemos mais emails e quantos remetentes únicos estão enviando esses emails. Nossa pasta de trabalho tem uma tabela com **Data**, **Dia da semana**, **Endereços de email** e **Colunas de assunto**. Nossa planilha também tem uma tabela dinâmica que está sendo dinamizada no **Dia da semana** e **Endereços de email**(essas são as hierarquias de linha). A contagem de **assuntos exclusivos** são as informações agregadas que estão sendo exibidas (a hierarquia de dados). Faremos com que o nosso script atualize essa tabela dinâmica depois de atualizar a tabela de email.
 
 1. No painel de tarefas **Editor de código**, selecione **Novo Script**.
 
@@ -175,9 +175,9 @@ function main(
 
     :::image type="content" source="../images/power-automate-tutorial-4.png" alt-text="Opção do Excel Online (Business) no Power Automate":::
 
-7. Em **Ações**, selecione **Executar script (visualização)**.
+7. Em **Ações**, selecione **Executar script**.
 
-    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Execute a opção de ação de script (visualização) no Power Automate":::
+    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Executar a opção de ação de script no Power Automate":::
 
 8. Depois, você selecionará a pasta de trabalho, o script e os argumentos de entrada do script para usar na etapa do fluxo. Para o tutorial, você fará o uso da pasta de trabalho criada no seu OneDrive, mas é possível usar qualquer pasta de trabalho em um site OneDrive ou no Microsoft Office SharePoint Online. Especifique as seguintes configurações para o conector **Executar Script**:
 

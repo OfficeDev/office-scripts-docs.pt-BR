@@ -1,16 +1,16 @@
 ---
 title: Comece a usar scripts de um fluxo manual do Power Automate
 description: Um tutorial sobre o uso de Scripts do Office no Power Automate por meio de um acionamento manual.
-ms.date: 12/28/2020
+ms.date: 05/17/2021
 localization_priority: Priority
-ms.openlocfilehash: 0a5fc93dbad1ee9804840fa11a06b689b7e7abda
-ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
+ms.openlocfilehash: f4feb14f70c43497f40dae3a521353dfee63c082
+ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232869"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52545826"
 ---
-# <a name="call-scripts-from-a-manual-power-automate-flow-preview"></a>Comece a usar scripts de um fluxo manual do Power Automate (pré-visualização)
+# <a name="call-scripts-from-a-manual-power-automate-flow"></a>Scripts de chamada a partir de um fluxo manual do Power Automate
 
 Este tutorial ensina como executar um Script do Office para o Excel na web por meio do [Power Automate](https://flow.microsoft.com). Você fará um script que atualizará os valores de duas células com a hora atual. Depois, você fará a conexão desse script a um fluxo do Power Automate acionado manualmente, para que o script seja executado sempre que um botão no Power Automate for pressionado. Depois de entender o padrão básico, você pode expandir o fluxo para incluir outros aplicativos e automatizar ainda mais o seu fluxo de trabalho diário.
 
@@ -23,7 +23,7 @@ Este tutorial ensina como executar um Script do Office para o Excel na web por m
 
 ## <a name="prepare-the-workbook"></a>Preparar a pasta de trabalho
 
-O Power Automate não pode usar[referências relativas](../testing/power-automate-troubleshooting.md#avoid-using-relative-references)como`Workbook.getActiveWorksheet`acessar componentes da pasta de trabalho. Portanto, precisamos de uma pasta de trabalho e de uma planilha com nomes consistentes que o Power Automate consiga consultar.
+O Power Automate não pode usar[referências relativas](../testing/power-automate-troubleshooting.md#avoid-relative-references)como`Workbook.getActiveWorksheet`acessar componentes da pasta de trabalho. Portanto, precisamos de uma pasta de trabalho e de uma planilha com nomes consistentes que o Power Automate consiga consultar.
 
 1. Crie uma pasta de trabalho intitulada **MyWorkbook**.
 
@@ -85,9 +85,9 @@ O Power Automate não pode usar[referências relativas](../testing/power-automat
 
     :::image type="content" source="../images/power-automate-tutorial-4.png" alt-text="Opção do Excel Online (Business) no Power Automate":::
 
-7. Em **Ações**, selecione **Executar script (visualização)**.
+7. Em **Ações**, selecione **Executar script**.
 
-    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Execute a opção de ação de script (visualização) no Power Automate":::
+    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Executar a opção de ação de script no Power Automate":::
 
 8. Depois, você selecionará a pasta de trabalho e o script que será utilizado na etapa do fluxo. Para o tutorial, você fará o uso da pasta de trabalho criada no seu OneDrive, mas é possível usar qualquer pasta de trabalho em um site OneDrive ou no Microsoft Office SharePoint Online. Especifique as seguintes configurações para o conector **Executar Script**:
 

@@ -1,18 +1,18 @@
 ---
 title: Scripts do Office no Excel na Web
 description: Uma breve introdução ao Gravador de ação e ao Editor de códigos de scripts do Office.
-ms.date: 11/13/2020
+ms.date: 05/17/2021
 localization_priority: Priority
-ms.openlocfilehash: 233baf33648f5fc8358b2aa8ce063ad5cdd68499
-ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
+ms.openlocfilehash: 36bf679c1778375ad2fb010d34efc88678fd9f57
+ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232659"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52545805"
 ---
 # <a name="office-scripts-in-excel-on-the-web-preview"></a>Scripts do Office no Excel na Web (visualização)
 
-Os scripts do Office no Excel na Web permitem automatizar suas tarefas diárias. Você pode gravar suas ações do Excel com o Gravador de ações, o qual cria um script. Você também pode criar e editar scripts com o Editor de códigos. Os scripts podem ser compartilhados com toda a organização, para que seus colegas possam automatizar os fluxos de trabalho.
+Os scripts do Office no Excel na Web permitem automatizar suas tarefas diárias. Você pode gravar suas ações do Excel com o Gravador de Ações, que cria um script de linguagem TypeScript. Você também pode criar e editar scripts com o Editor de códigos. Os scripts podem ser compartilhados com toda a organização, para que seus colegas possam automatizar os fluxos de trabalho.
 
 Esta série de documentos ensina como usar essas ferramentas. Você será apresentado ao Gravador de ações e verá como gravar suas ações frequentes do Excel. Você também aprenderá a criar ou atualizar seus próprios scripts com o Editor de códigos.
 
@@ -46,7 +46,7 @@ Para utilizar os Scripts do Office, você precisará do seguinte.
 
 Os scripts permitem gravar e reproduzir suas ações do Excel em diferentes pastas de trabalho e planilhas. Se você perceber que vive fazendo as mesmas coisas o tempo inteiro, experimente transformar todo esse trabalho em um Script do Office fácil de executar. Execute seu script com um apertar de botão no Excel ou combine-o com o Power Automate para simplificar todo o fluxo de trabalho.
 
-Como exemplo, digamos que você comece seu dia de trabalho abrindo um arquivo .csv em um site de contabilidade no Excel. Então você gasta alguns minutos excluindo colunas desnecessárias, formatando uma tabela, adicionando fórmulas e criando uma tabela dinâmica em uma nova planilha. As ações repetidas diariamente podem ser gravadas uma vez com o Gravador de ações. A partir daí, a execução do script cuidará da sua conversão .csv. Além de remover o risco de esquecer as etapas, você poderá compartilhar seu processo com outras pessoas sem precisar ensinar nada a elas. Os scripts do Office automatizam suas tarefas comuns para que você e seu local de trabalho possam ser mais eficientes e produtivos.
+Como exemplo, digamos que você comece seu dia de trabalho abrindo um arquivo .csv em um site de contabilidade no Excel. Então você gasta alguns minutos excluindo colunas desnecessárias, formatando uma tabela, adicionando fórmulas e criando uma tabela dinâmica em uma nova planilha. As ações repetidas diariamente podem ser gravadas uma vez com o Gravador de ações. A partir daí, a execução do script cuidará da sua conversão .csv. Além de remover o risco de esquecer as etapas, você poderá compartilhar seu processo com outras pessoas sem precisar ensinar nada a elas. Os Scripts do Office permitem que você automatize suas tarefas comuns para que você e seu local de trabalho possam ser mais eficientes e produtivos.
 
 ## <a name="action-recorder"></a>Gravador de ações
 
@@ -61,6 +61,8 @@ O Gravador de Ações registra as ações que você executa no Excel e as salva 
 Todos os scripts gravados com o Gravador de ações podem ser editados através do Editor de códigos. Isso permite que você ajuste e personalize o script para melhor atender às suas necessidades. Você também pode adicionar lógica e funcionalidade que não são acessíveis de forma direta pela interface do usuário do Excel, como instruções condicionais (se/senão) e loops.
 
 Uma maneira fácil de começar a aprender sobre os recursos dos scripts do Office é gravá-los no Excel na Web e exibir o código resultante. Outra opção é seguir nossos [tutoriais](../tutorials/excel-tutorial.md) para aprender de uma maneira mais guiada e estruturada.
+
+Depois de concluir o tutorial, leia [ Fundamentos de script para Scripts do Office no Excel na Web ](../develop/scripting-fundamentals.md) para saber mais sobre o Editor de código e como escrever e editar seus próprios scripts. Para informações adicionais sobre o Editor de Código e como seu código de script é interpretado, leia [Ambiente do Editor de Código de Scripts do Office](code-editor-environment.md).
 
 ## <a name="sharing-scripts"></a>Scripts de compartilhamento
 

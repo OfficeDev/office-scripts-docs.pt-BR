@@ -3,14 +3,14 @@ title: Retorna dados de um script para um fluxo do Power Automate executado auto
 description: Um tutorial que mostra como enviar emails de lembrete executando Scripts do Office para o Excel na web através do Power Automate.
 ms.date: 12/15/2020
 localization_priority: Priority
-ms.openlocfilehash: 54fcfc773d4d2a8d352f7bd22593ac817e7ded0e
-ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
+ms.openlocfilehash: e7f1051076bf84cfbbec0fcdd72777766dbcf152
+ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232876"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52544995"
 ---
-# <a name="return-data-from-a-script-to-an-automatically-run-power-automate-flow-preview"></a>Retorna dados de um script para um fluxo do Power Automate executado automaticamente (visualização)
+# <a name="return-data-from-a-script-to-an-automatically-run-power-automate-flow"></a>Retornar os dados de um script para um fluxo do Power Automate executado automaticamente
 
 Este tutorial ensina como retornar informações de um Script do Office para o Excel na web como parte de um fluxo de trabalho automatizado do [Power Automate](https://flow.microsoft.com). Você fará um script que olha através de uma programação e trabalha com um fluxo para enviar emails de lembrete. Esse fluxo será executado em uma programação regular, fornecendo esses lembretes em seu nome.
 
@@ -152,9 +152,9 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
 
     :::image type="content" source="../images/power-automate-tutorial-4.png" alt-text="Opção do Excel Online (Business) no Power Automate":::
 
-1. Em **Ações**, selecione **Executar script (visualização)**.
+1. Em **Ações**, selecione **Executar script**.
 
-    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Execute a opção de ação de script (visualização) no Power Automate":::
+    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Executar a opção de ação de script no Power Automate":::
 
 1. Em seguida, você selecionará a pasta de trabalho e o script que será utilizado na etapa do fluxo. Use a pasta de trabalho **on-call-rotation.xlsx** que você criou em seu OneDrive. Especifique as seguintes configurações para o conector **Executar Script**:
 

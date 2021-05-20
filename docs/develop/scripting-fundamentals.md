@@ -1,14 +1,14 @@
 ---
 title: Fundamentos de script para scripts do Office no Excel na Web
 description: Informações sobre o modelo de objeto e outros fundamentos para saber mais antes de escrever scripts do Office.
-ms.date: 07/08/2020
+ms.date: 05/10/2021
 localization_priority: Priority
-ms.openlocfilehash: 685f83952fa6aecc660524a95dec57e149522820
-ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
+ms.openlocfilehash: d930c9ee36933cb0458de8cce4f1d1adc7b6a001
+ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232386"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52545094"
 ---
 # <a name="scripting-fundamentals-for-office-scripts-in-excel-on-the-web-preview"></a>Fundamentos de script para scripts do Office no Excel na Web (visualização)
 
@@ -16,9 +16,15 @@ Este artigo apresentará os aspectos técnicos dos scripts do Office. Você sabe
 
 [!INCLUDE [Preview note](../includes/preview-note.md)]
 
-## <a name="main-function"></a>função `main`
+## <a name="typescript-the-language-of-office-scripts"></a>TypeScript: A linguagem dos Scripts do Office
 
-Cada Script do Office precisa incluir uma função `main` tendo o tipo de `ExcelScript.Workbook` como seu primeiro parâmetro. Quando a função é executada, o aplicativo Excel invoca esta função `main` fornecendo a pasta de trabalho como seu primeiro parâmetro. Portanto, é importante não modificar a assinatura básica da função `main` depois de gravar o script ou criar um script a partir do editor de código.
+Os Scripts do Office são escritos em [TypeScript](https://www.typescriptlang.org/docs/home.html), que é um superconjunto de [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript). Se você está familiarizado com o JavaScript, seus conhecimentos serão aproveitados porque muito do código é o mesmo em ambas as linguagens. Recomendamos que você tenha algum conhecimento de programação de nível iniciante antes de iniciar sua jornada de codificação nos Scripts do Office. Os recursos a seguir podem ajudá-lo a entender o lado da codificação dos Scripts do Office.
+
+[!INCLUDE [Preview note](../includes/coding-basics-references.md)]
+
+## <a name="main-function-the-scripts-starting-point"></a>Função `main`: O ponto de partida do script
+
+Cada script deve conter uma função `main` com o tipo `ExcelScript.Workbook` como seu primeiro parâmetro. Quando a função é executada, o aplicativo Excel invoca a função `main` fornecendo a pasta de trabalho como seu primeiro parâmetro. Um `ExcelScript.Workbook` deve sempre ser o primeiro parâmetro.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -26,14 +32,13 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-O código dentro da função `main` é executado quando o script é executado. `main` pode chamar outras funções em seu script, mas o código que não estiver contido em uma função não será executado.
+O código dentro da função `main` é executado quando o script é executado. `main` pode chamar outras funções em seu script, mas o código que não estiver contido em uma função não será executado. Os scripts não podem invocar ou chamar outros Scripts do Office.
 
-> [!CAUTION]
-> Se sua função `main` se parece com `async function main(context: Excel.RequestContext)`, seu script está usando um modelo antigo de API assíncrona. Para obter mais informações (inclusive sobre como converter seu script para o modelo de API atual), confira o artigo [Suporte a Scripts do Office mais antigos que utilizam APIs Assíncronas](excel-async-model.md).
+O [Power Automate](https://flow.microsoft.com) permite que você conecte scripts em fluxos. Os dados são passados entre os scripts e o fluxo por meio dos parâmetros e retornos do método `main`. Como integrar os Scripts do Office com o Power Automate é abordado em detalhes em [Executar Scripts do Office com o Power Automate ](power-automate-integration.md).
 
-## <a name="object-model"></a>Modelo de objetos
+## <a name="object-model-overview"></a>Visão geral do modelo de objeto
 
-Para escrever um script, você precisa entender como as APIs dos Scripts do Office se encaixam. Os componentes de uma pasta de trabalho têm relações específicas entre si. De várias maneiras, essas relações correspondem às da interface do usuário do Excel.
+Para escrever um script, você precisa entender como as APIs do Scripts do Office se encaixam. Os componentes de uma pasta de trabalho têm relações específicas entre si. De várias maneiras, essas relações correspondem às da interface do usuário do Excel.
 
 - Uma **Pasta de trabalho** contém uma ou mais **Planilhas**.
 - Uma **Planilha** concede acesso a células por meio de objetos de **Intervalo**.
@@ -42,7 +47,7 @@ Para escrever um script, você precisa entender como as APIs dos Scripts do Offi
 - Uma **Planilha** contém coleções desses objetos de dados que estão presentes na planilha individual.
 - As **Pastas de trabalho** contêm coleções de alguns desses objetos de dados (por exemplo, **Tabelas**) para toda a **Pasta de trabalho**.
 
-### <a name="workbook"></a>Pasta de Trabalho
+## <a name="workbook"></a>Pasta de Trabalho
 
 Todo script é fornecido com um `workbook` objeto do tipo `Workbook` pela função `main`. Isso representa o objeto de nível superior por meio do qual seu script interage com a pasta de trabalho do Excel.
 
@@ -58,15 +63,15 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-### <a name="ranges"></a>Intervalos
+## <a name="ranges"></a>Intervalos
 
 Um intervalo é um grupo de células contíguas na pasta de trabalho. Os scripts costumam usar uma notação estilo A1 (por ex.: **B3** para a única célula na coluna **B** e linha **3** ou **C2:F4** para as células das colunas **C** a **F** e linhas **2** a **4**) para definir intervalos.
 
 Os intervalos têm três propriedades principais: valores, fórmulas e formato. Essas propriedades recebem ou definem os valores da célula, as fórmulas a serem avaliadas e a formatação visual das células. Eles são acessados através de `getValues`, `getFormulas` e `getFormat`. Os valores e fórmulas podem ser alterados com `setValues` e `setFormulas`, enquanto o formato é um objeto `RangeFormat` composto de vários objetos menores que são configurados individualmente.
 
-Os intervalo usam matrizes bidimensionais para gerenciar informações. Leia a [Trabalhando com intervalos da seção Usando objetos JavaScript incorporados nos Scripts do Office](javascript-objects.md#working-with-ranges) para obter mais informações sobre como lidar com essas matrizes na estrutura de Scripts do Office.
+Os intervalo usam matrizes bidimensionais para gerenciar informações. Para obter mais informações sobre como lidar com matrizes na estrutura de Scripts do Office, consulte [Trabalhar com intervalos](javascript-objects.md#work-with-ranges).
 
-#### <a name="range-sample"></a>Exemplo de intervalo
+### <a name="range-sample"></a>Exemplo de intervalo
 
 O exemplo a seguir mostra como criar registros de vendas. Este script usa `Range` objetos para definir os valores, fórmulas e partes do formato.
 
@@ -111,11 +116,11 @@ Executar este script cria os seguintes dados na planilha atual:
 
 :::image type="content" source="../images/range-sample.png" alt-text="Uma planilha contendo um registro de vendas composto de linhas de valor, uma coluna de fórmula e cabeçalhos formatados":::
 
-### <a name="charts-tables-and-other-data-objects"></a>Gráficos, tabelas e outros objetos de dados
+## <a name="charts-tables-and-other-data-objects"></a>Gráficos, tabelas e outros objetos de dados
 
 Os scripts podem criar e manipular estruturas de dados e visualizações no Excel. As tabelas e gráficos são dois dos objetos mais usados, mas as APIs oferecem suporte a tabelas dinâmicas, formas, imagens e muito mais. Eles são armazenados em coleções, que serão discutidas mais adiante neste artigo.
 
-#### <a name="creating-a-table"></a>Criar uma tabela
+### <a name="create-a-table"></a>Criar uma tabela
 
 Crie tabelas usando intervalos preenchidos com dados. A formatação e os controles de tabela (como filtros) são automaticamente aplicados ao intervalo.
 
@@ -135,7 +140,7 @@ Executar esse script na planilha com os dados anteriores cria a tabela a seguir:
 
 :::image type="content" source="../images/table-sample.png" alt-text="Uma planilha contendo uma tabela feita com base no registro de vendas anterior":::
 
-#### <a name="creating-a-chart"></a>Criar um gráfico
+### <a name="create-a-chart"></a>Criar um gráfico
 
 Crie gráficos para visualizar os dados em um intervalo. Os scripts permitem inúmeras variedades de gráficos que podem ser personalizadas de acordo com suas necessidades.
 
@@ -161,19 +166,22 @@ Executar este script na planilha com a tabela anterior cria o seguinte gráfico:
 
 :::image type="content" source="../images/chart-sample.png" alt-text="Um gráfico de colunas exibindo a quantidade de três itens do registro de vendas anterior":::
 
-### <a name="collections-and-other-object-relations"></a>Coleções e outras relações de objeto
+## <a name="collections"></a>Coleções
 
-Qualquer objeto filho pode ser acessado através do objeto pai. Por exemplo, você pode ler `Worksheets` do objeto `Workbook`. Haverá um método `get` relacionado na classe mãe (por exemplo, `Workbook.getWorksheets()` ou `Workbook.getWorksheet(name)`). Os métodos `get` singulares retornam um único objeto e requerem um ID ou nome para o objeto específico (como o nome de uma planilha). Os métodos `get` que são plurais retornam toda a coleção de objetos como uma matriz. Se a coleção estiver vazia, você obterá uma matriz vazia (`[]`).
+Quando um objeto do Excel tem uma coleção de um ou mais objetos do mesmo tipo, ele os armazena em uma matriz. Por exemplo, um objeto `Workbook` contém um `Worksheet[]`. Esta matriz é acessada pelo método `Workbook.getWorksheets()`. Os métodos `get` que são plurais, como `Worksheet.getCharts()`, retornam toda a coleção de objetos como uma matriz. Você verá este padrão em todas as APIs de Scripts do Office: o objeto `Worksheet` tem um método `getTables()` que retorna um `Table[]`, o objeto `Table` tem um método `getColumns()` que retorna um `TableColumn[]`, como assim em diante.
 
-Depois que a coleção é recuperada, você pode usar operações regulares de matriz, como obter seus `length` ou usar `for`, `for..of`, `while` loops para iteração ou métodos de matriz TypeScript como `map`, `forEach`. Você também pode acessar objetos individuais na coleção usando o valor do índice da matriz. Por exemplo, `workbook.getTables()[0]` retorna a primeira tabela da coleção. Leia a seção [Trabalhando com coleções de Usando objetos JavaScript nos Scripts do Office](javascript-objects.md#working-with-collections) para aprender mais sobre o uso da funcionalidade de matriz incorporada com a estrutura de Scripts do Office.
+A matriz retornada é uma matriz normal, portanto todas as operações regulares de matriz estão disponíveis para seu script. Você também pode acessar objetos individuais na coleção usando o valor do índice da matriz. Por exemplo, `workbook.getTables()[0]` retorna a primeira tabela da coleção. Para saber mais sobre o uso da funcionalidade de matriz interna com a estrutura de Scripts do Office, consulte [Trabalhar com coleções](javascript-objects.md#work-with-collections). 
+
+Objetos individuais também são acessados a partir da coleção por meio de um método `get`. Os métodos `get` que são singulares, como `Worksheet.getTable(name)`, retornam um único objeto e requerem uma ID ou nome para o objeto específico. Esse ID ou nome geralmente é definido pelo script ou por meio da IU do Excel.
 
 O seguinte roteiro recebe todas as tabelas na pasta de trabalho. Assim, ele garante que os cabeçalhos sejam exibidos, os botões de filtro sejam visíveis e o estilo da tabela seja definido como "TableStyleLight1".
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
-  /* Get table collection */
-  const tables = workbook.getTables();
-  /* Set table formatting properties */
+  // Get the table collection.
+  let tables = workbook.getTables();
+
+  // Set the table formatting properties for every table.
   tables.forEach(table => {
     table.setShowHeaders(true);
     table.setShowFilterButton(true);
@@ -182,11 +190,11 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-#### <a name="adding-excel-objects-with-a-script"></a>Adicionando objetos do Excel com um script
+## <a name="add-excel-objects-with-a-script"></a>Adicionar objetos do Excel com um script
 
 Você pode adicionar programaticamente objetos de documento, como tabelas ou gráficos, chamando o método `add` correspondente disponível no objeto pai.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Não adicione manualmente objetos as matrizes de coleção. Use os métodos `add` nos objetos pai, por exemplo, adicione `Table` a `Worksheet` com o método `Worksheet.addTable`.
 
 O script a seguir cria, no Excel, uma tabela na primeira planilha da pasta de trabalho. Observe que a tabela criada é enviada de volta pelo método `addTable`.
@@ -196,15 +204,65 @@ function main(workbook: ExcelScript.Workbook) {
     // Get the first worksheet.
     let sheet = workbook.getWorksheets()[0];
 
-    // Add a table that uses the data in C3:G10.
+    // Add a table that uses the data in A1:G10.
     let table = sheet.addTable(
-      "C3:G10",
+      "A1:G10",
        true /* True because the table has headers. */
     );
+    
+    // Give the table a name for easy reference in other scripts.
+    table.setName("MyTable");
 }
 ```
 
-## <a name="removing-excel-objects-with-a-script"></a>Removendo objetos do Excel com um script
+> [!TIP]
+> A maioria dos objetos do Excel possui um método `setName`. Isso fornece uma maneira fácil de acessar objetos do Excel posteriormente no script ou em outros scripts para a mesma pasta de trabalho.
+
+### <a name="verify-an-object-exists-in-the-collection"></a>Verifique se existe um objeto na coleção
+
+Os scripts geralmente precisam verificar se uma tabela ou objeto semelhante existe antes de continuar. Use os nomes dados por scripts ou por meio da IU do Excel para identificar os objetos necessários e agir de acordo. O métodos `get` retornam `undefined` quando o objeto solicitado não está na coleção.
+
+O script a seguir solicita uma tabela chamada "MinhaTabela" e utiliza uma instrução `if...else` para verificar se a tabela foi encontrada.
+
+```TypeScript
+function main(workbook: ExcelScript.Workbook) {
+  // Get the table named "MyTable".
+  let myTable = workbook.getTable("MyTable");
+
+  // If the table is in the workbook, myTable will have a value.
+  // Otherwise, the variable will be undefined and go to the else clause.
+  if (myTable) {
+    let worksheetName = myTable.getWorksheet().getName();
+    console.log(`MyTable is on the ${worksheetName} worksheet`);
+  } else {
+    console.log(`MyTable is not in the workbook.`);
+  }
+}
+```
+
+Um padrão comum em Scripts do Office é recriar uma tabela, gráfico ou outro objeto sempre que o script for executado. Se você não precisa de dados antigos, é melhor excluir o objeto antigo antes de criar o novo. Isso evita conflitos de nome ou outras diferenças que possam ter sido introduzidas por outros usuários.
+
+O script a seguir remove a tabela chamada "MinhaTabela", se houver, e adiciona uma nova tabela com o mesmo nome.
+
+```TypeScript
+function main(workbook: ExcelScript.Workbook) {
+  // Get the table named "MyTable" from the first worksheet.
+  let sheet = workbook.getWorksheets()[0];
+  let tableName = "MyTable";
+  let oldTable = sheet.getTable(tableName);
+
+  // If the table exists, remove it.
+  if (oldTable) {
+    oldTable.delete();
+  }
+
+  // Add a new table with the same name.
+  let newTable = sheet.addTable("A1:G10", true);
+  newTable.setName(tableName);
+}
+```
+
+## <a name="remove-excel-objects-with-a-script"></a>Remova objetos do Excel com um script
 
 Para excluir um objeto, chame o método `delete` do objeto.
 
@@ -223,7 +281,7 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-### <a name="further-reading-on-the-object-model"></a>Leituras adicionais sobre o modelo de objeto
+## <a name="further-reading-on-the-object-model"></a>Leituras adicionais sobre o modelo de objeto
 
 A [documentação de referência de API dos scripts do Office](/javascript/api/office-scripts/overview) é uma lista completa dos objetos usados nos scripts do Office. Lá, você pode usar o sumário para navegar para qualquer classe da qual quiser saber mais. Estas são várias páginas exibidas com frequência.
 
@@ -243,3 +301,4 @@ A [documentação de referência de API dos scripts do Office](/javascript/api/o
 - [Ler os dados da pasta de trabalho com scripts do Office no Excel na Web](../tutorials/excel-read-tutorial.md)
 - [Referência da API de scripts do Office](/javascript/api/office-scripts/overview)
 - [Usar objetos internos do JavaScript nos scripts do Office](javascript-objects.md)
+- [Práticas recomendadas nos Scripts do Office ](best-practices.md)
