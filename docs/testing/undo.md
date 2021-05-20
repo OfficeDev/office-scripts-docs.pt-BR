@@ -1,28 +1,28 @@
 ---
-title: Desfazer as alterações feitas executando um script do Office
-description: Use o histórico de versão do Excel na Web para desfazer as alterações feitas pela execução de um script.
+title: Desfazer as alterações feitas por Office Scripts
+description: Use o histórico de versão de Excel na Web para desfazer as alterações feitas executando um script.
 ms.date: 01/08/2019
 localization_priority: Normal
-ms.openlocfilehash: 17f2d0bc69ce00b80be6db3d89ebb84bf064df98
-ms.sourcegitcommit: b075eed5a6f275274fbbf6d62633219eac416f26
+ms.openlocfilehash: f9f22d4879f8a02c00a5bac9f58d9aa36ae03e38
+ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42700040"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52545543"
 ---
-# <a name="undo-the-changes-made-by-running-an-office-script"></a>Desfazer as alterações feitas executando um script do Office
+# <a name="undo-the-changes-made-by-office-scripts"></a>Desfazer as alterações feitas por Office Scripts
 
-Você não pode desfazer um script usando o comando **desfazer** . Em vez disso, você deve restaurar uma versão anterior da pasta de trabalho do seu armazenamento em nuvem.
+Você não pode desfazer alterações feitas na Excel livro de trabalho por um script com o comando **desfazer** do Excel. Em vez disso, você deve restaurar uma versão anterior da pasta de trabalho do seu armazenamento em nuvem.
 
 ## <a name="version-history"></a>Histórico de versão
 
-O histórico de versões do Office é uma maneira fácil de restaurar uma pasta de trabalho mais antiga através da interface do usuário do Excel. O recurso só funciona para arquivos armazenados no OneDrive ou no SharePoint Online.
+O histórico de versão de Office é uma maneira fácil de restaurar uma pasta de trabalho mais antiga através da interface do Excel UI. O recurso só funciona para arquivos armazenados em OneDrive ou SharePoint Online.
 
-Na pasta de trabalho do Excel na qual o script foi executado, use estas etapas para desfazer os efeitos de um script do Office:
+A partir do Excel pasta de trabalho em que o script foi ranqueou, use essas etapas para desfazer os efeitos:
 
-1. Vá para **arquivo** > **Info** > **histórico de versões**de informações.
-2. Selecione uma versão salva antes da execução do script.
-3. Pressione **restaurar**.
+1. Vá para **O** Histórico da versão de  >  **informações**  >  **de arquivo**.
+2. Selecione uma versão salva antes de executar o script.
+3. **Restauração da imprensa**.
 
 ## <a name="see-also"></a>Confira também
 

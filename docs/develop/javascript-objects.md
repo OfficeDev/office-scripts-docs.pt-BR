@@ -1,31 +1,31 @@
 ---
 title: Usar objetos internos do JavaScript nos scripts do Office
-description: Como chamar APIs JavaScript integrados de um script Office no Excel na Web.
-ms.date: 07/16/2020
+description: Como chamar APIs JavaScript integrados de um script Office em Excel na Web.
+ms.date: 05/17/2021
 localization_priority: Normal
-ms.openlocfilehash: e3b36265f235678eee18fbf369058b165da46210
-ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
+ms.openlocfilehash: 680dd326e357bd06e2fc66cba5bd6745bbd33c24
+ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232400"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52545044"
 ---
-# <a name="using-built-in-javascript-objects-in-office-scripts"></a>Usar objetos internos do JavaScript nos scripts do Office
+# <a name="use-built-in-javascript-objects-in-office-scripts"></a>Use objetos JavaScript incorporados em scripts Office
 
-JavaScript fornece vários objetos integrados que você pode usar em seus scripts de Office, independentemente de você estar fazendo scripts em JavaScript ou [TypeScript](../overview/code-editor-environment.md) (um superconjunto de JavaScript). Este artigo descreve como você pode usar alguns dos objetos JavaScript integrados Office scripts para Excel na Web.
+JavaScript fornece vários objetos incorporados que você pode usar em seus scripts Office, independentemente de você estar fazendo scripts em JavaScript ou [TypeScript](../overview/code-editor-environment.md) (um superconjunto de JavaScript). Este artigo descreve como você pode usar alguns dos objetos JavaScript incorporados em scripts Office para Excel na Web.
 
 > [!NOTE]
-> Para uma lista completa de todos os objetos JavaScript integrados, consulte o artigo Objetos integrados [Standard do](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects) Mozilla.
+> Para obter uma lista completa de todos os objetos JavaScript incorporados, consulte o artigo [de objetos incorporados Padrão](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects) da Mozilla.
 
 ## <a name="array"></a>Matriz
 
-O [objeto Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) fornece uma maneira padronizada de trabalhar com matrizes em seu script. Embora as matrizes sejam construções JavaScript padrão, elas se relacionam Office scripts de duas maneiras principais: intervalos e coleções.
+O objeto [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) fornece uma maneira padronizada de trabalhar com arrays em seu script. Embora os arrays sejam construções JavaScript padrão, elas se relacionam com scripts Office de duas maneiras principais: intervalos e coleções.
 
-### <a name="working-with-ranges"></a>Trabalhando com intervalos
+### <a name="work-with-ranges"></a>Trabalhar com faixas
 
-Os intervalos contêm várias matrizes bidimensionais que mapeiam diretamente para as células nesse intervalo. Essas matrizes contêm informações específicas sobre cada célula nesse intervalo. Por exemplo, retorna todos os valores nessas células (com as linhas e colunas do mapeamento de matriz bidimensional para as linhas e colunas dessa `Range.getValues` subseção de planilha). `Range.getFormulas` e `Range.getNumberFormats` são outros métodos usados com frequência que retornam matrizes como `Range.getValues` .
+As faixas contêm várias matrizes bidimensionais que mapeiam diretamente para as células nesse intervalo. Essas matrizes contêm informações específicas sobre cada célula nesse intervalo. Por exemplo, `Range.getValues` retorna todos os valores nessas células (com as linhas e colunas do mapeamento bidimensional do array para as linhas e colunas dessa subseção da planilha). `Range.getFormulas` e `Range.getNumberFormats` são outros métodos frequentemente usados que retornam matrizes como `Range.getValues` .
 
-O script a seguir pesquisa o intervalo **A1:D4** para qualquer formato de número que contenha um "$". O script define a cor de preenchimento nessas células como "amarela".
+O script a seguir pesquisa a faixa **A1:D4** para qualquer formato de número que contenha um "$". O script define a cor de preenchimento nessas células como "amarela".
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -48,14 +48,14 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-### <a name="working-with-collections"></a>Trabalhando com coleções
+### <a name="work-with-collections"></a>Trabalhar com coleções
 
-Muitos Excel objetos estão contidos em uma coleção. A coleção é gerenciada pela API Office Scripts e exposta como uma matriz. Por exemplo, todas [as Formas](/javascript/api/office-scripts/excelscript/excelscript.shape) em uma planilha estão contidas em um que é retornado `Shape[]` pelo `Worksheet.getShapes` método. Você pode usar essa matriz para ler valores da coleção ou acessar objetos específicos dos métodos do `get*` objeto pai.
+Muitos objetos Excel estão contidos em uma coleção. A coleção é gerenciada pela API Office Scripts e exposta como uma matriz. Por exemplo, todas as formas em uma planilha estão [contidas](/javascript/api/office-scripts/excelscript/excelscript.shape) em um `Shape[]` que é devolvido pelo `Worksheet.getShapes` método. Você pode usar este array para ler valores da coleção ou acessar objetos específicos dos métodos do objeto `get*` pai.
 
 > [!NOTE]
-> Não adicione ou remova objetos manualmente dessas matrizes de coleção. Use os `add` métodos nos objetos pai e nos métodos nos objetos do tipo `delete` coleção. Por exemplo, adicione uma [Tabela](/javascript/api/office-scripts/excelscript/excelscript.table) a [uma Planilha com](/javascript/api/office-scripts/excelscript/excelscript.worksheet) o método e remova o uso `Worksheet.addTable` `Table` `Table.delete` .
+> Não adicione manualmente ou remova objetos dessas matrizes de coleta. Use os `add` métodos nos objetos-pai e os `delete` métodos nos objetos do tipo de coleta. Por exemplo, adicione uma [tabela](/javascript/api/office-scripts/excelscript/excelscript.table) a uma [planilha](/javascript/api/office-scripts/excelscript/excelscript.worksheet) com o `Worksheet.addTable` método e remova o uso `Table` `Table.delete` .
 
-O script a seguir registra o tipo de cada forma na planilha atual.
+O script a seguir registra o tipo de todas as formas na planilha atual.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -90,9 +90,9 @@ function main(workbook: ExcelScript.Workbook) {
 
 ## <a name="date"></a>Data
 
-O [objeto Date](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date) fornece uma maneira padronizada de trabalhar com datas em seu script. `Date.now()` gera um objeto com a data e a hora atuais, o que é útil ao adicionar data/hora à entrada de dados do script.
+O objeto [Data](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date) fornece uma maneira padronizada de trabalhar com datas em seu script. `Date.now()` gera um objeto com a data e a hora atuais, o que é útil ao adicionar datamps de tempo à entrada de dados do seu script.
 
-O script a seguir adiciona a data atual à planilha. Observe que, usando o método, Excel reconhece o valor como uma data e altera automaticamente o `toLocaleDateString` formato de número da célula.
+O script a seguir adiciona a data atual à planilha. Observe que, usando o `toLocaleDateString` método, Excel reconhece o valor como uma data e altera automaticamente o formato de número da célula.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -107,13 +107,13 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-A [seção Trabalhar com datas](../resources/samples/excel-samples.md#dates) dos exemplos tem mais scripts relacionados à data.
+A seção [Trabalho com datas](../resources/samples/excel-samples.md#dates) das amostras tem mais scripts relacionados a datas.
 
 ## <a name="math"></a>Matemática
 
-O [objeto Math](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math) fornece métodos e constantes para operações matemáticas comuns. Elas fornecem muitas funções também disponíveis no Excel, sem a necessidade de usar o mecanismo de cálculo da agenda de trabalho. Isso salva o script de ter que consultar a workbook, o que melhora o desempenho.
+O objeto [Math](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math) fornece métodos e constantes para operações matemáticas comuns. Estes fornecem muitas funções também disponíveis em Excel, sem a necessidade de usar o mecanismo de cálculo da pasta de trabalho. Isso evita que seu script tenha que consultar a pasta de trabalho, o que melhora o desempenho.
 
-O script a seguir `Math.min` usa para encontrar e registrar o menor número no intervalo **A1:D4.** Observe que este exemplo supõe que todo o intervalo contém apenas números, não cadeias de caracteres.
+O script a seguir usa `Math.min` para encontrar e registrar o menor número na faixa **A1:D4.** Observe que esta amostra pressupõe que toda a gama contém apenas números, não strings.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -140,11 +140,11 @@ function main(workbook: ExcelScript.Workbook) {
 
 ```
 
-## <a name="use-of-external-javascript-libraries-is-not-supported"></a>Não há suporte para o uso de bibliotecas JavaScript externas
+## <a name="use-of-external-javascript-libraries-is-not-supported"></a>O uso de bibliotecas JavaScript externas não é suportado
 
-Office Os scripts não suportam o uso de bibliotecas externas de terceiros. Seu script só pode usar os objetos JavaScript integrados e as APIs Office Scripts.
+Office Scripts não suportam o uso de bibliotecas externas de terceiros. Seu script só pode usar os objetos JavaScript incorporados e as APIs Office Scripts.
 
 ## <a name="see-also"></a>Confira também
 
-- [Objetos integrados padrão](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects)
+- [Objetos embutidos padrão](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects)
 - [Office Ambiente do Editor de Código de Scripts](../overview/code-editor-environment.md)

@@ -1,20 +1,20 @@
 ---
-title: Melhorar o desempenho dos scripts do Office
-description: Crie scripts mais rápidos compreendendo a comunicação entre a planilha do Excel e seu script.
-ms.date: 06/15/2020
+title: Melhore o desempenho de seus scripts de Office
+description: Crie scripts mais rápidos entendendo a comunicação entre a Excel pasta de trabalho e seu script.
+ms.date: 05/17/2021
 localization_priority: Normal
-ms.openlocfilehash: ce50a6fd7ad02ddcd2dd304be8b4dd8fa3d0acf3
-ms.sourcegitcommit: 7580dcb8f2f97974c2a9cce25ea30d6526730e28
+ms.openlocfilehash: 512e2108cb81cf9ac8ae98980951d5d01b3d2de9
+ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867867"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52544988"
 ---
-# <a name="improve-the-performance-of-your-office-scripts"></a>Melhorar o desempenho dos scripts do Office
+# <a name="improve-the-performance-of-your-office-scripts"></a>Melhore o desempenho de seus scripts de Office
 
-O objetivo dos Scripts do Office é automatizar uma série de tarefas normalmente realizadas para economizar tempo. Um script lento pode parecer que ele não acelera seu fluxo de trabalho. Na maioria das vezes, seu script ficará perfeitamente bem e será executado conforme o esperado. No entanto, há alguns cenários que podem afetar o desempenho.
+O objetivo do Office Scripts é automatizar séries comumente executadas de tarefas para economizar tempo. Um script lento pode parecer que não acelera seu fluxo de trabalho. Na maioria das vezes, seu roteiro estará perfeitamente bem e será executado como esperado. No entanto, existem alguns cenários evitáveis que podem afetar o desempenho.
 
-O motivo mais comum para um script lento é a comunicação excessiva com a agenda. O script é executado no computador local, enquanto a agenda existe na nuvem. Em determinados momentos, seu script sincroniza seus dados locais com os da agenda. Isso significa que todas as operações de gravação (como) serão aplicadas somente à plano de trabalho quando essa sincronização nos `workbook.addWorksheet()` bastidores ocorrer. Da mesma forma, qualquer operação de leitura (como) só obter dados da área de trabalho `myRange.getValues()` para o script nesses momentos. Em ambos os casos, o script busca informações antes de agir sobre os dados. Por exemplo, o código a seguir registrará com precisão o número de linhas no intervalo usado.
+A razão mais comum para um script lento é a comunicação excessiva com a pasta de trabalho. Seu script é executado em sua máquina local, enquanto a pasta de trabalho existe na nuvem. Em certos momentos, seu script sincroniza seus dados locais com os da pasta de trabalho. Isso significa que qualquer operação de gravação (como `workbook.addWorksheet()` ) só é aplicada à pasta de trabalho quando essa sincronização nos bastidores acontece. Da mesma forma, qualquer operação de leitura (como `myRange.getValues()` ) só recebe dados da pasta de trabalho para o script nesses momentos. Em ambos os casos, o script busca informações antes de agir sobre os dados. Por exemplo, o código a seguir registrará com precisão o número de linhas no intervalo usado.
 
 ```TypeScript
 let usedRange = workbook.getActiveWorksheet().getUsedRange();
@@ -24,21 +24,21 @@ let rowCount = usedRange.getRowCount();
 console.log(rowCount);
 ```
 
-As APIs de scripts do Office garantem que todos os dados da lista de trabalho ou script sejam precisos e atualizados quando necessário. Você não precisa se preocupar com essas sincronizações para que seu script seja executado corretamente. No entanto, um reconhecimento dessa comunicação entre scripts e nuvem pode ajudá-lo a evitar chamadas de rede não precisas.
+Office As APIs de scripts garantem que quaisquer dados na pasta de trabalho ou script são precisos e atualizados quando necessário. Você não precisa se preocupar com essas sincronizações para que seu script seja executado corretamente. No entanto, uma consciência dessa comunicação script-to-cloud pode ajudá-lo a evitar chamadas de rede não fornecidas.
 
 ## <a name="performance-optimizations"></a>Otimizações de desempenho
 
-Você pode aplicar técnicas simples para ajudar a reduzir a comunicação com a nuvem. Os seguintes padrões ajudam a acelerar seus scripts.
+Você pode aplicar técnicas simples para ajudar a reduzir a comunicação à nuvem. Os seguintes padrões ajudam a acelerar seus scripts.
 
-- Ler dados de uma vez em vez de repetidamente em um loop.
-- Remova instruções `console.log` desnecessárias.
-- Evite usar blocos try/catch.
+- Leia dados da pasta de trabalho uma vez em vez de repetidamente em um loop.
+- Remova `console.log` declarações desnecessárias.
+- Evite usar blocos de tentativa/captura.
 
-### <a name="read-workbook-data-outside-of-a-loop"></a>Ler dados da área de trabalho fora de um loop
+### <a name="read-workbook-data-outside-of-a-loop"></a>Leia dados da pasta de trabalho fora de um loop
 
-Qualquer método que obtém dados da agenda pode disparar uma chamada de rede. Em vez de fazer repetidamente a mesma chamada, você deve salvar dados localmente sempre que possível. Isso é especialmente verdadeiro ao lidar com loops.
+Qualquer método que obtenha dados da pasta de trabalho pode acionar uma chamada de rede. Em vez de fazer repetidamente a mesma chamada, você deve salvar os dados localmente sempre que possível. Isso é especialmente verdade quando se lida com loops.
 
-Considere um script para obter a contagem de números negativos no intervalo usado de uma planilha. O script precisa iterar em todas as células no intervalo usado. Para fazer isso, ele precisa do intervalo, do número de linhas e do número de colunas. Você deve armazená-los como variáveis locais antes de iniciar o loop. Caso contrário, cada iteração do loop força um retorno à agenda.
+Considere um script para obter a contagem de números negativos na faixa usada de uma planilha. O script precisa iterar sobre cada célula da gama usada. Para isso, precisa do intervalo, do número de linhas e do número de colunas. Você deve armazená-los como variáveis locais antes de iniciar o loop. Caso contrário, cada iteração do loop forçará um retorno à pasta de trabalho.
 
 ```TypeScript
 /**
@@ -70,15 +70,11 @@ function main(workbook: ExcelScript.Workbook) {
 ```
 
 > [!NOTE]
-> Como um experimento, tente substituir `usedRangeValues` no loop por `usedRange.getValues()` . Você pode notar que o script leva consideravelmente mais tempo para ser executado ao lidar com intervalos grandes.
+> Como um experimento, tente substituir `usedRangeValues` no loop com `usedRange.getValues()` . Você pode notar que o script leva consideravelmente mais tempo para ser executado ao lidar com grandes faixas.
 
-### <a name="remove-unnecessary-consolelog-statements"></a>Remover instruções `console.log` desnecessárias
+### <a name="avoid-using-trycatch-blocks-in-or-surrounding-loops"></a>Evite usar `try...catch` blocos em loops ou ao redor
 
-O log do console é uma ferramenta vital [para depurar seus scripts.](../testing/troubleshooting.md) No entanto, ele força o script a sincronizar com a agenda para garantir que as informações registradas estejam atualizadas. Considere remover instruções de registro em log desnecessárias (como aquelas usadas para teste) antes de compartilhar seu script. Isso normalmente não causará um problema de desempenho perceptível, a menos que `console.log()` a instrução esteja em um loop.
-
-### <a name="avoid-using-trycatch-blocks"></a>Evite usar blocos try/catch
-
-Não recomendamos o uso de [ `try` / `catch` blocos](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/try...catch) como parte do fluxo de controle esperado de um script. A maioria dos erros pode ser evitada verificando objetos retornados da agenda. Por exemplo, o script a seguir verifica se a tabela retornada pela lista de trabalho existe antes de tentar adicionar uma linha.
+Não recomendamos o uso [`try...catch`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/try...catch) de declarações em loops ou loops circundantes. Isso é pela mesma razão que você deve evitar ler dados em um loop: cada iteração força o script a sincronizar com a pasta de trabalho para garantir que nenhum erro tenha sido jogado. A maioria dos erros pode ser evitada verificando objetos retornados da pasta de trabalho. Por exemplo, o script a seguir verifica se a tabela devolvida pela pasta de trabalho existe antes de tentar adicionar uma linha.
 
 ```TypeScript
 /**
@@ -98,11 +94,15 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
+### <a name="remove-unnecessary-consolelog-statements"></a>Remover `console.log` declarações desnecessárias
+
+O registro de consoles é uma ferramenta vital para [depurar seus scripts](../testing/troubleshooting.md). No entanto, ele força o script a sincronizar com a pasta de trabalho para garantir que as informações registradas estão atualizadas. Considere remover declarações de registro desnecessárias (como as usadas para testes) antes de compartilhar seu script. Isso normalmente não causará um problema de desempenho perceptível, a menos que a `console.log()` instrução esteja em um loop.
+
 ## <a name="case-by-case-help"></a>Ajuda caso a caso
 
-À medida que a plataforma de Scripts do Office se expande para trabalhar com o [Power Automate](https://flow.microsoft.com/), Cartões [Adaptáveis](/adaptive-cards)e outros recursos entre produtos, os detalhes da comunicação entre as guias de trabalho de script se tornam mais complexos. Se precisar de ajuda para fazer seu script ser executado mais rapidamente, entre em contato com o [Stack Overflow.](https://stackoverflow.com/questions/tagged/office-scripts) Certifique-se de marcar sua pergunta com "office-scripts" para que os especialistas possam encontrá-la e ajudar.
+À medida que a plataforma Office Scripts se expande para trabalhar com [Power Automate,](https://flow.microsoft.com/) [Cartões Adaptativos](/adaptive-cards)e outros recursos entre produtos, os detalhes da comunicação script-workbook se tornam mais complexos. Se você precisar de ajuda para fazer seu script funcionar mais rápido, entre em contato com [o Microsoft Q&A](/answers/topics/office-scripts-dev.html). Certifique-se de marcar sua pergunta com "office-scripts-dev" para que os especialistas possam encontrá-la e ajudar.
 
 ## <a name="see-also"></a>Confira também
 
 - [Fundamentos de script para scripts do Office no Excel na Web](scripting-fundamentals.md)
-- [Documentos da Web do MDN: Loops e iteração](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Loops_and_iteration)
+- [MDN web docs: Loops e iteração](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Loops_and_iteration)

@@ -1,14 +1,14 @@
 ---
 title: Grave, edite e crie scripts do Office no Excel na Web
 description: Um tutorial sobre o básico dos scripts do Office, incluindo a gravação de scripts com o Gravador de ações e a gravação de dados em uma pasta de trabalho.
-ms.date: 01/06/2021
+ms.date: 05/17/2021
 localization_priority: Priority
-ms.openlocfilehash: 9f1b2e29d60ec0e370bdb29fde0f04be831a222b
-ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
+ms.openlocfilehash: 957a36d56af476bafe2c11e7c89a37e79b820cce
+ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232862"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52545023"
 ---
 # <a name="record-edit-and-create-office-scripts-in-excel-on-the-web"></a>Grave, edite e crie scripts do Office no Excel na Web
 
@@ -39,13 +39,6 @@ Primeiro, precisaremos de alguns dados e um pequeno script inicial.
 4. Pressione o botão **Ações de registro**.
 5. Clique nas células **A2:C2** (a linha "Laranjas") e defina a cor de preenchimento como laranja.
 6. Pare a gravação pressionando o botão **Parar**.
-7. Preencha o campo **Nome do script** com um nome digno de memória.
-8. *Opcional:* Preencha o campo **Descrição** com uma descrição significativa. Isso é usado para fornecer contexto sobre o que o script faz. Para o tutorial, você pode usar "Linhas de códigos de cores de uma tabela".
-
-   > [!TIP]
-   > Você pode editar a descrição de um script posteriormente no painel **Detalhes do script**, localizado no menu do Editor de códigos **...**.
-
-9. Salve o script pressionando o botão **Salvar**.
 
     Sua planilha deve ficar assim (não se preocupe se a cor for diferente):
 

@@ -1,42 +1,42 @@
 ---
-title: 'Office Cenário de exemplo de scripts: lembretes de tarefas automatizados'
-description: Um exemplo que usa Power Automate e Cartões Adaptáveis automatizam lembretes de tarefas em uma planilha de gerenciamento de projeto.
+title: 'Office Cenário de exemplo de scripts: Lembretes automatizados de tarefas'
+description: Uma amostra que usa Power Automate e Cartões Adaptativos automatiza lembretes de tarefas em uma planilha de gerenciamento de projetos.
 ms.date: 11/30/2020
 localization_priority: Normal
-ms.openlocfilehash: c5515abb1e36d1bf588ab034f62dfda2625c65dc
-ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
+ms.openlocfilehash: c254a627da8442c0974263908a41275182740b6e
+ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232855"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52545593"
 ---
-# <a name="office-scripts-sample-scenario-automated-task-reminders"></a>Office Cenário de exemplo de scripts: lembretes de tarefas automatizados
+# <a name="office-scripts-sample-scenario-automated-task-reminders"></a>Office Cenário de exemplo de scripts: Lembretes automatizados de tarefas
 
-Nesse cenário, você está gerenciando um projeto. Você usa uma planilha Excel para acompanhar o status de seus funcionários todos os meses. Muitas vezes, você precisa lembrar as pessoas para preencher seu status, então você decidiu automatizar esse processo de lembrete.
+Neste cenário você está gerenciando um projeto. Você usa uma planilha Excel para acompanhar o status de seus funcionários todos os meses. Muitas vezes você precisa lembrar as pessoas para preencher seu status, então você decidiu automatizar esse processo de lembrete.
 
-Você criará um fluxo Power Automate mensagens para pessoas com campos de status ausentes e aplicará suas respostas à planilha. Para fazer isso, você desenvolverá um par de scripts para lidar com o trabalho com a workbook. O primeiro script obtém uma lista de pessoas com status em branco e o segundo script adiciona uma cadeia de caracteres de status à linha direita. Você também usará cartões [](/microsoftteams/platform/task-modules-and-cards/what-are-cards) adaptáveis Teams para que os funcionários insiram o status diretamente da notificação.
+Você criará um fluxo de Power Automate para enviar mensagens às pessoas com campos de status ausentes e aplicar suas respostas à planilha. Para fazer isso, você desenvolverá um par de scripts para lidar com o trabalho com a pasta de trabalho. O primeiro script recebe uma lista de pessoas com status em branco e o segundo script adiciona uma sequência de status à linha direita. Você também fará uso de [Teams Cartões Adaptativos](/microsoftteams/platform/task-modules-and-cards/what-are-cards) para que os funcionários insiram seu status diretamente a partir da notificação.
 
-## <a name="scripting-skills-covered"></a>Habilidades de script abordadas
+## <a name="scripting-skills-covered"></a>Habilidades de scripting cobertas
 
 - Criar fluxos em Power Automate
-- Passar dados para scripts
+- Passe dados para scripts
 - Retornar dados de scripts
-- Teams Cartões adaptáveis
+- Teams Cartões adaptativos
 - Tabelas
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Este cenário usa [Power Automate](https://flow.microsoft.com) e [Microsoft Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software). Você precisará de ambos associados à conta que você usa para desenvolver Office Scripts. Para ter acesso gratuito a uma assinatura do Microsoft Developer para saber mais sobre e trabalhar com esses aplicativos, considere ingressar no programa Microsoft 365 [desenvolvedor.](https://developer.microsoft.com/microsoft-365/dev-program)
+Este cenário utiliza [Power Automate](https://flow.microsoft.com) e [Microsoft Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software). Você precisará de ambos associados à conta que você usa para desenvolver scripts Office. Para ter acesso gratuito a uma assinatura do Microsoft Developer para aprender e trabalhar com esses aplicativos, considere participar do [programa de desenvolvedores Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program).
 
-## <a name="setup-instructions"></a>Instruções de instalação
+## <a name="setup-instructions"></a>Instruções de configuração
 
-1. Baixe <a href="task-reminders.xlsx">task-reminders.xlsx</a> para seu OneDrive.
+1. Baixe <a href="task-reminders.xlsx">task-reminders.xlsx</a> para sua OneDrive.
 
-2. Abra a Excel na Web.
+2. Abra a pasta de trabalho em Excel na Web.
 
-3. Na guia **Automatizar,** abra **Todos os Scripts.**
+3. Na guia **Automate,** abra **todos os scripts**.
 
-4. Primeiro, precisamos de um script para obter todos os funcionários com relatórios de status ausentes na planilha. No painel de tarefas Editor de **Código,** pressione **Novo Script** e colar o seguinte script no editor.
+4. Primeiro, precisamos de um script para obter todos os funcionários com relatórios de status que estão faltando na planilha. No painel de tarefas do **Editor de Código,** **pressione o Novo Script** e cole o seguinte script no editor.
 
     ```TypeScript
     /**
@@ -89,7 +89,7 @@ Este cenário usa [Power Automate](https://flow.microsoft.com) e [Microsoft Team
 
 5. Salve o script com o nome **Get People**.
 
-6. Em seguida, precisamos de um segundo script para processar os cartões de relatório de status e colocar as novas informações na planilha. No painel de tarefas Editor de **Código,** pressione **Novo Script** e colar o seguinte script no editor.
+6. Em seguida, precisamos de um segundo script para processar os boletins de status e colocar as novas informações na planilha. No painel de tarefas do **Editor de Código,** **pressione o Novo Script** e cole o seguinte script no editor.
 
     ```TypeScript
     /**
@@ -143,31 +143,31 @@ Este cenário usa [Power Automate](https://flow.microsoft.com) e [Microsoft Team
     }
     ```
 
-7. Salve o script com o nome **Salvar Status**.
+7. Salve o script com o nome **Save Status**.
 
-8. Agora, precisamos criar o fluxo. Abra [Power Automate](https://flow.microsoft.com/).
+8. Agora, precisamos criar o fluxo. Aberto [Power Automate](https://flow.microsoft.com/).
 
     > [!TIP]
-    > Se você não tiver criado um fluxo antes, confira nosso tutorial Comece a usar [scripts](../../tutorials/excel-power-automate-manual.md) com Power Automate para aprender o básico.
+    > Se você ainda não criou um fluxo antes, confira nosso tutorial [Comece a usar scripts com Power Automate](../../tutorials/excel-power-automate-manual.md) para aprender o básico.
 
-9. Criar um novo **fluxo instantâneo.**
+9. Crie um novo **fluxo instantâneo**.
 
-10. Escolha **Disparar manualmente um fluxo** das opções e pressione **Criar**.
+10. Escolha **acionar manualmente um fluxo** das opções e **pressione Criar**.
 
-11. O fluxo precisa chamar o script **Obter Pessoas** para obter todos os funcionários com campos de status vazios. Pressione **Nova etapa** e selecione Excel Online **(Business)**. Em **Ações**, selecione **Executar script (visualização)**. Forneça as seguintes entradas para a etapa de fluxo:
+11. O fluxo precisa chamar o script **Get People** para obter todos os funcionários com campos de status vazios. Pressione **nova etapa** e selecione Excel **Online (Business)**. Em **Ações**, selecione **Executar script**. Forneça as seguintes entradas para a etapa de fluxo:
 
     - **Localização**: OneDrive for Business
     - **Biblioteca de Documentos**: OneDrive
-    - **Arquivo**: task-reminders.xlsx *(Escolhido por meio do navegador de arquivos)*
-    - **Script**: Obter pessoas
+    - **Arquivo**: task-reminders.xlsx *(Escolhido através do navegador de arquivo)*
+    - **Script**: Get People
 
-    :::image type="content" source="../../images/scenario-task-reminders-first-flow-step.png" alt-text="O Power Automate que mostra a primeira etapa executar fluxo de script":::
+    :::image type="content" source="../../images/scenario-task-reminders-first-flow-step.png" alt-text="O fluxo Power Automate mostrando a primeira etapa de fluxo de script run":::
 
-12. Em seguida, o fluxo precisa processar cada Funcionário na matriz retornada pelo script. Pressione **Nova etapa** e selecione Postar um Cartão **Adaptável para um** Teams usuário e aguarde uma resposta .
+12. Em seguida, o fluxo precisa processar cada Funcionário na matriz retornada pelo script. Pressione **nova etapa** e selecione Postar um **cartão adaptativo para um usuário Teams e esperar por uma resposta**.
 
-13. Para o **campo Destinatário,** adicione **email** do conteúdo dinâmico (a seleção terá o logotipo Excel por ele). Adicionar **email** faz com que a etapa de fluxo seja cercada por um **Apply a cada** bloco. Isso significa que a matriz será iterada por Power Automate.
+13. Para o campo **Destinatário,** adicione **e-mail** do conteúdo dinâmico (a seleção terá o logotipo Excel por ele). A adição **de e-mails** faz com que a etapa de fluxo seja cercada por um **Aplicar a cada** bloco. Isso significa que a matriz será iterada por Power Automate.
 
-14. O envio de um Cartão Adaptável exige que o JSON do cartão seja fornecido como **a Mensagem**. Você pode usar o [Designer de Cartão Adaptável](https://adaptivecards.io/designer/) para criar cartões personalizados. Para este exemplo, use o seguinte JSON.  
+14. O envio de um Cartão Adaptativo requer que o JSON do cartão seja fornecido como **a Mensagem**. Você pode usar o [Designer de Cartões Adaptativos](https://adaptivecards.io/designer/) para criar cartões personalizados. Para esta amostra, use o seguinte JSON.  
 
     ```json
     {
@@ -210,35 +210,35 @@ Este cenário usa [Power Automate](https://flow.microsoft.com) e [Microsoft Team
 
 15. Preencha os campos restantes da seguinte forma:
 
-    - **Mensagem de atualização**: Obrigado por enviar seu relatório de status. Sua resposta foi adicionada com êxito à planilha.
-    - **Deve atualizar o cartão**: Sim
+    - **Mensagem de atualização**: Obrigado por enviar seu relatório de status. Sua resposta foi adicionada com sucesso à planilha.
+    - **Deve atualizar cartão**: Sim
 
-16. No bloco **Aplicar a cada** bloco, após o Post an **Adaptive Card** to a Teams user and wait for a response , pressione **Adicionar uma ação**. Selecione **Excel Online (Business)**. Em **Ações**, selecione **Executar script (visualização)**. Forneça as seguintes entradas para a etapa de fluxo:
+16. No **Aplicar a cada** bloco, seguindo o **Post a Adaptive Card para um usuário Teams e esperar por uma resposta,** **pressione Adicionar uma ação**. Selecione **Excel Online (Negócios)**. Em **Ações**, selecione **Executar script**. Forneça as seguintes entradas para a etapa de fluxo:
 
     - **Localização**: OneDrive for Business
     - **Biblioteca de Documentos**: OneDrive
-    - **Arquivo**: task-reminders.xlsx *(Escolhido por meio do navegador de arquivos)*
-    - **Script**: Salvar Status
-    - **senderEmail**: email *(conteúdo dinâmico do Excel)*
-    - **statusReportResponse**: resposta *(conteúdo dinâmico de Teams)*
+    - **Arquivo**: task-reminders.xlsx *(Escolhido através do navegador de arquivo)*
+    - **Script**: Salvar status
+    - **e-mail**: e-mail *(conteúdo dinâmico de Excel)*
+    - **statusReportReponse**: resposta *(conteúdo dinâmico de Teams)*
 
-    :::image type="content" source="../../images/scenario-task-reminders-last-flow-step.png" alt-text="O Power Automate que mostra a etapa aplicar a cada etapa":::
+    :::image type="content" source="../../images/scenario-task-reminders-last-flow-step.png" alt-text="O fluxo Power Automate mostrando a etapa de aplicação a cada passo":::
 
-17. Salve o fluxo.
+17. Guarde o fluxo.
 
 ## <a name="running-the-flow"></a>Executando o fluxo
 
-Para testar o fluxo, certifique-se de que quaisquer linhas de tabela com status em branco usem um endereço de email vinculado a uma conta Teams cliente (você provavelmente deve usar seu próprio endereço de email durante o teste).
+Para testar o fluxo, certifique-se de que quaisquer linhas de tabela com status em branco usem um endereço de e-mail vinculado a uma conta Teams (você provavelmente deve usar seu próprio endereço de e-mail durante o teste).
 
-Você pode selecionar **Testar no** designer de fluxo ou executar o fluxo na página **Meus fluxos.** Depois de iniciar o fluxo e aceitar o uso das conexões necessárias, você deve receber um Cartão Adaptável de Power Automate até Teams. Depois de preencher o campo de status no cartão, o fluxo continuará e atualizará a planilha com o status que você fornece.
+Você pode selecionar **Teste** no designer de fluxo ou executar o fluxo da página **Meus fluxos.** Depois de iniciar o fluxo e aceitar o uso das conexões necessárias, você deve receber um Cartão Adaptive de Power Automate até Teams. Uma vez preenchido o campo de status no cartão, o fluxo continuará e atualizará a planilha com o status que você fornece.
 
 ### <a name="before-running-the-flow"></a>Antes de executar o fluxo
 
-:::image type="content" source="../../images/scenario-task-reminders-spreadsheet-before.png" alt-text="Uma planilha com um relatório de status contendo uma entrada de status ausente":::
+:::image type="content" source="../../images/scenario-task-reminders-spreadsheet-before.png" alt-text="Uma planilha com um relatório de status contendo uma entrada de status faltando":::
 
-### <a name="receiving-the-adaptive-card"></a>Receber o Cartão Adaptável
+### <a name="receiving-the-adaptive-card"></a>Recebendo o Cartão Adaptativo
 
-:::image type="content" source="../../images/scenario-task-reminders-adaptive-card.png" alt-text="Um Cartão Adaptável em Teams solicitando ao funcionário uma atualização de status":::
+:::image type="content" source="../../images/scenario-task-reminders-adaptive-card.png" alt-text="Um Cartão Adaptativo em Teams pedindo ao funcionário uma atualização de status":::
 
 ### <a name="after-running-the-flow"></a>Depois de executar o fluxo
 

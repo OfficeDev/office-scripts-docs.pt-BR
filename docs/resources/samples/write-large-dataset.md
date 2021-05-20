@@ -1,98 +1,97 @@
 ---
-title: Otimização de desempenho ao escrever um grande conjuntos de dados
-description: Saiba como otimizar o desempenho ao escrever um grande conjuntos de dados em Office Scripts.
-ms.date: 04/28/2021
+title: Escrever um grande conjuntos de dados
+description: Aprenda a dividir um grande conjunto de dados em operações de gravação menores em scripts Office.
+ms.date: 05/13/2021
 localization_priority: Normal
-ms.openlocfilehash: 9622494378a24db16ea43b5500d6efa156726ff8
-ms.sourcegitcommit: 763d341857bcb209b2f2c278a82fdb63d0e18f0a
+ms.openlocfilehash: 06abb58c61c18620d638ab3eb61ea68398bf20aa
+ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52285945"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52545620"
 ---
-# <a name="performance-optimization-when-writing-a-large-dataset"></a>Otimização de desempenho ao escrever um grande conjuntos de dados
+# <a name="write-a-large-dataset"></a>Escrever um grande conjuntos de dados
 
-## <a name="basic-performance-optimization"></a>Otimização básica de desempenho
+A `Range.setValues()` API coloca os dados em um intervalo. Essa API tem limitações dependendo de vários fatores, como tamanho de dados e configurações de rede. Isso significa que se você tentar escrever uma quantidade maciça de informações para uma pasta de trabalho como uma única operação, você precisará escrever os dados em lotes menores, a fim de atualizar de forma confiável uma [grande gama](../../testing/platform-limits.md).
 
-Para obter noções básicas Office scripts, consulte a seção [de](getting-started.md#basic-performance-considerations) desempenho do artigo Getting Started.
+Para o básico de desempenho em Office Scripts, leia [Melhorar o desempenho de seus scripts Office](../../develop/web-client-performance.md).
 
-## <a name="sample-code-optimize-performance-of-a-large-dataset"></a>Código de exemplo: otimizar o desempenho de um grande conjuntos de dados
+## <a name="sample-code-write-a-large-dataset"></a>Código de amostra: Escreva um grande conjunto de dados
 
-A `setValues()` API range permite definir os valores de um intervalo. Essa API tem limitações de dados dependendo de vários fatores, como tamanho de dados, configurações de rede, etc. Para atualizar com confiança uma grande variedade de dados, você precisará pensar em fazer atualizações de dados em partes menores. Esse script tenta fazer isso e grava linhas de um intervalo em partes para que, se um intervalo grande precisar ser atualizado, ele possa ser feito em partes menores. **Aviso:** ele não foi testado em vários tamanhos, portanto, esteja ciente disso se você quiser usá-lo em seu script. À medida que temos a oportunidade de testar, atualizaremos com as descobertas sobre como ele é feito para vários tamanhos de dados.
+Este script escreve linhas de uma gama em partes menores. Ele seleciona 1000 células para escrever de cada vez. Execute o script em uma planilha em branco para ver os lotes de atualização em ação. A saída do console dá mais informações sobre o que está acontecendo.
 
-Este script seleciona células 1K por parte, mas você pode substituir para testar como ele funciona para você. Ele atualiza linhas de 100 mil com 6 colunas de dados. Execute isso em uma planilha em branco para examinar.
+> [!NOTE]
+> Você pode alterar o número de linhas totais que estão sendo escritas alterando o valor de `SAMPLE_ROWS` . Você pode alterar o número de células para escrever como uma única ação alterando o valor de `CELLS_IN_BATCH` .
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
+  const SAMPLE_ROWS = 100000;
+  const CELLS_IN_BATCH = 10000;
+
+  // Get the current worksheet.
   const sheet = workbook.getActiveWorksheet();
 
-  let data: (string | number | boolean)[][] = [];
-  // Number of rows in the random data (x 6 columns).
-  const sampleRows = 100000;
-
   console.log(`Generating data...`)
-  // Dynamically generate some random data for testing purpose. 
-  for (let i = 0; i < sampleRows; i++) {
+  let data: (string | number | boolean)[][] = [];
+  // Generate six columns of random data per row. 
+  for (let i = 0; i < SAMPLE_ROWS; i++) {
     data.push([i, ...[getRandomString(5), getRandomString(20), getRandomString(10), Math.random()], "Sample data"]);
   }
 
   console.log(`Calling update range function...`);
-  const updated = updateRangeInChunks(sheet.getRange("B2"), data);
+  const updated = updateRangeInBatches(sheet.getRange("B2"), data, CELLS_IN_BATCH);
   if (!updated) {
     console.log(`Update did not take place or complete. Check and run again.`);
   }
 }
 
-function updateRangeInChunks(
+function updateRangeInBatches(
   startCell: ExcelScript.Range,
   values: (string | boolean | number)[][],
-  cellsInChunk: number = 10000
+  cellsInBatch: number
 ): boolean {
 
   const startTime = new Date().getTime();
-  console.log(`Cells per chunk setting: ${cellsInChunk}`);
-  if (!values) {
-    console.log(`Invalid input values to update.`);
-    return false;
-  }
-  if (values.length === 0 || values[0].length === 0) {
-    console.log(`Empty data -- nothing to update.`);
-    return true;
-  }
-  const totalCells = values.length * values[0].length;
+  console.log(`Cells per batch setting: ${cellsInBatch}`);
 
+  // Determine the total number of cells to write.
+  const totalCells = values.length * values[0].length;
   console.log(`Total cells to update in the target range: ${totalCells}`);
-  if (totalCells <= cellsInChunk) {
-    console.log(`No need to chunk -- updating directly`);
+  if (totalCells <= cellsInBatch) {
+    console.log(`No need to batch -- updating directly`);
     updateTargetRange(startCell, values);
     return true;
   }
 
-  const rowsPerChunk = Math.floor(cellsInChunk / values[0].length);
-  console.log("Rows per chunk: " + rowsPerChunk);
+  // Determine how many rows to write at once.
+  const rowsPerBatch = Math.floor(cellsInBatch / values[0].length);
+  console.log("Rows per batch: " + rowsPerBatch);
   let rowCount = 0;
   let totalRowsUpdated = 0;
-  let chunkCount = 0;
+  let batchCount = 0;
 
+  // Write each batch of rows.
   for (let i = 0; i < values.length; i++) {
     rowCount++;
-    if (rowCount === rowsPerChunk) {
-      chunkCount++;
-      console.log(`Calling update next chunk function. Chunk#: ${chunkCount}`);
-      updateNextChunk(startCell, values, rowsPerChunk, totalRowsUpdated);
-      rowCount = 0;
-      totalRowsUpdated += rowsPerChunk;
-      console.log(`${((totalRowsUpdated / values.length) * 100).toFixed(1)}% Done`);
+    if (rowCount === rowsPerBatch) {
+      batchCount++;
+      console.log(`Calling update next batch function. Batch#: ${batchCount}`);
+      updateNextBatch(startCell, values, rowsPerBatch, totalRowsUpdated);
 
+      // Write a completion percentage to help the user understand the progress.
+      rowCount = 0;
+      totalRowsUpdated += rowsPerBatch;
+      console.log(`${((totalRowsUpdated / values.length) * 100).toFixed(1)}% Done`);
     }
   }
-  console.log(`Updating remaining rows -- last chunk: ${rowCount}`)
+  
+  console.log(`Updating remaining rows -- last batch: ${rowCount}`)
   if (rowCount > 0) {
-    updateNextChunk(startCell, values, rowCount, totalRowsUpdated);
+    updateNextBatch(startCell, values, rowCount, totalRowsUpdated);
   }
 
   let endTime = new Date().getTime();
-  console.log(`Completed ${totalCells} cells update. It took: ${((endTime - startTime) / 1000).toFixed(6)} seconds to complete. ${((((endTime  - startTime) / 1000)) / cellsInChunk).toFixed(8)} seconds per ${cellsInChunk} cells-chunk.`);
+  console.log(`Completed ${totalCells} cells update. It took: ${((endTime - startTime) / 1000).toFixed(6)} seconds to complete. ${((((endTime  - startTime) / 1000)) / cellsInBatch).toFixed(8)} seconds per ${cellsInBatch} cells-batch.`);
 
   return true;
 }
@@ -100,22 +99,20 @@ function updateRangeInChunks(
 /**
  * A helper function that computes the target range and updates. 
  */
-
-function updateNextChunk(
+function updateNextBatch(
   startingCell: ExcelScript.Range,
   data: (string | boolean | number)[][],
-  rowsPerChunk: number,
+  rowsPerBatch: number,
   totalRowsUpdated: number
 ) {
-
   const newStartCell = startingCell.getOffsetRange(totalRowsUpdated, 0);
-  const targetRange = newStartCell.getResizedRange(rowsPerChunk - 1, data[0].length - 1);
-  console.log(`Updating chunk at range ${targetRange.getAddress()}`);
-  const dataToUpdate = data.slice(totalRowsUpdated, totalRowsUpdated + rowsPerChunk);
+  const targetRange = newStartCell.getResizedRange(rowsPerBatch - 1, data[0].length - 1);
+  console.log(`Updating batch at range ${targetRange.getAddress()}`);
+  const dataToUpdate = data.slice(totalRowsUpdated, totalRowsUpdated + rowsPerBatch);
   try {
     targetRange.setValues(dataToUpdate);
   } catch (e) {
-    throw `Error while updating the chunk range: ${JSON.stringify(e)}`;
+    throw `Error while updating the batch range: ${JSON.stringify(e)}`;
   }
   return;
 }
@@ -149,6 +146,6 @@ function getRandomString(length: number): string {
 }
 ```
 
-## <a name="training-video-optimize-performance-when-writing-a-large-dataset"></a>Vídeo de treinamento: otimizar o desempenho ao escrever um grande conjuntos de dados
+## <a name="training-video-write-a-large-dataset"></a>Vídeo de treinamento: Escreva um grande conjunto de dados
 
-[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/BP9Kp0Ltj7U).
+[Assista Sudhi Ramamurthy andar através desta amostra no YouTube](https://youtu.be/BP9Kp0Ltj7U).

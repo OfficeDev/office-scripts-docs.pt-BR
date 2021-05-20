@@ -1,41 +1,42 @@
 ---
-title: Enviar uma Teams de dados Excel dados
-description: Saiba como usar Office scripts para enviar uma reunião Teams de Excel dados.
+title: Envie uma reunião de Teams a partir de dados Excel
+description: Aprenda a usar Office Scripts para enviar uma reunião Teams a partir de dados Excel.
 ms.date: 05/06/2021
 localization_priority: Normal
-ms.openlocfilehash: d366da45618f211450a4779bc3a1aec4297eb376
-ms.sourcegitcommit: 763d341857bcb209b2f2c278a82fdb63d0e18f0a
+ROBOTS: NOINDEX
+ms.openlocfilehash: 85b39d7e3d1008dee01e7fe9c690116be1d7e5d8
+ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52285826"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52545627"
 ---
-# <a name="send-teams-meeting-from-excel-data"></a>Enviar Teams reunião de Excel dados
+# <a name="send-teams-meeting-from-excel-data"></a>Envie Teams reunião a partir de dados Excel
 
-Esta solução mostra como usar Office scripts e ações Power Automate para selecionar linhas do arquivo Excel e usá-lo para enviar um convite de reunião Teams e atualizar Excel.
+Esta solução mostra como usar Office Scripts e ações Power Automate para selecionar linhas de Excel arquivo e usá-lo para enviar um convite de reunião Teams e atualizar Excel.
 
 ## <a name="example-scenario"></a>Cenário de exemplo
 
-* Um recrutador de RH gerencia o cronograma de entrevista de candidatos em um arquivo Excel de dados.
-* O recrutador precisa enviar o Teams de reunião para o candidato e os entrevistadores. As regras de negócios são para selecionar:
+* Um recrutador de RH gerencia o cronograma de entrevistas dos candidatos em um arquivo Excel.
+* O recrutador precisa enviar o convite Teams reunião para o candidato e entrevistadores. As regras de negócios são selecionar:
 
-    (a) Convida apenas aqueles para os quais o convite ainda não foi enviado conforme registrado na coluna de arquivo.
+    a Convida apenas para aqueles para quem o convite ainda não foi enviado como registrado na coluna de arquivos.
 
-    (b) Datas de entrevista no futuro (sem datas passadas).
+    b Datas de entrevista no futuro (sem datas passadas).
 
-* O recrutador precisa atualizar o arquivo Excel com a confirmação de que todas as reuniões Teams foram enviadas para os registros qualificados.
+* O recrutador precisa atualizar o arquivo Excel com a confirmação de que todas as reuniões Teams foram enviadas para os registros elegíveis.
 
 A solução tem 3 partes:
 
-1. Office Script para extrair dados de uma tabela com base em condições e retorna uma matriz de objetos como dados JSON.
-1. Os dados são enviados para o Teams **Criar uma ação de Teams de** reunião para enviar convites. Envie uma Teams por instância na matriz JSON.
+1. Office Script para extrair dados de uma tabela com base nas condições e retorna uma matriz de objetos como dados JSON.
+1. Os dados são então enviados ao Teams **Criar uma ação de reunião Teams** para enviar convites. Envie uma Teams reunião por instância na matriz JSON.
 1. Envie os mesmos dados JSON para outro script Office para atualizar o status do convite.
 
-## <a name="sample-excel-file"></a>Exemplo Excel arquivo
+## <a name="sample-excel-file"></a>Arquivo de Excel de amostra
 
 Baixe o arquivo <a href="hr-schedule.xlsx">hr-schedule.xlsx</a> usado nesta solução e experimente você mesmo!
 
-## <a name="sample-code-select-filtered-rows-from-table-as-json"></a>Código de exemplo: selecione linhas filtradas da tabela como JSON
+## <a name="sample-code-select-filtered-rows-from-table-as-json"></a>Código de amostra: Selecione linhas filtradas da tabela como JSON
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook): InterviewInvite[] {
@@ -173,7 +174,7 @@ interface InterviewInvite extends BasicObj {
 }
 ```
 
-## <a name="sample-code-mark-as-invited"></a>Código de exemplo: Marcar como convidado
+## <a name="sample-code-mark-as-invited"></a>Código amostral: Mark como convidado
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook, completedInvitesString: string) {
@@ -227,6 +228,6 @@ interface InterviewInvite  {
 }
 ```
 
-## <a name="training-video-send-a-teams-meeting-from-excel-data"></a>Vídeo de treinamento: enviar uma reunião Teams de dados Excel dados
+## <a name="training-video-send-a-teams-meeting-from-excel-data"></a>Vídeo de treinamento: Envie uma reunião de Teams a partir de dados Excel
 
-[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/HyBdx52NOE8).
+[Assista Sudhi Ramamurthy andar através desta amostra no YouTube](https://youtu.be/HyBdx52NOE8).
