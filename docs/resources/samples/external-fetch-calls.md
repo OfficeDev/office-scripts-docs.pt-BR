@@ -1,6 +1,6 @@
 ---
 title: Usar chamadas de busca externa em Scripts do Office
-description: Aprenda a fazer chamadas de API externas em scripts Office.
+description: Saiba como fazer chamadas de API externas Office Scripts.
 ms.date: 05/14/2021
 localization_priority: Normal
 ms.openlocfilehash: df8814cbab16969a1140aecfe526fd68e609d43c
@@ -12,13 +12,13 @@ ms.locfileid: "52545749"
 ---
 # <a name="use-external-fetch-calls-in-office-scripts"></a>Usar chamadas de busca externa em Scripts do Office
 
-Este script obtém informações básicas sobre os repositórios de GitHub do usuário. Mostra como usar `fetch` em um cenário simples. Para obter mais informações sobre o uso `fetch` ou outras chamadas [externas, leia o suporte de chamadas de API externas em scripts Office](../../develop/external-calls.md)
+Este script obtém informações básicas sobre os repositórios de GitHub do usuário. Ele mostra como usar `fetch` em um cenário simples. Para obter mais informações sobre como `fetch` usar ou outras chamadas [externas,](../../develop/external-calls.md) leia Suporte a chamadas de API externa em Office Scripts
 
-Você pode saber mais sobre as APIs do GItHub que estão sendo usadas na [referência GitHub API](https://docs.github.com/rest/reference/repos#list-repositories-for-a-user). Você também pode ver a saída bruta de chamada de API visitando `https://api.github.com/users/{USERNAME}/repos` em um navegador da Web (certifique-se de substituir o espaço reservado {USERNAME} pelo seu ID GitHub).
+Você pode saber mais sobre as APIs GItHub que estão sendo usadas na [referência GitHub API.](https://docs.github.com/rest/reference/repos#list-repositories-for-a-user) Você também pode ver a saída de chamada de API bruta visitando um navegador da Web (certifique-se de substituir o espaço reservado {USERNAME} pelo seu `https://api.github.com/users/{USERNAME}/repos` ID GitHub de usuário).
 
-![Obtenha o exemplo de informações de repositórios](../../images/git.png)
+![Obter exemplo de informações de repositórios](../../images/git.png)
 
-## <a name="sample-code-get-basic-information-about-users-github-repositories"></a>Código de amostra: Obtenha informações básicas sobre os repositórios de GitHub do usuário
+## <a name="sample-code-get-basic-information-about-users-github-repositories"></a>Código de exemplo: obter informações básicas sobre os repositórios GitHub do usuário
 
 ```TypeScript
 async function main(workbook: ExcelScript.Workbook) {
@@ -55,6 +55,6 @@ interface License {
 }
 ```
 
-## <a name="training-video-how-to-make-external-api-calls"></a>Vídeo de treinamento: Como fazer chamadas externas de API
+## <a name="training-video-how-to-make-external-api-calls"></a>Vídeo de treinamento: como fazer chamadas de API externas
 
-[Assista Sudhi Ramamurthy andar através desta amostra no YouTube](https://youtu.be/fulP29J418E).
+[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/fulP29J418E).

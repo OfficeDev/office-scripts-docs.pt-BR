@@ -1,6 +1,6 @@
 ---
 title: Escrever um grande conjuntos de dados
-description: Aprenda a dividir um grande conjunto de dados em operações de gravação menores em scripts Office.
+description: Saiba como dividir um grande conjuntos de dados em operações de gravação menores Office Scripts.
 ms.date: 05/13/2021
 localization_priority: Normal
 ms.openlocfilehash: 06abb58c61c18620d638ab3eb61ea68398bf20aa
@@ -12,16 +12,16 @@ ms.locfileid: "52545620"
 ---
 # <a name="write-a-large-dataset"></a>Escrever um grande conjuntos de dados
 
-A `Range.setValues()` API coloca os dados em um intervalo. Essa API tem limitações dependendo de vários fatores, como tamanho de dados e configurações de rede. Isso significa que se você tentar escrever uma quantidade maciça de informações para uma pasta de trabalho como uma única operação, você precisará escrever os dados em lotes menores, a fim de atualizar de forma confiável uma [grande gama](../../testing/platform-limits.md).
+A `Range.setValues()` API coloca dados em um intervalo. Essa API tem limitações dependendo de vários fatores, como tamanho de dados e configurações de rede. Isso significa que, se você tentar gravar uma grande quantidade de informações em uma área de trabalho como uma única operação, precisará gravar os dados em lotes menores para atualizar com confiança um intervalo [grande.](../../testing/platform-limits.md)
 
-Para o básico de desempenho em Office Scripts, leia [Melhorar o desempenho de seus scripts Office](../../develop/web-client-performance.md).
+Para noções básicas de desempenho Office scripts, leia Melhorar o desempenho do seu Office [Scripts](../../develop/web-client-performance.md).
 
-## <a name="sample-code-write-a-large-dataset"></a>Código de amostra: Escreva um grande conjunto de dados
+## <a name="sample-code-write-a-large-dataset"></a>Código de exemplo: Gravar um grande conjuntos de dados
 
-Este script escreve linhas de uma gama em partes menores. Ele seleciona 1000 células para escrever de cada vez. Execute o script em uma planilha em branco para ver os lotes de atualização em ação. A saída do console dá mais informações sobre o que está acontecendo.
+Este script grava linhas de um intervalo em partes menores. Ele seleciona 1.000 células para gravar por vez. Execute o script em uma planilha em branco para ver os lotes de atualização em ação. A saída do console fornece mais informações sobre o que está acontecendo.
 
 > [!NOTE]
-> Você pode alterar o número de linhas totais que estão sendo escritas alterando o valor de `SAMPLE_ROWS` . Você pode alterar o número de células para escrever como uma única ação alterando o valor de `CELLS_IN_BATCH` .
+> Você pode alterar o número total de linhas que estão sendo escritas alterando o valor de `SAMPLE_ROWS` . Você pode alterar o número de células para gravar como uma única ação alterando o valor de `CELLS_IN_BATCH` .
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -146,6 +146,6 @@ function getRandomString(length: number): string {
 }
 ```
 
-## <a name="training-video-write-a-large-dataset"></a>Vídeo de treinamento: Escreva um grande conjunto de dados
+## <a name="training-video-write-a-large-dataset"></a>Vídeo de treinamento: Gravar um grande conjuntos de dados
 
-[Assista Sudhi Ramamurthy andar através desta amostra no YouTube](https://youtu.be/BP9Kp0Ltj7U).
+[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/BP9Kp0Ltj7U).
