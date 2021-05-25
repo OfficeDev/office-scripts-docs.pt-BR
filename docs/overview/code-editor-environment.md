@@ -1,14 +1,14 @@
 ---
 title: Office Ambiente do Editor de Código de Scripts
 description: Os pré-requisitos e informações de ambiente para Office scripts em Excel na Web.
-ms.date: 05/10/2021
+ms.date: 05/24/2021
 localization_priority: Normal
-ms.openlocfilehash: aa54939826f8dda2a068df0f3fabf0fd3a2c842b
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: aca97c31ba970617a9fa270021a5b5b976ae4a57
+ms.sourcegitcommit: 90ca8cdf30f2065f63938f6bb6780d024c128467
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52545819"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52639877"
 ---
 # <a name="office-scripts-code-editor-environment"></a>Office Ambiente do Editor de Código de Scripts
 
@@ -20,7 +20,7 @@ Os Scripts do Office são escritos em [TypeScript](https://www.typescriptlang.or
 
 Office Scripts são partes de código amplamente autoconstrutivas. Apenas uma pequena parte da funcionalidade do TypeScript é usada. Portanto, você pode editar scripts sem ter que aprender as complexidades de TypeScript. O Editor de Código também lida com a instalação, a compilação e a execução do código, para que você não precise se preocupar com nada além do próprio script. É possível aprender o idioma e criar scripts sem conhecimento de programação anterior. No entanto, se você for novo na programação, recomendamos aprender alguns conceitos básicos antes de prosseguir com Office Scripts:
 
-[!INCLUDE [Preview note](../includes/coding-basics-references.md)]
+[!INCLUDE [Recommended coding resources](../includes/coding-basics-references.md)]
 
 ## <a name="office-scripts-javascript-api"></a>Office Scripts JavaScript API
 

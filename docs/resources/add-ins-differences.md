@@ -3,12 +3,12 @@ title: Diferenças entre os scripts do Office e os suplementos do Office
 description: O comportamento e as diferenças de API entre Office scripts e Office de complementos.
 ms.date: 06/01/2020
 localization_priority: Normal
-ms.openlocfilehash: 45993d08d85cfceb299216dddbe2e7da9fd2e404
-ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
+ms.openlocfilehash: 5c30406867da05952dedda684f765df5e7a7e53f
+ms.sourcegitcommit: 09d8859d5269ada8f1d0e141f6b5a4f96d95a739
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232631"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52631675"
 ---
 # <a name="differences-between-office-scripts-and-office-add-ins"></a>Diferenças entre os scripts do Office e os suplementos do Office
 
@@ -28,15 +28,13 @@ Office Atualmente, os scripts só têm suporte para Excel na Web. Toda a gravaç
 
 ## <a name="apis"></a>APIs
 
-Não há nenhuma versão síncrona das APIs Office JavaScript para Office de usuário. As APIs Office scripts padrão são exclusivas da plataforma e têm várias otimizações e alterações para evitar o uso do `load` / `sync` paradigma.
-
-Algumas das [APIs Excel JavaScript](/javascript/api/excel?view=excel-js-preview&preserve-view=true) são compatíveis com as [APIs Office Scripts Async.](../develop/excel-async-model.md) Alguns exemplos e blocos de código de complemento podem ser portados para blocos `Excel.run` com conversão mínima. Embora as duas plataformas compartilhem a funcionalidade, há lacunas. Os dois principais conjuntos de API que Office os Complementos têm, mas Office scripts não são eventos e apIs comuns.
+Embora as APIs Office JavaScript para Office e as APIs Office scripts compartilhem algumas funcionalidades, elas são plataformas diferentes. As OFFICE scripts são uma versão otimizada e síncrona do modelo Excel API JavaScript. A principal diferença é o uso do `load` / `sync` paradigma com os complementos. Além disso, os complementos oferecem APIs para eventos e um conjunto mais amplo de funcionalidades fora da Excel, conhecidas como APIs Comuns.
 
 ### <a name="events"></a>Eventos
 
 Office Scripts não suportam [eventos](/office/dev/add-ins/excel/excel-add-ins-events). Cada script executa o código em um único `main` método e termina. Ele não é reativado quando os eventos são disparados e, portanto, não pode registrar eventos.
 
-### <a name="common-apis"></a>APIs comuns
+### <a name="common-apis"></a>Common APIs
 
 Office Os scripts não podem usar [APIs comuns.](/javascript/api/office) Se você precisar de autenticação, janelas de diálogo ou outros recursos com suporte apenas para APIs comuns, provavelmente precisará criar um Office Add-in em vez de um script Office.
 

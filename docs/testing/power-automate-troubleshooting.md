@@ -1,14 +1,14 @@
 ---
 title: Solucionar Office scripts em execução no Power Automate
 description: Dicas, informações da plataforma e problemas conhecidos com a integração entre Office Scripts e Power Automate.
-ms.date: 05/17/2021
+ms.date: 05/18/2021
 localization_priority: Normal
-ms.openlocfilehash: e26378051c764d97b4e8d748abc85fbe095c7b03
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: 3d114b8b9aceb95285ecfc78ddbd868541b9f04c
+ms.sourcegitcommit: 09d8859d5269ada8f1d0e141f6b5a4f96d95a739
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52545564"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52631661"
 ---
 # <a name="troubleshoot-office-scripts-running-in-power-automate"></a>Solucionar Office scripts em execução no Power Automate
 
@@ -23,11 +23,11 @@ Power Automate executa seu script na Excel de trabalho escolhida em seu nome. A 
 
 Algumas APIs de referência relativa lançam erros Power Automate. Outras têm um comportamento padrão que implica no estado de um usuário. Ao projetar seus scripts, certifique-se de usar referências absolutas para planilhas e intervalos. Isso torna o fluxo Power Automate consistente, mesmo que as planilhas sejam reorganizadas.
 
-### <a name="script-methods-that-fail-when-run-power-automate-flows"></a>Métodos de script que falham ao executar Power Automate fluxos
+### <a name="script-methods-that-fail-when-run-in-power-automate-flows"></a>Métodos de script que falham quando executados em Power Automate fluxos
 
-Os métodos a seguir lançarão um erro e falharão quando chamados de um script em Power Automate fluxo.
+Os métodos a seguir lançam um erro e falham quando chamados de um script em Power Automate fluxo.
 
-| Classe | Método |
+| Classe | Method |
 |--|--|
 | [Gráfico](/javascript/api/office-scripts/excelscript/excelscript.chart) | `activate` |
 | [Range](/javascript/api/office-scripts/excelscript/excelscript.range) | `select` |
@@ -41,10 +41,25 @@ Os métodos a seguir lançarão um erro e falharão quando chamados de um script
 
 Os métodos a seguir usam um comportamento padrão, em vez do estado atual de qualquer usuário.
 
-| Classe | Método | Power Automate comportamento |
+| Classe | Method | Power Automate comportamento |
 |--|--|--|
 | [Pasta de trabalho](/javascript/api/office-scripts/excelscript/excelscript.workbook) | `getActiveWorksheet` | Retorna a primeira planilha da pasta de trabalho ou a planilha atualmente ativada pelo `Worksheet.activate` método. |
 | [Planilha](/javascript/api/office-scripts/excelscript/excelscript.worksheet) | `activate` | Marca a planilha como a planilha ativa para fins de `Workbook.getActiveWorksheet` . |
+
+## <a name="data-refresh-not-supported-in-power-automate"></a>Atualização de dados não suportada em Power Automate
+
+Office Os scripts não podem atualizar dados quando executados Power Automate. Métodos como `PivotTable.refresh` não fazer nada quando chamado em um fluxo. Além disso, Power Automate não dispara uma atualização de dados para fórmulas que usam links de workbook.
+
+### <a name="script-methods-that-do-nothing-when-run-in-power-automate-flows"></a>Métodos de script que não fazem nada quando executados Power Automate fluxos
+
+Os métodos a seguir não fazem nada em um script quando chamados por Power Automate. Eles ainda retornam com êxito e não lançam erros.
+
+| Classe | Method |
+|--|--|
+| [PivotTable](/javascript/api/office-scripts/excelscript/excelscript.pivottable) | `refresh` |
+| [Pasta de trabalho](/javascript/api/office-scripts/excelscript/excelscript.workbook) | `refreshAllDataConnections` |
+| [Pasta de trabalho](/javascript/api/office-scripts/excelscript/excelscript.workbook) | `refreshAllPivotTables` |
+| [Planilha](/javascript/api/office-scripts/excelscript/excelscript.worksheet) | `refreshAllPivotTables` |
 
 ## <a name="select-workbooks-with-the-file-browser-control"></a>Selecionar pasta de trabalho com o controle do navegador de arquivos
 

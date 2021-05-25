@@ -1,14 +1,14 @@
 ---
 title: Office Propriedade e armazenamento de arquivos de scripts
 description: Informações sobre como Office scripts são armazenados em Microsoft OneDrive e transferidos entre proprietários.
-ms.date: 05/17/2021
+ms.date: 05/21/2021
 localization_priority: Normal
-ms.openlocfilehash: 556d784dc1fe64873866c49ab2726a4c68abc1a7
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: 25683d2b6ac2e8ac47b465b24fa087af83175806
+ms.sourcegitcommit: 09d8859d5269ada8f1d0e141f6b5a4f96d95a739
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52545798"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52631654"
 ---
 # <a name="office-scripts-file-storage-and-ownership"></a>Office Propriedade e armazenamento de arquivos de scripts
 
@@ -27,6 +27,15 @@ Os scripts compartilhados com uma de suas guias de trabalho permanecem no OneDri
 Office Os scripts são armazenados no OneDrive. Eles seguem as políticas de retenção e exclusão especificadas pelo Microsoft OneDrive. Para saber como lidar com os scripts criados e compartilhados por um usuário que está sendo removido da sua organização, confira [retenção e exclusão do OneDrive](/onedrive/retention-and-deletion).
 
 Durante a edição, os arquivos são temporariamente armazenados no navegador. Você deve salvar o script antes de fechar a janela Excel para salvá-lo no OneDrive local. Não se esqueça de salvar o arquivo após edições, ou essas edições só estarão na versão do arquivo do navegador.
+
+## <a name="audit-office-scripts-usage-at-the-admin-level"></a>Auditar Office uso de Scripts no nível de administrador
+
+Descubra quais locatários estão usando Office scripts com o log de auditoria no centro de conformidade. Para saber como usar essa ferramenta, visite Pesquisar o log de auditoria no Centro de Conformidade & [Segurança.](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#search-the-audit-log)
+
+Para descobrir quem está usando Office scripts com a ferramenta de pesquisa, adicione o `.osts` **campo Arquivo, pasta ou site.** Isso pesquisa todos os arquivos com a extensão de arquivo Office Scripts. Se alguém em sua organização tiver usado o recurso Office Scripts, a atividade do usuário será a que aparece nos resultados da pesquisa de log de auditoria.
+
+> [!NOTE]
+> No momento, a execução de um script não está registrada. Somente as ações criar, exibir e modificar são registradas.
 
 ## <a name="see-also"></a>Confira também
 

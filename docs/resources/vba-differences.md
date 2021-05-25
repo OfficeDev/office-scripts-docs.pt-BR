@@ -1,14 +1,14 @@
 ---
 title: Diferenças entre Office scripts e macros do VBA
 description: O comportamento e as diferenças de API entre Office Scripts e Excel VBA.
-ms.date: 05/18/2021
+ms.date: 05/21/2021
 localization_priority: Normal
-ms.openlocfilehash: 612a5f21d935fd262a6e9fd12a3431956105636a
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: 8be7388221d0f1b9e8142177de526c5c7828b426
+ms.sourcegitcommit: 09d8859d5269ada8f1d0e141f6b5a4f96d95a739
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52545585"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52631667"
 ---
 # <a name="differences-between-office-scripts-and-vba-macros"></a>Diferenças entre Office scripts e macros do VBA
 
@@ -29,7 +29,7 @@ Office Scripts usam um tempo de execução universal para JavaScript. Isso ofere
 
 As macros VBA têm a mesma autorização de segurança que Excel. Isso dá a eles acesso total à sua área de trabalho. Office Os scripts só têm acesso à workbook, não ao computador que hospeda a workbook. Além disso, nenhum token de autenticação JavaScript pode ser compartilhado com scripts. Isso significa que o script não tem os tokens do usuário interno nem há recursos de API para entrar em um serviço externo, portanto, eles não podem usar tokens existentes para fazer chamadas externas em nome do usuário.
 
-Os administradores têm três opções para macros VBA: permitir todas as macros no locatário, não permitir macros no locatário ou permitir somente macros com certificados assinados. Essa falta de granularidade dificulta a isolação de um único ator ruim. Atualmente, Office scripts estão ativas ou desligadas para um locatário. No entanto, estamos trabalhando para dar aos administradores mais controle sobre scripts individuais e criadores de scripts.
+Os administradores têm três opções para macros VBA: permitir todas as macros no locatário, não permitir macros no locatário ou permitir somente macros com certificados assinados. Essa falta de granularidade dificulta a isolação de um único ator ruim. Atualmente, Office scripts podem estar desligados para um locatário inteiro, para um locatário inteiro ou para um grupo de usuários em um locatário. Os administradores também têm controle sobre quem pode compartilhar scripts com outras pessoas e quem pode usar scripts em Power Automate.
 
 ## <a name="coverage"></a>Cobertura
 

@@ -3,12 +3,12 @@ title: Solucionar Office scripts
 description: Dicas e técnicas de depuração para Office scripts, bem como recursos de ajuda.
 ms.date: 05/17/2021
 localization_priority: Normal
-ms.openlocfilehash: ff0ac1e63084c7c541d2a4925f1f011d16fa4992
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: 04ea0ea5d49d40667d249a6f4f4b109e03362940
+ms.sourcegitcommit: 09d8859d5269ada8f1d0e141f6b5a4f96d95a739
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52545550"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52631696"
 ---
 # <a name="troubleshoot-office-scripts"></a>Solucionar Office scripts
 
@@ -84,9 +84,11 @@ Para obter informações específicas sobre como executar scripts Power Automate
 
 [Stack Overflow](https://stackoverflow.com/questions/tagged/office-scripts) é uma comunidade de desenvolvedores dispostos a ajudar com problemas de codificação. Muitas vezes, você poderá encontrar a solução para seu problema por meio de uma pesquisa rápida de Estouro de Pilha. Se não, faça sua pergunta e marque-a com a marca "office-scripts". Certifique-se de mencionar que você está criando um *script* de Office , não um Office *Desem.*
 
-Se você encontrar um problema com a API JavaScript Office, crie um problema no repositório [officeDev/office-js GitHub](https://github.com/OfficeDev/office-js) repositório. Os membros da equipe do produto responderão a problemas e fornecerão mais assistência. A criação de um problema no repositório **officeDev/office-js** indica que você encontrou uma falha na biblioteca de API JavaScript Office que a equipe do produto deve resolver.
+Para enviar uma solicitação de recurso para Office Scripts, poste sua ideia na página Voz do Usuário [ou](https://excel.uservoice.com/forums/274580-excel-for-the-web?category_id=143439)se a solicitação de recurso já existir lá, adicione seu voto a ela. Certifique-se de arquivar a solicitação em Excel para a Web na categoria "Macros, Scripts e Complementos".
 
-Se houver um problema com o Gravador de Ações ou Editor, envie comentários por meio do botão **Ajuda > Comentários** no Excel.
+Se houver um problema com o Gravador de Ações ou Editor, entre em contato conosco. No menu do painel de tarefas do Editor de **Código...** selecione o botão **Enviar comentários** para compartilhar quaisquer problemas.
+
+:::image type="content" source="../images/code-editor-feedback.png" alt-text="O menu de estouro do Editor de Código com o botão &quot;Enviar comentários&quot;":::
 
 ## <a name="see-also"></a>Confira também
 

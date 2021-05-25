@@ -1,23 +1,24 @@
 ---
 title: Chamada de API externa nos scripts do Office
 description: Suporte e orientação para fazer chamadas de API externas em Office Script.
-ms.date: 05/17/2021
+ms.date: 05/21/2021
 localization_priority: Normal
-ms.openlocfilehash: fd6ba0c57bf4cabb2d07421355cacff373f6706c
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: 5d768b53112473c1774f8fe8257b197ffead4a63
+ms.sourcegitcommit: 09d8859d5269ada8f1d0e141f6b5a4f96d95a739
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52545079"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52631640"
 ---
 # <a name="external-api-call-support-in-office-scripts"></a>Chamada de API externa nos scripts do Office
 
-Os autores de script não devem esperar comportamento consistente ao usar [APIs externas](https://developer.mozilla.org/docs/Web/API) durante a fase de visualização da plataforma. Dessa forma, não confie em APIs externas para cenários críticos de script.
-
-As chamadas para APIs externas só podem ser feitas por meio do aplicativo Excel, não por meio Power Automate [em circunstâncias normais.](#external-calls-from-power-automate)
+Scripts suportam chamadas para serviços externos. Use esses serviços para fornecer dados e outras informações à sua workbook.
 
 > [!CAUTION]
 > Chamadas externas podem resultar em dados confidenciais expostos a pontos de extremidade indesejáveis. O administrador pode estabelecer proteção de firewall contra essas chamadas.
+
+> [!IMPORTANT]
+> As chamadas para APIs externas só podem ser feitas por meio do aplicativo Excel, não por meio Power Automate [em circunstâncias normais.](#external-calls-from-power-automate)
 
 ## <a name="configure-your-script-for-external-calls"></a>Configurar seu script para chamadas externas
 
@@ -36,7 +37,7 @@ Você precisará aprender as interfaces do serviço externo para fazer chamadas 
 
 * Não há nenhuma maneira de entrar ou usar o tipo OAuth2 de fluxos de autenticação. Todas as chaves e credenciais devem ser codificadas (ou leitura de outra fonte).
 * Não há infraestrutura para armazenar credenciais e chaves da API. Isso terá que ser gerenciado pelo usuário.
-* Cookies de documento `localStorage` e objetos não são `sessionStorage` suportados. 
+* Cookies de documento `localStorage` e objetos não são `sessionStorage` suportados.
 * Chamadas externas podem resultar em dados confidenciais expostos a pontos de extremidade indesejáveis ou dados externos a serem trazidos para as guias de trabalho internas. O administrador pode estabelecer proteção de firewall contra essas chamadas. Verifique as políticas locais antes de confiar em chamadas externas.
 * Verifique a quantidade de transferência de dados antes de assumir uma dependência. Por exemplo, retirar todo o conjuntos de dados externos pode não ser a melhor opção e, em vez disso, a paginação deve ser usada para obter dados em partes.
 
