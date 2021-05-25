@@ -1,16 +1,16 @@
 ---
 title: Scripts do Office no Excel na Web
 description: Uma breve introdução ao Gravador de ação e ao Editor de códigos de scripts do Office.
-ms.date: 05/17/2021
+ms.date: 05/24/2021
 localization_priority: Priority
-ms.openlocfilehash: 36bf679c1778375ad2fb010d34efc88678fd9f57
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: fe1552ca51e8ef251f029aa11968725ad466a841
+ms.sourcegitcommit: 90ca8cdf30f2065f63938f6bb6780d024c128467
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52545805"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52639884"
 ---
-# <a name="office-scripts-in-excel-on-the-web-preview"></a>Scripts do Office no Excel na Web (visualização)
+# <a name="office-scripts-in-excel-on-the-web"></a>Scripts do Office no Excel na Web
 
 Os scripts do Office no Excel na Web permitem automatizar suas tarefas diárias. Você pode gravar suas ações do Excel com o Gravador de Ações, que cria um script de linguagem TypeScript. Você também pode criar e editar scripts com o Editor de códigos. Os scripts podem ser compartilhados com toda a organização, para que seus colegas possam automatizar os fluxos de trabalho.
 
@@ -21,8 +21,6 @@ Esta série de documentos ensina como usar essas ferramentas. Você será aprese
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qdFF]
 
 ## <a name="requirements"></a>Requisitos
-
-[!INCLUDE [Preview note](../includes/preview-note.md)]
 
 Para utilizar os Scripts do Office, você precisará do seguinte.
 
@@ -68,7 +66,7 @@ Depois de concluir o tutorial, leia [ Fundamentos de script para Scripts do Offi
 
 :::image type="content" source="../images/script-sharing.png" alt-text="A página Detalhes do script exibindo a opção 'Compartilhar com outras pessoas nesta pasta de trabalho'":::
 
-Os scripts do Office podem ser compartilhados com outros usuários de uma pasta de trabalho do Excel. Quando você compartilha um script com outras pessoas em uma pasta de trabalho, o script é anexado àquela pasta. Seus scripts são armazenados no OneDrive e, quando você compartilha um, é possível criar um link para ele na pasta de trabalho que você abriu.
+Os scripts do Office podem ser compartilhados com outros usuários de uma pasta de trabalho do Excel. Quando você compartilha um script em uma pasta de trabalho compartilhada, todos com acesso à pasta de trabalho também podem visualizar e executar seu script.
 
 Mais detalhes sobre o compartilhamento e descompartilhamento de scripts são encontrados no artigo [Compartilhando Scripts do Office no Excel para a Web](https://support.microsoft.com/office/sharing-office-scripts-in-excel-for-the-web-226eddbc-3a44-4540-acfe-fccda3d1122b).
 
@@ -81,7 +79,7 @@ Mais detalhes sobre o compartilhamento e descompartilhamento de scripts são enc
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Conclua o [tutorial Scripts do Office no Excel na Web](../tutorials/excel-tutorial.md) para aprender como criar seus primeiros scripts do Office.
+Conclua o [tutorial de Scripts do Office no Excel na web](../tutorials/excel-tutorial.md) para saber como criar seu primeiro script.
 
 ## <a name="see-also"></a>Confira também
 
