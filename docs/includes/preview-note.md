@@ -1,2 +1,0 @@
-> [!NOTE]
-> Os Scripts do Office no Excel na Web estão na visualização pública. As funcionalidades descritas aqui estão sujeitas a alterações conforme o recurso se desenvolve. Você pode enviar comentários sobre os Scripts do Office por meio do botão **Ajuda > Feedback** no Excel. Você pode enviar comentários sobre a documentação para o repositório do GitHub [OfficeDev/office-scripts-docs](https://github.com/OfficeDev/office-scripts-docs/issues).
