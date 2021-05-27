@@ -1,14 +1,14 @@
 ---
 title: Grave, edite e crie scripts do Office no Excel na Web
 description: Um tutorial sobre o básico dos scripts do Office, incluindo a gravação de scripts com o Gravador de ações e a gravação de dados em uma pasta de trabalho.
-ms.date: 05/17/2021
+ms.date: 05/23/2021
 localization_priority: Priority
-ms.openlocfilehash: 957a36d56af476bafe2c11e7c89a37e79b820cce
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: 19cd7bf6c3120d674553d37a36f45d36f46ee852
+ms.sourcegitcommit: 0343e4a9843f7ab6ec99d6ddf955050271b061c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52545023"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52655902"
 ---
 # <a name="record-edit-and-create-office-scripts-in-excel-on-the-web"></a>Grave, edite e crie scripts do Office no Excel na Web
 
@@ -35,7 +35,7 @@ Primeiro, precisaremos de alguns dados e um pequeno script inicial.
     |Limões-galego |600 |500 |
     |Toranjas |900 |700 |
 
-3. Abra a guia **Automação**. Se você não vir a guia **Automação**, verifique o extravasamento da fita pressionando a seta suspensa.
+3. Abra a guia **Automação**. Se você não vir a guia **Automação**, verifique o excedente da faixa de opções pressionando a seta suspensa. Se ainda não estiver lá, siga o conselho do artigo [Solução de Problemas de Scripts do Office ](../testing/troubleshooting.md#automate-tab-not-appearing-or-office-scripts-unavailable).
 4. Pressione o botão **Ações de registro**.
 5. Clique nas células **A2:C2** (a linha "Laranjas") e defina a cor de preenchimento como laranja.
 6. Pare a gravação pressionando o botão **Parar**.
