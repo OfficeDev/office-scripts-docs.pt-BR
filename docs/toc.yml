@@ -95,6 +95,8 @@ items:
                 href: resources/scenarios/noaa-data-fetch.md
               - name: Calculadora de notas
                 href: resources/scenarios/grade-calculator.md
+              - name: Agendar entrevistas no Teams
+                href: resources/scenarios/schedule-interviews-in-teams.md
               - name: Lembretes de tarefas (com Power Automate)
                 href: resources/scenarios/task-reminders.md
           - name: Contribuições da comunidade
