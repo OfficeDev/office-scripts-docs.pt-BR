@@ -1,22 +1,22 @@
 ---
 title: Diferenças entre os scripts do Office e os suplementos do Office
 description: O comportamento e as diferenças de API entre Office scripts e Office de complementos.
-ms.date: 06/01/2020
+ms.date: 06/02/2021
 localization_priority: Normal
-ms.openlocfilehash: 5c30406867da05952dedda684f765df5e7a7e53f
-ms.sourcegitcommit: 09d8859d5269ada8f1d0e141f6b5a4f96d95a739
+ms.openlocfilehash: 46f5f2ea6fea15e9506f5c7d30941311fc2e669e
+ms.sourcegitcommit: 0bfc9472d107e32c804029659317f8e81fec5d19
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52631675"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779360"
 ---
 # <a name="differences-between-office-scripts-and-office-add-ins"></a>Diferenças entre os scripts do Office e os suplementos do Office
 
-Office Os complementos e Office scripts têm muito em comum. Ambos oferecem controle automatizado de uma Excel uma API JavaScript. No entanto, as APIs Office scripts são uma versão especializada e síncrona da API Office JavaScript.
+Entenda as diferenças entre Office scripts e Office de Office para saber quando usar cada um deles. Office Os scripts foram projetados para serem feitos rapidamente por qualquer pessoa que procura melhorar seu fluxo de trabalho. Office Os complementos se integram à interface do usuário Office para uma experiência mais interativa por meio de botões de faixa de opções e painéis de tarefas. Office Os complementos também podem expandir funções de Excel por meio do fornecimento de funções personalizadas.
 
 :::image type="content" source="../images/office-programmability-diagram.png" alt-text="Um diagrama de quatro quadrantes mostrando as áreas de foco para diferentes soluções Office extensibilidade. Os Office scripts e os Office web add-ins estão focados na Web e na colaboração, mas os scripts do Office atendem aos usuários finais (enquanto os Office Web Add-ins são destinados a desenvolvedores profissionais)":::
 
-Office Os scripts são executados para conclusão com uma pressão de botão manual ou como uma etapa em [Power Automate](https://flow.microsoft.com/), enquanto os Office de complementos persistem enquanto seus painéis de tarefas estão abertos. Isso significa que os complementos podem manter o estado durante uma sessão, enquanto Office scripts não mantêm um estado interno entre as executações. Se você descobrir que Excel extensão do Excel precisa exceder os recursos da plataforma de scripts, visite Office documentação de Office de [Complementos](/office/dev/add-ins) para saber mais sobre Office Desempla.
+Office Os scripts são executados para conclusão com uma pressionamento de botão manual ou como uma etapa em [Power Automate](https://flow.microsoft.com/), enquanto os Office de complementos continuam sendo executados dependendo de como eles são configurados. Por exemplo, você pode configurar um Office para continuar a ser executado mesmo quando o painel de tarefas estiver fechado. Isso significa que Office os complementos mantêm o estado durante uma sessão, enquanto Office scripts não mantêm um estado interno entre as executações. Se a solução que você está criando exigir um estado mantido, você deve visitar a documentação de Office de Office de [complementos](/office/dev/add-ins) para saber mais sobre os Office Desem.
 
 O restante deste artigo descreve as principais diferenças entre os Office e Office Scripts.
 
@@ -28,11 +28,11 @@ Office Atualmente, os scripts só têm suporte para Excel na Web. Toda a gravaç
 
 ## <a name="apis"></a>APIs
 
-Embora as APIs Office JavaScript para Office e as APIs Office scripts compartilhem algumas funcionalidades, elas são plataformas diferentes. As OFFICE scripts são uma versão otimizada e síncrona do modelo Excel API JavaScript. A principal diferença é o uso do `load` / `sync` paradigma com os complementos. Além disso, os complementos oferecem APIs para eventos e um conjunto mais amplo de funcionalidades fora da Excel, conhecidas como APIs Comuns.
+Embora as APIs Office JavaScript para Office e as APIs Office scripts compartilhem algumas funcionalidades, elas são plataformas diferentes. As OFFICE scripts são um subconjunto otimizado e síncrono do modelo de API JavaScript Excel JavaScript. A principal diferença é o uso do `load` / `sync` paradigma com os complementos. Além disso, os complementos oferecem APIs para eventos e um conjunto mais amplo de funcionalidades fora da Excel, conhecidas como APIs Comuns.
 
 ### <a name="events"></a>Eventos
 
-Office Scripts não suportam [eventos](/office/dev/add-ins/excel/excel-add-ins-events). Cada script executa o código em um único `main` método e termina. Ele não é reativado quando os eventos são disparados e, portanto, não pode registrar eventos.
+Office Os scripts não suportam eventos de nível de [trabalho.](/office/dev/add-ins/excel/excel-add-ins-events) Os scripts são disparados por usuários pressionando o **botão Executar** para um script ou por Power Automate. Cada script executa o código em um único `main` método e termina.
 
 ### <a name="common-apis"></a>Common APIs
 
