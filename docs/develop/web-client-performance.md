@@ -3,12 +3,12 @@ title: Melhorar o desempenho de seus Office Scripts
 description: Crie scripts mais rápidos compreendendo a comunicação entre a Excel de trabalho e seu script.
 ms.date: 05/17/2021
 localization_priority: Normal
-ms.openlocfilehash: 512e2108cb81cf9ac8ae98980951d5d01b3d2de9
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: a5bd879625b9c3bac0caa621dde312f7c961dd5c
+ms.sourcegitcommit: 2aaf7dc527cb6c9f1206550b2c5745280503b2a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52544988"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52957697"
 ---
 # <a name="improve-the-performance-of-your-office-scripts"></a>Melhorar o desempenho de seus Office Scripts
 
@@ -100,7 +100,7 @@ O log de console é uma ferramenta vital [para depurar seus scripts.](../testing
 
 ## <a name="case-by-case-help"></a>Ajuda caso a caso
 
-À medida que Office plataforma scripts se expande para trabalhar com [Power Automate,](https://flow.microsoft.com/) [Cartões](/adaptive-cards)Adaptáveis e outros recursos entre produtos, os detalhes da comunicação script-workbook se tornam mais complexos. Se você precisar de ajuda para tornar seu script mais rápido, entre em contato com o [Microsoft Q&A](/answers/topics/office-scripts-dev.html). Certifique-se de marcar sua pergunta com "office-scripts-dev" para que os especialistas possam encontrá-la e ajudar.
+À medida que Office plataforma scripts se expande para trabalhar com [Power Automate,](https://flow.microsoft.com/) [Cartões](/adaptive-cards)Adaptáveis e outros recursos entre produtos, os detalhes da comunicação script-workbook se tornam mais complexos. Se você precisar de ajuda para tornar seu script mais rápido, entre em contato com o [Microsoft Q&A](/answers/topics/office-scripts-excel-dev.html). Certifique-se de marcar sua pergunta com "office-scripts-dev" para que os especialistas possam encontrá-la e ajudar.
 
 ## <a name="see-also"></a>Confira também
 
