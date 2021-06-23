@@ -3,12 +3,12 @@ title: Retorna dados de um script para um fluxo do Power Automate executado auto
 description: Um tutorial que mostra como enviar emails de lembrete executando Scripts do Office para o Excel na web através do Power Automate.
 ms.date: 12/15/2020
 localization_priority: Priority
-ms.openlocfilehash: e7f1051076bf84cfbbec0fcdd72777766dbcf152
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: 6c1041ede630319f75ccdad453734828eaa8bd3d
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52544995"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074673"
 ---
 # <a name="return-data-from-a-script-to-an-automatically-run-power-automate-flow"></a>Retornar os dados de um script para um fluxo do Power Automate executado automaticamente
 
@@ -36,9 +36,9 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
     > [!IMPORTANT]
     > O roteiro que você vai escrever utiliza a primeira entrada correspondente na tabela, portanto, certifique-se de que seu nome esteja acima de qualquer linha com a semana atual.
 
-    :::image type="content" source="../images/power-automate-return-tutorial-1.png" alt-text="Uma planilha contendo os dados da tabela de rotação de plantão":::
+    :::image type="content" source="../images/power-automate-return-tutorial-1.png" alt-text="Uma planilha contendo os dados da tabela de rotação chamada.":::
 
-## <a name="create-an-office-script"></a>Criar um Script do Office
+## <a name="create-an-office-script"></a>Crie um Script do Office
 
 1. Vá até a guia **Automatizar** e selecione **Todos os Scripts**.
 
@@ -131,7 +131,7 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
 
     :::image type="content" source="../images/power-automate-tutorial-1.png" alt-text="Botão Criar no Power Automate":::
 
-1. Na seção **Iniciar de Modelo em Branco**, selecione **Fluxo de nuvem agendado**.
+1. Na seção **Iniciar de um Modelo em Branco**, selecione **Fluxo de nuvem agendado**.
 
     :::image type="content" source="../images/power-automate-return-tutorial-2.png" alt-text="O botão Fluxo de nuvem agendado no Power Automate":::
 
@@ -142,7 +142,7 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
     - **Repetir a cada**: 1 Semana
     - **Nesses dias**: M
 
-    :::image type="content" source="../images/power-automate-return-tutorial-3.png" alt-text="O Diálogo &quot;Construa um fluxo de nuvens programado&quot; do Power Automate mostrando opções. As opções incluem nome do fluxo, hora para começar, quantas vezes repetir e qual dia da semana executar o fluxo":::
+    :::image type="content" source="../images/power-automate-return-tutorial-3.png" alt-text="A caixa de diálogo &quot;Criar um fluxo de nuvem agendado&quot; do Power Automate mostrando opções. As opções incluem nome do fluxo, hora de início, frequência de repetição e um dia da semana para executar o fluxo.":::
 
 1. Pressione **Criar**.
 
@@ -152,9 +152,9 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
 
     :::image type="content" source="../images/power-automate-tutorial-4.png" alt-text="Opção do Excel Online (Business) no Power Automate":::
 
-1. Em **Ações**, selecione **Executar script**.
+1. Em **Ações**, selecione **Executar o script**.
 
-    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Executar a opção de ação de script no Power Automate":::
+    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Executar a opção de ação do script no Power Automate":::
 
 1. Em seguida, você selecionará a pasta de trabalho e o script que será utilizado na etapa do fluxo. Use a pasta de trabalho **on-call-rotation.xlsx** que você criou em seu OneDrive. Especifique as seguintes configurações para o conector **Executar Script**:
 
@@ -163,13 +163,13 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
     - **Arquivo**: on-call-rotation.xlsx *(Escolhido através do navegador de arquivos)*
     - **Script**: Obter uma Pessoa de Plantão
 
-    :::image type="content" source="../images/power-automate-return-tutorial-4.png" alt-text="As configurações do conector do Power Automate para executar um script":::
+    :::image type="content" source="../images/power-automate-return-tutorial-4.png" alt-text="As configurações do conector do Power Automate para executar um script.":::
 
 1. Pressione **Nova etapa**.
 
 1. Terminaremos o fluxo enviando o email de lembrete. Selecione **Enviar um email (V2)** usando a barra de pesquisa do conector. Use o controle **Adicionar conteúdo dinâmico** para adicionar o endereço de email retornado pelo script. Ele será rotulado como **resultado** com o ícone do Excel próximo a ele. Você pode fornecer qualquer assunto e corpo de texto que desejar.
 
-    :::image type="content" source="../images/power-automate-return-tutorial-5.png" alt-text="As configurações do conector Power Automate Outlook para enviar um e-mail. As opções incluem o arquivo a ser enviado, o assunto do e-mail e o corpo do e-mail, assim como opções avançadas"::: 
+    :::image type="content" source="../images/power-automate-return-tutorial-5.png" alt-text="As configurações do conector do Outlook do Power Automate Outlook para o envio de email. As opções incluem o arquivo a ser enviado, o assunto e o corpo do email, além das opções avançadas."::: 
 
     > [!NOTE]
     > Este tutorial usa o Outlook. Sinta-se à vontade para usar seu serviço de e-mail preferido, embora algumas opções possam ser diferentes.

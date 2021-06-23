@@ -3,12 +3,12 @@ title: Passar dados para scripts numa execução automática do fluxo no Power A
 description: Tutorial sobre executar os Scripts do Office para Excel na Web por meio do Power Automate quando emails são recebidos e transmitidos para o script.
 ms.date: 12/28/2020
 localization_priority: Priority
-ms.openlocfilehash: 79686eacf4d38bd5db5e082a9bfb73edc969451d
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: b459501a955f337c7a0ad4040c7d7f5d9e344b93
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52545833"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074680"
 ---
 # <a name="pass-data-to-scripts-in-an-automatically-run-power-automate-flow"></a>Passar dados para scripts numa execução automática do fluxo no Power Automate.
 
@@ -160,11 +160,11 @@ function main(
 
 3. Na seção **Começar no espaço em branco**, selecione **Fluxo automático**. Isso cria um fluxo de trabalho iniciado por um evento, como o recebimento de emails.
 
-    :::image type="content" source="../images/power-automate-params-tutorial-1.png" alt-text="A opção de fluxo automatizado no Power Automate":::
+    :::image type="content" source="../images/power-automate-params-tutorial-1.png" alt-text="A opção de Fluxo automatizado no Power Automate":::
 
 4. Na caixa de diálogo exibida, insira o nome para seu fluxo na **caixa de texto** Nome de Fluxo. Em seguida, selecione **Quando um novo email chegar** da lista de opções em **escolha o gatilho de fluxo**. Talvez seja necessário procurar pela opção usando a caixa de pesquisa. Por fim, pressione **criar**.
 
-    :::image type="content" source="../images/power-automate-params-tutorial-2.png" alt-text="Parte do fluxo do Power Automate exibindo o &quot;nome do fluxo&quot; e as opções de &quot;escolher o gatilho do fluxo&quot;. O nome do fluxo é &quot;Gravar Fluxo de E-mails&quot; e o acionador é a opção &quot;Quando um novo e-mail chegar no Outlook&quot;":::
+    :::image type="content" source="../images/power-automate-params-tutorial-2.png" alt-text="Parte do fluxo do Power Automate mostrando o &quot;nome do fluxo&quot; e as opções de &quot;escolher gatilho de fluxo&quot;. O nome do fluxo é &quot;Gravar Fluxo de Emails&quot; e o gatilho é a opção para &quot;Quando um novo email chegar no Outlook&quot;.":::
 
     > [!NOTE]
     > Este tutorial usa o Outlook. Sinta-se à vontade para usar seu serviço de e-mail preferido, embora algumas opções possam ser diferentes.
@@ -175,9 +175,9 @@ function main(
 
     :::image type="content" source="../images/power-automate-tutorial-4.png" alt-text="Opção do Excel Online (Business) no Power Automate":::
 
-7. Em **Ações**, selecione **Executar script**.
+7. Em **Ações**, selecione **Executar o script**.
 
-    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Executar a opção de ação de script no Power Automate":::
+    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Executar a opção de ação do script no Power Automate":::
 
 8. Depois, você selecionará a pasta de trabalho, o script e os argumentos de entrada do script para usar na etapa do fluxo. Para o tutorial, você fará o uso da pasta de trabalho criada no seu OneDrive, mas é possível usar qualquer pasta de trabalho em um site OneDrive ou no Microsoft Office SharePoint Online. Especifique as seguintes configurações para o conector **Executar Script**:
 
@@ -191,7 +191,7 @@ function main(
 
     *Observe que os parâmetros para o script só aparecerão quando o script for selecionado.*
 
-    :::image type="content" source="../images/power-automate-params-tutorial-3.png" alt-text="A ação de script de execução do Power Automate exibindo as opções que são exibidas depois que o script é selecionado":::
+    :::image type="content" source="../images/power-automate-params-tutorial-3.png" alt-text="A ação de script de execução do Power Automate mostrando as opções que aparecem depois que o script é selecionado.":::
 
 9. Clique em **Salvar**.
 
@@ -207,9 +207,9 @@ Seu fluxo já está habilitado. Ele executará automaticamente seu script sempre
 
 Quando o fluxo é acionado e executa seu script com sucesso, você deverá ver as atualizações da planilha na pasta de trabalho e da tabela dinâmica.
 
-:::image type="content" source="../images/power-automate-params-tutorial-4.png" alt-text="Uma planilha exibindo a tabela de e-mail depois que o fluxo foi executado três vezes":::
+:::image type="content" source="../images/power-automate-params-tutorial-4.png" alt-text="Uma planilha mostrando a tabela de email depois que o fluxo foi executado três vezes.":::
 
-:::image type="content" source="../images/power-automate-params-tutorial-5.png" alt-text="Uma planilha exibindo o PivotTable depois que o fluxo foi executado três vezes":::
+:::image type="content" source="../images/power-automate-params-tutorial-5.png" alt-text="Uma planilha mostrando o PivotTable depois que o fluxo foi executado três vezes.":::
 
 ## <a name="next-steps"></a>Próximas etapas
 
