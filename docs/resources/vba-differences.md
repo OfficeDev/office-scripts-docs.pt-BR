@@ -3,19 +3,19 @@ title: Diferenças entre Office scripts e macros do VBA
 description: O comportamento e as diferenças de API entre Office Scripts e Excel VBA.
 ms.date: 05/21/2021
 localization_priority: Normal
-ms.openlocfilehash: 8be7388221d0f1b9e8142177de526c5c7828b426
-ms.sourcegitcommit: 09d8859d5269ada8f1d0e141f6b5a4f96d95a739
+ms.openlocfilehash: c934b546834e018e5bac1da4d90043eb3bb52e63
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52631667"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074414"
 ---
 # <a name="differences-between-office-scripts-and-vba-macros"></a>Diferenças entre Office scripts e macros do VBA
 
 Office Scripts e macros VBA têm muito em comum. Ambos permitem que os usuários automatizem soluções por meio de um gravador de ações fácil de usar e permitem edições dessas gravações. Ambas as estruturas foram projetadas para capacitar pessoas que podem não se considerar programadores para criar pequenos programas em Excel.
 A diferença fundamental é que as macros VBA são desenvolvidas para soluções de área de trabalho e Office scripts são projetados para soluções seguras baseadas em nuvem. Atualmente, Office scripts são suportados apenas em Excel na Web.
 
-:::image type="content" source="../images/office-programmability-diagram.png" alt-text="Um diagrama de quatro quadrantes mostrando as áreas de foco para soluções Office extensibilidade diferentes. Tanto Office scripts quanto macros VBA foram projetados para ajudar os usuários finais a criar soluções, mas Office scripts são criados para a Web e colaboração (enquanto o VBA é para a área de trabalho)":::
+:::image type="content" source="../images/office-programmability-diagram.png" alt-text="Um diagrama de quatro quadrantes mostrando as áreas de foco para soluções Office extensibilidade diferentes. Tanto Office scripts quanto macros VBA foram projetados para ajudar os usuários finais a criar soluções, mas Office scripts são criados para a Web e colaboração (enquanto o VBA é para a área de trabalho).":::
 
 Este artigo descreve as principais diferenças entre as macros do VBA (bem como o VBA em geral) e Office Scripts. Como Office scripts estão disponíveis apenas para Excel, esse é o único host que está sendo discutido aqui.
 

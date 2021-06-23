@@ -3,12 +3,12 @@ title: Office Ambiente do Editor de Código de Scripts
 description: Os pré-requisitos e informações de ambiente para Office scripts em Excel na Web.
 ms.date: 05/27/2021
 localization_priority: Normal
-ms.openlocfilehash: 2334b0f98dfe03d97c35e6d1f54eeb45c06a134c
-ms.sourcegitcommit: c75f71b8abde962e922927a18145dd1d9b361b05
+ms.openlocfilehash: 4a8adc03e372bc769fb44b1c4e3e98c7a4531756
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52731138"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074463"
 ---
 # <a name="office-scripts-code-editor-environment"></a>Office Ambiente do Editor de Código de Scripts
 
@@ -34,13 +34,13 @@ Office Scripts não suportam o uso de bibliotecas JavaScript externas de terceir
 
 IntelliSense é um conjunto de recursos do Editor de Código que ajudam você a escrever código. Ele fornece realce automático, realce de erro de sintaxe e documentação de API em linha.
 
-IntelliSense sugestões conforme você digita, semelhante ao texto sugerido em Excel. Pressionar a tecla Tab ou Enter insere o membro sugerido. Acionar IntelliSense local atual do cursor pressionando as teclas Ctrl+Space. Essas sugestões são especialmente úteis ao concluir um método. A assinatura do método exibida por IntelliSense contém uma lista de argumentos necessários, o tipo de cada argumento, se um determinado argumento é obrigatório ou opcional e o tipo de retorno do método.
+IntelliSense sugestões conforme você digita, semelhante ao texto sugerido em Excel. Pressionar a tecla Tab ou Enter insere o membro sugerido. Acionar IntelliSense local atual do cursor pressionando as teclas Ctrl+Space. Essas sugestões são especialmente úteis ao concluir um método. A assinatura do método exibida pelo IntelliSense contém uma lista de argumentos necessários, o tipo de cada argumento, se um determinado argumento é obrigatório ou opcional e o tipo de retorno do método.
 
 Passe o cursor sobre um método, classe ou outro objeto de código para ver mais informações. Passe o mouse sobre um erro de sintaxe ou sugestão de código, representado por uma linha vermelha ou amarela, para ver sugestões sobre como corrigir o problema. Geralmente, IntelliSense fornece uma opção "Correção Rápida" para alterar automaticamente o código.
 
-:::image type="content" source="../images/implicit-any-editor-message.png" alt-text="Uma mensagem de erro no texto de foco do Editor de Código com um botão &quot;Correção Rápida&quot;":::
+:::image type="content" source="../images/implicit-any-editor-message.png" alt-text="Uma mensagem de erro no texto de foco do Editor de Código com um botão &quot;Correção Rápida&quot;.":::
 
-O Office De código de scripts usa o mesmo mecanismo IntelliSense que Visual Studio Code. Para saber mais sobre o recurso, [visite Visual Studio Code de IntelliSense Recursos.](https://code.visualstudio.com/docs/editor/intellisense#_intellisense-features)
+O Office de Código de Scripts usa o mesmo mecanismo IntelliSense que Visual Studio Code. Para saber mais sobre o recurso, visite os recursos Visual Studio Code [do IntelliSense.](https://code.visualstudio.com/docs/editor/intellisense#_intellisense-features)
 
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado
 

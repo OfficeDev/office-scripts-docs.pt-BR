@@ -3,12 +3,12 @@ title: Saída Excel dados como JSON
 description: Saiba como Excel dados de tabela como JSON a ser usado Power Automate.
 ms.date: 05/06/2021
 localization_priority: Normal
-ms.openlocfilehash: 9b8c0c48b969cfd05750ca4a6703a5ecbb9d18d2
-ms.sourcegitcommit: 763d341857bcb209b2f2c278a82fdb63d0e18f0a
+ms.openlocfilehash: fefeda4f7e60880758f8f01e03f437a70c4111d4
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52285812"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074568"
 ---
 # <a name="output-excel-table-data-as-json-for-usage-in-power-automate"></a>Dados Excel de tabela de saída como JSON para uso em Power Automate
 
@@ -16,17 +16,17 @@ Excel dados de tabela podem ser representados como uma matriz de objetos na form
 
 _Dados da tabela de entrada_
 
-:::image type="content" source="../../images/table-input.png" alt-text="Uma planilha mostrando dados da tabela de entrada":::
+:::image type="content" source="../../images/table-input.png" alt-text="Uma planilha mostrando dados da tabela de entrada.":::
 
 Uma variação desse exemplo também inclui os hiperlinks em uma das colunas da tabela. Isso permite que níveis adicionais de dados de células sejam a superfície no JSON.
 
 _Dados da tabela de entrada que incluem hiperlinks_
 
-:::image type="content" source="../../images/table-hyperlink-view.png" alt-text="Uma planilha mostrando uma coluna de dados de tabela formatados como hiperlinks":::
+:::image type="content" source="../../images/table-hyperlink-view.png" alt-text="Uma planilha mostrando uma coluna de dados de tabela formatados como hiperlinks.":::
 
 _Caixa de diálogo para editar hiperlink_
 
-:::image type="content" source="../../images/table-hyperlink-edit.png" alt-text="A caixa de diálogo Editar Hiperlink exibindo opções para alterar hiperlinks":::
+:::image type="content" source="../../images/table-hyperlink-edit.png" alt-text="A caixa de diálogo Editar Hiperlink exibe opções para alterar hiperlinks.":::
 
 ## <a name="sample-excel-file"></a>Exemplo Excel arquivo
 

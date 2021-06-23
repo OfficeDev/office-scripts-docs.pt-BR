@@ -3,12 +3,12 @@ title: Solucionar Office scripts
 description: Dicas e técnicas de depuração para Office scripts, bem como recursos de ajuda.
 ms.date: 05/17/2021
 localization_priority: Normal
-ms.openlocfilehash: 04ea0ea5d49d40667d249a6f4f4b109e03362940
-ms.sourcegitcommit: 09d8859d5269ada8f1d0e141f6b5a4f96d95a739
+ms.openlocfilehash: 251ad72588422a86c52c81666164c2c4bd79bdb5
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52631696"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074645"
 ---
 # <a name="troubleshoot-office-scripts"></a>Solucionar Office scripts
 
@@ -25,7 +25,7 @@ Office Os erros de scripts se enquadram em uma das duas categorias:
 
 Erros e avisos de tempo de compilação são mostrados inicialmente no Editor de Código. Eles são mostrados pelos sublinhados vermelho ondulados no editor. Eles também são exibidos na guia **Problemas** na parte inferior do painel de tarefas Editor de Código. Selecionar o erro dará mais detalhes sobre o problema e sugerirá soluções. Erros em tempo de compilação devem ser resolvidos antes de executar o script.
 
-:::image type="content" source="../images/explicit-any-editor-message.png" alt-text="Um erro de compilador mostrado no texto de foco do Editor de Código":::
+:::image type="content" source="../images/explicit-any-editor-message.png" alt-text="Um erro de compilador mostrado no texto de foco do Editor de Código.":::
 
 Você também pode ver sublinhados de aviso laranja e mensagens informativas cinzas. Elas indicam sugestões de desempenho ou outras possibilidades em que o script pode ter efeitos não intencional. Esses avisos devem ser examinados de perto antes de descartá-los.
 
@@ -47,10 +47,10 @@ function main(workbook: ExcelScript.Workbook) {
 Erros de tempo de compilação e tempo de execução exibem mensagens de erro no console quando um script é executado. Eles dão um número de linha onde o problema foi encontrado. Lembre-se de que a causa raiz de qualquer problema pode ser uma linha de código diferente da indicada no console.
 
 A imagem a seguir mostra a saída do console para [o erro explícito `any` ](../develop/typescript-restrictions.md) do compilador. Observe o texto `[5, 16]` no início da cadeia de caracteres de erro. Isso indica que o erro está na linha 5, começando no caractere 16.
-:::image type="content" source="../images/explicit-any-error-message.png" alt-text="O console do Editor de Código exibindo uma mensagem de erro explícita &quot;qualquer&quot;":::
+:::image type="content" source="../images/explicit-any-error-message.png" alt-text="O console do Editor de Código exibindo uma mensagem de erro &quot;qualquer&quot; explícita.":::
 
 A imagem a seguir mostra a saída do console para um erro de tempo de execução. Aqui, o script tenta adicionar uma planilha com o nome de uma planilha existente. Novamente, observe a "Linha 2" anterior ao erro para mostrar qual linha investigar.
-:::image type="content" source="../images/runtime-error-console.png" alt-text="O console do Editor de Código exibindo um erro da chamada 'addWorksheet'":::
+:::image type="content" source="../images/runtime-error-console.png" alt-text="O console do Editor de Código exibindo um erro da chamada 'addWorksheet'.":::
 
 ## <a name="console-logs"></a>Logs de console
 
@@ -72,7 +72,7 @@ As etapas a seguir devem ajudar a solucionar problemas relacionados à guia **Au
 1. [Certifique-se de Microsoft 365 sua licença de Office Scripts](../overview/excel.md#requirements).
 1. [Verifique se o navegador tem suporte](platform-limits.md#browser-support).
 1. [Verifique se os cookies de terceiros estão habilitados.](platform-limits.md#third-party-cookies)
-1. [Verifique se o administrador não desabilitou Office scripts no Microsoft 365 de administração.](/microsoft-365/admin/manage/manage-office-scripts-settings)
+1. [Verifique se o administrador não desabilitou Office scripts no Centro de administração do Microsoft 365](/microsoft-365/admin/manage/manage-office-scripts-settings).
 
 [!INCLUDE [Teams support note](../includes/teams-support-note.md)]
 
@@ -88,7 +88,7 @@ Para enviar uma solicitação de recurso para Office Scripts, poste sua ideia na
 
 Se houver um problema com o Gravador de Ações ou Editor, entre em contato conosco. No menu do painel de tarefas do Editor de **Código...** selecione o botão **Enviar comentários** para compartilhar quaisquer problemas.
 
-:::image type="content" source="../images/code-editor-feedback.png" alt-text="O menu de estouro do Editor de Código com o botão &quot;Enviar comentários&quot;":::
+:::image type="content" source="../images/code-editor-feedback.png" alt-text="O menu de estouro do Editor de Código com o botão &quot;Enviar comentários&quot;.":::
 
 ## <a name="see-also"></a>Confira também
 

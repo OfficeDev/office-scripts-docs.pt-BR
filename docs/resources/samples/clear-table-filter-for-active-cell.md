@@ -3,12 +3,12 @@ title: Limpar filtro de coluna de tabela com base no local ativo da célula
 description: Saiba como limpar o filtro de coluna de tabela com base no local ativo da célula.
 ms.date: 05/03/2021
 localization_priority: Normal
-ms.openlocfilehash: 06fba191a79f4641d4d1017bda332c7559b50e6d
-ms.sourcegitcommit: 763d341857bcb209b2f2c278a82fdb63d0e18f0a
+ms.openlocfilehash: d6f267b433be9a0ddf44edf53ed92a136eb2ded6
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52285924"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074435"
 ---
 # <a name="clear-table-column-filter-based-on-active-cell-location"></a>Limpar filtro de coluna de tabela com base no local ativo da célula
 
@@ -18,11 +18,11 @@ Se você quiser saber mais sobre como salvar o filtro antes de desmatá-lo (e re
 
 _Antes de limpar o filtro de coluna (observe a célula ativa)_
 
-:::image type="content" source="../../images/before-filter-applied.png" alt-text="Uma célula ativa antes de limpar o filtro de coluna":::
+:::image type="content" source="../../images/before-filter-applied.png" alt-text="Uma célula ativa antes de limpar o filtro de coluna.":::
 
 _Depois de limpar o filtro de coluna_
 
-:::image type="content" source="../../images/after-filter-cleared.png" alt-text="Uma célula ativa após limpar o filtro de coluna":::
+:::image type="content" source="../../images/after-filter-cleared.png" alt-text="Uma célula ativa após limpar o filtro de coluna.":::
 
 ## <a name="sample-code-clear-table-column-filter-based-on-active-cell"></a>Código de exemplo: Limpar filtro de coluna de tabela com base na célula ativa
 

@@ -3,12 +3,12 @@ title: 'Office Cenário de exemplo de scripts: lembretes de tarefas automatizado
 description: Um exemplo que usa Power Automate e Cartões Adaptáveis automatizam lembretes de tarefas em uma planilha de gerenciamento de projeto.
 ms.date: 11/30/2020
 localization_priority: Normal
-ms.openlocfilehash: c254a627da8442c0974263908a41275182740b6e
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: 1297f10e45c515079994d659378331fc4a2be744
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52545593"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074659"
 ---
 # <a name="office-scripts-sample-scenario-automated-task-reminders"></a>Office Cenário de exemplo de scripts: lembretes de tarefas automatizados
 
@@ -161,7 +161,7 @@ Este cenário usa [Power Automate](https://flow.microsoft.com) e [Microsoft Team
     - **Arquivo**: task-reminders.xlsx *(Escolhido por meio do navegador de arquivos)*
     - **Script**: Obter pessoas
 
-    :::image type="content" source="../../images/scenario-task-reminders-first-flow-step.png" alt-text="O Power Automate que mostra a primeira etapa executar fluxo de script":::
+    :::image type="content" source="../../images/scenario-task-reminders-first-flow-step.png" alt-text="O Power Automate que mostra a primeira etapa executar fluxo de script.":::
 
 12. Em seguida, o fluxo precisa processar cada Funcionário na matriz retornada pelo script. Pressione **Nova etapa** e selecione Postar um Cartão **Adaptável para um** Teams usuário e aguarde uma resposta .
 
@@ -222,7 +222,7 @@ Este cenário usa [Power Automate](https://flow.microsoft.com) e [Microsoft Team
     - **senderEmail**: email *(conteúdo dinâmico do Excel)*
     - **statusReportResponse**: resposta *(conteúdo dinâmico de Teams)*
 
-    :::image type="content" source="../../images/scenario-task-reminders-last-flow-step.png" alt-text="O Power Automate que mostra a etapa aplicar a cada etapa":::
+    :::image type="content" source="../../images/scenario-task-reminders-last-flow-step.png" alt-text="O Power Automate fluxo mostrando a etapa apply-to-each.":::
 
 17. Salve o fluxo.
 
@@ -234,12 +234,12 @@ Você pode selecionar **Testar no** designer de fluxo ou executar o fluxo na pá
 
 ### <a name="before-running-the-flow"></a>Antes de executar o fluxo
 
-:::image type="content" source="../../images/scenario-task-reminders-spreadsheet-before.png" alt-text="Uma planilha com um relatório de status contendo uma entrada de status ausente":::
+:::image type="content" source="../../images/scenario-task-reminders-spreadsheet-before.png" alt-text="Uma planilha com um relatório de status contendo uma entrada de status ausente.":::
 
 ### <a name="receiving-the-adaptive-card"></a>Receber o Cartão Adaptável
 
-:::image type="content" source="../../images/scenario-task-reminders-adaptive-card.png" alt-text="Um Cartão Adaptável em Teams solicitando ao funcionário uma atualização de status":::
+:::image type="content" source="../../images/scenario-task-reminders-adaptive-card.png" alt-text="Um Cartão Adaptável em Teams solicitando ao funcionário uma atualização de status.":::
 
 ### <a name="after-running-the-flow"></a>Depois de executar o fluxo
 
-:::image type="content" source="../../images/scenario-task-reminders-spreadsheet-after.png" alt-text="Uma planilha com um relatório de status com uma entrada de status agora preenchida":::
+:::image type="content" source="../../images/scenario-task-reminders-spreadsheet-after.png" alt-text="Uma planilha com um relatório de status com uma entrada de status agora preenchida.":::

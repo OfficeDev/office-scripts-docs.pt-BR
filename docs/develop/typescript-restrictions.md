@@ -3,12 +3,12 @@ title: Restrições typeScript em Office Scripts
 description: Os detalhes do compilador TypeScript e linter usados pelo editor de código Office Scripts.
 ms.date: 05/24/2021
 localization_priority: Normal
-ms.openlocfilehash: 449a8abbcfdcfde53d0c9b96106f73259de368b1
-ms.sourcegitcommit: 90ca8cdf30f2065f63938f6bb6780d024c128467
+ms.openlocfilehash: 0bc6b4c0acaf9bb42f8200a0850dd7254632f965
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639852"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074442"
 ---
 # <a name="typescript-restrictions-in-office-scripts"></a>Restrições typeScript em Office Scripts
 
@@ -22,9 +22,9 @@ Os [tipos de](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minut
 
 Não é possível declarar explicitamente que uma variável seja do tipo `any` Office Scripts (ou seja, `let value: any;` ). O `any` tipo causa problemas quando processado por Excel. Por exemplo, um `Range` precisa saber que um valor é um , ou `string` `number` `boolean` . Você receberá um erro em tempo de compilação (um erro antes de executar o script) se qualquer variável for explicitamente definida como o `any` tipo no script.
 
-:::image type="content" source="../images/explicit-any-editor-message.png" alt-text="A mensagem explícita &quot;qualquer&quot; no texto de foco do Editor de Código":::
+:::image type="content" source="../images/explicit-any-editor-message.png" alt-text="A mensagem explícita &quot;qualquer&quot; no texto de foco do Editor de Código.":::
 
-:::image type="content" source="../images/explicit-any-error-message.png" alt-text="O erro explícito &quot;qualquer&quot; na janela do console":::
+:::image type="content" source="../images/explicit-any-error-message.png" alt-text="O erro explícito &quot;qualquer&quot; na janela do console.":::
 
 Na captura de tela anterior, indica que a linha #2, a coluna `[2, 14] Explicit Any is not allowed` #14 define o `any` tipo. Isso ajuda a localizar o erro.
 
@@ -34,7 +34,7 @@ Para se livrar desse problema, sempre defina o tipo da variável. Se você não 
 
 Tipos de variável TypeScript podem ser [definidos implicitamente.](https://www.typescriptlang.org/docs/handbook/type-inference.html) Se o compilador TypeScript não conseguir determinar o tipo de uma variável (porque o tipo não é definido explicitamente ou a inferência de tipo não é possível), então é implícito e você receberá um erro de tempo de `any` compilação.
 
-:::image type="content" source="../images/implicit-any-editor-message.png" alt-text="A mensagem implícita &quot;qualquer&quot; no texto de foco do Editor de Código":::
+:::image type="content" source="../images/implicit-any-editor-message.png" alt-text="A mensagem implícita &quot;qualquer&quot; no texto de foco do Editor de Código.":::
 
 O caso mais comum em qualquer `any` implícito está em uma declaração variável, como `let value;` . Há duas maneiras de evitar isso:
 

@@ -1,14 +1,14 @@
 ---
-title: Agendar entrevistas em Teams
+title: Agendar entrevistas no Teams
 description: Saiba como usar Office scripts para enviar uma reunião Teams de Excel dados.
 ms.date: 05/25/2021
 localization_priority: Normal
-ms.openlocfilehash: f93d9ceca6603ddb9e7123a393787fcf54597cca
-ms.sourcegitcommit: 339ecbb9914d54f919e3475018888fb5d00abe89
+ms.openlocfilehash: 66dae536c4a51ff3e028f06bf3aef3c7509d83bb
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52697770"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074428"
 ---
 # <a name="office-scripts-sample-scenario-schedule-interviews-in-teams"></a>Office Cenário de exemplo de scripts: Agendar entrevistas em Teams
 
@@ -140,7 +140,7 @@ interface InterviewInvite {
     1. **Localização**: OneDrive for Business
     1. **Biblioteca de Documentos**: OneDrive
     1. **Arquivo**: hr-interviews.xlsx *(Escolhido por meio do navegador de arquivos)*
-    1. **Script**: Agendar Entrevistas Captura de tela do conector de Excel :::image type="content" source="../../images/schedule-interviews-1.png" alt-text="Online (Negócios)"::: para obter dados de entrevista da Power Automate
+    1. **Script**: Agendar Entrevistas Captura de tela do conector Excel :::image type="content" source="../../images/schedule-interviews-1.png" alt-text="online (Business)"::: concluído para obter dados de entrevista da Power Automate.
 1. Adicione uma **nova etapa** que usa a ação Criar uma **Teams de** reunião. À medida que você seleciona o conteúdo dinâmico Excel conector de Excel, um **Apply a cada** bloco será gerado para seu fluxo. Conclua o conector com os seguintes valores.
     1. **ID do calendário**: Calendário
     1. **Assunto**: Entrevista contoso
@@ -148,13 +148,13 @@ interface InterviewInvite {
     1. **Fuso horário**: Hora Padrão do Pacífico
     1. **Hora de início**: **StartTime** (o Excel valor)
     1. **Hora de** término : **FinishTime** (o Excel valor)
-    1. **Participantes obrigatórios**: **CandidateEmail** ; **InterviewerEmail** (os valores Excel) Captura de tela do conector de Teams concluído para :::image type="content" source="../../images/schedule-interviews-2.png" alt-text="agendar reuniões no Power Automate":::
+    1. **Participantes obrigatórios**: **CandidateEmail** ; **InterviewerEmail** (os Excel) Captura de tela do conector de Teams concluído para agendar reuniões :::image type="content" source="../../images/schedule-interviews-2.png" alt-text="no Power Automate.":::
 1. Na mesma opção **Aplicar a cada** bloco, adicione outro conector Excel Online **(Business)** com a **ação Executar script.** Use os seguintes valores.
     1. **Localização**: OneDrive for Business
     1. **Biblioteca de Documentos**: OneDrive
     1. **Arquivo**: hr-interviews.xlsx *(Escolhido por meio do navegador de arquivos)*
     1. **Script**: Gravar Convites Enviados
-    1. **invites**: result (the Excel value) :::image type="content" source="../../images/schedule-interviews-3.png" alt-text="Screenshot of the completed Excel Online (Business) connector"::: to record **that** invites have been sent in Power Automate
+    1. **invites**: **result** (the Excel value) :::image type="content" source="../../images/schedule-interviews-3.png" alt-text="Screenshot of the completed Excel Online (Business) connector"::: to record that invites have been sent in Power Automate.
 1. Salve o fluxo e experimente-o.
 
 ## <a name="training-video-send-a-teams-meeting-from-excel-data"></a>Vídeo de treinamento: enviar uma reunião Teams de dados Excel dados

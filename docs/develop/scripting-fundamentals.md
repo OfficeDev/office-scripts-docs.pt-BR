@@ -3,12 +3,12 @@ title: Fundamentos de script para scripts do Office no Excel na Web
 description: Informações sobre o modelo de objeto e outros fundamentos para saber mais antes de escrever scripts do Office.
 ms.date: 05/24/2021
 localization_priority: Priority
-ms.openlocfilehash: 629e816ea988d6b8ffe5264c701e3a1eba6c6feb
-ms.sourcegitcommit: 90ca8cdf30f2065f63938f6bb6780d024c128467
+ms.openlocfilehash: 9c3c10e283e40f1e719e73106bcdacfcff44dbc9
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639891"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074505"
 ---
 # <a name="scripting-fundamentals-for-office-scripts-in-excel-on-the-web"></a>Fundamentos de script para Scripts do Office no Excel na Web
 
@@ -112,7 +112,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 Executar este script cria os seguintes dados na planilha atual:
 
-:::image type="content" source="../images/range-sample.png" alt-text="Uma planilha contendo um registro de vendas composto de linhas de valor, uma coluna de fórmula e cabeçalhos formatados":::
+:::image type="content" source="../images/range-sample.png" alt-text="Uma planilha contendo um registro de vendas composto por linhas de valor, uma coluna de fórmulas e os cabeçalhos formatados.":::
 
 ### <a name="the-types-of-range-values"></a>Os tipos de valores do Intervalo
 
@@ -162,7 +162,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 Executar esse script na planilha com os dados anteriores cria a tabela a seguir:
 
-:::image type="content" source="../images/table-sample.png" alt-text="Uma planilha contendo uma tabela feita com base no registro de vendas anterior":::
+:::image type="content" source="../images/table-sample.png" alt-text="Uma planilha contendo uma tabela feita do registro de vendas anterior.":::
 
 ### <a name="create-a-chart"></a>Criar um gráfico
 
@@ -188,7 +188,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 Executar este script na planilha com a tabela anterior cria o seguinte gráfico:
 
-:::image type="content" source="../images/chart-sample.png" alt-text="Um gráfico de colunas exibindo a quantidade de três itens do registro de vendas anterior":::
+:::image type="content" source="../images/chart-sample.png" alt-text="Um gráfico de colunas mostrando as quantidades de três itens do registro de vendas anterior.":::
 
 ## <a name="collections"></a>Coleções
 

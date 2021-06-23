@@ -3,12 +3,12 @@ title: Solucionar Office scripts em execução no Power Automate
 description: Dicas, informações da plataforma e problemas conhecidos com a integração entre Office Scripts e Power Automate.
 ms.date: 05/18/2021
 localization_priority: Normal
-ms.openlocfilehash: 3d114b8b9aceb95285ecfc78ddbd868541b9f04c
-ms.sourcegitcommit: 09d8859d5269ada8f1d0e141f6b5a4f96d95a739
+ms.openlocfilehash: 7ba128314c0d632a3e77792b7ee545bfb7dca71d
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52631661"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074631"
 ---
 # <a name="troubleshoot-office-scripts-running-in-power-automate"></a>Solucionar Office scripts em execução no Power Automate
 
@@ -27,7 +27,7 @@ Algumas APIs de referência relativa lançam erros Power Automate. Outras têm u
 
 Os métodos a seguir lançam um erro e falham quando chamados de um script em Power Automate fluxo.
 
-| Classe | Method |
+| Classe | Método |
 |--|--|
 | [Gráfico](/javascript/api/office-scripts/excelscript/excelscript.chart) | `activate` |
 | [Range](/javascript/api/office-scripts/excelscript/excelscript.range) | `select` |
@@ -41,7 +41,7 @@ Os métodos a seguir lançam um erro e falham quando chamados de um script em Po
 
 Os métodos a seguir usam um comportamento padrão, em vez do estado atual de qualquer usuário.
 
-| Classe | Method | Power Automate comportamento |
+| Classe | Método | Power Automate comportamento |
 |--|--|--|
 | [Pasta de trabalho](/javascript/api/office-scripts/excelscript/excelscript.workbook) | `getActiveWorksheet` | Retorna a primeira planilha da pasta de trabalho ou a planilha atualmente ativada pelo `Worksheet.activate` método. |
 | [Planilha](/javascript/api/office-scripts/excelscript/excelscript.worksheet) | `activate` | Marca a planilha como a planilha ativa para fins de `Workbook.getActiveWorksheet` . |
@@ -54,7 +54,7 @@ Office Os scripts não podem atualizar dados quando executados Power Automate. M
 
 Os métodos a seguir não fazem nada em um script quando chamados por Power Automate. Eles ainda retornam com êxito e não lançam erros.
 
-| Classe | Method |
+| Classe | Método |
 |--|--|
 | [PivotTable](/javascript/api/office-scripts/excelscript/excelscript.pivottable) | `refresh` |
 | [Pasta de trabalho](/javascript/api/office-scripts/excelscript/excelscript.workbook) | `refreshAllDataConnections` |
@@ -65,7 +65,7 @@ Os métodos a seguir não fazem nada em um script quando chamados por Power Auto
 
 Ao criar a **etapa Executar script** de um fluxo Power Automate, você precisa selecionar qual workbook faz parte do fluxo. Use o navegador de arquivos para selecionar sua pasta de trabalho, em vez de digitar manualmente o nome da pasta de trabalho.
 
-:::image type="content" source="../images/power-automate-file-browser.png" alt-text="A Power Automate executar script mostrando a opção Mostrar navegador de arquivos do Se picker":::
+:::image type="content" source="../images/power-automate-file-browser.png" alt-text="A Power Automate executar script mostrando a opção Mostrar navegador de arquivo do Se picker.":::
 
 Para obter mais contexto sobre a limitação Power Automate e uma discussão sobre possíveis soluções alternativas para a seleção dinâmica de workbooks, consulte este thread no [Microsoft Power Automate Community](https://powerusers.microsoft.com/t5/Power-Automate-Ideas/Allow-for-dynamic-quot-file-quot-value-for-excel-quot-get-a-row/idi-p/103091#).
 

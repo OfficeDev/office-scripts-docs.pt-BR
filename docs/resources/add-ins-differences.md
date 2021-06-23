@@ -3,18 +3,18 @@ title: Diferenças entre os scripts do Office e os suplementos do Office
 description: O comportamento e as diferenças de API entre Office scripts e Office de complementos.
 ms.date: 06/02/2021
 localization_priority: Normal
-ms.openlocfilehash: 46f5f2ea6fea15e9506f5c7d30941311fc2e669e
-ms.sourcegitcommit: 0bfc9472d107e32c804029659317f8e81fec5d19
+ms.openlocfilehash: 17d66e37c7bf2b1263c0232bb0afb3ee4d29aa36
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779360"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074561"
 ---
 # <a name="differences-between-office-scripts-and-office-add-ins"></a>Diferenças entre os scripts do Office e os suplementos do Office
 
 Entenda as diferenças entre Office scripts e Office de Office para saber quando usar cada um deles. Office Os scripts foram projetados para serem feitos rapidamente por qualquer pessoa que procura melhorar seu fluxo de trabalho. Office Os complementos se integram à interface do usuário Office para uma experiência mais interativa por meio de botões de faixa de opções e painéis de tarefas. Office Os complementos também podem expandir funções de Excel por meio do fornecimento de funções personalizadas.
 
-:::image type="content" source="../images/office-programmability-diagram.png" alt-text="Um diagrama de quatro quadrantes mostrando as áreas de foco para diferentes soluções Office extensibilidade. Os Office scripts e os Office web add-ins estão focados na Web e na colaboração, mas os scripts do Office atendem aos usuários finais (enquanto os Office Web Add-ins são destinados a desenvolvedores profissionais)":::
+:::image type="content" source="../images/office-programmability-diagram.png" alt-text="Um diagrama de quatro quadrantes mostrando as áreas de foco para diferentes soluções Office extensibilidade. Os Office Scripts e os Office Web Add-ins estão focados na Web e na colaboração, mas os scripts do Office atendem aos usuários finais (enquanto os Office Web São destinados a desenvolvedores profissionais).":::
 
 Office Os scripts são executados para conclusão com uma pressionamento de botão manual ou como uma etapa em [Power Automate](https://flow.microsoft.com/), enquanto os Office de complementos continuam sendo executados dependendo de como eles são configurados. Por exemplo, você pode configurar um Office para continuar a ser executado mesmo quando o painel de tarefas estiver fechado. Isso significa que Office os complementos mantêm o estado durante uma sessão, enquanto Office scripts não mantêm um estado interno entre as executações. Se a solução que você está criando exigir um estado mantido, você deve visitar a documentação de Office de Office de [complementos](/office/dev/add-ins) para saber mais sobre os Office Desem.
 
