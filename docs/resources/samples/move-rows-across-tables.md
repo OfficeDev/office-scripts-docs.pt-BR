@@ -3,28 +3,28 @@ title: Mover linhas entre tabelas usando Office Scripts
 description: Saiba como mover linhas entre tabelas salvando filtros e, em seguida, processamento e reaplicação dos filtros.
 ms.date: 05/06/2021
 localization_priority: Normal
-ms.openlocfilehash: 02fa99ff0444924bd2d44ad4fa421fe66fbd7272
-ms.sourcegitcommit: 763d341857bcb209b2f2c278a82fdb63d0e18f0a
+ms.openlocfilehash: c850ed055457f6733694027469a96a87e74ef66a
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52285938"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074449"
 ---
-# <a name="move-rows-across-tables-by-saving-filters-then-processing-and-reapplying-the-filters"></a><span data-ttu-id="b4b74-103">Mover linhas entre tabelas salvando filtros e, em seguida, processamento e reaplicação dos filtros</span><span class="sxs-lookup"><span data-stu-id="b4b74-103">Move rows across tables by saving filters, then processing and reapplying the filters</span></span>
+# <a name="move-rows-across-tables-by-saving-filters-then-processing-and-reapplying-the-filters"></a><span data-ttu-id="8c600-103">Mover linhas entre tabelas salvando filtros e, em seguida, processamento e reaplicação dos filtros</span><span class="sxs-lookup"><span data-stu-id="8c600-103">Move rows across tables by saving filters, then processing and reapplying the filters</span></span>
 
-<span data-ttu-id="b4b74-104">Esse script faz o seguinte:</span><span class="sxs-lookup"><span data-stu-id="b4b74-104">This script does the following:</span></span>
+<span data-ttu-id="8c600-104">Esse script faz o seguinte:</span><span class="sxs-lookup"><span data-stu-id="8c600-104">This script does the following:</span></span>
 
-* <span data-ttu-id="b4b74-105">Seleciona linhas da tabela de origem onde o valor em uma coluna é igual a _algum valor_.</span><span class="sxs-lookup"><span data-stu-id="b4b74-105">Selects rows from the source table where the value in a column is equal to _some value_.</span></span>
-* <span data-ttu-id="b4b74-106">Move todas as linhas selecionadas para outra tabela (destino) em outra planilha.</span><span class="sxs-lookup"><span data-stu-id="b4b74-106">Moves all selected rows into another (target) table on another worksheet.</span></span>
-* <span data-ttu-id="b4b74-107">Reaplica os filtros relevantes na tabela de origem.</span><span class="sxs-lookup"><span data-stu-id="b4b74-107">Reapplies the relevant filters on the source table.</span></span>
+* <span data-ttu-id="8c600-105">Seleciona linhas da tabela de origem onde o valor em uma coluna é igual a _algum valor_.</span><span class="sxs-lookup"><span data-stu-id="8c600-105">Selects rows from the source table where the value in a column is equal to _some value_.</span></span>
+* <span data-ttu-id="8c600-106">Move todas as linhas selecionadas para outra tabela (destino) em outra planilha.</span><span class="sxs-lookup"><span data-stu-id="8c600-106">Moves all selected rows into another (target) table on another worksheet.</span></span>
+* <span data-ttu-id="8c600-107">Reaplica os filtros relevantes na tabela de origem.</span><span class="sxs-lookup"><span data-stu-id="8c600-107">Reapplies the relevant filters on the source table.</span></span>
 
-:::image type="content" source="../../images/table-filter-before-after.png" alt-text="Capturas de tela da workbook antes e depois":::
+:::image type="content" source="../../images/table-filter-before-after.png" alt-text="Capturas de tela da workbook antes e depois.":::
 
-## <a name="sample-excel-file"></a><span data-ttu-id="b4b74-109">Exemplo Excel arquivo</span><span class="sxs-lookup"><span data-stu-id="b4b74-109">Sample Excel file</span></span>
+## <a name="sample-excel-file"></a><span data-ttu-id="8c600-109">Exemplo Excel arquivo</span><span class="sxs-lookup"><span data-stu-id="8c600-109">Sample Excel file</span></span>
 
-<span data-ttu-id="b4b74-110">Baixe o arquivo <a href="input-table-filters.xlsx">input-table-filters.xlsx</a> usado nesta solução para experimentar você mesmo!</span><span class="sxs-lookup"><span data-stu-id="b4b74-110">Download the file <a href="input-table-filters.xlsx">input-table-filters.xlsx</a> used in this solution to try it out yourself!</span></span>
+<span data-ttu-id="8c600-110">Baixe o arquivo <a href="input-table-filters.xlsx">input-table-filters.xlsx</a> usado nesta solução para experimentar você mesmo!</span><span class="sxs-lookup"><span data-stu-id="8c600-110">Download the file <a href="input-table-filters.xlsx">input-table-filters.xlsx</a> used in this solution to try it out yourself!</span></span>
 
-## <a name="sample-code-move-rows-using-range-values"></a><span data-ttu-id="b4b74-111">Código de exemplo: Mover linhas usando valores de intervalo</span><span class="sxs-lookup"><span data-stu-id="b4b74-111">Sample code: Move rows using range values</span></span>
+## <a name="sample-code-move-rows-using-range-values"></a><span data-ttu-id="8c600-111">Código de exemplo: Mover linhas usando valores de intervalo</span><span class="sxs-lookup"><span data-stu-id="8c600-111">Sample code: Move rows using range values</span></span>
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -106,9 +106,9 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-## <a name="training-video-move-rows-across-tables"></a><span data-ttu-id="b4b74-112">Vídeo de treinamento: Mover linhas entre tabelas</span><span class="sxs-lookup"><span data-stu-id="b4b74-112">Training video: Move rows across tables</span></span>
+## <a name="training-video-move-rows-across-tables"></a><span data-ttu-id="8c600-112">Vídeo de treinamento: Mover linhas entre tabelas</span><span class="sxs-lookup"><span data-stu-id="8c600-112">Training video: Move rows across tables</span></span>
 
-<span data-ttu-id="b4b74-113">[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/_3t3Pk4i2L0).</span><span class="sxs-lookup"><span data-stu-id="b4b74-113">[Watch Sudhi Ramamurthy walk through this sample on YouTube](https://youtu.be/_3t3Pk4i2L0).</span></span> <span data-ttu-id="b4b74-114">Há dois scripts mostrados na solução do vídeo.</span><span class="sxs-lookup"><span data-stu-id="b4b74-114">There are two scripts shown in the video's solution.</span></span> <span data-ttu-id="b4b74-115">A principal diferença é como as linhas são selecionadas.</span><span class="sxs-lookup"><span data-stu-id="b4b74-115">The main difference is how the rows are selected.</span></span>
+<span data-ttu-id="8c600-113">[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/_3t3Pk4i2L0).</span><span class="sxs-lookup"><span data-stu-id="8c600-113">[Watch Sudhi Ramamurthy walk through this sample on YouTube](https://youtu.be/_3t3Pk4i2L0).</span></span> <span data-ttu-id="8c600-114">Há dois scripts mostrados na solução do vídeo.</span><span class="sxs-lookup"><span data-stu-id="8c600-114">There are two scripts shown in the video's solution.</span></span> <span data-ttu-id="8c600-115">A principal diferença é como as linhas são selecionadas.</span><span class="sxs-lookup"><span data-stu-id="8c600-115">The main difference is how the rows are selected.</span></span>
 
-* <span data-ttu-id="b4b74-116">Na primeira variante, as linhas são selecionadas aplicando o filtro de tabela e lendo o intervalo visível.</span><span class="sxs-lookup"><span data-stu-id="b4b74-116">In the first variant, the rows are selected by applying the table filter and reading the visible range.</span></span>
-* <span data-ttu-id="b4b74-117">No segundo, as linhas são selecionadas lendo os valores e extraindo os valores da linha (que é o que o exemplo nesta página usa).</span><span class="sxs-lookup"><span data-stu-id="b4b74-117">In the second, the rows are selected by reading the values and extracting the row values (which is what the sample on this page uses).</span></span>
+* <span data-ttu-id="8c600-116">Na primeira variante, as linhas são selecionadas aplicando o filtro de tabela e lendo o intervalo visível.</span><span class="sxs-lookup"><span data-stu-id="8c600-116">In the first variant, the rows are selected by applying the table filter and reading the visible range.</span></span>
+* <span data-ttu-id="8c600-117">No segundo, as linhas são selecionadas lendo os valores e extraindo os valores da linha (que é o que o exemplo nesta página usa).</span><span class="sxs-lookup"><span data-stu-id="8c600-117">In the second, the rows are selected by reading the values and extracting the row values (which is what the sample on this page uses).</span></span>
