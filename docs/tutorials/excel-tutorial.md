@@ -3,12 +3,12 @@ title: Grave, edite e crie scripts do Office no Excel na Web
 description: Um tutorial sobre o básico dos scripts do Office, incluindo a gravação de scripts com o Gravador de ações e a gravação de dados em uma pasta de trabalho.
 ms.date: 05/23/2021
 localization_priority: Priority
-ms.openlocfilehash: 19cd7bf6c3120d674553d37a36f45d36f46ee852
-ms.sourcegitcommit: 0343e4a9843f7ab6ec99d6ddf955050271b061c7
+ms.openlocfilehash: f9290a3d7dc723b72bfb4913171052472f2361c5
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52655902"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074666"
 ---
 # <a name="record-edit-and-create-office-scripts-in-excel-on-the-web"></a>Grave, edite e crie scripts do Office no Excel na Web
 
@@ -71,7 +71,7 @@ O script anterior coloriu a linha "Laranjas" para ficar laranja. Vamos adicionar
 
 4. Teste o script pressionando **Executar**. Sua pasta de trabalho já deve ter esta aparência:
 
-    :::image type="content" source="../images/tutorial-2.png" alt-text="Uma planilha mostrando a linha de dados das vendas de frutas com a linha &quot;Laranjas&quot; realçada na cor laranja, e a linha &quot;Limões&quot; realçada na cor amarela":::
+    :::image type="content" source="../images/tutorial-2.png" alt-text="Uma planilha mostrando a linha de dados das vendas de frutas com a linha &quot;Laranjas&quot; realçada na cor laranja, e a linha &quot;Limões&quot; realçada na cor amarela.":::
 
 ## <a name="create-a-table"></a>Crie uma tabela
 
