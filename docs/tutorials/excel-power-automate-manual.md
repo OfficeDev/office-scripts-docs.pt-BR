@@ -3,12 +3,12 @@ title: Comece a usar scripts de um fluxo manual do Power Automate
 description: Um tutorial sobre o uso de Scripts do Office no Power Automate por meio de um acionamento manual.
 ms.date: 05/17/2021
 localization_priority: Priority
-ms.openlocfilehash: f4feb14f70c43497f40dae3a521353dfee63c082
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: 6da852fd93599753592ea61eef443ef674ead8ef
+ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52545826"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53074498"
 ---
 # <a name="call-scripts-from-a-manual-power-automate-flow"></a>Scripts de chamada a partir de um fluxo manual do Power Automate
 
@@ -67,15 +67,15 @@ O Power Automate não pode usar[referências relativas](../testing/power-automat
 
 2. No menu exibido do lado esquerdo da tela, pressione **Criar**. Isso o conduzirá a uma lista de maneiras de criar novos fluxos de trabalho.
 
-    :::image type="content" source="../images/power-automate-tutorial-1.png" alt-text="O botão 'Criar' do Power Automate":::
+    :::image type="content" source="../images/power-automate-tutorial-1.png" alt-text="O botão &quot;Criar&quot; do Power Automate.":::
 
 3. Na seção **Começar no espaço em branco**, selecione **Fluxo instantâneo**. Isso irá criar um fluxo de trabalho ativado manualmente.
 
-    :::image type="content" source="../images/power-automate-tutorial-2.png" alt-text="A opção de fluxo instantâneo do Power Automate para criar um novo fluxo de trabalho":::
+    :::image type="content" source="../images/power-automate-tutorial-2.png" alt-text="A opção de fluxo instantâneo do Power Automate para criar um novo fluxo de trabalho.":::
 
 4. Na janela da caixa de diálogo que aparece, insira um nome para o seu fluxo na caixa de texto **Nome do fluxo**; selecione **Acionar um fluxo manualmente** na lista de opções em **Escolher como acionar o fluxo**, e pressione **Criar**.
 
-    :::image type="content" source="../images/power-automate-tutorial-3.png" alt-text="A opção 'Acionar um fluxo manualmente' do Power Automate":::
+    :::image type="content" source="../images/power-automate-tutorial-3.png" alt-text="A opção &quot;Acionar um fluxo manualmente&quot; do Power Automate.":::
 
     Observe que o fluxo acionado manualmente é apenas um entre os diversos tipos de fluxo. No tutorial a seguir, você criará um fluxo que é executado automaticamente quando você recebe um email.
 
@@ -83,11 +83,11 @@ O Power Automate não pode usar[referências relativas](../testing/power-automat
 
 6. Selecione a guia **Padrão** e, em seguida, selecione **Excel Online (Business)**.
 
-    :::image type="content" source="../images/power-automate-tutorial-4.png" alt-text="Opção do Excel Online (Business) no Power Automate":::
+    :::image type="content" source="../images/power-automate-tutorial-4.png" alt-text="Opção do Excel Online (Business) no Power Automate.":::
 
 7. Em **Ações**, selecione **Executar script**.
 
-    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Executar a opção de ação de script no Power Automate":::
+    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Executar a opção de ação de script no Power Automate.":::
 
 8. Depois, você selecionará a pasta de trabalho e o script que será utilizado na etapa do fluxo. Para o tutorial, você fará o uso da pasta de trabalho criada no seu OneDrive, mas é possível usar qualquer pasta de trabalho em um site OneDrive ou no Microsoft Office SharePoint Online. Especifique as seguintes configurações para o conector **Executar Script**:
 
@@ -96,7 +96,7 @@ O Power Automate não pode usar[referências relativas](../testing/power-automat
     - **Arquivo**: MyWorkbook.xlsx *(Escolhido por meio do navegador de arquivos)*
     - **Script**: Definir data e hora
 
-    :::image type="content" source="../images/power-automate-tutorial-6.png" alt-text="As configurações do conector do Power Automate para executar um script":::
+    :::image type="content" source="../images/power-automate-tutorial-6.png" alt-text="Configurações do conector para executar um script no Power Automate.":::
 
 9. Pressione **Salvar**.
 
@@ -106,7 +106,7 @@ Seu fluxo agora está pronto para ser executado por meio do Power Automate. Voc�
 
 1. Na página principal do Power Automate, selecione **Meus fluxos**.
 
-    :::image type="content" source="../images/power-automate-tutorial-7.png" alt-text="Botão Meus fluxos no Power Automate":::
+    :::image type="content" source="../images/power-automate-tutorial-7.png" alt-text="Botão Meus fluxos no Power Automate.":::
 
 2. Selecione **Fluxo do meu tutorial** na lista de fluxos exibida na guia **Meus fluxos**. Isso irá lhe mostrar os detalhes do fluxo que criamos anteriormente.
 
