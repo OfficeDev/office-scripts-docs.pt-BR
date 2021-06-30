@@ -67,6 +67,8 @@ items:
                 href: resources/samples/copy-tables-combine.md
           - name: Além do básico
             items:
+              - name: Planilhas de referência cruzada
+                href: resources/samples/excel-cross-reference.md
               - name: Contar linhas em branco em planilhas
                 href: resources/samples/count-blank-rows.md
               - name: Imagens de email de gráfico e tabela
