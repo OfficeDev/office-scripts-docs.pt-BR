@@ -3,12 +3,12 @@ title: Office Exemplos de scripts
 description: Exemplos Office scripts e cenários disponíveis.
 ms.date: 05/25/2021
 localization_priority: Normal
-ms.openlocfilehash: aac730fd8a0da76728e4a455339366a75b27a0b2
-ms.sourcegitcommit: 339ecbb9914d54f919e3475018888fb5d00abe89
+ms.openlocfilehash: 1b7e9cdd9e23f57d59e5e878a37b50afb63965fd
+ms.sourcegitcommit: a063b3faf6c1b7c294bd6a73e46845b352f2a22d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52697655"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53202848"
 ---
 # <a name="office-scripts-samples-and-scenarios"></a>Office Exemplos e cenários de scripts
 
@@ -35,6 +35,7 @@ Confira o seguinte projeto de ponta a ponta que automatiza cenários de exemplo,
 
 | Project | Detalhes |
 |---------|---------|
+| [Workbooks de referência cruzada](excel-cross-reference.md) | Este exemplo usa Office scripts e Power Automate para fazer referência cruzada e validar informações em diferentes workbooks. |
 | [Contar linhas em branco em uma planilha específica ou em todas as planilhas](count-blank-rows.md) | Este exemplo detecta se há linhas em branco em planilhas nas quais você antecipa a presença dos dados e relata a contagem de linhas em branco para uso em um fluxo de Power Automate. |
 | [Imagens de gráfico de email e tabela](email-images-chart-table.md) | Este exemplo usa Office scripts e ações Power Automate para criar um gráfico e enviar esse gráfico como uma imagem por email. |
 | [Chamadas de busca externas](external-fetch-calls.md) | Este exemplo usa `fetch` para obter informações do GitHub para o script. |
@@ -55,7 +56,7 @@ Office Os scripts podem automatizar partes da sua rotina diária. Essas tarefas 
 | [Analisar downloads da Web](../scenarios/analyze-web-downloads.md) | Esse cenário apresenta um script que analisado registros de tráfego da Web para determinar o país de origem de um usuário. Ele mostra as habilidades de análise de texto, usando subfunções em scripts, aplicando formatação condicional e trabalhando com tabelas. |
 | [Buscar e representar graficamente os dados do nível de água do NOAA](../scenarios/noaa-data-fetch.md) | Esse cenário usa um script de Office para obter dados de uma fonte externa (o banco de dados [do NoAA Tides e Currents)](https://tidesandcurrents.noaa.gov/)e fazer um gráfico das informações resultantes. Ele realça as habilidades de uso `fetch` para obter dados e usar gráficos. |
 | [Calculadora de notas](../scenarios/grade-calculator.md) | Esse cenário apresenta um script que valida o registro de um instrutor para as notas da classe. Ele mostra as habilidades de verificação de erros, formatação de células e expressões regulares. |
-| [Agendar entrevistas em Teams](../scenarios/schedule-interviews-in-teams.md) | Este cenário mostra como usar uma planilha Excel para gerenciar os horários de reunião de entrevista e fazer um fluxo para agendar reuniões em Teams. |
+| [Agendar entrevistas no Teams](../scenarios/schedule-interviews-in-teams.md) | Este cenário mostra como usar uma planilha Excel para gerenciar os horários de reunião de entrevista e fazer um fluxo para agendar reuniões em Teams. |
 | [Lembretes de tarefas](../scenarios/task-reminders.md) | Esse cenário usa um script Office em um fluxo Power Automate para enviar lembretes aos colegas de trabalho para atualizar o status de um projeto. Ele realça as habilidades de Power Automate integração e transferência de dados de e para scripts. |
 
 ## <a name="community-contributions-and-fun-samples"></a>Community contribuições e exemplos divertidos
