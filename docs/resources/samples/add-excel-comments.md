@@ -1,34 +1,36 @@
 ---
 title: Adicionar comentários em Excel
 description: Saiba como usar Office scripts para adicionar comentários em uma planilha.
-ms.date: 05/03/2021
+ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: e5e5d17c076eceaf06fddeea1a67d31ee3581f31
-ms.sourcegitcommit: 763d341857bcb209b2f2c278a82fdb63d0e18f0a
+ms.openlocfilehash: 77e308d020281c71751e2652f8dbaec00c263e44
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52285931"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313908"
 ---
-# <a name="add-comments-in-excel"></a><span data-ttu-id="47e8f-103">Adicionar comentários em Excel</span><span class="sxs-lookup"><span data-stu-id="47e8f-103">Add comments in Excel</span></span>
+# <a name="add-comments-in-excel"></a><span data-ttu-id="d3489-103">Adicionar comentários em Excel</span><span class="sxs-lookup"><span data-stu-id="d3489-103">Add comments in Excel</span></span>
 
-<span data-ttu-id="47e8f-104">Este exemplo mostra como adicionar comentários a uma célula, [incluindo @mentioning](https://support.microsoft.com/office/90701709-5dc1-41c7-aa48-b01d4a46e8c7) um colega.</span><span class="sxs-lookup"><span data-stu-id="47e8f-104">This sample shows how to add comments to a cell including [@mentioning](https://support.microsoft.com/office/90701709-5dc1-41c7-aa48-b01d4a46e8c7) a colleague.</span></span>
+<span data-ttu-id="d3489-104">Este exemplo mostra como adicionar comentários a uma célula, [incluindo @mentioning](https://support.microsoft.com/office/90701709-5dc1-41c7-aa48-b01d4a46e8c7) um colega.</span><span class="sxs-lookup"><span data-stu-id="d3489-104">This sample shows how to add comments to a cell including [@mentioning](https://support.microsoft.com/office/90701709-5dc1-41c7-aa48-b01d4a46e8c7) a colleague.</span></span>
 
-## <a name="example-scenario"></a><span data-ttu-id="47e8f-105">Cenário de exemplo</span><span class="sxs-lookup"><span data-stu-id="47e8f-105">Example scenario</span></span>
+## <a name="example-scenario"></a><span data-ttu-id="d3489-105">Cenário de exemplo</span><span class="sxs-lookup"><span data-stu-id="d3489-105">Example scenario</span></span>
 
-* <span data-ttu-id="47e8f-106">O líder da equipe mantém o cronograma de turnos.</span><span class="sxs-lookup"><span data-stu-id="47e8f-106">The team lead maintains the shift schedule.</span></span> <span data-ttu-id="47e8f-107">O líder da equipe atribui uma ID de funcionário ao registro de turno.</span><span class="sxs-lookup"><span data-stu-id="47e8f-107">The team lead assigns an employee ID to the shift record.</span></span>
-* <span data-ttu-id="47e8f-108">O líder da equipe deseja notificar o funcionário.</span><span class="sxs-lookup"><span data-stu-id="47e8f-108">The team lead wishes to notify the employee.</span></span> <span data-ttu-id="47e8f-109">Adicionando um comentário que @mentions o funcionário, o funcionário é enviado por email com uma mensagem personalizada da planilha.</span><span class="sxs-lookup"><span data-stu-id="47e8f-109">By adding a comment that @mentions the employee, the employee is emailed with a custom message from the worksheet.</span></span>
-* <span data-ttu-id="47e8f-110">Posteriormente, o funcionário pode exibir a guia de trabalho e responder ao comentário por conveniência.</span><span class="sxs-lookup"><span data-stu-id="47e8f-110">Subsequently, the employee can view the workbook and respond to the comment at their convenience.</span></span>
+* <span data-ttu-id="d3489-106">O líder da equipe mantém o cronograma de turnos.</span><span class="sxs-lookup"><span data-stu-id="d3489-106">The team lead maintains the shift schedule.</span></span> <span data-ttu-id="d3489-107">O líder da equipe atribui uma ID de funcionário ao registro de turno.</span><span class="sxs-lookup"><span data-stu-id="d3489-107">The team lead assigns an employee ID to the shift record.</span></span>
+* <span data-ttu-id="d3489-108">O líder da equipe deseja notificar o funcionário.</span><span class="sxs-lookup"><span data-stu-id="d3489-108">The team lead wishes to notify the employee.</span></span> <span data-ttu-id="d3489-109">Adicionando um comentário que @mentions o funcionário, o funcionário é enviado por email com uma mensagem personalizada da planilha.</span><span class="sxs-lookup"><span data-stu-id="d3489-109">By adding a comment that @mentions the employee, the employee is emailed with a custom message from the worksheet.</span></span>
+* <span data-ttu-id="d3489-110">Posteriormente, o funcionário pode exibir a guia de trabalho e responder ao comentário por conveniência.</span><span class="sxs-lookup"><span data-stu-id="d3489-110">Subsequently, the employee can view the workbook and respond to the comment at their convenience.</span></span>
 
-## <a name="solution"></a><span data-ttu-id="47e8f-111">Solução</span><span class="sxs-lookup"><span data-stu-id="47e8f-111">Solution</span></span>
+## <a name="solution"></a><span data-ttu-id="d3489-111">Solução</span><span class="sxs-lookup"><span data-stu-id="d3489-111">Solution</span></span>
 
-1. <span data-ttu-id="47e8f-112">O script extrai informações dos funcionários da planilha do funcionário.</span><span class="sxs-lookup"><span data-stu-id="47e8f-112">The script extracts employee information from the employee worksheet.</span></span>
-1. <span data-ttu-id="47e8f-113">Em seguida, o script adiciona um comentário (incluindo o email de funcionário relevante) à célula apropriada no registro de turno.</span><span class="sxs-lookup"><span data-stu-id="47e8f-113">The script then adds a comment (including the relevant employee email) to the appropriate cell in the shift record.</span></span>
-1. <span data-ttu-id="47e8f-114">Os comentários existentes na célula são removidos antes de adicionar o novo comentário.</span><span class="sxs-lookup"><span data-stu-id="47e8f-114">Existing comments in the cell are removed before adding the new comment.</span></span>
+1. <span data-ttu-id="d3489-112">O script extrai informações dos funcionários da planilha do funcionário.</span><span class="sxs-lookup"><span data-stu-id="d3489-112">The script extracts employee information from the employee worksheet.</span></span>
+1. <span data-ttu-id="d3489-113">Em seguida, o script adiciona um comentário (incluindo o email de funcionário relevante) à célula apropriada no registro de turno.</span><span class="sxs-lookup"><span data-stu-id="d3489-113">The script then adds a comment (including the relevant employee email) to the appropriate cell in the shift record.</span></span>
+1. <span data-ttu-id="d3489-114">Os comentários existentes na célula são removidos antes de adicionar o novo comentário.</span><span class="sxs-lookup"><span data-stu-id="d3489-114">Existing comments in the cell are removed before adding the new comment.</span></span>
 
-## <a name="sample-code-add-comments"></a><span data-ttu-id="47e8f-115">Código de exemplo: Adicionar comentários</span><span class="sxs-lookup"><span data-stu-id="47e8f-115">Sample code: Add comments</span></span>
+## <a name="sample-excel-file"></a><span data-ttu-id="d3489-115">Exemplo Excel arquivo</span><span class="sxs-lookup"><span data-stu-id="d3489-115">Sample Excel file</span></span>
 
-<span data-ttu-id="47e8f-116">Baixe o arquivo <a href="excel-comments.xlsx">excel-comments.xlsx</a> usado neste exemplo e experimente você mesmo!</span><span class="sxs-lookup"><span data-stu-id="47e8f-116">Download the file <a href="excel-comments.xlsx">excel-comments.xlsx</a> used in this sample and try it out yourself!</span></span>
+<span data-ttu-id="d3489-116">Baixe <a href="excel-comments.xlsx">excel-comments.xlsx</a> para uma workbook pronta para uso.</span><span class="sxs-lookup"><span data-stu-id="d3489-116">Download <a href="excel-comments.xlsx">excel-comments.xlsx</a> for a ready-to-use workbook.</span></span> <span data-ttu-id="d3489-117">Adicione o seguinte script para experimentar o exemplo você mesmo!</span><span class="sxs-lookup"><span data-stu-id="d3489-117">Add the following script to try the sample yourself!</span></span>
+
+## <a name="sample-code-add-comments"></a><span data-ttu-id="d3489-118">Código de exemplo: Adicionar comentários</span><span class="sxs-lookup"><span data-stu-id="d3489-118">Sample code: Add comments</span></span>
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -75,6 +77,6 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-## <a name="training-video-add-comments"></a><span data-ttu-id="47e8f-117">Vídeo de treinamento: Adicionar comentários</span><span class="sxs-lookup"><span data-stu-id="47e8f-117">Training video: Add comments</span></span>
+## <a name="training-video-add-comments"></a><span data-ttu-id="d3489-119">Vídeo de treinamento: Adicionar comentários</span><span class="sxs-lookup"><span data-stu-id="d3489-119">Training video: Add comments</span></span>
 
-<span data-ttu-id="47e8f-118">[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/CpR78nkaOFw).</span><span class="sxs-lookup"><span data-stu-id="47e8f-118">[Watch Sudhi Ramamurthy walk through this sample on YouTube](https://youtu.be/CpR78nkaOFw).</span></span>
+<span data-ttu-id="d3489-120">[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/CpR78nkaOFw).</span><span class="sxs-lookup"><span data-stu-id="d3489-120">[Watch Sudhi Ramamurthy walk through this sample on YouTube](https://youtu.be/CpR78nkaOFw).</span></span>

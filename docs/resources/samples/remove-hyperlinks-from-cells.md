@@ -1,25 +1,27 @@
 ---
 title: Remover hiperlinks de cada célula em uma Excel de trabalho
 description: Saiba como usar Office Scripts para remover hiperlinks de cada célula em uma Excel de trabalho.
-ms.date: 05/06/2021
+ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: 048d01691377a7086bdba9ceb87ca98839cfa4d1
-ms.sourcegitcommit: 763d341857bcb209b2f2c278a82fdb63d0e18f0a
+ms.openlocfilehash: dc33eb639edac8ada29824a53440031942e59179
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52285798"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313747"
 ---
-# <a name="remove-hyperlinks-from-each-cell-in-an-excel-worksheet"></a><span data-ttu-id="51a7c-103">Remover hiperlinks de cada célula em uma Excel de trabalho</span><span class="sxs-lookup"><span data-stu-id="51a7c-103">Remove hyperlinks from each cell in an Excel worksheet</span></span>
+# <a name="remove-hyperlinks-from-each-cell-in-an-excel-worksheet"></a><span data-ttu-id="4e887-103">Remover hiperlinks de cada célula em uma Excel de trabalho</span><span class="sxs-lookup"><span data-stu-id="4e887-103">Remove hyperlinks from each cell in an Excel worksheet</span></span>
 
- <span data-ttu-id="51a7c-104">Este exemplo limpa todos os hiperlinks da planilha atual.</span><span class="sxs-lookup"><span data-stu-id="51a7c-104">This sample clears all of the hyperlinks from the current worksheet.</span></span> <span data-ttu-id="51a7c-105">Ele percorre a planilha e, se houver algum hiperlink associado à célula, ele limpará o hiperlink e ainda manterá o valor da célula como está.</span><span class="sxs-lookup"><span data-stu-id="51a7c-105">It traverses the worksheet and if there is any hyperlink associated with the cell, it clears the hyperlink yet retains the cell value as is.</span></span> <span data-ttu-id="51a7c-106">Também registra o tempo necessário para concluir a transição.</span><span class="sxs-lookup"><span data-stu-id="51a7c-106">Also logs the time it takes to complete traversal.</span></span>
+ <span data-ttu-id="4e887-104">Este exemplo limpa todos os hiperlinks da planilha atual.</span><span class="sxs-lookup"><span data-stu-id="4e887-104">This sample clears all of the hyperlinks from the current worksheet.</span></span> <span data-ttu-id="4e887-105">Ele percorre a planilha e, se houver algum hiperlink associado à célula, ele limpará o hiperlink e ainda manterá o valor da célula como está.</span><span class="sxs-lookup"><span data-stu-id="4e887-105">It traverses the worksheet and if there is any hyperlink associated with the cell, it clears the hyperlink yet retains the cell value as is.</span></span> <span data-ttu-id="4e887-106">Também registra o tempo necessário para concluir a transição.</span><span class="sxs-lookup"><span data-stu-id="4e887-106">Also logs the time it takes to complete traversal.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="51a7c-107">Isso só funcionará se a contagem de células for < 10k.</span><span class="sxs-lookup"><span data-stu-id="51a7c-107">This only works if the cell count is < 10k.</span></span>
+> <span data-ttu-id="4e887-107">Isso só funcionará se a contagem de células for < 10k.</span><span class="sxs-lookup"><span data-stu-id="4e887-107">This only works if the cell count is < 10k.</span></span>
 
-## <a name="sample-code-remove-hyperlinks"></a><span data-ttu-id="51a7c-108">Código de exemplo: Remover hiperlinks</span><span class="sxs-lookup"><span data-stu-id="51a7c-108">Sample code: Remove hyperlinks</span></span>
+## <a name="sample-excel-file"></a><span data-ttu-id="4e887-108">Exemplo Excel arquivo</span><span class="sxs-lookup"><span data-stu-id="4e887-108">Sample Excel file</span></span>
 
-<span data-ttu-id="51a7c-109">Baixe o arquivo <a href="remove-hyperlinks.xlsx">remove-hyperlinks.xlsx</a> usado neste exemplo e experimente você mesmo!</span><span class="sxs-lookup"><span data-stu-id="51a7c-109">Download the file <a href="remove-hyperlinks.xlsx">remove-hyperlinks.xlsx</a> used in this sample and try it out yourself!</span></span>
+<span data-ttu-id="4e887-109">Baixe o arquivo <a href="remove-hyperlinks.xlsx">remove-hyperlinks.xlsx</a> para uma pasta de trabalho pronta para uso.</span><span class="sxs-lookup"><span data-stu-id="4e887-109">Download the file <a href="remove-hyperlinks.xlsx">remove-hyperlinks.xlsx</a> for a ready-to-use workbook.</span></span> <span data-ttu-id="4e887-110">Adicione o seguinte script para experimentar o exemplo você mesmo!</span><span class="sxs-lookup"><span data-stu-id="4e887-110">Add the following script to try the sample yourself!</span></span>
+
+## <a name="sample-code-remove-hyperlinks"></a><span data-ttu-id="4e887-111">Código de exemplo: Remover hiperlinks</span><span class="sxs-lookup"><span data-stu-id="4e887-111">Sample code: Remove hyperlinks</span></span>
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook, sheetName: string = 'Sheet1') {
@@ -55,6 +57,6 @@ function main(workbook: ExcelScript.Workbook, sheetName: string = 'Sheet1') {
 }
 ```
 
-## <a name="training-video-remove-hyperlinks-from-each-cell-in-an-excel-worksheet"></a><span data-ttu-id="51a7c-110">Vídeo de treinamento: Remover hiperlinks de cada célula em uma Excel de trabalho</span><span class="sxs-lookup"><span data-stu-id="51a7c-110">Training video: Remove hyperlinks from each cell in an Excel worksheet</span></span>
+## <a name="training-video-remove-hyperlinks-from-each-cell-in-an-excel-worksheet"></a><span data-ttu-id="4e887-112">Vídeo de treinamento: Remover hiperlinks de cada célula em uma Excel de trabalho</span><span class="sxs-lookup"><span data-stu-id="4e887-112">Training video: Remove hyperlinks from each cell in an Excel worksheet</span></span>
 
-<span data-ttu-id="51a7c-111">[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/v20fdinxpHU).</span><span class="sxs-lookup"><span data-stu-id="51a7c-111">[Watch Sudhi Ramamurthy walk through this sample on YouTube](https://youtu.be/v20fdinxpHU).</span></span>
+<span data-ttu-id="4e887-113">[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/v20fdinxpHU).</span><span class="sxs-lookup"><span data-stu-id="4e887-113">[Watch Sudhi Ramamurthy walk through this sample on YouTube](https://youtu.be/v20fdinxpHU).</span></span>

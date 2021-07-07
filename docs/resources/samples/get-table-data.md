@@ -1,41 +1,41 @@
 ---
 title: Saída Excel dados como JSON
 description: Saiba como Excel dados de tabela como JSON a ser usado Power Automate.
-ms.date: 05/06/2021
+ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: fefeda4f7e60880758f8f01e03f437a70c4111d4
-ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
+ms.openlocfilehash: 63379d1323f5e2084f4aa39af3f4b6e5e6d7e7bb
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53074568"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313943"
 ---
-# <a name="output-excel-table-data-as-json-for-usage-in-power-automate"></a><span data-ttu-id="b93ca-103">Dados Excel de tabela de saída como JSON para uso em Power Automate</span><span class="sxs-lookup"><span data-stu-id="b93ca-103">Output Excel table data as JSON for usage in Power Automate</span></span>
+# <a name="output-excel-table-data-as-json-for-usage-in-power-automate"></a><span data-ttu-id="3844b-103">Dados Excel de tabela de saída como JSON para uso em Power Automate</span><span class="sxs-lookup"><span data-stu-id="3844b-103">Output Excel table data as JSON for usage in Power Automate</span></span>
 
-<span data-ttu-id="b93ca-104">Excel dados de tabela podem ser representados como uma matriz de objetos na forma de JSON.</span><span class="sxs-lookup"><span data-stu-id="b93ca-104">Excel table data can be represented as an array of objects in the form of JSON.</span></span> <span data-ttu-id="b93ca-105">Cada objeto representa uma linha na tabela.</span><span class="sxs-lookup"><span data-stu-id="b93ca-105">Each object represents a row in the table.</span></span> <span data-ttu-id="b93ca-106">Isso ajuda a extrair os dados Excel em um formato consistente que é visível para o usuário.</span><span class="sxs-lookup"><span data-stu-id="b93ca-106">This helps extract the data from Excel in a consistent format that is visible to the user.</span></span> <span data-ttu-id="b93ca-107">Em seguida, os dados podem ser dados a outros sistemas por meio Power Automate fluxos.</span><span class="sxs-lookup"><span data-stu-id="b93ca-107">The data can then be given to other systems through Power Automate flows.</span></span>
+<span data-ttu-id="3844b-104">Excel dados de tabela podem ser representados como uma matriz de objetos na forma de JSON.</span><span class="sxs-lookup"><span data-stu-id="3844b-104">Excel table data can be represented as an array of objects in the form of JSON.</span></span> <span data-ttu-id="3844b-105">Cada objeto representa uma linha na tabela.</span><span class="sxs-lookup"><span data-stu-id="3844b-105">Each object represents a row in the table.</span></span> <span data-ttu-id="3844b-106">Isso ajuda a extrair os dados Excel em um formato consistente que é visível para o usuário.</span><span class="sxs-lookup"><span data-stu-id="3844b-106">This helps extract the data from Excel in a consistent format that is visible to the user.</span></span> <span data-ttu-id="3844b-107">Em seguida, os dados podem ser dados a outros sistemas por meio Power Automate fluxos.</span><span class="sxs-lookup"><span data-stu-id="3844b-107">The data can then be given to other systems through Power Automate flows.</span></span>
 
-<span data-ttu-id="b93ca-108">_Dados da tabela de entrada_</span><span class="sxs-lookup"><span data-stu-id="b93ca-108">_Input table data_</span></span>
+<span data-ttu-id="3844b-108">_Dados da tabela de entrada_</span><span class="sxs-lookup"><span data-stu-id="3844b-108">_Input table data_</span></span>
 
 :::image type="content" source="../../images/table-input.png" alt-text="Uma planilha mostrando dados da tabela de entrada.":::
 
-<span data-ttu-id="b93ca-110">Uma variação desse exemplo também inclui os hiperlinks em uma das colunas da tabela.</span><span class="sxs-lookup"><span data-stu-id="b93ca-110">A variation of this sample also includes the hyperlinks in one of the table columns.</span></span> <span data-ttu-id="b93ca-111">Isso permite que níveis adicionais de dados de células sejam a superfície no JSON.</span><span class="sxs-lookup"><span data-stu-id="b93ca-111">This allows additional levels of cell data to be surfaced in the JSON.</span></span>
+<span data-ttu-id="3844b-110">Uma variação desse exemplo também inclui os hiperlinks em uma das colunas da tabela.</span><span class="sxs-lookup"><span data-stu-id="3844b-110">A variation of this sample also includes the hyperlinks in one of the table columns.</span></span> <span data-ttu-id="3844b-111">Isso permite que níveis adicionais de dados de células sejam a superfície no JSON.</span><span class="sxs-lookup"><span data-stu-id="3844b-111">This allows additional levels of cell data to be surfaced in the JSON.</span></span>
 
-<span data-ttu-id="b93ca-112">_Dados da tabela de entrada que incluem hiperlinks_</span><span class="sxs-lookup"><span data-stu-id="b93ca-112">_Input table data that includes hyperlinks_</span></span>
+<span data-ttu-id="3844b-112">_Dados da tabela de entrada que incluem hiperlinks_</span><span class="sxs-lookup"><span data-stu-id="3844b-112">_Input table data that includes hyperlinks_</span></span>
 
 :::image type="content" source="../../images/table-hyperlink-view.png" alt-text="Uma planilha mostrando uma coluna de dados de tabela formatados como hiperlinks.":::
 
-<span data-ttu-id="b93ca-114">_Caixa de diálogo para editar hiperlink_</span><span class="sxs-lookup"><span data-stu-id="b93ca-114">_Dialog to edit hyperlink_</span></span>
+<span data-ttu-id="3844b-114">_Caixa de diálogo para editar hiperlink_</span><span class="sxs-lookup"><span data-stu-id="3844b-114">_Dialog to edit hyperlink_</span></span>
 
 :::image type="content" source="../../images/table-hyperlink-edit.png" alt-text="A caixa de diálogo Editar Hiperlink exibe opções para alterar hiperlinks.":::
 
-## <a name="sample-excel-file"></a><span data-ttu-id="b93ca-116">Exemplo Excel arquivo</span><span class="sxs-lookup"><span data-stu-id="b93ca-116">Sample Excel file</span></span>
+## <a name="sample-excel-file"></a><span data-ttu-id="3844b-116">Exemplo Excel arquivo</span><span class="sxs-lookup"><span data-stu-id="3844b-116">Sample Excel file</span></span>
 
-<span data-ttu-id="b93ca-117">Baixe o arquivo <a href="table-data-with-hyperlinks.xlsx">table-data-with-hyperlinks.xlsx</a> usado nesses exemplos e experimente você mesmo!</span><span class="sxs-lookup"><span data-stu-id="b93ca-117">Download the file <a href="table-data-with-hyperlinks.xlsx">table-data-with-hyperlinks.xlsx</a> used in these samples and try it out yourself!</span></span>
+<span data-ttu-id="3844b-117">Baixe o arquivo <a href="table-data-with-hyperlinks.xlsx">table-data-with-hyperlinks.xlsx</a> para uma pasta de trabalho pronta para uso.</span><span class="sxs-lookup"><span data-stu-id="3844b-117">Download the file <a href="table-data-with-hyperlinks.xlsx">table-data-with-hyperlinks.xlsx</a> for a ready-to-use workbook.</span></span> <span data-ttu-id="3844b-118">Adicione o seguinte script para experimentar o exemplo você mesmo!</span><span class="sxs-lookup"><span data-stu-id="3844b-118">Add the following script to try the sample yourself!</span></span>
 
-## <a name="sample-code-return-table-data-as-json"></a><span data-ttu-id="b93ca-118">Código de exemplo: Retornar dados da tabela como JSON</span><span class="sxs-lookup"><span data-stu-id="b93ca-118">Sample code: Return table data as JSON</span></span>
+## <a name="sample-code-return-table-data-as-json"></a><span data-ttu-id="3844b-119">Código de exemplo: Retornar dados da tabela como JSON</span><span class="sxs-lookup"><span data-stu-id="3844b-119">Sample code: Return table data as JSON</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="b93ca-119">Você pode alterar a `interface TableData` estrutura para corresponder às colunas da tabela.</span><span class="sxs-lookup"><span data-stu-id="b93ca-119">You can change the `interface TableData` structure to match your table columns.</span></span> <span data-ttu-id="b93ca-120">Observe que, para nomes de coluna com espaços, certifique-se de colocar sua chave entre aspas, como com `"Event ID"` no exemplo.</span><span class="sxs-lookup"><span data-stu-id="b93ca-120">Note that for column names with spaces, be sure to place your key in quotation marks, such as with `"Event ID"` in the sample.</span></span>
+> <span data-ttu-id="3844b-120">Você pode alterar a `interface TableData` estrutura para corresponder às colunas da tabela.</span><span class="sxs-lookup"><span data-stu-id="3844b-120">You can change the `interface TableData` structure to match your table columns.</span></span> <span data-ttu-id="3844b-121">Observe que, para nomes de coluna com espaços, certifique-se de colocar sua chave entre aspas, como com `"Event ID"` no exemplo.</span><span class="sxs-lookup"><span data-stu-id="3844b-121">Note that for column names with spaces, be sure to place your key in quotation marks, such as with `"Event ID"` in the sample.</span></span>
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook): TableData[] {
@@ -88,7 +88,7 @@ interface TableData {
 }
 ```
 
-### <a name="sample-output-from-the-plaintable-worksheet"></a><span data-ttu-id="b93ca-121">Saída de exemplo da planilha "PlainTable"</span><span class="sxs-lookup"><span data-stu-id="b93ca-121">Sample output from the "PlainTable" worksheet</span></span>
+### <a name="sample-output-from-the-plaintable-worksheet"></a><span data-ttu-id="3844b-122">Saída de exemplo da planilha "PlainTable"</span><span class="sxs-lookup"><span data-stu-id="3844b-122">Sample output from the "PlainTable" worksheet</span></span>
 
 ```json
 [{
@@ -142,10 +142,10 @@ interface TableData {
 }]
 ```
 
-## <a name="sample-code-return-table-data-as-json-with-hyperlink-text"></a><span data-ttu-id="b93ca-122">Código de exemplo: Retornar dados da tabela como JSON com texto de hiperlink</span><span class="sxs-lookup"><span data-stu-id="b93ca-122">Sample code: Return table data as JSON with hyperlink text</span></span>
+## <a name="sample-code-return-table-data-as-json-with-hyperlink-text"></a><span data-ttu-id="3844b-123">Código de exemplo: Retornar dados da tabela como JSON com texto de hiperlink</span><span class="sxs-lookup"><span data-stu-id="3844b-123">Sample code: Return table data as JSON with hyperlink text</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="b93ca-123">O script sempre extrai hiperlinks da 4ª coluna (índice 0) da tabela.</span><span class="sxs-lookup"><span data-stu-id="b93ca-123">The script always extracts hyperlinks from the 4th column (0 index) of the table.</span></span> <span data-ttu-id="b93ca-124">Você pode alterar essa ordem ou incluir várias colunas como dados de hiperlink modificando o código no comentário `// For the 4th column (0 index), extract the hyperlink and use that instead of text.`</span><span class="sxs-lookup"><span data-stu-id="b93ca-124">You can change that order or include multiple columns as hyperlink data by modifying the code under the comment `// For the 4th column (0 index), extract the hyperlink and use that instead of text.`</span></span>
+> <span data-ttu-id="3844b-124">O script sempre extrai hiperlinks da 4ª coluna (índice 0) da tabela.</span><span class="sxs-lookup"><span data-stu-id="3844b-124">The script always extracts hyperlinks from the 4th column (0 index) of the table.</span></span> <span data-ttu-id="3844b-125">Você pode alterar essa ordem ou incluir várias colunas como dados de hiperlink modificando o código no comentário `// For the 4th column (0 index), extract the hyperlink and use that instead of text.`</span><span class="sxs-lookup"><span data-stu-id="3844b-125">You can change that order or include multiple columns as hyperlink data by modifying the code under the comment `// For the 4th column (0 index), extract the hyperlink and use that instead of text.`</span></span>
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook): TableData[] {
@@ -202,7 +202,7 @@ interface TableData {
 }
 ```
 
-### <a name="sample-output-from-the-withhyperlink-worksheet"></a><span data-ttu-id="b93ca-125">Exemplo de saída da planilha "WithHyperLink"</span><span class="sxs-lookup"><span data-stu-id="b93ca-125">Sample output from the "WithHyperLink" worksheet</span></span>
+### <a name="sample-output-from-the-withhyperlink-worksheet"></a><span data-ttu-id="3844b-126">Exemplo de saída da planilha "WithHyperLink"</span><span class="sxs-lookup"><span data-stu-id="3844b-126">Sample output from the "WithHyperLink" worksheet</span></span>
 
 ```json
 [{
@@ -264,6 +264,6 @@ interface TableData {
 }]
 ```
 
-## <a name="use-in-power-automate"></a><span data-ttu-id="b93ca-126">Usar no Power Automate</span><span class="sxs-lookup"><span data-stu-id="b93ca-126">Use in Power Automate</span></span>
+## <a name="use-in-power-automate"></a><span data-ttu-id="3844b-127">Usar no Power Automate</span><span class="sxs-lookup"><span data-stu-id="3844b-127">Use in Power Automate</span></span>
 
-<span data-ttu-id="b93ca-127">Para saber como usar esse script em Power Automate, consulte [Create a automated workflow with Power Automate](../../tutorials/excel-power-automate-returns.md#create-an-automated-workflow-with-power-automate).</span><span class="sxs-lookup"><span data-stu-id="b93ca-127">For how to use such a script in Power Automate, see [Create an automated workflow with Power Automate](../../tutorials/excel-power-automate-returns.md#create-an-automated-workflow-with-power-automate).</span></span>
+<span data-ttu-id="3844b-128">Para saber como usar esse script em Power Automate, consulte [Create a automated workflow with Power Automate](../../tutorials/excel-power-automate-returns.md#create-an-automated-workflow-with-power-automate).</span><span class="sxs-lookup"><span data-stu-id="3844b-128">For how to use such a script in Power Automate, see [Create an automated workflow with Power Automate](../../tutorials/excel-power-automate-returns.md#create-an-automated-workflow-with-power-automate).</span></span>
