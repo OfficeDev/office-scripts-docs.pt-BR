@@ -1,14 +1,14 @@
 ---
 title: Referência cruzada Excel arquivos com Power Automate
 description: Saiba como usar Office scripts e Power Automate para fazer referência cruzada e formatar um arquivo Excel.
-ms.date: 06/25/2021
+ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: 89c4a5fa5dcff21681fa20cd4118447d39d9b6da
-ms.sourcegitcommit: a063b3faf6c1b7c294bd6a73e46845b352f2a22d
+ms.openlocfilehash: 0776ce49cacecfa15339cc7c0cd4866daad789ff
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53202862"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313957"
 ---
 # <a name="cross-reference-excel-files-with-power-automate"></a>Referência cruzada Excel arquivos com Power Automate
 
@@ -20,10 +20,12 @@ Você é um coordenador de eventos que está agendando palestrantes para próxim
 
 ## <a name="sample-excel-files"></a>Exemplo Excel arquivos
 
-Baixe os seguintes arquivos usados nesta solução para experimentar você mesmo!
+Baixe os arquivos a seguir para obter pastas de trabalho prontas para uso para o exemplo.
 
 1. <a href="event-data.xlsx">event-data.xlsx</a>
 1. <a href="speaker-registrations.xlsx">speaker-registrations.xlsx</a>
+
+Adicione os scripts a seguir para experimentar o exemplo você mesmo!
 
 ## <a name="sample-code-get-event-data"></a>Código de exemplo: Obter dados de evento
 
@@ -147,7 +149,7 @@ interface EventData {
 Esse fluxo extrai as informações de evento da primeira workbook e usa esses dados para validar a segunda workbook.
 
 1. Entre [Power Automate](https://flow.microsoft.com) e crie um novo fluxo **de nuvem instantâneo.**
-1. Selecione **Disparar manualmente um fluxo e** pressione **Criar**.
+1. Escolha **Disparar manualmente um fluxo e** selecione **Criar**.
 1. Adicione uma **nova etapa** que usa o conector Excel **Online (Business)** com a **ação Executar script.** Use os seguintes valores para a ação:
     * **Localização**: OneDrive for Business
     * **Biblioteca de Documentos**: OneDrive
@@ -169,4 +171,5 @@ Esse fluxo extrai as informações de evento da primeira workbook e usa esses da
     * **Body**: result (_conteúdo dinâmico de Executar script **2**_)
 
     :::image type="content" source="../../images/cross-reference-flow-3.png" alt-text="O conector Office 365 Outlook no Power Automate.":::
-1. Salve o fluxo e selecione **Testar** para testá-lo. Você deve receber um email dizendo "Incompatibilidade encontrada. Os dados exigem sua revisão." Isso indica que há diferenças entre linhas em **speaker-registrations.xlsx** e linhas em **event-data.xlsx**. Abra **speaker-registrations.xlsx** para ver várias células realçadas onde há possíveis problemas com as listagem de registro do alto-falante.
+1. Salve o fluxo. Use o **botão Testar** na página do editor de fluxo ou execute o fluxo através da guia **Meus fluxos.** Certifique-se de permitir o acesso quando solicitado.
+1. Você deve receber um email dizendo "Incompatibilidade encontrada. Os dados exigem sua revisão." Isso indica que há diferenças entre linhas em **speaker-registrations.xlsx** e linhas em **event-data.xlsx**. Abra **speaker-registrations.xlsx** para ver várias células realçadas onde há possíveis problemas com as listagem de registro do alto-falante.

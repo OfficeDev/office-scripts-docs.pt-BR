@@ -1,28 +1,27 @@
 ---
 title: Scripts básicos para Office scripts no Excel na Web
 description: Uma coleção de exemplos de código a ser usado com Office Scripts no Excel na Web.
-ms.date: 05/17/2021
+ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: 3bf3bd5acd10bc5999db4746a2ed62af85237e48
-ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
+ms.openlocfilehash: 3aaaa7fe8769f6dcd658ae91c577956b56033051
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53074554"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313936"
 ---
 # <a name="basic-scripts-for-office-scripts-in-excel-on-the-web"></a>Scripts básicos para Office scripts no Excel na Web
 
 Os exemplos a seguir são scripts simples para você experimentar suas próprias workbooks. Para usá-los em Excel na Web:
 
 1. Abra a guia **Automação**.
-2. Pressione **Editor de Código**.
-3. Pressione **Novo Script** no painel de tarefas do Editor de Código.
-4. Substitua o script inteiro pelo exemplo de sua escolha.
-5. Pressione **Executar** no painel de tarefas do Editor de Código.
+1. Selecione **Novo Script**.
+1. Substitua o script inteiro pelo exemplo de sua escolha.
+1. Selecione **Executar** no painel de tarefas do Editor de Código.
 
 ## <a name="script-basics"></a>Noções básicas de script
 
-Esses exemplos demonstram blocos de construção fundamentais para Office Scripts. Adicione-os aos scripts para estender sua solução e resolver problemas comuns.
+Esses exemplos demonstram blocos de construção fundamentais para Office Scripts. Expanda esses scripts para estender sua solução e resolver problemas comuns.
 
 ### <a name="read-and-log-one-cell"></a>Ler e registrar uma célula
 
@@ -424,4 +423,4 @@ Recebemos sugestões de novos exemplos. Se houver um cenário comum que ajude ou
 
 * ["Noções básicas de intervalo" de Sudhi Ramamurthy no YouTube](https://youtu.be/4emjkOFdLBA)
 * [Office Exemplos e cenários de scripts](samples-overview.md)
-* [Gravar, editar e criar scripts do Office no Excel na Web](../../tutorials/excel-tutorial.md)
+* [Grave, edite e crie Scripts do Office no Excel na web](../../tutorials/excel-tutorial.md)

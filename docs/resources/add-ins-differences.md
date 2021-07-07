@@ -1,14 +1,14 @@
 ---
 title: Diferenças entre os scripts do Office e os suplementos do Office
 description: O comportamento e as diferenças de API entre Office scripts e Office de complementos.
-ms.date: 06/02/2021
+ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: 17d66e37c7bf2b1263c0232bb0afb3ee4d29aa36
-ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
+ms.openlocfilehash: c45fa12369ed8333df0c8f85a2b49900e7079eba
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53074561"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313915"
 ---
 # <a name="differences-between-office-scripts-and-office-add-ins"></a>Diferenças entre os scripts do Office e os suplementos do Office
 
@@ -32,7 +32,7 @@ Embora as APIs Office JavaScript para Office e as APIs Office scripts compartilh
 
 ### <a name="events"></a>Eventos
 
-Office Os scripts não suportam eventos de nível de [trabalho.](/office/dev/add-ins/excel/excel-add-ins-events) Os scripts são disparados por usuários pressionando o **botão Executar** para um script ou por Power Automate. Cada script executa o código em um único `main` método e termina.
+Office Os scripts não suportam eventos de nível de [trabalho.](/office/dev/add-ins/excel/excel-add-ins-events) Os scripts são disparados por usuários selecionando o botão **Executar** para um script ou por meio Power Automate. Cada script executa o código em um único `main` método e termina.
 
 ### <a name="common-apis"></a>Common APIs
 

@@ -1,14 +1,14 @@
 ---
 title: Mover linhas entre tabelas usando Office Scripts
 description: Saiba como mover linhas entre tabelas salvando filtros e, em seguida, processamento e reaplicação dos filtros.
-ms.date: 05/06/2021
+ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: c850ed055457f6733694027469a96a87e74ef66a
-ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
+ms.openlocfilehash: 860521de166108d5a8355ea246c1bfe77e0e064b
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53074449"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313754"
 ---
 # <a name="move-rows-across-tables-by-saving-filters-then-processing-and-reapplying-the-filters"></a>Mover linhas entre tabelas salvando filtros e, em seguida, processamento e reaplicação dos filtros
 
@@ -22,7 +22,7 @@ Esse script faz o seguinte:
 
 ## <a name="sample-excel-file"></a>Exemplo Excel arquivo
 
-Baixe o arquivo <a href="input-table-filters.xlsx">input-table-filters.xlsx</a> usado nesta solução para experimentar você mesmo!
+Baixe o arquivo <a href="input-table-filters.xlsx">input-table-filters.xlsx</a> para uma pasta de trabalho pronta para uso. Adicione o seguinte script para experimentar o exemplo você mesmo!
 
 ## <a name="sample-code-move-rows-using-range-values"></a>Código de exemplo: Mover linhas usando valores de intervalo
 

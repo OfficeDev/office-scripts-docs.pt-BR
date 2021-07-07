@@ -3,12 +3,12 @@ title: Grave, edite e crie scripts do Office no Excel na Web
 description: Um tutorial sobre o básico dos scripts do Office, incluindo a gravação de scripts com o Gravador de ações e a gravação de dados em uma pasta de trabalho.
 ms.date: 05/23/2021
 localization_priority: Priority
-ms.openlocfilehash: f9290a3d7dc723b72bfb4913171052472f2361c5
-ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
+ms.openlocfilehash: 6bcf603211aa07920e99178c35c6f405224c29bd
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53074666"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313922"
 ---
 # <a name="record-edit-and-create-office-scripts-in-excel-on-the-web"></a>Grave, edite e crie scripts do Office no Excel na Web
 
@@ -35,10 +35,10 @@ Primeiro, precisaremos de alguns dados e um pequeno script inicial.
     |Limões-galego |600 |500 |
     |Toranjas |900 |700 |
 
-3. Abra a guia **Automação**. Se você não vir a guia **Automação**, verifique o excedente da faixa de opções pressionando a seta suspensa. Se ainda não estiver lá, siga o conselho do artigo [Solução de Problemas de Scripts do Office ](../testing/troubleshooting.md#automate-tab-not-appearing-or-office-scripts-unavailable).
-4. Pressione o botão **Ações de registro**.
-5. Clique nas células **A2:C2** (a linha "Laranjas") e defina a cor de preenchimento como laranja.
-6. Pare a gravação pressionando o botão **Parar**.
+3. Abra a guia **Automação**. Se você não vir a guia **Automação**, verifique o excedente da faixa de opções selecionando a seta suspensa. Se ainda não estiver lá, siga o conselho do artigo [Solução de Problemas de Scripts do Office ](../testing/troubleshooting.md#automate-tab-not-appearing-or-office-scripts-unavailable).
+4. Selecione o botão **Gravar Ações**.
+5. Selecione as células **A2:C2** (a linha "Laranjas") e defina a cor de preenchimento como laranja.
+6. Interrompa a gravação selecionando o botão **Parar**.
 
     Sua planilha deve ficar assim (não se preocupe se a cor for diferente):
 
@@ -48,7 +48,7 @@ Primeiro, precisaremos de alguns dados e um pequeno script inicial.
 
 O script anterior coloriu a linha "Laranjas" para ficar laranja. Vamos adicionar uma linha amarela aos "Limões".
 
-1. A partir do painel, agora aberto em **Detalhes**, pressione o botão **Editar**.
+1. No painel, agora aberto, **Detalhes**, selecione o botão **Editar**.
 2. Você deve ver algo semelhante a este código:
 
     ```TypeScript
@@ -69,7 +69,7 @@ O script anterior coloriu a linha "Laranjas" para ficar laranja. Vamos adicionar
     selectedSheet.getRange("A3:C3").getFormat().getFill().setColor("yellow");
     ```
 
-4. Teste o script pressionando **Executar**. Sua pasta de trabalho já deve ter esta aparência:
+4. Teste o script selecionando **Executar**. Sua pasta de trabalho já deve ter esta aparência:
 
     :::image type="content" source="../images/tutorial-2.png" alt-text="Uma planilha mostrando a linha de dados das vendas de frutas com a linha &quot;Laranjas&quot; realçada na cor laranja, e a linha &quot;Limões&quot; realçada na cor amarela.":::
 

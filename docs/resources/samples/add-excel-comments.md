@@ -1,14 +1,14 @@
 ---
 title: Adicionar comentários em Excel
 description: Saiba como usar Office scripts para adicionar comentários em uma planilha.
-ms.date: 05/03/2021
+ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: e5e5d17c076eceaf06fddeea1a67d31ee3581f31
-ms.sourcegitcommit: 763d341857bcb209b2f2c278a82fdb63d0e18f0a
+ms.openlocfilehash: 77e308d020281c71751e2652f8dbaec00c263e44
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52285931"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313908"
 ---
 # <a name="add-comments-in-excel"></a>Adicionar comentários em Excel
 
@@ -26,9 +26,11 @@ Este exemplo mostra como adicionar comentários a uma célula, [incluindo @menti
 1. Em seguida, o script adiciona um comentário (incluindo o email de funcionário relevante) à célula apropriada no registro de turno.
 1. Os comentários existentes na célula são removidos antes de adicionar o novo comentário.
 
-## <a name="sample-code-add-comments"></a>Código de exemplo: Adicionar comentários
+## <a name="sample-excel-file"></a>Exemplo Excel arquivo
 
-Baixe o arquivo <a href="excel-comments.xlsx">excel-comments.xlsx</a> usado neste exemplo e experimente você mesmo!
+Baixe <a href="excel-comments.xlsx">excel-comments.xlsx</a> para uma workbook pronta para uso. Adicione o seguinte script para experimentar o exemplo você mesmo!
+
+## <a name="sample-code-add-comments"></a>Código de exemplo: Adicionar comentários
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {

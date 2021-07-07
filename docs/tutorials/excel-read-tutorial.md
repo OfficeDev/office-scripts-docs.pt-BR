@@ -3,12 +3,12 @@ title: Ler os dados da pasta de trabalho com scripts do Office no Excel na Web.
 description: Um tutorial de scripts do Office sobre a leitura de dados de pastas de trabalho e avaliação desses dados no script.
 ms.date: 01/06/2021
 localization_priority: Priority
-ms.openlocfilehash: aa05533f0d7cd3b53e4eb616ae3216d672d026f9
-ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
+ms.openlocfilehash: 38a8c64fcf0ed998049c2b95c6d4ede148b6925b
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53074687"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313985"
 ---
 # <a name="read-workbook-data-with-office-scripts-in-excel-on-the-web"></a>Ler os dados da pasta de trabalho com scripts do Office no Excel na Web.
 
@@ -70,8 +70,8 @@ No resto do tutorial, normalizaremos os dados usando um script. Primeiro, vamos 
 
 6. Execute o script.
 7. Você deverá ver `[Array[1]]` no console. Isso não é um número porque os intervalos são matrizes bidimensionais de dados. Esse intervalo bidimensional está sendo registrado diretamente no console. Felizmente, o Editor de Códigos permite visualizar o conteúdo da matriz.
-8. Quando uma matriz bidimensional é registrada no console, ela agrupa os valores de coluna em cada linha. Expanda o log de matriz pressionando o triângulo azul.
-9. Expanda o segundo nível da matriz clicando no triângulo azul exibido recentemente. Você já deve poder ver isto:
+8. Quando uma matriz bidimensional é registrada no console, ela agrupa os valores de coluna em cada linha. Expanda o registro da matriz selecionando o triângulo azul.
+9. Expanda o segundo nível da matriz selecionando o triângulo azul exibido recentemente. Agora você deve ver isto:
 
     :::image type="content" source="../images/tutorial-4.png" alt-text="O log do console exibindo a saída '-20.05', aninhada em duas matrizes.":::
 

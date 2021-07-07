@@ -1,21 +1,23 @@
 ---
 title: Executar um script em todos os arquivos do Excel em uma pasta
 description: Saiba como executar um script em todos os arquivos Excel em uma pasta em OneDrive for Business.
-ms.date: 05/03/2021
+ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: 83e091a8b009bac577da9ed53dcf4139c1b845c9
-ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
+ms.openlocfilehash: bf9c0c486dacced5c3017b267ea65dfd215a5197
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53074582"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313894"
 ---
 # <a name="run-a-script-on-all-excel-files-in-a-folder"></a>Executar um script em todos os arquivos do Excel em uma pasta
 
 Este projeto executa um conjunto de tarefas de automação em todos os arquivos situados em uma pasta OneDrive for Business. Ele também pode ser usado em uma pasta SharePoint de dados.
 Ele executa cálculos nos arquivos Excel, adiciona formatação e insere um comentário que @mentions [um](https://support.microsoft.com/office/90701709-5dc1-41c7-aa48-b01d4a46e8c7) colega.
 
-Baixe o arquivo <a href="https://github.com/OfficeDev/office-scripts-docs/blob/master/docs/resources/samples/highlight-alert-excel-files.zip?raw=true">highlight-alert-excel-files.zip</a>, extraia os arquivos para uma pasta intitulada **Vendas** usada neste exemplo e experimente você mesmo!
+## <a name="sample-excel-files"></a>Exemplo Excel arquivos
+
+Baixe <a href="https://github.com/OfficeDev/office-scripts-docs/blob/master/docs/resources/samples/highlight-alert-excel-files.zip?raw=true">highlight-alert-excel-files.zip</a> todas as guias de trabalho que você precisará para este exemplo. Extraia esses arquivos para uma pasta intitulada **Vendas**. Adicione o seguinte script à sua coleção de scripts para experimentar o exemplo você mesmo!
 
 ## <a name="sample-code-add-formatting-and-insert-comment"></a>Código de exemplo: Adicionar formatação e inserir comentário
 
@@ -74,7 +76,7 @@ function main(workbook: ExcelScript.Workbook) {
 Esse fluxo executa o script em cada pasta de trabalho na pasta "Vendas".
 
 1. Criar um novo **fluxo de nuvem instantânea.**
-1. Selecione **Disparar manualmente um fluxo e** pressione **Criar**.
+1. Escolha **Disparar manualmente um fluxo e** selecione **Criar**.
 1. Adicione uma **nova etapa que** usa o conector **OneDrive for Business** e os arquivos list na **ação de** pasta.
 
     :::image type="content" source="../../images/all-files-in-folder-sample-flow-1.png" alt-text="O conector OneDrive for Business no Power Automate.":::
@@ -92,7 +94,7 @@ Esse fluxo executa o script em cada pasta de trabalho na pasta "Vendas".
     1. **Script**: Seu nome de script
 
     :::image type="content" source="../../images/all-files-in-folder-sample-flow-3.png" alt-text="O conector Excel online (Business) concluído Power Automate.":::
-1. Salve o fluxo e experimente-o.
+1. Salve o fluxo e experimente-o. Use o **botão Testar** na página do editor de fluxo ou execute o fluxo através da guia **Meus fluxos.** Certifique-se de permitir o acesso quando solicitado.
 
 ## <a name="training-video-run-a-script-on-all-excel-files-in-a-folder"></a>Vídeo de treinamento: execute um script em todos os Excel arquivos em uma pasta
 

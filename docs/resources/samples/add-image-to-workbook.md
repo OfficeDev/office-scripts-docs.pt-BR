@@ -1,14 +1,14 @@
 ---
 title: Adicionar imagens a uma pasta de trabalho
 description: Saiba como usar Office Scripts para adicionar uma imagem a uma planilha e copiá-la entre planilhas.
-ms.date: 05/17/2021
+ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: 64c356b2d76a561276b2955263555b16de27b3ba
-ms.sourcegitcommit: a2b85168d2b5e2c4e6951f808368f7d726400df0
+ms.openlocfilehash: 2ae77ca1295cf6e55443789506242d9cf888f9a1
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52592751"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313901"
 ---
 # <a name="add-images-to-a-workbook"></a>Adicionar imagens a uma pasta de trabalho
 
@@ -24,7 +24,7 @@ O segundo exemplo copia uma imagem de uma URL. Isso pode ser usado para copiar f
 
 ## <a name="sample-excel-file"></a>Exemplo Excel arquivo
 
-Baixe o arquivo <a href="add-images.xlsx">add-images.xlsx</a> usado nesses exemplos e experimente você mesmo!
+Baixe <a href="add-images.xlsx">add-images.xlsx</a> para uma workbook pronta para uso. Adicione os scripts a seguir e experimente o exemplo você mesmo!
 
 ## <a name="sample-code-copy-an-image-across-worksheets"></a>Código de exemplo: copiar uma imagem entre planilhas
 

@@ -1,14 +1,14 @@
 ---
 title: Agendar entrevistas no Teams
 description: Saiba como usar Office scripts para enviar uma reunião Teams de Excel dados.
-ms.date: 05/25/2021
+ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: 66dae536c4a51ff3e028f06bf3aef3c7509d83bb
-ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
+ms.openlocfilehash: cb24da12637add805d86da4d07ce878509c6a5f6
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53074428"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313726"
 ---
 # <a name="office-scripts-sample-scenario-schedule-interviews-in-teams"></a>Office Cenário de exemplo de scripts: Agendar entrevistas em Teams
 
@@ -32,7 +32,7 @@ Baixe o arquivo <a href="hr-schedule.xlsx">hr-schedule.xlsx</a> usado nesta solu
 
 ## <a name="sample-code-extract-table-data-to-schedule-invites"></a>Código de exemplo: extrair dados de tabela para agendar convites
 
-Nomeia este script **Agendar Entrevistas** para o fluxo.
+Adicione esse script à sua coleção de scripts. **Nomeá-lo Agendar** Entrevistas para o fluxo.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook): InterviewInvite[] {
@@ -93,7 +93,7 @@ interface InterviewInvite {
 
 ## <a name="sample-code-mark-rows-as-invited"></a>Código de exemplo: Marcar linhas como convidados
 
-Nomeia este registro **de script Convites enviados** para o fluxo.
+Adicione esse script à sua coleção de scripts. **Nomeá-lo Gravar Convites Enviados** para o fluxo.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook, invites: InterviewInvite[]) {
@@ -135,7 +135,7 @@ interface InterviewInvite {
 ## <a name="sample-flow-run-the-interview-scheduling-scripts-and-send-the-teams-meetings"></a>Fluxo de exemplo: execute os scripts de agendamento de entrevista e envie as Teams reuniões
 
 1. Criar um novo **fluxo de nuvem instantânea.**
-1. Selecione **Disparar manualmente um fluxo e** pressione **Criar**.
+1. Escolha **Disparar manualmente um fluxo e** selecione **Criar**.
 1. Adicione uma **nova etapa que** usa o conector Excel Online **(Business)** e a **ação Executar script.** Conclua o conector com os seguintes valores.
     1. **Localização**: OneDrive for Business
     1. **Biblioteca de Documentos**: OneDrive
@@ -155,7 +155,7 @@ interface InterviewInvite {
     1. **Arquivo**: hr-interviews.xlsx *(Escolhido por meio do navegador de arquivos)*
     1. **Script**: Gravar Convites Enviados
     1. **invites**: **result** (the Excel value) :::image type="content" source="../../images/schedule-interviews-3.png" alt-text="Screenshot of the completed Excel Online (Business) connector"::: to record that invites have been sent in Power Automate.
-1. Salve o fluxo e experimente-o.
+1. Salve o fluxo e experimente-o. Use o **botão Testar** na página do editor de fluxo ou execute o fluxo através da guia **Meus fluxos.** Certifique-se de permitir o acesso quando solicitado.
 
 ## <a name="training-video-send-a-teams-meeting-from-excel-data"></a>Vídeo de treinamento: enviar uma reunião Teams de dados Excel dados
 

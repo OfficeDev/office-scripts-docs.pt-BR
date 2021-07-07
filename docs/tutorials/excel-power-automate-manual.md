@@ -1,18 +1,18 @@
 ---
 title: Comece a usar scripts de um fluxo manual do Power Automate
 description: Um tutorial sobre o uso de Scripts do Office no Power Automate por meio de um acionamento manual.
-ms.date: 05/17/2021
+ms.date: 06/29/2021
 localization_priority: Priority
-ms.openlocfilehash: 6da852fd93599753592ea61eef443ef674ead8ef
-ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
+ms.openlocfilehash: 1a8b9659ec6f6354d583496ba0f3e94d4a13c01b
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53074498"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313992"
 ---
 # <a name="call-scripts-from-a-manual-power-automate-flow"></a>Scripts de chamada a partir de um fluxo manual do Power Automate
 
-Este tutorial ensina como executar um Script do Office para o Excel na web por meio do [Power Automate](https://flow.microsoft.com). Você fará um script que atualizará os valores de duas células com a hora atual. Depois, você fará a conexão desse script a um fluxo do Power Automate acionado manualmente, para que o script seja executado sempre que um botão no Power Automate for pressionado. Depois de entender o padrão básico, você pode expandir o fluxo para incluir outros aplicativos e automatizar ainda mais o seu fluxo de trabalho diário.
+Este tutorial ensina como executar um Script do Office para o Excel na web por meio do [Power Automate](https://flow.microsoft.com). Você fará um script que atualizará os valores de duas células com a hora atual. Depois, você fará a conexão desse script a um fluxo do Power Automate acionado manualmente, para que o script seja executado sempre que um botão no Power Automate for selecionado. Depois de entender o padrão básico, você pode expandir o fluxo para incluir outros aplicativos e automatizar ainda mais o seu fluxo de trabalho diário.
 
 > [!TIP]
 > Se você não tiver experiência com os scripts do Office, recomendamos começar com o tutorial [Grave, edite e crie scripts do Office no Excel na Web](excel-tutorial.md). [Os Scripts do Office usam TypeScript](../overview/code-editor-environment.md) e este tutorial se destina a pessoas com conhecimento de nível iniciante a intermediário em JavaScript ou TypeScript. Se você é novo no JavaScript, recomendamos começar com o [tutorial da Mozilla sobre JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Introduction).
@@ -57,15 +57,15 @@ O Power Automate não pode usar[referências relativas](../testing/power-automat
     }
     ```
 
-4. Renomeie o script como **Definir data e hora**. Pressione o nome do script para alterá-lo.
+4. Renomeie o script como **Definir data e hora**. Selecione o nome do script para alterá-lo.
 
-5. Salve o script pressionando **Salvar Script**.
+5. Salve o script selecionando **Salvar script**.
 
 ## <a name="create-an-automated-workflow-with-power-automate"></a>Criar um fluxo de trabalho automatizado com o Power Automate
 
 1. Entre no [site do Power Automate](https://flow.microsoft.com).
 
-2. No menu exibido do lado esquerdo da tela, pressione **Criar**. Isso o conduzirá a uma lista de maneiras de criar novos fluxos de trabalho.
+2. No menu exibido no lado esquerdo da tela, selecione **Criar**. Isso o conduzirá a uma lista de maneiras de criar novos fluxos de trabalho.
 
     :::image type="content" source="../images/power-automate-tutorial-1.png" alt-text="O botão &quot;Criar&quot; do Power Automate.":::
 
@@ -73,13 +73,13 @@ O Power Automate não pode usar[referências relativas](../testing/power-automat
 
     :::image type="content" source="../images/power-automate-tutorial-2.png" alt-text="A opção de fluxo instantâneo do Power Automate para criar um novo fluxo de trabalho.":::
 
-4. Na janela da caixa de diálogo que aparece, insira um nome para o seu fluxo na caixa de texto **Nome do fluxo**; selecione **Acionar um fluxo manualmente** na lista de opções em **Escolher como acionar o fluxo**, e pressione **Criar**.
+4. Na janela da caixa de diálogo que aparece, insira um nome para seu fluxo na caixa de texto **Nome do fluxo**, selecione **Acionar um fluxo manualmente** na lista de opções em **Escolher como acionar o fluxo**, e em seguida, selecione **Criar**.
 
     :::image type="content" source="../images/power-automate-tutorial-3.png" alt-text="A opção &quot;Acionar um fluxo manualmente&quot; do Power Automate.":::
 
     Observe que o fluxo acionado manualmente é apenas um entre os diversos tipos de fluxo. No tutorial a seguir, você criará um fluxo que é executado automaticamente quando você recebe um email.
 
-5. Pressione **Nova etapa**.
+5. Selecione **Nova etapa**.
 
 6. Selecione a guia **Padrão** e, em seguida, selecione **Excel Online (Business)**.
 
@@ -98,7 +98,7 @@ O Power Automate não pode usar[referências relativas](../testing/power-automat
 
     :::image type="content" source="../images/power-automate-tutorial-6.png" alt-text="Configurações do conector para executar um script no Power Automate.":::
 
-9. Pressione **Salvar**.
+9. Selecione **Salvar**.
 
 Seu fluxo agora está pronto para ser executado por meio do Power Automate. Você pode testá-lo usando o botão **Testar** no editor de fluxo ou seguir as etapas restantes do tutorial para executar o fluxo a partir da sua coleção de fluxos.
 
@@ -110,15 +110,15 @@ Seu fluxo agora está pronto para ser executado por meio do Power Automate. Voc�
 
 2. Selecione **Fluxo do meu tutorial** na lista de fluxos exibida na guia **Meus fluxos**. Isso irá lhe mostrar os detalhes do fluxo que criamos anteriormente.
 
-3. Pressione **Executar**.
+3. Selecione **Executar**.
 
     :::image type="content" source="../images/power-automate-tutorial-8.png" alt-text="Botão Executar no Power Automate.":::
 
-4. Um painel de tarefas irá aparecer para executar o fluxo. Se você for solicitado a **Entrar** no Excel Online, faça o login pressionando **Continuar**.
+4. Um painel de tarefas irá aparecer para executar o fluxo. Se você for solicitado a **Entrar** no Excel Online, entre selecionando **Continuar**.
 
-5. Pressione **Executar o fluxo**. Isso executará o fluxo, que, por sua vez, executará o Script do Office associado.
+5. Selecione **Executar fluxo**. Isso executará o fluxo, que, por sua vez, executará o Script do Office relacionado.
 
-6. Pressione **Concluído**. Você deverá ver a seção **Executar** ser atualizada de acordo.
+6. Selecione **Concluído**. Você deverá ver a seção **Executar** ser atualizada de acordo.
 
 7. Atualize a página para ver os resultados do Power Automate. Se o script tiver sido bem-sucedido, vá para a pasta de trabalho para ver as células atualizadas. Se tiver falhado, verifique as configurações do fluxo e execute-o novamente.
 

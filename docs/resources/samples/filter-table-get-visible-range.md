@@ -1,14 +1,14 @@
 ---
 title: Filtrar Excel tabela e obter intervalo visível
 description: Saiba como usar Office Scripts para filtrar uma tabela Excel e obter o intervalo visível como uma matriz de objetos.
-ms.date: 05/06/2021
+ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: 196e39ffdfb7e6ff2d0898802665d3c2eccc7dbe
-ms.sourcegitcommit: 763d341857bcb209b2f2c278a82fdb63d0e18f0a
+ms.openlocfilehash: b19b826f95c7e7aeb331130fde05afaafe500c3d
+ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52285791"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53313950"
 ---
 # <a name="filter-excel-table-and-get-visible-range-as-a-json-object"></a>Filtrar Excel tabela e obter intervalo visível como um objeto JSON
 
@@ -20,11 +20,11 @@ Este exemplo filtra uma Excel e retorna o intervalo visível como um objeto JSON
 * Extraia o intervalo visível após a filtragem.
 * Montar e retornar um objeto com uma [estrutura JSON específica.](#sample-json)
 
+## <a name="sample-excel-file"></a>Exemplo Excel arquivo
+
+Baixe <a href="table-filter.xlsx">table-filter.xlsx</a> para uma workbook pronta para uso. Adicione o seguinte script para experimentar o exemplo você mesmo!
+
 ## <a name="sample-code-filter-a-table-and-get-visible-range"></a>Código de exemplo: filtrar uma tabela e obter intervalo visível
-
-O script a seguir filtra uma tabela e obtém o intervalo visível.
-
-Baixe o arquivo de <a href="table-filter.xlsx"> exemplotable-filter.xlsx</a> e use-o com este script para experimentar você mesmo!
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook): ReturnTemplate {
