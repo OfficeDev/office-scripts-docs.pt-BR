@@ -4323,7 +4323,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-@types/office-js-preview 1.0.227 - MIT https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/office-js-preview
+@types/office-js-preview 1.0.231 - MIT https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/office-js-preview
 
 Copyright (c) Microsoft Corporation.
 
@@ -6735,26 +6735,6 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-commander 2.20.3 - MIT https://github.com/tj/commander.js#readme
-
-Copyright (c) 2011 TJ Holowaychuk <tj@vision-media.ca>
-
-(A licença do MIT)
-
-Copyright (c) 2011 TJ Holowaychuk <tj@vision-media.ca>
-
-A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o 'Software'), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software é fornecido para fazer isso, sujeitas às seguintes condições:
-
-O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
-
-O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT.
-EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
-
-
----------------------------------------------------------
-
----------------------------------------------------------
-
 commander 2.17.1 - MIT https://github.com/tj/commander.js#readme
 
 Copyright (c) 2011 TJ Holowaychuk <tj@vision-media.ca>
@@ -6776,6 +6756,26 @@ EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESP
 ---------------------------------------------------------
 
 commander 2.19.0 - MIT https://github.com/tj/commander.js#readme
+
+Copyright (c) 2011 TJ Holowaychuk <tj@vision-media.ca>
+
+(A licença do MIT)
+
+Copyright (c) 2011 TJ Holowaychuk <tj@vision-media.ca>
+
+A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o 'Software'), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software é fornecido para fazer isso, sujeitas às seguintes condições:
+
+O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
+
+O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT.
+EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
+
+
+---------------------------------------------------------
+
+---------------------------------------------------------
+
+commander 2.20.3 - MIT https://github.com/tj/commander.js#readme
 
 Copyright (c) 2011 TJ Holowaychuk <tj@vision-media.ca>
 
@@ -7194,7 +7194,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-cssesc 2.0.0 - MIT https://mths.be/cssesc
+cssesc 3.0.0 - MIT https://mths.be/cssesc
 
 Copyright Mathias Bynens <https://mathiasbynens.be/>
 
@@ -7211,7 +7211,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-cssesc 3.0.0 - MIT https://mths.be/cssesc
+cssesc 2.0.0 - MIT https://mths.be/cssesc
 
 Copyright Mathias Bynens <https://mathiasbynens.be/>
 
@@ -7552,14 +7552,14 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-define-property 1.0.0 - MIT https://github.com/jonschlinkert/define-property
+define-property 2.0.2 - MIT https://github.com/jonschlinkert/define-property
 
-Copyright (c) 2015, 2017, Jon Schlinkert.
-Copyright (c) 2017, Jon Schlinkert ( https://github.com/jonschlinkert) .
+Copyright (c) 2015-2018, Jon Schlinkert.
+Copyright (c) 2018, Jon Schlinkert ( https://github.com/jonschlinkert) .
 
 A Licença do MIT (MIT)
 
-Copyright (c) 2015, 2017, Jon Schlinkert
+Copyright (c) 2015-2018, Jon Schlinkert.
 
 A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software seja fornecido para fazer isso, sujeitas às seguintes condições:
 
@@ -7572,14 +7572,14 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-define-property 2.0.2 - MIT https://github.com/jonschlinkert/define-property
+define-property 1.0.0 - MIT https://github.com/jonschlinkert/define-property
 
-Copyright (c) 2015-2018, Jon Schlinkert.
-Copyright (c) 2018, Jon Schlinkert ( https://github.com/jonschlinkert) .
+Copyright (c) 2015, 2017, Jon Schlinkert.
+Copyright (c) 2017, Jon Schlinkert ( https://github.com/jonschlinkert) .
 
 A Licença do MIT (MIT)
 
-Copyright (c) 2015-2018, Jon Schlinkert.
+Copyright (c) 2015, 2017, Jon Schlinkert
 
 A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software seja fornecido para fazer isso, sujeitas às seguintes condições:
 
@@ -9931,14 +9931,14 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-is-number 3.0.0 - MIT https://github.com/jonschlinkert/is-number
+is-number 7.0.0 - MIT https://github.com/jonschlinkert/is-number
 
-Copyright (c) 2014-2016, Jon Schlinkert Copyright (c) 2014-2015, Jon Schlinkert.
-Copyright (c) 2016, Jon Schlinkert ( https://github.com/jonschlinkert) .
+Copyright (c) 2014-present, Jon Schlinkert.
+Copyright (c) 2018, Jon Schlinkert ( https://github.com/jonschlinkert) .
 
 A Licença do MIT (MIT)
 
-Copyright (c) 2014-2016, Jon Schlinkert
+Copyright (c) 2014-present, Jon Schlinkert.
 
 A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software seja fornecido para fazer isso, sujeitas às seguintes condições:
 
@@ -9951,14 +9951,14 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-is-number 7.0.0 - MIT https://github.com/jonschlinkert/is-number
+is-number 3.0.0 - MIT https://github.com/jonschlinkert/is-number
 
-Copyright (c) 2014-present, Jon Schlinkert.
-Copyright (c) 2018, Jon Schlinkert ( https://github.com/jonschlinkert) .
+Copyright (c) 2014-2016, Jon Schlinkert Copyright (c) 2014-2015, Jon Schlinkert.
+Copyright (c) 2016, Jon Schlinkert ( https://github.com/jonschlinkert) .
 
 A Licença do MIT (MIT)
 
-Copyright (c) 2014-present, Jon Schlinkert.
+Copyright (c) 2014-2016, Jon Schlinkert
 
 A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software seja fornecido para fazer isso, sujeitas às seguintes condições:
 
@@ -13421,7 +13421,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-postcss-selector-parser 5.0.0 - MIT https://github.com/postcss/postcss-selector-parser
+postcss-selector-parser 6.0.2 - MIT https://github.com/postcss/postcss-selector-parser
 
 Copyright (c) Ben Briggs <beneb.info@gmail.com> (http://beneb.info)
 
@@ -13438,7 +13438,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-postcss-selector-parser 6.0.2 - MIT https://github.com/postcss/postcss-selector-parser
+postcss-selector-parser 5.0.0 - MIT https://github.com/postcss/postcss-selector-parser
 
 Copyright (c) Ben Briggs <beneb.info@gmail.com> (http://beneb.info)
 
@@ -13881,7 +13881,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-punycode 1.4.1 - MIT https://mths.be/punycode
+punycode 1.3.2 - MIT https://mths.be/punycode
 
 Copyright Mathias Bynens <https://mathiasbynens.be/>
 
@@ -13898,7 +13898,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-punycode 1.3.2 - MIT https://mths.be/punycode
+punycode 1.4.1 - MIT https://mths.be/punycode
 
 Copyright Mathias Bynens <https://mathiasbynens.be/>
 
@@ -15615,7 +15615,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-string_decoder 1.1.1 - MIT https://github.com/nodejs/string_decoder
+string_decoder 1.3.0 - MIT https://github.com/nodejs/string_decoder
 
 Copyright Joyent, Inc. e outros colaboradores do Nó.
 
@@ -15646,7 +15646,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-string_decoder 1.3.0 - MIT https://github.com/nodejs/string_decoder
+string_decoder 1.1.1 - MIT https://github.com/nodejs/string_decoder
 
 Copyright Joyent, Inc. e outros colaboradores do Nó.
 

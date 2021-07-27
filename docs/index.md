@@ -5,12 +5,12 @@ title: Documentação de scripts do Office
 description: Recursos para aprender sobre os scripts do Office no Excel na web, incluindo tutoriais, artigos conceituais e exemplos de código.
 ms.date: 05/24/2021
 localization_priority: Priority
-ms.openlocfilehash: baa015f7f6384ccc2cdd7d8a4cbadcbc16167828
-ms.sourcegitcommit: 90ca8cdf30f2065f63938f6bb6780d024c128467
+ms.openlocfilehash: 095fffbc0b92f4efb5dcdcde1cd5970d6fd3c3f1
+ms.sourcegitcommit: de25e0657e7404bb780851b52633222bc3f80e52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639898"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53529215"
 ---
 # <a name="office-scripts-documentation"></a>Documentação de Scripts do Office
 
@@ -129,11 +129,11 @@ Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <a href="https://stackoverflow.com/questions/tagged/office-scripts" target="_blank"><img src="images/index-landing-page/i_support.svg" alt="API questions" /></a>
+                            <a href="/answers/topics/office-scripts-excel-dev.html" target="_blank"><img src="images/index-landing-page/i_support.svg" alt="API questions" /></a>
                         </div>
                     </div>
                     <div class="cardText">
-                        <a href="https://stackoverflow.com/questions/tagged/office-scripts" target="_blank"><h3>Tire dúvidas</h3></a>
+                        <a href="/answers/topics/office-scripts-excel-dev.html" target="_blank"><h3>Tire dúvidas</h3></a>
                     </div>
                 </div>
             </div>
