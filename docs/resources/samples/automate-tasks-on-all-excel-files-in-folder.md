@@ -3,12 +3,12 @@ title: Executar um script em todos os arquivos do Excel em uma pasta
 description: Saiba como executar um script em todos os arquivos Excel em uma pasta em OneDrive for Business.
 ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: bf9c0c486dacced5c3017b267ea65dfd215a5197
-ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
+ms.openlocfilehash: a595c31c9e0fa7066d6e18aff4d3778f727714b6
+ms.sourcegitcommit: 9d00ee1c11cdf897410e5232692ee985f01ee098
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53313894"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53772320"
 ---
 # <a name="run-a-script-on-all-excel-files-in-a-folder"></a>Executar um script em todos os arquivos do Excel em uma pasta
 
@@ -81,13 +81,13 @@ Esse fluxo executa o script em cada pasta de trabalho na pasta "Vendas".
 
     :::image type="content" source="../../images/all-files-in-folder-sample-flow-1.png" alt-text="O conector OneDrive for Business no Power Automate.":::
 1. Selecione a pasta "Vendas" com as pastas de trabalho extraídas.
-1. Para garantir que apenas as guias de trabalho sejam selecionadas, escolha **Nova etapa** e, em seguida, selecione **Condição** e de definir os seguintes valores:
+1. Para garantir que apenas as guias de trabalho sejam selecionadas, escolha **Nova etapa** e, em seguida, **selecione Condição**. Use os seguintes valores para a condição.
     1. **Nome** (o valor OneDrive nome do arquivo)
     1. "termina com"
-    1. "xlsx".
+    1. "xlsx"
 
     :::image type="content" source="../../images/all-files-in-folder-sample-flow-2.png" alt-text="O Power Automate de condição que aplica ações subsequentes a cada arquivo.":::
-1. Na **ramificação Se sim,** adicione o **conector Excel Online (Business)** com a **ação Executar script.** Use os seguintes valores para a ação:
+1. Na **ramificação Se sim,** adicione o **conector Excel Online (Business)** com a **ação Executar script.** Use os seguintes valores para a ação.
     1. **Localização**: OneDrive for Business
     1. **Biblioteca de Documentos**: OneDrive
     1. **Arquivo**: **Id** (o valor OneDrive ID do arquivo)

@@ -3,12 +3,12 @@ title: Práticas recomendadas no Scripts do Office
 description: Como evitar problemas comuns e gravar scripts robustos Office que podem manipular entradas ou dados inesperados.
 ms.date: 05/10/2021
 localization_priority: Normal
-ms.openlocfilehash: 0697e6fd1fa8f437a4a585d938254deb5a05f20c
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: 45dd40ad2f88aecbf66db2a623d92ca81f73657c
+ms.sourcegitcommit: 9d00ee1c11cdf897410e5232692ee985f01ee098
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546018"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53772306"
 ---
 # <a name="best-practices-in-office-scripts"></a>Práticas recomendadas no Scripts do Office
 
@@ -79,7 +79,7 @@ function main(workbook: ExcelScript.Workbook) {
   // Continue....
 }
 
-function inputPresent( workbook: ExcelScript.Workbook): boolean {
+function inputPresent(workbook: ExcelScript.Workbook): boolean {
   // These tables must be in the workbook for the script.
   const TargetTableName = 'Table1';
   const SourceTableName = 'Table2';
@@ -134,7 +134,7 @@ Considere o trecho a seguir que executa uma grande atualização de dados em um 
 range.setValues(someLargeValues);
 ```
 
-Se `someLargeValues` for maior do que Excel a Web pode manipular, a chamada `setValues()` falhará. Em seguida, o script também falha com um [erro de tempo de execução.](../testing/troubleshooting.md#runtime-errors) A `try...catch` instrução permite que seu script reconheça essa condição, sem encerrar imediatamente o script e mostrar o erro padrão.
+Se `someLargeValues` for maior do que Excel para a Web possa manipular, a chamada `setValues()` falhará. Em seguida, o script também falha com um [erro de tempo de execução.](../testing/troubleshooting.md#runtime-errors) A `try...catch` instrução permite que seu script reconheça essa condição, sem encerrar imediatamente o script e mostrar o erro padrão.
 
 Uma abordagem para dar ao usuário de script uma experiência melhor é apresentar uma mensagem de erro personalizada. O trecho a seguir mostra uma `try...catch` instrução registrando mais informações de erro para ajudar melhor o leitor.
 

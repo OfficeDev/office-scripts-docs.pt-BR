@@ -3,12 +3,12 @@ title: Limites e requisitos da plataforma com Office Scripts
 description: Limites de recursos e suporte ao navegador para Office scripts quando usados com Excel na Web
 ms.date: 05/17/2021
 localization_priority: Normal
-ms.openlocfilehash: 7e81aaf2f96faeb67c815814fe3b7f1795651318
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: 8b7afa02f73476e6e98f231a7a7162ad87607b37
+ms.sourcegitcommit: 9d00ee1c11cdf897410e5232692ee985f01ee098
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52545578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53772355"
 ---
 # <a name="platform-limits-and-requirements-with-office-scripts"></a>Limites e requisitos da plataforma com Office Scripts
 
@@ -45,7 +45,7 @@ Excel para a Web tem as seguintes limitações ao fazer chamadas para a lista de
 - Solicitações e respostas são limitadas a **5 MB**.
 - Um intervalo é limitado a **cinco milhões de células**.
 
-Se você estiver encontrando erros ao lidar com conjuntos de dados grandes, tente usar vários intervalos menores em vez de intervalos maiores. Por exemplo, consulte o exemplo [Gravar um grande conjuntos de](../resources/samples/write-large-dataset.md) dados. Você também pode usar APIs como [Range.getSpecialCells](/javascript/api/office-scripts/excelscript/excelscript.range#getspecialcells-celltype--cellvaluetype-) para direcionar células específicas em vez de intervalos grandes.
+Se você estiver encontrando erros ao lidar com conjuntos de dados grandes, tente usar vários intervalos menores em vez de intervalos maiores. Por exemplo, consulte o exemplo [Gravar um grande conjuntos de](../resources/samples/write-large-dataset.md) dados. Você também pode usar APIs como [Range.getSpecialCells](/javascript/api/office-scripts/excelscript/excelscript.range#getSpecialCells_cellType__cellValueType_) para direcionar células específicas em vez de intervalos grandes.
 
 ### <a name="power-automate"></a>Power Automate
 
