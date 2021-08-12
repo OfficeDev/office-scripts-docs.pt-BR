@@ -3,12 +3,12 @@ title: Usar chamadas de busca externa em Scripts do Office
 description: Saiba como fazer chamadas de API externas Office Scripts.
 ms.date: 05/14/2021
 localization_priority: Normal
-ms.openlocfilehash: df8814cbab16969a1140aecfe526fd68e609d43c
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: 46e83e290224d03cdb1f87eeb6215e2fb9510189c210a7dfa330f438ced0a53e
+ms.sourcegitcommit: 75f7ed8c2d23a104acc293f8ce29ea580b4fcdc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52545749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57847524"
 ---
 # <a name="use-external-fetch-calls-in-office-scripts"></a>Usar chamadas de busca externa em Scripts do Office
 

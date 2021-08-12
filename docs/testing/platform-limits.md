@@ -3,12 +3,12 @@ title: Limites e requisitos da plataforma com Office Scripts
 description: Limites de recursos e suporte ao navegador para Office scripts quando usados com Excel na Web
 ms.date: 05/17/2021
 localization_priority: Normal
-ms.openlocfilehash: 8b7afa02f73476e6e98f231a7a7162ad87607b37
-ms.sourcegitcommit: 9d00ee1c11cdf897410e5232692ee985f01ee098
+ms.openlocfilehash: e6a9baa7adac438c88767ae9b4138cc0a6b31f1c5b05ca74ad8b0a50b079075b
+ms.sourcegitcommit: 75f7ed8c2d23a104acc293f8ce29ea580b4fcdc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53772355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57847385"
 ---
 # <a name="platform-limits-and-requirements-with-office-scripts"></a>Limites e requisitos da plataforma com Office Scripts
 
@@ -47,7 +47,7 @@ Excel para a Web tem as seguintes limitações ao fazer chamadas para a lista de
 
 Se você estiver encontrando erros ao lidar com conjuntos de dados grandes, tente usar vários intervalos menores em vez de intervalos maiores. Por exemplo, consulte o exemplo [Gravar um grande conjuntos de](../resources/samples/write-large-dataset.md) dados. Você também pode usar APIs como [Range.getSpecialCells](/javascript/api/office-scripts/excelscript/excelscript.range#getSpecialCells_cellType__cellValueType_) para direcionar células específicas em vez de intervalos grandes.
 
-### <a name="power-automate"></a>Power Automate
+### <a name="power-automate"></a>Ligar/Desligar Automação
 
 Ao usar Office scripts com Power Automate, cada usuário é limitado a **400** chamadas para a ação Executar Script por dia . Esse limite é redefinido às 00:00 UTC.
 

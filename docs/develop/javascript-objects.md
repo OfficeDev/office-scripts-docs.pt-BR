@@ -3,12 +3,12 @@ title: Usar objetos internos do JavaScript nos scripts do Office
 description: Como chamar APIs JavaScript integrados de um script Office no Excel na Web.
 ms.date: 05/17/2021
 localization_priority: Normal
-ms.openlocfilehash: 680dd326e357bd06e2fc66cba5bd6745bbd33c24
-ms.sourcegitcommit: 4687693f02fc90a57ba30c461f35046e02e6f5fb
+ms.openlocfilehash: 6c15daf0429009d289a17e604caf51b807510442bf6e6fa6e42c85d7457f6164
+ms.sourcegitcommit: 75f7ed8c2d23a104acc293f8ce29ea580b4fcdc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52545044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57846607"
 ---
 # <a name="use-built-in-javascript-objects-in-office-scripts"></a>Usar objetos JavaScript integrados em Office Scripts
 

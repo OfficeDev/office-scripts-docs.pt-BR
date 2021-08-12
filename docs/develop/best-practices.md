@@ -3,12 +3,12 @@ title: Práticas recomendadas no Scripts do Office
 description: Como evitar problemas comuns e gravar scripts robustos Office que podem manipular entradas ou dados inesperados.
 ms.date: 05/10/2021
 localization_priority: Normal
-ms.openlocfilehash: 45dd40ad2f88aecbf66db2a623d92ca81f73657c
-ms.sourcegitcommit: 9d00ee1c11cdf897410e5232692ee985f01ee098
+ms.openlocfilehash: cdea3583120109cda05c05cb7c4f908e929bbff0d37e615b1820f67b57fbe24f
+ms.sourcegitcommit: 75f7ed8c2d23a104acc293f8ce29ea580b4fcdc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53772306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57846614"
 ---
 # <a name="best-practices-in-office-scripts"></a>Práticas recomendadas no Scripts do Office
 

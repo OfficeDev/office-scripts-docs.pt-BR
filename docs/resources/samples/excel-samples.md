@@ -3,12 +3,12 @@ title: Scripts básicos para Office scripts no Excel na Web
 description: Uma coleção de exemplos de código a ser usado com Office Scripts no Excel na Web.
 ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: 3aaaa7fe8769f6dcd658ae91c577956b56033051
-ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
+ms.openlocfilehash: 6d74d55556feb93e0f49da375b3c7896d439663f7f922e4ae135b6fdc6a40197
+ms.sourcegitcommit: 75f7ed8c2d23a104acc293f8ce29ea580b4fcdc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53313936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57847539"
 ---
 # <a name="basic-scripts-for-office-scripts-in-excel-on-the-web"></a>Scripts básicos para Office scripts no Excel na Web
 

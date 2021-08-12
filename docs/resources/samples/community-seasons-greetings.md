@@ -1,14 +1,14 @@
 ---
 title: Saudações de estação
 description: Saiba como usar Office scripts para mostrar uma árvore de canto em Excel na Web.
-ms.date: 04/28/2021
+ms.date: 06/29/2021
 localization_priority: Normal
-ms.openlocfilehash: a328ba66fedc245ff73300d7f47cd339ec87234f
-ms.sourcegitcommit: f7a7aebfb687f2a35dbed07ed62ff352a114525a
+ms.openlocfilehash: 3474a3e4a87257bba75132b029b57b0c28c922d1b901cda10068d5998d895c53
+ms.sourcegitcommit: 75f7ed8c2d23a104acc293f8ce29ea580b4fcdc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57846600"
 ---
 # <a name="seasons-greetings"></a>Saudações de estação
 
@@ -20,7 +20,7 @@ Assista ao script de saudações de estações [em ação no canal do YouTube "B
 
 ## <a name="script"></a>Script
 
-Baixe o arquivo <a href="happy-tree.xlsx">happy-tree.xlsx</a> usado nesta solução para experimentar você mesmo!
+Baixe <a href="happy-tree.xlsx">happy-tree.xlsx</a> para uma workbook pronta para uso. Adicione o seguinte script para experimentar o exemplo você mesmo!
 
 ```TypeScript
 /* Original version by Leslie Black.  */

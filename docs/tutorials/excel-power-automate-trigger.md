@@ -3,12 +3,12 @@ title: Passar dados para scripts numa execução automática do fluxo no Power A
 description: Tutorial sobre executar os Scripts do Office para Excel na Web por meio do Power Automate quando emails são recebidos e transmitidos para o script.
 ms.date: 06/29/2021
 localization_priority: Priority
-ms.openlocfilehash: 27a028d3cc2af58ca158bb631b7b266cd2a3d488
-ms.sourcegitcommit: 211c157ca746e266eeb079f5fa1925a1e35ab702
+ms.openlocfilehash: 954a7e9b48d8973310a97d7d5821341907938adde98c50fd77a36d8bd966ffb9
+ms.sourcegitcommit: 75f7ed8c2d23a104acc293f8ce29ea580b4fcdc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53313698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57847348"
 ---
 # <a name="pass-data-to-scripts-in-an-automatically-run-power-automate-flow"></a>Passar dados para scripts numa execução automática do fluxo no Power Automate.
 

@@ -3,12 +3,12 @@ title: Diferenças entre Office scripts e macros do VBA
 description: O comportamento e as diferenças de API entre Office Scripts e Excel VBA.
 ms.date: 05/21/2021
 localization_priority: Normal
-ms.openlocfilehash: c934b546834e018e5bac1da4d90043eb3bb52e63
-ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
+ms.openlocfilehash: 0d94607902fa62e07ce378b94ec3b9c328937e16535b1882b6cad5bd76212b33
+ms.sourcegitcommit: 75f7ed8c2d23a104acc293f8ce29ea580b4fcdc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53074414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57847265"
 ---
 # <a name="differences-between-office-scripts-and-vba-macros"></a>Diferenças entre Office scripts e macros do VBA
 
@@ -37,7 +37,7 @@ Atualmente, o VBA oferece uma cobertura mais completa de recursos Excel, especia
 
 Office Scripts não suportam eventos Excel [nível](/office/vba/excel/concepts/events-worksheetfunctions-shapes/using-events-with-excel-objects). Os scripts só são executados quando um usuário os inicia manualmente ou quando um fluxo Power Automate chama o script.
 
-## <a name="power-automate"></a>Power Automate
+## <a name="power-automate"></a>Ligar/Desligar Automação
 
 Office Os scripts podem ser executados Power Automate. Sua workbook pode ser atualizada por meio de fluxos agendados ou orientados por eventos, o que permite automatizar fluxos de trabalho sem nem mesmo abrir Excel. Isso significa que, desde que sua OneDrive seja armazenada no OneDrive (e acessível ao Power Automate), um fluxo pode executar seus scripts independentemente de você e sua organização usarem a área de trabalho, Mac ou cliente Web do Excel.
 

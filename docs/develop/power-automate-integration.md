@@ -3,12 +3,12 @@ title: Executar Office scripts com Power Automate
 description: Como obter Office scripts para Excel na Web trabalhando com um fluxo de trabalho Power Automate.
 ms.date: 05/17/2021
 localization_priority: Normal
-ms.openlocfilehash: 96b07501e07383ace5ff88a8bc6b64ef145ebd5e
-ms.sourcegitcommit: 4693c8f79428ec74695328275703af0ba1bfea8f
+ms.openlocfilehash: 61b43904cbc46b97a0102230c9c87c1051edd1516668f42fbded63c53c958de9
+ms.sourcegitcommit: 75f7ed8c2d23a104acc293f8ce29ea580b4fcdc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53074421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57846514"
 ---
 # <a name="run-office-scripts-with-power-automate"></a>Executar Office scripts com Power Automate
 

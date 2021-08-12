@@ -1,14 +1,14 @@
 ---
 title: Office Exemplos de scripts
 description: Exemplos Office scripts e cenários disponíveis.
-ms.date: 05/25/2021
+ms.date: 07/19/2021
 localization_priority: Normal
-ms.openlocfilehash: 1b7e9cdd9e23f57d59e5e878a37b50afb63965fd
-ms.sourcegitcommit: a063b3faf6c1b7c294bd6a73e46845b352f2a22d
+ms.openlocfilehash: 508c9fa61d6816faf3fbe740bdf1d587b127b064e9918aac2d789ff2d4faccff
+ms.sourcegitcommit: 75f7ed8c2d23a104acc293f8ce29ea580b4fcdc5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53202848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57846346"
 ---
 # <a name="office-scripts-samples-and-scenarios"></a>Office Exemplos e cenários de scripts
 
@@ -20,7 +20,7 @@ Em [Cenários,](#scenarios)incluímos alguns exemplos de cenários maiores que d
 
 Também saudamos [as contribuições da comunidade.](#community-contributions-and-fun-samples)
 
-## <a name="basics"></a>Noções básicas
+## <a name="basics"></a>Básico
 
 | Project | Detalhes |
 |---------|---------|
@@ -35,6 +35,7 @@ Confira o seguinte projeto de ponta a ponta que automatiza cenários de exemplo,
 
 | Project | Detalhes |
 |---------|---------|
+| [Converter arquivos CSV em Excel pastas de trabalho](convert-csv.md) | Este exemplo usa Office scripts e Power Automate para criar .xlsx arquivos .csv arquivos. |
 | [Workbooks de referência cruzada](excel-cross-reference.md) | Este exemplo usa Office scripts e Power Automate para fazer referência cruzada e validar informações em diferentes workbooks. |
 | [Contar linhas em branco em uma planilha específica ou em todas as planilhas](count-blank-rows.md) | Este exemplo detecta se há linhas em branco em planilhas nas quais você antecipa a presença dos dados e relata a contagem de linhas em branco para uso em um fluxo de Power Automate. |
 | [Imagens de gráfico de email e tabela](email-images-chart-table.md) | Este exemplo usa Office scripts e ações Power Automate para criar um gráfico e enviar esse gráfico como uma imagem por email. |
