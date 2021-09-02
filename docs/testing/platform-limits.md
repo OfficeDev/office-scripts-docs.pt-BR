@@ -3,12 +3,12 @@ title: Limites e requisitos da plataforma com Office Scripts
 description: Limites de recursos e suporte ao navegador para Office scripts quando usados com Excel na Web
 ms.date: 05/17/2021
 localization_priority: Normal
-ms.openlocfilehash: e6a9baa7adac438c88767ae9b4138cc0a6b31f1c5b05ca74ad8b0a50b079075b
-ms.sourcegitcommit: 75f7ed8c2d23a104acc293f8ce29ea580b4fcdc5
+ms.openlocfilehash: e60a7ecd00237bb704819d04b90e1d9ac974d4a6
+ms.sourcegitcommit: 6654aeae8a3ee2af84b4d4c4d8ff45b360a303eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57847385"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862226"
 ---
 # <a name="platform-limits-and-requirements-with-office-scripts"></a>Limites e requisitos da plataforma com Office Scripts
 
@@ -30,7 +30,7 @@ Seu navegador precisa de cookies de terceiros habilitados para mostrar a guia **
 #### <a name="instructions-for-adjusting-cookie-settings-in-popular-browsers"></a>Instruções para ajustar configurações de cookie em navegadores populares
 
 - [Chrome](https://support.google.com/chrome/answer/95647)
-- [Borda](https://support.microsoft.com/microsoft-edge/temporarily-allow-cookies-and-site-data-in-microsoft-edge-597f04f2-c0ce-f08c-7c2b-541086362bd2)
+- [Borda](https://support.microsoft.com/microsoft-edge/597f04f2-c0ce-f08c-7c2b-541086362bd2)
 - [Firefox](https://support.mozilla.org/kb/disable-third-party-cookies)
 - [Safari](https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac)
 
@@ -47,7 +47,7 @@ Excel para a Web tem as seguintes limitações ao fazer chamadas para a lista de
 
 Se você estiver encontrando erros ao lidar com conjuntos de dados grandes, tente usar vários intervalos menores em vez de intervalos maiores. Por exemplo, consulte o exemplo [Gravar um grande conjuntos de](../resources/samples/write-large-dataset.md) dados. Você também pode usar APIs como [Range.getSpecialCells](/javascript/api/office-scripts/excelscript/excelscript.range#getSpecialCells_cellType__cellValueType_) para direcionar células específicas em vez de intervalos grandes.
 
-### <a name="power-automate"></a>Ligar/Desligar Automação
+### <a name="power-automate"></a>Power Automate
 
 Ao usar Office scripts com Power Automate, cada usuário é limitado a **400** chamadas para a ação Executar Script por dia . Esse limite é redefinido às 00:00 UTC.
 

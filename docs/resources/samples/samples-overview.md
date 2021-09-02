@@ -3,12 +3,12 @@ title: Office Exemplos de scripts
 description: Exemplos Office scripts e cenários disponíveis.
 ms.date: 07/19/2021
 localization_priority: Normal
-ms.openlocfilehash: 508c9fa61d6816faf3fbe740bdf1d587b127b064e9918aac2d789ff2d4faccff
-ms.sourcegitcommit: 75f7ed8c2d23a104acc293f8ce29ea580b4fcdc5
+ms.openlocfilehash: 042e49145285fe100cace1df2571f5aa06dab7d5
+ms.sourcegitcommit: 6654aeae8a3ee2af84b4d4c4d8ff45b360a303eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57846346"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862163"
 ---
 # <a name="office-scripts-samples-and-scenarios"></a>Office Exemplos e cenários de scripts
 
@@ -20,9 +20,9 @@ Em [Cenários,](#scenarios)incluímos alguns exemplos de cenários maiores que d
 
 Também saudamos [as contribuições da comunidade.](#community-contributions-and-fun-samples)
 
-## <a name="basics"></a>Básico
+## <a name="basics"></a>Noções básicas
 
-| Project | Detalhes |
+| Projeto | Detalhes |
 |---------|---------|
 | [Noções básicas de scripts](../excel-samples.md) | Esses exemplos demonstram blocos de construção fundamentais para Office Scripts. |
 | [Adicionar comentários em Excel](add-excel-comments.md) | Este exemplo adiciona comentários a uma célula, incluindo @mentioning um colega. |
@@ -33,7 +33,7 @@ Também saudamos [as contribuições da comunidade.](#community-contributions-an
 
 Confira o seguinte projeto de ponta a ponta que automatiza cenários de exemplo, juntamente com scripts completos, exemplos Excel arquivos usados e [vídeos (hospedados no YouTube)](https://www.youtube.com/playlist?list=PLr3zVPZrMOUMl88fs8uc2GGAePRnNe6m0).
 
-| Project | Detalhes |
+| Projeto | Detalhes |
 |---------|---------|
 | [Converter arquivos CSV em Excel pastas de trabalho](convert-csv.md) | Este exemplo usa Office scripts e Power Automate para criar .xlsx arquivos .csv arquivos. |
 | [Workbooks de referência cruzada](excel-cross-reference.md) | Este exemplo usa Office scripts e Power Automate para fazer referência cruzada e validar informações em diferentes workbooks. |
@@ -64,7 +64,7 @@ Office Os scripts podem automatizar partes da sua rotina diária. Essas tarefas 
 
 Saudamos [as contribuições](https://github.com/OfficeDev/office-scripts-docs/blob/master/Contributing.md) de nossa Office de Scripts! Sinta-se à vontade para criar uma solicitação pull para revisão.
 
-| Project | Detalhes |
+| Projeto | Detalhes |
 |---------|---------|
 | [Jogo da Vida](https://techcommunity.microsoft.com/t5/excel-blog/ready-player-zero/ba-p/2246208) | O blog "Ready Player Zero" de Yutao Huang no Excel Tech Community inclui um script para modelar O [*Jogo da Vida de*](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)John Conway. |
 | [Animação de saudações de estações](community-seasons-greetings.md) | Este script foi contribuído [por Leslie Black](https://www.linkedin.com/in/lesblackconsultant/) no espírito da estação de feriado! É um script divertido que mostra uma árvore de Natal cantoria Excel na Web usando Office Scripts. |
