@@ -67,6 +67,8 @@ items:
                 href: resources/samples/copy-tables-combine.md
           - name: Além do básico
             items:
+              - name: Converter arquivos CSV
+                href: resources/samples/convert-csv.md
               - name: Planilhas de referência cruzada
                 href: resources/samples/excel-cross-reference.md
               - name: Contar linhas em branco em planilhas
