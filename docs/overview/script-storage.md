@@ -3,12 +3,12 @@ title: Office Propriedade e armazenamento de arquivos de scripts
 description: Informações sobre como Office scripts são armazenados em Microsoft OneDrive e transferidos entre proprietários.
 ms.date: 06/04/2021
 localization_priority: Normal
-ms.openlocfilehash: 6343b5bad366d9e4c4f349622a33b062de9c8ddd7877c3d40a49635d6aaef9cf
-ms.sourcegitcommit: 75f7ed8c2d23a104acc293f8ce29ea580b4fcdc5
+ms.openlocfilehash: 788850db9c8e07ad59ea6d42eb9958779efcb06f
+ms.sourcegitcommit: 6654aeae8a3ee2af84b4d4c4d8ff45b360a303eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57847293"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862156"
 ---
 # <a name="office-scripts-file-storage-and-ownership"></a>Office Propriedade e armazenamento de arquivos de scripts
 
@@ -24,7 +24,7 @@ Os scripts compartilhados com uma de suas guias de trabalho permanecem no OneDri
 
 ### <a name="restore-deleted-scripts"></a>Restaurar scripts excluídos
 
-Quando você exclui um script no Excel, ele vai para sua OneDrive lixeira. Para restaurar um script excluído, siga as etapas listadas em [Restaurar arquivos ou pastas excluídos em OneDrive](https://support.microsoft.com/office/restore-deleted-files-or-folders-in-onedrive-949ada80-0026-4db3-a953-c99083e6a84f). Restaurar um **arquivo .osts** retorna-o à **lista Todos os scripts.**
+Quando você exclui um script no Excel, ele vai para sua OneDrive lixeira. Para restaurar um script excluído, siga as etapas listadas em [Restaurar arquivos ou pastas excluídos em OneDrive](https://support.microsoft.com/office/949ada80-0026-4db3-a953-c99083e6a84f). Restaurar um **arquivo .osts** retorna-o à **lista Todos os scripts.**
 
 Um script excluído não é compartilhada com a workbook. Quando você restaura um script, ele **não mantém** seu acesso de script. Você precisará compartilhar o script novamente.
 
@@ -47,7 +47,7 @@ Para descobrir quem está usando Office scripts com a ferramenta de pesquisa, ad
 
 ## <a name="see-also"></a>Confira também
 
-- [Compartilhando scripts do Office no Excel para a Web](https://support.microsoft.com/office/sharing-office-scripts-in-excel-for-the-web-226eddbc-3a44-4540-acfe-fccda3d1122b)
+- [Compartilhamento de Scripts do Office no Excel para a web](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b)
 - [Solução de problemas dos scripts do Office](../testing/troubleshooting.md)
-- [Configurações dos scripts do Office no M365](https://support.office.com/article/office-scripts-settings-in-m365-19d3c51a-6ca2-40ab-978d-60fa49554dcf)
+- [Configurações dos scripts do Office no M365](/microsoft-365/admin/manage/manage-office-scripts-settings)
 - [Desfazer os efeitos do Scripts do Office](../testing/undo.md)

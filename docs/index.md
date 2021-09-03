@@ -5,12 +5,12 @@ title: Documentação de scripts do Office
 description: Recursos para aprender sobre os scripts do Office no Excel na web, incluindo tutoriais, artigos conceituais e exemplos de código.
 ms.date: 05/24/2021
 localization_priority: Priority
-ms.openlocfilehash: 108642efda29aa9d794b1202befda0854f5db6305f6c93ee4038727016acebb0
-ms.sourcegitcommit: 75f7ed8c2d23a104acc293f8ce29ea580b4fcdc5
+ms.openlocfilehash: 9dec6813cd4603700b8ff06647031b9a2cd407b1
+ms.sourcegitcommit: 6654aeae8a3ee2af84b4d4c4d8ff45b360a303eb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57847104"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862212"
 ---
 # <a name="office-scripts-documentation"></a>Documentação de Scripts do Office
 
