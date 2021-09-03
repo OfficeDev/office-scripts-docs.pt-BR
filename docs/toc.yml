@@ -37,6 +37,8 @@ items:
             href: overview/script-storage.md
           - name: Executar scripts com Power Automate
             href: develop/power-automate-integration.md
+          - name: Usar os arquivos de macro em fluxos do Power Automate
+            href: develop/macros-power-automate.md
       - name: Solução de problemas
         items:
           - name: Noções básicas de solução de problemas
