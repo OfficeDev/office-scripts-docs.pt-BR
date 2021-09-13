@@ -4323,9 +4323,8 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-@types/office-js-preview 1.0.231 - MIT https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/office-js-preview
+@types/office-js-preview 1.0.239 - MIT https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/office-js-preview
 
-Copyright (c) Microsoft Corporation.
 
 Licença do MIT
 
@@ -13564,54 +13563,6 @@ prepend-http 1.0.4 - MIT https://github.com/sindresorhus/prepend-http#readme
 A Licença do MIT (MIT)
 
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-
-A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software seja fornecido para fazer isso, sujeitas às seguintes condições:
-
-O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
-
-O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
-
-
----------------------------------------------------------
-
----------------------------------------------------------
-
-mais bonito 2.0.5 - MIT https://prettier.io/
-
-Copyright Google Inc. Copyright (c) 2014-2016 Teambition Copyright (c) Microsoft Corporation.
-Copyright (c) 2014-2015, Jon Schlinkert.
-Copyright (c) 2014-2016, Jon Schlinkert.
-Copyright (c) 2014-2017, Jon Schlinkert.
-Copyright (c) 2015-2017, Jon Schlinkert.
-Copyright (c) James Long e colaboradores Copyright (c) 2014-present, Jon Schlinkert.
-Copyright (c) Facebook, Inc. e suas afiliadas.
-Copyright (c) 2014Van Nikulin <ifaaan@gmail.com> Copyright 2014, 2015, 2016, 2017, 2018 Simon Lydell Copyright (c) 2013 Yusuke Suzuki <utatane.tea@gmail.com> Copyright (c) 2013-2014 Yusuke Suzuki <utatane.tea@gmail.com>
-
-Copyright © James Long e colaboradores
-
-A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software seja fornecido para fazer isso, sujeitas às seguintes condições:
-
-O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
-
-O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
-
-
----------------------------------------------------------
-
----------------------------------------------------------
-
-mais bonito 2.2.1 - MIT https://prettier.io/
-
-(c) bv u Copyright Google LLC Copyright Google Inc. (c) bv(u,t),function t,r (c) Kr Cr t,zr Cr a,your Cr (c) Kr Tr t,zr Tr a,your Tr Copyright (c) Microsoft Corporation.
-Copyright (c) 2014-2015, Jon Schlinkert.
-Copyright (c) 2014-2016, Jon Schlinkert.
-Copyright (c) 2014-2017, Jon Schlinkert.
-Copyright (c) 2015-2017, Jon Schlinkert.
-Copyright (c) James Long e colaboradores Copyright (c) 2014-present, Jon Schlinkert.
-Copyright (c) Facebook, Inc. e suas afiliadas.
-Copyright (c) 2014Van Nikulin <ifaaan@gmail.com> Copyright 2014, 2015, 2016, 2017, 2018 Simon Lydell Copyright (c) 2013 Yusuke Suzuki <utatane.tea@gmail.com> Copyright (c) 2013-2014 Yusuke Suzuki <utatane.tea@gmail.com>
-
-Copyright © James Long e colaboradores
 
 A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas às quais o Software seja fornecido para fazer isso, sujeitas às seguintes condições:
 
