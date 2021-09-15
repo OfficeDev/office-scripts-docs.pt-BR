@@ -69,6 +69,8 @@ items:
                 href: resources/samples/copy-tables-combine.md
           - name: Além do básico
             items:
+              - name: Combinar planilhas em uma única pasta de trabalho
+                href: resources/samples/combine-worksheets-into-single-workbook.md
               - name: Converter arquivos CSV
                 href: resources/samples/convert-csv.md
               - name: Planilhas de referência cruzada

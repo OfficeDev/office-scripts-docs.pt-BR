@@ -2,13 +2,13 @@
 title: Limites e requisitos da plataforma com Office Scripts
 description: Limites de recursos e suporte ao navegador para Office scripts quando usados com Excel na Web
 ms.date: 05/17/2021
-localization_priority: Normal
-ms.openlocfilehash: e60a7ecd00237bb704819d04b90e1d9ac974d4a6
-ms.sourcegitcommit: 6654aeae8a3ee2af84b4d4c4d8ff45b360a303eb
+ms.localizationpriority: medium
+ms.openlocfilehash: 2140ebf249af76447f64efae7fd2008e781bf815
+ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862226"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59327872"
 ---
 # <a name="platform-limits-and-requirements-with-office-scripts"></a>Limites e requisitos da plataforma com Office Scripts
 

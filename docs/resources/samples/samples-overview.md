@@ -1,14 +1,14 @@
 ---
 title: Office Exemplos de scripts
 description: Exemplos Office scripts e cenários disponíveis.
-ms.date: 07/19/2021
-localization_priority: Normal
-ms.openlocfilehash: 042e49145285fe100cace1df2571f5aa06dab7d5
-ms.sourcegitcommit: 6654aeae8a3ee2af84b4d4c4d8ff45b360a303eb
+ms.date: 09/03/2021
+ms.localizationpriority: medium
+ms.openlocfilehash: 0d11e15a7e839f33a74ca8ad7f1d09dd7711347c
+ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862163"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334931"
 ---
 # <a name="office-scripts-samples-and-scenarios"></a>Office Exemplos e cenários de scripts
 
@@ -35,6 +35,7 @@ Confira o seguinte projeto de ponta a ponta que automatiza cenários de exemplo,
 
 | Projeto | Detalhes |
 |---------|---------|
+| [Combinar planilhas em uma única pasta de trabalho](combine-worksheets-into-single-workbook.md) | Este exemplo usa Office scripts e Power Automate para puxar dados de outras guias de trabalho para uma única workbook. |
 | [Converter arquivos CSV em Excel pastas de trabalho](convert-csv.md) | Este exemplo usa Office scripts e Power Automate para criar .xlsx arquivos .csv arquivos. |
 | [Workbooks de referência cruzada](excel-cross-reference.md) | Este exemplo usa Office scripts e Power Automate para fazer referência cruzada e validar informações em diferentes workbooks. |
 | [Contar linhas em branco em uma planilha específica ou em todas as planilhas](count-blank-rows.md) | Este exemplo detecta se há linhas em branco em planilhas nas quais você antecipa a presença dos dados e relata a contagem de linhas em branco para uso em um fluxo de Power Automate. |
@@ -64,7 +65,7 @@ Office Os scripts podem automatizar partes da sua rotina diária. Essas tarefas 
 
 Saudamos [as contribuições](https://github.com/OfficeDev/office-scripts-docs/blob/master/Contributing.md) de nossa Office de Scripts! Sinta-se à vontade para criar uma solicitação pull para revisão.
 
-| Projeto | Detalhes |
+| Project | Detalhes |
 |---------|---------|
 | [Jogo da Vida](https://techcommunity.microsoft.com/t5/excel-blog/ready-player-zero/ba-p/2246208) | O blog "Ready Player Zero" de Yutao Huang no Excel Tech Community inclui um script para modelar O [*Jogo da Vida de*](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)John Conway. |
 | [Animação de saudações de estações](community-seasons-greetings.md) | Este script foi contribuído [por Leslie Black](https://www.linkedin.com/in/lesblackconsultant/) no espírito da estação de feriado! É um script divertido que mostra uma árvore de Natal cantoria Excel na Web usando Office Scripts. |
