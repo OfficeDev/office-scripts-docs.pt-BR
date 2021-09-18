@@ -3,16 +3,16 @@ title: Office Propriedade e armazenamento de arquivos de scripts
 description: Informações sobre como Office scripts são armazenados em Microsoft OneDrive e transferidos entre proprietários.
 ms.date: 06/04/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 2a404818ad5eb118467d5ad98c8921c5f3ea29fe
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: 6b82fc041c97288feefa85f2a9c9efeab0cb5705
+ms.sourcegitcommit: 5ec904cbb1f2cc00a301a5ba7ccb8ae303341267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59326860"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447447"
 ---
 # <a name="office-scripts-file-storage-and-ownership"></a>Office Propriedade e armazenamento de arquivos de scripts
 
-Office Scripts são armazenados como **arquivos .osts** em seu Microsoft OneDrive. Eles são armazenados separadamente de uma workbook. Para dar acesso a outras pessoas, [compartilhe o script com uma Excel de trabalho](excel.md#sharing-scripts). Isso significa que você está vinculando o script com o arquivo, não anexando-o. Quem tiver acesso ao arquivo Excel também poderá exibir, executar ou fazer uma cópia do script.
+Office Scripts são armazenados como **arquivos .osts** em seu Microsoft OneDrive. Eles são armazenados separadamente de uma workbook. Para dar acesso a outras pessoas, [compartilhe o script com uma Excel de trabalho](excel.md#share-scripts). Isso significa que você está vinculando o script com o arquivo, não anexando-o. Quem tiver acesso ao arquivo Excel também poderá exibir, executar ou fazer uma cópia do script.
 
 A menos que você compartilhe seus scripts, ninguém mais poderá acessá-los. Suas OneDrive controlam o acesso compartilhado e as permissões para todos os arquivos **.osts** de script, independentemente de qualquer configuração Excel script. Os scripts não podem ser vinculados a partir de um disco local ou locais de nuvem personalizados. Office Os scripts só reconhecem e executam um script se ele estiver em sua pasta OneDrive ou compartilhado com a pasta de trabalho.
 
@@ -45,7 +45,7 @@ Para descobrir quem está usando Office scripts com a ferramenta de pesquisa, ad
 > [!NOTE]
 > No momento, a execução de um script não está registrada. Somente as ações criar, exibir e modificar são registradas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Também consulte
 
 - [Compartilhamento de Scripts do Office no Excel para a web](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b)
 - [Solução de problemas dos scripts do Office](../testing/troubleshooting.md)

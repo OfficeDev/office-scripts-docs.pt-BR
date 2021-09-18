@@ -3,12 +3,12 @@ title: Converter arquivos CSV em Excel pastas de trabalho
 description: Saiba como usar Office scripts e Power Automate para criar .xlsx arquivos .csv arquivos.
 ms.date: 07/19/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: ecfc4d143cbaf10b9ea5f02881751f2c4fa28853
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: 213c6caab1d1b20d566aa0e79630c1a9b50554f7
+ms.sourcegitcommit: 5ec904cbb1f2cc00a301a5ba7ccb8ae303341267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59333430"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447475"
 ---
 # <a name="convert-csv-files-to-excel-workbooks"></a>Converter arquivos CSV em Excel pastas de trabalho
 
@@ -67,7 +67,7 @@ function main(workbook: ExcelScript.Workbook, csv: string) {
 1. De definir o fluxo como **Repetir a cada** "1" "Dia" e selecione **Criar**.
 1. Obter o arquivo Excel modelo. Essa é a base para todos os arquivos .csv convertidos. Adicione uma **nova etapa que** usa o conector **OneDrive for Business** e a ação Obter **conteúdo de** arquivo. Forneça o caminho do arquivo para o arquivo "Template.xlsx".
     * **Arquivo**: /output/Template.xlsx
-1. Renomeie **a etapa Obter** conteúdo de arquivo indo para **o menu ...** dessa etapa (no canto superior direito do conector) e selecionando a opção **Renomear.** Altere o nome da etapa para "Obter Excel modelo".
+1. Renomeie a etapa **Obter** conteúdo de arquivo indo para o menu Obter conteúdo de **arquivo(...)** dessa etapa (no canto superior direito do conector) e selecionando a opção **Renomear.** Altere o nome da etapa para "Obter Excel modelo".
 
      :::image type="content" source="../../images/convert-csv-flow-1.png" alt-text="O conector OneDrive for Business no Power Automate, renomeado para Get Excel template.":::
 1. Obter todos os arquivos na pasta "saída". Adicione uma **nova etapa que** usa o conector **OneDrive for Business** e os arquivos list na **ação de** pasta. Forneça o caminho da pasta que contém os .csv arquivos.

@@ -3,12 +3,12 @@ title: Práticas recomendadas no Scripts do Office
 description: Como evitar problemas comuns e gravar scripts robustos Office que podem manipular entradas ou dados inesperados.
 ms.date: 05/10/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 49075d52587a1d2c4ed06fc2939aebc7081d4ddb
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: c37559c978a04bd99fff044674b2f64b7758438b
+ms.sourcegitcommit: 5ec904cbb1f2cc00a301a5ba7ccb8ae303341267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59327837"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447454"
 ---
 # <a name="best-practices-in-office-scripts"></a>Práticas recomendadas no Scripts do Office
 
@@ -60,7 +60,7 @@ function main(workbook: ExcelScript.Workbook) {
     return;
   }
 
-  // Continue....
+  // Continue...
 }
 ```
 
@@ -76,7 +76,7 @@ function main(workbook: ExcelScript.Workbook) {
     return;
   }
 
-  // Continue....
+  // Continue...
 }
 
 function inputPresent(workbook: ExcelScript.Workbook): boolean {
@@ -168,7 +168,7 @@ try {
 > [!NOTE]
 > Usar `try...catch` dentro ou ao redor de um loop retarda seu script. Para obter mais informações de desempenho, consulte [Evite usar `try...catch` blocos](web-client-performance.md#avoid-using-trycatch-blocks-in-or-surrounding-loops).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Também consulte
 
 - [Solução de problemas dos scripts do Office](../testing/troubleshooting.md)
 - [Solução de problemas de informações para Power Automate com Office Scripts](../testing/power-automate-troubleshooting.md)

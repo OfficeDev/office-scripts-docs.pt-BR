@@ -1,14 +1,14 @@
 ---
 title: Solucionar Office scripts
 description: Dicas e técnicas de depuração para Office scripts, bem como recursos de ajuda.
-ms.date: 05/17/2021
+ms.date: 09/15/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 8ea133afdf302994126e8051d275d03b938df370
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: 5229490e2487974f751456ef63004bcb27f7b09c
+ms.sourcegitcommit: 5ec904cbb1f2cc00a301a5ba7ccb8ae303341267
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59333976"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447482"
 ---
 # <a name="troubleshoot-office-scripts"></a>Solucionar Office scripts
 
@@ -84,13 +84,11 @@ Para obter informações específicas sobre como executar scripts Power Automate
 
 [Stack Overflow](https://stackoverflow.com/questions/tagged/office-scripts) é uma comunidade de desenvolvedores dispostos a ajudar com problemas de codificação. Muitas vezes, você poderá encontrar a solução para seu problema por meio de uma pesquisa rápida de Estouro de Pilha. Se não, faça sua pergunta e marque-a com a marca "office-scripts". Certifique-se de mencionar que você está criando um *script* de Office , não um Office *Desem.*
 
-Para enviar uma solicitação de recurso para Office Scripts, poste sua ideia na página Voz do Usuário [ou](https://excel.uservoice.com/forums/274580-excel-for-the-web?category_id=143439)se a solicitação de recurso já existir lá, adicione seu voto a ela. Certifique-se de arquivar a solicitação em Excel para a Web na categoria "Macros, Scripts e Complementos".
-
-Se houver um problema com o Gravador de Ações ou Editor, entre em contato conosco. No menu do painel de tarefas do Editor de **Código...** selecione o botão **Enviar comentários** para compartilhar quaisquer problemas.
+Para enviar uma solicitação de recurso para Office scripts ou para relatar um problema com o recurso, use o botão comentários no Editor de Código. No menu Mais opções  **(...)** do painel de tarefas Editor de Código, selecione o botão Enviar **comentários** para compartilhar suas necessidades de recursos e outras experiências.
 
 :::image type="content" source="../images/code-editor-feedback.png" alt-text="O menu de estouro do Editor de Código com o botão &quot;Enviar comentários&quot;.":::
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Também consulte
 
 - [Práticas recomendadas nos Scripts do Office ](../develop/best-practices.md)
 - [Limites da plataforma com Office Scripts](platform-limits.md)
