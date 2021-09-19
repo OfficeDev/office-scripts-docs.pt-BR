@@ -1,14 +1,14 @@
 ---
 title: Scripts do Office no Excel na Web
 description: Uma breve introdução ao Gravador de ação e ao Editor de códigos de scripts do Office.
-ms.date: 07/04/2021
+ms.date: 09/17/2021
 ms.localizationpriority: high
-ms.openlocfilehash: 056bf4bb489739d4062dcf422aded2dcc7fc5aa8
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: 5b33f4b15733a0e053b7e5fa7ba1051b382f22ca
+ms.sourcegitcommit: 5ec904cbb1f2cc00a301a5ba7ccb8ae303341267
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59332877"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447490"
 ---
 # <a name="office-scripts-in-excel-on-the-web"></a>Scripts do Office no Excel na Web
 
@@ -62,7 +62,7 @@ Uma maneira fácil de começar a aprender sobre os recursos dos scripts do Offic
 
 Depois de concluir o tutorial, leia [ Fundamentos de script para Scripts do Office no Excel na Web ](../develop/scripting-fundamentals.md) para saber mais sobre o Editor de código e como escrever e editar seus próprios scripts. Para informações adicionais sobre o Editor de Código e como seu código de script é interpretado, leia [Ambiente do Editor de Código de Scripts do Office](code-editor-environment.md).
 
-## <a name="sharing-scripts"></a>Scripts de compartilhamento
+## <a name="share-scripts"></a>Compartilhar scripts
 
 :::image type="content" source="../images/script-sharing.png" alt-text="A página de detalhes do script mostrando a opção &quot;Compartilhar com outras pessoas nesta pasta de trabalho&quot;.":::
 
@@ -73,7 +73,19 @@ Mais detalhes sobre o compartilhamento e descompartilhamento de scripts são enc
 > [!NOTE]
 > Saiba mais sobre como os scripts são armazenados no seu OneDrive em [Armazenamento de arquivos e propriedade de Scripts do Office](script-storage.md).
 
-## <a name="connecting-office-scripts-to-power-automate"></a>Conectando Scripts do Office com o Power Automate
+### <a name="create-script-buttons-preview"></a>Criar botões de script (visualização)
+
+[!INCLUDE [Public preview](../includes/preview-note.md)]
+
+Ajude seus colegas a encontrar e executar seus scripts adicionando botões de script a uma pasta de trabalho. Com qualquer script, vá para o menu Mais opções **(...)** na página Detalhes do script ou no painel de tarefas do Editor de Código e selecione **Adicionar botão**. Isso cria um botão na guia de trabalho que executa o script associado quando selecionado. Ele também compartilha o script com a pasta de trabalho, para que todos com permissões de gravação para a pasta de trabalho possam usar sua automação útil.
+
+A captura de tela a seguir mostra a página Detalhes do script de um script intitulado **Criar Relatório** e tem a opção **Adicionar botão** no menu **Mais opções** (...) realçada.
+
+:::image type="content" source="../images/add-button.png" alt-text="A opção 'Adicionar botão' no menu da página Detalhes do script.":::
+
+Para parar de compartilhar um script por meio de um botão, vá para o menu Mais opções **(...)** na página Detalhes do script e selecione **Parar de Compartilhar**. Isso remove todos os botões que executem o script. A exclusão de um único botão remove o script desse botão, mesmo que a operação seja desfeita ou o botão seja cortado e passado.
+
+## <a name="connect-office-scripts-to-power-automate"></a>Conectar Scripts do Office com o Power Automate
 
 [O Power Automate](https://flow.microsoft.com/) é um serviço que ajuda você a criar fluxos de trabalho automatizados entre vários aplicativos e serviços. Os scripts do Office podem ser usados nesses fluxos de trabalho, permitindo que você controle seus scripts fora da pasta de trabalho. Você pode executar seus scripts em um cronograma, dispará-los em resposta a emails e muito mais. Visite o [Executar scripts do Office no Excel na Web com o tutorial do Power Automate](../tutorials/excel-power-automate-manual.md) para aprender como se conectar a esses serviços de automação.
 
