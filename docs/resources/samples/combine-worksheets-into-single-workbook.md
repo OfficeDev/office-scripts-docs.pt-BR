@@ -1,14 +1,14 @@
 ---
 title: Combinar as guias de trabalho em uma única workbook
 description: Saiba como usar Office scripts e Power Automate para criar planilhas de mesclagem de outras pasta de trabalho em uma única pasta de trabalho.
-ms.date: 09/03/2021
+ms.date: 09/17/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 6d2c9492e0e2164fe34cff21d92f3df4c9bee3fe
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: ffb0fd13cf587184aec87ade36e5e0e661043b94
+ms.sourcegitcommit: c23816babcc628b52f6d8aaa4b6342e04e83a5bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59337940"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460782"
 ---
 # <a name="combine-worksheets-into-a-single-workbook"></a>Combinar planilhas em uma única pasta de trabalho
 
@@ -101,7 +101,7 @@ interface WorksheetData {
     * **Arquivo**: seu arquivo
     * **Script**: Adicionar planilhas
     * **workbookName**: *Name* (conteúdo dinâmico de **Arquivos de lista na pasta**)
-    * **worksheetInformation**: *result* (conteúdo dinâmico do **script Executar**)
+    * **worksheetInformation** (depois de selecionar o botão **Alternar** para inserir toda a matriz, consulte a observação a seguir à próxima imagem): *resultado* (conteúdo dinâmico do **script Executar**)
 
     :::image type="content" source="../../images/combine-worksheets-flow-2.png" alt-text="As duas ações de script Executar dentro do controle Aplicar a cada controle.":::
     > [!NOTE]
