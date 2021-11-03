@@ -1,14 +1,14 @@
 ---
 title: Executar Office scripts com Power Automate
 description: Como obter Office scripts para Excel na Web trabalhando com um fluxo de trabalho Power Automate.
-ms.date: 05/17/2021
+ms.date: 11/01/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: b5bddae61961a56699f99111f71c4f152382f7c6
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: 1a335944230011bc8f5967004b7394f3f5958321
+ms.sourcegitcommit: 634ad2061e683ae1032c1e0b55b00ac577adc34f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59327865"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60725597"
 ---
 # <a name="run-office-scripts-with-power-automate"></a>Executar Office scripts com Power Automate
 
@@ -46,17 +46,19 @@ Ao adicionar parâmetros de entrada à função de um `main` script, considere a
 
 1. O primeiro parâmetro deve ser do tipo `ExcelScript.Workbook` . Seu nome de parâmetro não importa.
 
-2. Cada parâmetro deve ter um tipo (como `string` ou `number` ).
+1. Cada parâmetro deve ter um tipo (como `string` ou `number` ).
 
-3. Os tipos `string` básicos `number` , , , e são `boolean` `unknown` `object` `undefined` suportados.
+1. Os tipos `string` básicos `number` , , , e são `boolean` `unknown` `object` `undefined` suportados.
 
-4. Há suporte para matrizes dos tipos básicos listados anteriormente.
+1. Matrizes ( ) dos tipos básicos listados `[]` anteriormente são suportados.
+    > [!IMPORTANT]
+    > Observe que o objeto `Array<T>` não é um tipo de parâmetro com suporte.
 
-5. As matrizes aninhadas são suportadas como parâmetros (mas não como tipos de retorno).
+1. As matrizes aninhadas são suportadas como parâmetros (mas não como tipos de retorno).
 
-6. Os tipos de união são permitidos se eles são uma união de literais pertencentes a um único tipo (como `"Left" | "Right"` ). Também há suporte para uniões de um tipo com suporte indefinido (como `string | undefined` ).
+1. Os tipos de união são permitidos se eles são uma união de literais pertencentes a um único tipo (como `"Left" | "Right"` ). Também há suporte para uniões de um tipo com suporte indefinido (como `string | undefined` ).
 
-7. Os tipos de objeto são permitidos se eles contêm propriedades do tipo , , matrizes com `string` suporte ou outros objetos com `number` `boolean` suporte. O exemplo a seguir mostra objetos aninhados com suporte como tipos de parâmetro:
+1. Os tipos de objeto são permitidos se eles contêm propriedades do tipo , , matrizes com `string` suporte ou outros objetos com `number` `boolean` suporte. O exemplo a seguir mostra objetos aninhados com suporte como tipos de parâmetro:
 
     ```TypeScript
     // Office Scripts can return an Employee object because Position only contains strings and numbers.
@@ -71,15 +73,15 @@ Ao adicionar parâmetros de entrada à função de um `main` script, considere a
     }
     ```
 
-8. Os objetos devem ter sua interface ou definição de classe definida no script. Um objeto também pode ser definido anonimamente em linha, como no exemplo a seguir:
+1. Os objetos devem ter sua interface ou definição de classe definida no script. Um objeto também pode ser definido anonimamente em linha, como no exemplo a seguir:
 
     ```TypeScript
     function main(workbook: ExcelScript.Workbook): {name: string, email: string}
     ```
 
-9. Parâmetros opcionais são permitidos e podem ser denodos como tal usando o modificador opcional `?` (por exemplo, `function main(workbook: ExcelScript.Workbook, Name?: string)` ).
+1. Parâmetros opcionais são permitidos e podem ser denodos como tal usando o modificador opcional `?` (por exemplo, `function main(workbook: ExcelScript.Workbook, Name?: string)` ).
 
-10. Os valores de parâmetro padrão são permitidos (por `async function main(workbook: ExcelScript.Workbook, Name: string = 'Jane Doe')` exemplo.
+1. Os valores de parâmetro padrão são permitidos (por `async function main(workbook: ExcelScript.Workbook, Name: string = 'Jane Doe')` exemplo.
 
 ### <a name="return-data-from-a-script"></a>Retornar dados de um script
 
@@ -87,13 +89,15 @@ Os scripts podem retornar dados da caixa de trabalho a serem usados como conteú
 
 1. Os tipos `string` básicos `number` , , e são `boolean` `void` `undefined` suportados.
 
-2. Os tipos de união usados como tipos de retorno seguem as mesmas restrições que fazem quando usados como parâmetros de script.
+1. Os tipos de união usados como tipos de retorno seguem as mesmas restrições que fazem quando usados como parâmetros de script.
 
-3. Os tipos de matriz são permitidos se eles são do tipo `string` `number` , ou `boolean` . Eles também são permitidos se o tipo for uma união com suporte ou um tipo literal com suporte.
+1. Tipos de matriz ( `[]` ) são permitidos se eles são do tipo `string` , ou `number` `boolean` . Eles também são permitidos se o tipo for uma união com suporte ou um tipo literal com suporte.
+    > [!IMPORTANT]
+    > Observe que o objeto `Array<T>` não é um tipo de retorno com suporte.
 
-4. Os tipos de objeto usados como tipos de retorno seguem as mesmas restrições que fazem quando usados como parâmetros de script.
+1. Os tipos de objeto usados como tipos de retorno seguem as mesmas restrições que fazem quando usados como parâmetros de script.
 
-5. A digitação implícita é suportada, embora ela deve seguir as mesmas regras de um tipo definido.
+1. A digitação implícita é suportada, embora ela deve seguir as mesmas regras de um tipo definido.
 
 ## <a name="example"></a>Exemplo
 
