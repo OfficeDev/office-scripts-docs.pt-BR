@@ -1,14 +1,14 @@
 ---
 title: Converter arquivos CSV em Excel pastas de trabalho
 description: Saiba como usar Office scripts e Power Automate para criar .xlsx arquivos .csv arquivos.
-ms.date: 07/19/2021
+ms.date: 11/02/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 213c6caab1d1b20d566aa0e79630c1a9b50554f7
-ms.sourcegitcommit: 5ec904cbb1f2cc00a301a5ba7ccb8ae303341267
+ms.openlocfilehash: 203174aec099e426b75d1c816fb3f849b4f13152
+ms.sourcegitcommit: 8df930d9ad90001dbed7cb9bd9015ebe7bc9854e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59447475"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60793262"
 ---
 # <a name="convert-csv-files-to-excel-workbooks"></a>Converter arquivos CSV em Excel pastas de trabalho
 
@@ -99,3 +99,43 @@ function main(workbook: ExcelScript.Workbook, csv: string) {
     :::image type="content" source="../../images/convert-csv-flow-5.png" alt-text="O conector Excel online (Business) concluído Power Automate.":::
 1. Salve o fluxo. Use o **botão Testar** na página do editor de fluxo ou execute o fluxo através da guia **Meus fluxos.** Certifique-se de permitir o acesso quando solicitado.
 1. Você deve encontrar novos arquivos .xlsx na pasta "output", juntamente com os arquivos .csv originais. As novas pastas de trabalho contêm os mesmos dados dos arquivos CSV.
+
+## <a name="troubleshooting"></a>Solução de problemas
+
+O script espera que os valores separados por vírgulas façam um intervalo retangular. Se o arquivo .csv contiver linhas com diferentes números de colunas, você receberá um erro que diz: "O número de linhas ou colunas na matriz de entrada não corresponderá ao tamanho ou dimensões do intervalo." Se os dados não puderem ser feitos para estar em conformidade com uma forma retangular, use o script a seguir. Este script adiciona os dados uma linha por vez, em vez de como um intervalo único. Esse script é menos eficiente e é visivelmente mais lento com conjuntos de dados grandes.
+
+```TypeScript
+function main(workbook: ExcelScript.Workbook, csv: string) {
+  let sheet = workbook.getWorksheet("Sheet1");
+
+  /* Convert the CSV data into a 2D array. */
+  // Trim the trailing new line.
+  csv = csv.trim();
+
+  // Split each line into a row.
+  let rows = csv.split("\r\n");
+  rows.forEach((value, index) => {
+    /*
+     * For each row, match the comma-separated sections.
+     * For more information on how to use regular expressions to parse CSV files,
+     * see this Stack Overflow post: https://stackoverflow.com/a/48806378/9227753
+     */
+    let row = value.match(/(?:,|\n|^)("(?:(?:"")*[^"]*)*"|[^",\n]*|(?:\n|$))/g);
+
+    // Remove the preceding comma.
+    row.forEach((cell, index) => {
+      row[index] = cell.indexOf(",") === 0 ? cell.substr(1) : cell;
+    });
+
+    // Create a 2D-array with one row.
+    let data: string[][] = [];
+    data.push(row);
+
+    // Put the data in the worksheet.
+    let range = sheet.getRangeByIndexes(index, 0, 1, data[0].length);
+    range.setValues(data);
+  });
+
+  // Add any formatting or table creation that you want.
+}
+```
