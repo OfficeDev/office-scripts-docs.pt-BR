@@ -1,18 +1,18 @@
 ---
 title: Restrições typeScript em Office Scripts
 description: Os detalhes do compilador TypeScript e linter usados pelo editor de código Office Scripts.
-ms.date: 07/14/2021
+ms.date: 11/09/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 1e63f61116bcff64ba6ad2a24a09253cccbdce10
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: 7b67ccb4898823100e890aa5c8c0332d28a4522b
+ms.sourcegitcommit: ddbb1c66d627ffabbfc3b938d6e25cf6fe3cc13f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59326881"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924100"
 ---
 # <a name="typescript-restrictions-in-office-scripts"></a>Restrições typeScript em Office Scripts
 
-Office Os scripts usam o idioma TypeScript. Na maioria das partes, qualquer código TypeScript ou JavaScript funcionará em Office Scripts. No entanto, há algumas restrições impostas pelo Editor de Código para garantir que seu script funcione de forma consistente e conforme o pretendido com sua Excel de trabalho.
+Office scripts usam o idioma TypeScript. Na maioria das partes, qualquer código TypeScript ou JavaScript funcionará em Office Scripts. No entanto, há algumas restrições impostas pelo Editor de Código para garantir que seu script funcione de forma consistente e conforme o pretendido com sua Excel de trabalho.
 
 ## <a name="no-any-type-in-office-scripts"></a>Nenhum tipo "qualquer" no Office Scripts
 
@@ -26,7 +26,7 @@ Não é possível declarar explicitamente que uma variável seja do tipo `any` O
 
 :::image type="content" source="../images/explicit-any-error-message.png" alt-text="O erro explícito &quot;qualquer&quot; na janela do console.":::
 
-Na captura de tela anterior, indica que a linha #2, a coluna `[2, 14] Explicit Any is not allowed` #14 define o `any` tipo. Isso ajuda a localizar o erro.
+Na captura de tela anterior, indica que a `[2, 14] Explicit Any is not allowed` linha #2, a coluna #14 define o `any` tipo. Isso ajuda a localizar o erro.
 
 Para se livrar desse problema, sempre defina o tipo da variável. Se você não tiver certeza sobre o tipo de uma variável, poderá usar um tipo [de união](https://www.typescriptlang.org/docs/handbook/unions-and-intersections.html). Isso pode ser útil para variáveis que mantém valores, que podem ser do tipo , ou (o tipo para valores é `Range` `string` uma `number` `boolean` `Range` união dessas: `string | number | boolean` ).
 
@@ -47,7 +47,7 @@ Classes e interfaces criadas em seu Office Script não podem estender ou [implem
 
 ## <a name="incompatible-typescript-functions"></a>Funções TypeScript incompatíveis
 
-Office As APIs de scripts não podem ser usadas no seguinte:
+Office APIs de scripts não podem ser usadas no seguinte:
 
 * [Funções de gerador](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators#generator_functions)
 * [Array.sort](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
@@ -83,7 +83,7 @@ let filteredArray = myArray.filter((x) => {
 
 ## <a name="unions-of-excelscript-types-and-user-defined-types-arent-supported"></a>Não há suporte para união de tipos e tipos definidos `ExcelScript` pelo usuário
 
-Office Os scripts são convertidos no tempo de execução de blocos de código síncronos para assíncronos. A comunicação com a workbook por meio [de promessas](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) está oculta do criador do script. Essa conversão não dá suporte a tipos [de união](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types) que incluem `ExcelScript` tipos e tipos definidos pelo usuário. Nesse caso, o é retornado ao script, mas o compilador Office Script não espera e o criador do script não pode interagir com o `Promise` `Promise` .
+Office scripts são convertidos em tempo de execução de blocos de código síncronos para assíncronos. A comunicação com a workbook por meio [de promessas](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) está oculta do criador do script. Essa conversão não dá suporte a tipos [de união](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types) que incluem `ExcelScript` tipos e tipos definidos pelo usuário. Nesse caso, o é retornado ao script, mas o compilador Office Script não espera e o criador do script não pode interagir com o `Promise` `Promise` .
 
 O exemplo de código a seguir mostra uma união sem suporte entre `ExcelScript.Table` e uma `MyTable` interface personalizada.
 
@@ -103,6 +103,25 @@ function main(workbook: ExcelScript.Workbook) {
 
 interface MyTable {
   getName(): string
+}
+```
+
+## <a name="constructors-dont-support-office-scripts-apis-and-console-statements"></a>Os construtores não suportam Office scripts e `console` instruções
+
+`console`as instruções e muitas OFFICE scripts exigem sincronização com a Excel de trabalho. Essas sincronizações usam instruções na versão de tempo de execução `await` compilada do script. `await` não é suportado em [construtores](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/constructor). Se você precisar de classes com construtores, evite usar Office DE Scripts ou `console` instruções nesses blocos de código.
+
+O exemplo de código a seguir demonstra esse cenário. Ele gera um erro que diz `failed to load [code] [library]` .
+
+```TypeScript
+function main(workbook: ExcelScript.Workbook) {
+  class MyClass {
+    constructor() {
+      // Console statements and Office Scripts APIs aren't supported in constructors.
+      console.log("This won't print.");
+    }
+  }
+
+  let test = new MyClass();
 }
 ```
 
