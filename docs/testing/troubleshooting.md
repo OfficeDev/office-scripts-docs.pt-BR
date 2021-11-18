@@ -1,22 +1,25 @@
 ---
 title: Solucionar Office scripts
 description: Dicas e técnicas de depuração para Office scripts, bem como recursos de ajuda.
-ms.date: 09/15/2021
+ms.date: 11/11/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 5229490e2487974f751456ef63004bcb27f7b09c
-ms.sourcegitcommit: 5ec904cbb1f2cc00a301a5ba7ccb8ae303341267
+ms.openlocfilehash: 2c43d0e4b1f4fd5675397fd79eaab1345ae39b98
+ms.sourcegitcommit: 24a6b8ae0cc57a0307fbc9b3e87432f1f4a92263
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59447482"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064199"
 ---
 # <a name="troubleshoot-office-scripts"></a>Solucionar Office scripts
 
 À medida que você Office scripts, você pode cometer erros. Não há problema. Você tem as ferramentas para ajudar a encontrar os problemas e fazer seus scripts funcionarem perfeitamente.
 
+> [!NOTE]
+> Para solucionar problemas de consultoria específicas Office scripts com Power Automate, consulte [Troubleshoot Office Scripts em](power-automate-troubleshooting.md)execução em Power Automate .
+
 ## <a name="types-of-errors"></a>Tipos de erros
 
-Office Os erros de scripts se enquadram em uma das duas categorias:
+Office erros de scripts se enquadram em uma das duas categorias:
 
 * Erros ou avisos em tempo de compilação
 * Erros de tempo de execução
@@ -76,19 +79,11 @@ As etapas a seguir devem ajudar a solucionar problemas relacionados à guia **Au
 
 [!INCLUDE [Teams support note](../includes/teams-support-note.md)]
 
-## <a name="troubleshoot-scripts-in-power-automate"></a>Solucionar problemas de scripts em Power Automate
-
-Para obter informações específicas sobre como executar scripts Power Automate, consulte [Troubleshoot Office Scripts em execução em Power Automate](power-automate-troubleshooting.md).
-
 ## <a name="help-resources"></a>Recursos de ajuda
 
 [Stack Overflow](https://stackoverflow.com/questions/tagged/office-scripts) é uma comunidade de desenvolvedores dispostos a ajudar com problemas de codificação. Muitas vezes, você poderá encontrar a solução para seu problema por meio de uma pesquisa rápida de Estouro de Pilha. Se não, faça sua pergunta e marque-a com a marca "office-scripts". Certifique-se de mencionar que você está criando um *script* de Office , não um Office *Desem.*
 
-Para enviar uma solicitação de recurso para Office scripts ou para relatar um problema com o recurso, use o botão comentários no Editor de Código. No menu Mais opções  **(...)** do painel de tarefas Editor de Código, selecione o botão Enviar **comentários** para compartilhar suas necessidades de recursos e outras experiências.
-
-:::image type="content" source="../images/code-editor-feedback.png" alt-text="O menu de estouro do Editor de Código com o botão &quot;Enviar comentários&quot;.":::
-
-## <a name="see-also"></a>Também consulte
+## <a name="see-also"></a>Confira também
 
 - [Práticas recomendadas nos Scripts do Office ](../develop/best-practices.md)
 - [Limites da plataforma com Office Scripts](platform-limits.md)

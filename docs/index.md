@@ -5,18 +5,18 @@ title: Documentação de scripts do Office
 description: Recursos para aprender sobre os scripts do Office no Excel na web, incluindo tutoriais, artigos conceituais e exemplos de código.
 ms.date: 05/24/2021
 ms.localizationpriority: high
-ms.openlocfilehash: 4f8840404d13da483e40d719fa96b5ed154d80fa
-ms.sourcegitcommit: 5ec904cbb1f2cc00a301a5ba7ccb8ae303341267
+ms.openlocfilehash: c3e1c95886ebef3bf34a73a374372e84be91117d
+ms.sourcegitcommit: 24a6b8ae0cc57a0307fbc9b3e87432f1f4a92263
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59447510"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064185"
 ---
 # <a name="office-scripts-documentation"></a>Documentação de Scripts do Office
 
 Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias. Explore os artigos a seguir para aprender como criar e editar scripts do Office, e comece a automatizar ainda hoje.
 
-<ul class="panelContent cardsF cols cols3">
+<ul class="panelContent cardsF cols cols3 rows2">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -74,7 +74,7 @@ Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias.
 
 <h2>Outros recursos</h2>
 <p>Use os seguintes recursos para saber mais sobre as APIs que os scripts do Office usam para interagir com as pastas de trabalho no Excel na Web; faça perguntas sobre os scripts do Office no Excel na Web ou solicite recursos para eles.</p>
-<ul class="panelContent cardsF cols cols3">
+<ul class="panelContent cardsF cols cols3 rows2">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -113,6 +113,22 @@ Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
+                            <a href="develop/power-automate-integration.md" target="_blank"><img src="images/index-landing-page/i_architecture.svg" alt="Integrate with Power Automate"/></a>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <a href="develop/power-automate-integration.md" target="_blank"><h3>Integre-se com o Power Automate</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
                             <a href="/microsoft-365/admin/manage/manage-office-scripts-settings" target="_blank"><img src="images/index-landing-page/i_upgrade.svg" alt="Admin settings"/></a>
                         </div>
                     </div>
@@ -129,11 +145,11 @@ Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <a href="/answers/topics/office-scripts-excel-dev.html" target="_blank"><img src="images/index-landing-page/i_support.svg" alt="API questions" /></a>
+                            <a href="https://github.com/OfficeDev/office-scripts-docs/blob/master/licensing-information.md" target="_blank"><img src="images/index-landing-page/i_library.svg" alt="Licensing information" /></a>
                         </div>
                     </div>
                     <div class="cardText">
-                        <a href="/answers/topics/office-scripts-excel-dev.html" target="_blank"><h3>Tire dúvidas</h3></a>
+                        <a href="https://github.com/OfficeDev/office-scripts-docs/blob/master/licensing-information.md" target="_blank"><h3>Informações de licenciamento</h3></a>
                     </div>
                 </div>
             </div>
@@ -145,11 +161,11 @@ Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <a href="https://github.com/OfficeDev/office-scripts-docs/blob/master/licensing-information.md" target="_blank"><img src="images/index-landing-page/i_library.svg" alt="Licensing information" /></a>
+                            <a href="/answers/topics/office-scripts-excel-dev.html" target="_blank"><img src="images/index-landing-page/i_support.svg" alt="API questions" /></a>
                         </div>
                     </div>
                     <div class="cardText">
-                        <a href="https://github.com/OfficeDev/office-scripts-docs/blob/master/licensing-information.md" target="_blank"><h3>Informações de licenciamento</h3></a>
+                        <a href="/answers/topics/office-scripts-excel-dev.html" target="_blank"><h3>Tire dúvidas</h3></a>
                     </div>
                 </div>
             </div>
