@@ -3,12 +3,12 @@ title: Limites e requisitos da plataforma com Office Scripts
 description: Limites de recursos e suporte ao navegador para Office scripts quando usados com Excel na Web
 ms.date: 05/17/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 2140ebf249af76447f64efae7fd2008e781bf815
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: 6db32cd1c72850f02ee9e2a714c1a0a3bccd727d
+ms.sourcegitcommit: ea9c3685a7407a07acf802705f4f44fb007c7825
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59327872"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61333488"
 ---
 # <a name="platform-limits-and-requirements-with-office-scripts"></a>Limites e requisitos da plataforma com Office Scripts
 
@@ -16,7 +16,7 @@ Há algumas limitações de plataforma das quais você deve estar ciente ao dese
 
 ## <a name="browser-support"></a>Suporte do navegador
 
-Office Os scripts funcionam em qualquer navegador que [oferece suporte Office para a Web](https://support.microsoft.com/office/ad1303e0-a318-47aa-b409-d3a5eb44e452). No entanto, alguns recursos JavaScript não são suportados no Internet Explorer 11 (IE 11). Quaisquer recursos introduzidos [no ES6 ou posterior](https://www.w3schools.com/Js/js_es6.asp) não funcionarão com o IE 11. Se as pessoas em sua organização ainda usarem esse navegador, teste seus scripts nesse ambiente ao compartilhar.
+Office scripts funcionam em qualquer navegador que [suporta Office para a Web](https://support.microsoft.com/office/ad1303e0-a318-47aa-b409-d3a5eb44e452). No entanto, alguns recursos JavaScript não são suportados no Internet Explorer 11 (IE 11). Quaisquer recursos introduzidos [no ES6 ou posterior](https://www.w3schools.com/Js/js_es6.asp) não funcionarão com o IE 11. Se as pessoas em sua organização ainda usarem esse navegador, teste seus scripts nesse ambiente ao compartilhar.
 
 [!INCLUDE [Teams support note](../includes/teams-support-note.md)]
 
@@ -49,7 +49,7 @@ Se você estiver encontrando erros ao lidar com conjuntos de dados grandes, tent
 
 ### <a name="power-automate"></a>Power Automate
 
-Ao usar Office scripts com Power Automate, cada usuário é limitado a **400** chamadas para a ação Executar Script por dia . Esse limite é redefinido às 00:00 UTC.
+Ao usar Office scripts com Power Automate, cada usuário é limitado a **800** chamadas para a ação Executar Script por dia . Esse limite é redefinido às 00:00 UTC.
 
 A Power Automate plataforma também tem limitações de uso, que podem ser encontradas nos seguintes artigos:
 
