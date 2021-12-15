@@ -1,14 +1,14 @@
 ---
 title: Limites e requisitos da plataforma com Office Scripts
 description: Limites de recursos e suporte ao navegador para Office scripts quando usados com Excel na Web
-ms.date: 05/17/2021
+ms.date: 12/14/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 6db32cd1c72850f02ee9e2a714c1a0a3bccd727d
-ms.sourcegitcommit: ea9c3685a7407a07acf802705f4f44fb007c7825
+ms.openlocfilehash: e0c2c8108bb36dc979b33e195cdc0e0e17a586ba
+ms.sourcegitcommit: 1e561d245d9ab7f2529a1b071b1fa0326e37c4ca
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61333488"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61513626"
 ---
 # <a name="platform-limits-and-requirements-with-office-scripts"></a>Limites e requisitos da plataforma com Office Scripts
 
@@ -51,10 +51,13 @@ Se você estiver encontrando erros ao lidar com conjuntos de dados grandes, tent
 
 Ao usar Office scripts com Power Automate, cada usuário é limitado a **800** chamadas para a ação Executar Script por dia . Esse limite é redefinido às 00:00 UTC.
 
-A Power Automate plataforma também tem limitações de uso, que podem ser encontradas nos seguintes artigos:
+A Power Automate plataforma também tem limitações de uso, que podem ser encontradas nos artigos a seguir.
 
 - [Limites e configuração no Power Automate](/power-automate/limits-and-config)
 - [Problemas conhecidos e limitações para o conector Excel Online (Business)](/connectors/excelonlinebusiness/#known-issues-and-limitations)
+
+> [!NOTE]
+> Se você tiver um script de longa duração, esteja ciente do tempo de tempo de 120 segundos para operações [Power Automate síncronas.](/power-automate/limits-and-config#timeout) Você precisará otimizar seu [script ou](../develop/web-client-performance.md) dividir sua Excel em vários scripts.
 
 ## <a name="see-also"></a>Confira também
 
