@@ -1,18 +1,24 @@
 ---
 title: Práticas recomendadas no Scripts do Office
 description: Como evitar problemas comuns e gravar scripts robustos Office que podem manipular entradas ou dados inesperados.
-ms.date: 05/10/2021
+ms.date: 12/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: c37559c978a04bd99fff044674b2f64b7758438b
-ms.sourcegitcommit: 5ec904cbb1f2cc00a301a5ba7ccb8ae303341267
+ms.openlocfilehash: 19b10cf6ea778f109edeb74fa5995628bb8bf632
+ms.sourcegitcommit: c62567dc1188527511e4618d3e04e26580d4bb44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59447454"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "61659191"
 ---
 # <a name="best-practices-in-office-scripts"></a>Práticas recomendadas no Scripts do Office
 
 Esses padrões e práticas são projetados para ajudar seus scripts a executar com êxito sempre. Use-os para evitar armadilhas comuns à medida que você começa a automatizar seu fluxo de trabalho Excel de usuário.
+
+## <a name="use-the-action-recorder-to-learn-new-features"></a>Usar o Gravador de Ações para aprender novos recursos
+
+Excel faz muitas coisas. A maioria deles pode ser escrita em script. O Gravador de Ações registra suas Excel e as converte em código. Esta é a maneira mais fácil de aprender sobre como diferentes recursos funcionam com Office Scripts. Se você precisar de código para uma ação específica, alternar para o Gravador de Ações, executar as ações, selecione **Copiar** como código e colar o código resultante em seu script.
+
+:::image type="content" source="../images/action-recorder-copy-code.png" alt-text="O painel de tarefas Do Gravador de Ações com o botão 'Copiar como código' realçado.":::
 
 ## <a name="verify-an-object-is-present"></a>Verificar se um objeto está presente
 
@@ -168,7 +174,7 @@ try {
 > [!NOTE]
 > Usar `try...catch` dentro ou ao redor de um loop retarda seu script. Para obter mais informações de desempenho, consulte [Evite usar `try...catch` blocos](web-client-performance.md#avoid-using-trycatch-blocks-in-or-surrounding-loops).
 
-## <a name="see-also"></a>Também consulte
+## <a name="see-also"></a>Confira também
 
 - [Solução de problemas dos scripts do Office](../testing/troubleshooting.md)
 - [Solução de problemas de informações para Power Automate com Office Scripts](../testing/power-automate-troubleshooting.md)
