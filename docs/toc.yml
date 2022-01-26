@@ -63,6 +63,8 @@ items:
                 href: resources/samples/add-image-to-workbook.md
               - name: Copiar várias tabelas em uma única tabela
                 href: resources/samples/copy-tables-combine.md
+              - name: Criar um sumário da pasta de trabalho
+                href: resources/samples/table-of-contents.md
           - name: Além do básico
             items:
               - name: Combinar planilhas em uma única pasta de trabalho
