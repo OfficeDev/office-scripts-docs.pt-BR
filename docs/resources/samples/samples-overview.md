@@ -1,16 +1,16 @@
 ---
-title: Office Exemplos de scripts
+title: Office scripts
 description: Exemplos Office scripts e cenários disponíveis.
-ms.date: 09/03/2021
+ms.date: 01/20/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 0d11e15a7e839f33a74ca8ad7f1d09dd7711347c
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: ca8ed15983c2171c2e9eb2291cc78d7e4d536ac8
+ms.sourcegitcommit: 161229492c85f3519c899573cf5022140026e7b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59334931"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62220404"
 ---
-# <a name="office-scripts-samples-and-scenarios"></a>Office Exemplos e cenários de scripts
+# <a name="office-scripts-samples-and-scenarios"></a>Office scripts e cenários
 
 Esta seção contém Office [de automação baseadas](../../overview/excel.md) em Scripts que ajudam os usuários finais a alcançar a automação de tarefas diárias. Ele contém cenários realistas que os usuários de negócios enfrentam e fornece soluções detalhadas juntamente com links de vídeo instrucional passo a passo.
 
@@ -22,18 +22,19 @@ Também saudamos [as contribuições da comunidade.](#community-contributions-an
 
 ## <a name="basics"></a>Noções básicas
 
-| Projeto | Detalhes |
+| Project | Detalhes |
 |---------|---------|
 | [Noções básicas de scripts](../excel-samples.md) | Esses exemplos demonstram blocos de construção fundamentais para Office Scripts. |
 | [Adicionar comentários em Excel](add-excel-comments.md) | Este exemplo adiciona comentários a uma célula, incluindo @mentioning um colega. |
 | [Adicionar imagens a uma pasta de trabalho](add-image-to-workbook.md) | Este exemplo adiciona uma imagem a uma planilha e copia uma imagem entre folhas.|
 | [Copiar várias Excel tabelas em uma única tabela](copy-tables-combine.md) | Este exemplo combina dados de várias Excel tabelas em uma única tabela que inclui todas as linhas. |
+| [Criar um índice de conteúdo de uma workbook](table-of-contents.md) | Este exemplo cria um índice com links para cada planilha. |
 
 ## <a name="beyond-the-basics"></a>Além do básico
 
 Confira o seguinte projeto de ponta a ponta que automatiza cenários de exemplo, juntamente com scripts completos, exemplos Excel arquivos usados e [vídeos (hospedados no YouTube)](https://www.youtube.com/playlist?list=PLr3zVPZrMOUMl88fs8uc2GGAePRnNe6m0).
 
-| Projeto | Detalhes |
+| Project | Detalhes |
 |---------|---------|
 | [Combinar planilhas em uma única pasta de trabalho](combine-worksheets-into-single-workbook.md) | Este exemplo usa Office scripts e Power Automate para puxar dados de outras guias de trabalho para uma única workbook. |
 | [Converter arquivos CSV em Excel pastas de trabalho](convert-csv.md) | Este exemplo usa Office scripts e Power Automate para criar .xlsx arquivos .csv arquivos. |
@@ -51,7 +52,7 @@ Confira o seguinte projeto de ponta a ponta que automatiza cenários de exemplo,
 
 ## <a name="scenarios"></a>Cenários
 
-Office Os scripts podem automatizar partes da sua rotina diária. Essas tarefas diárias geralmente existem em ecossistemas exclusivos, com Excel de trabalho que são configuradas de maneiras específicas. Esses exemplos de cenário maiores demonstram esses casos de uso no mundo real. Eles incluem o Office scripts e as guias de trabalho, para que você possa ver o cenário de ponta a ponta.
+Office scripts podem automatizar partes da sua rotina diária. Essas tarefas diárias geralmente existem em ecossistemas exclusivos, com Excel de trabalho que são configuradas de maneiras específicas. Esses exemplos de cenário maiores demonstram esses casos de uso no mundo real. Eles incluem o Office scripts e as guias de trabalho, para que você possa ver o cenário de ponta a ponta.
 
 | Cenário | Detalhes |
 |---------|---------|
