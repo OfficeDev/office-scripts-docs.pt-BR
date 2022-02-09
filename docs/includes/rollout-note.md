@@ -1,0 +1,2 @@
+> [!NOTE]
+> Esse recurso está sendo lançado e não está disponível para todos. É liberado lentamente para um número maior de usuários para garantir que está funcionando conforme o esperado. Esse recurso está sujeito a alterações com base em seus comentários.
