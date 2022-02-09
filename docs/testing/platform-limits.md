@@ -1,14 +1,14 @@
 ---
 title: Limites e requisitos da plataforma com Office Scripts
-description: Limites de recursos e suporte ao navegador para Office scripts quando usados com Excel na Web
-ms.date: 12/14/2021
+description: Limites de recursos e suporte ao navegador para Office scripts quando usados com Excel na Web.
+ms.date: 01/31/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: e0c2c8108bb36dc979b33e195cdc0e0e17a586ba
-ms.sourcegitcommit: 1e561d245d9ab7f2529a1b071b1fa0326e37c4ca
+ms.openlocfilehash: 385248e5c62ed3dbf2827105b3097ef27e5187a7
+ms.sourcegitcommit: b84d4c8dd31335e4e39b0da6ad25fd528cb9d8f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61513626"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62462499"
 ---
 # <a name="platform-limits-and-requirements-with-office-scripts"></a>Limites e requisitos da plataforma com Office Scripts
 
@@ -16,7 +16,7 @@ Há algumas limitações de plataforma das quais você deve estar ciente ao dese
 
 ## <a name="browser-support"></a>Suporte do navegador
 
-Office scripts funcionam em qualquer navegador que [suporta Office para a Web](https://support.microsoft.com/office/ad1303e0-a318-47aa-b409-d3a5eb44e452). No entanto, alguns recursos JavaScript não são suportados no Internet Explorer 11 (IE 11). Quaisquer recursos introduzidos [no ES6 ou posterior](https://www.w3schools.com/Js/js_es6.asp) não funcionarão com o IE 11. Se as pessoas em sua organização ainda usarem esse navegador, teste seus scripts nesse ambiente ao compartilhar.
+Office scripts funcionam em qualquer navegador que [oferece suporte Office para a Web](https://support.microsoft.com/office/ad1303e0-a318-47aa-b409-d3a5eb44e452). No entanto, alguns recursos JavaScript não são suportados no Internet Explorer 11 (IE 11). Quaisquer recursos introduzidos [no ES6 ou posterior](https://www.w3schools.com/Js/js_es6.asp) não funcionarão com o IE 11. Se as pessoas em sua organização ainda usarem esse navegador, teste seus scripts nesse ambiente ao compartilhar.
 
 [!INCLUDE [Teams support note](../includes/teams-support-note.md)]
 
@@ -45,11 +45,11 @@ Excel para a Web tem as seguintes limitações ao fazer chamadas para a lista de
 - Solicitações e respostas são limitadas a **5 MB**.
 - Um intervalo é limitado a **cinco milhões de células**.
 
-Se você estiver encontrando erros ao lidar com conjuntos de dados grandes, tente usar vários intervalos menores em vez de intervalos maiores. Por exemplo, consulte o exemplo [Gravar um grande conjuntos de](../resources/samples/write-large-dataset.md) dados. Você também pode usar APIs como [Range.getSpecialCells](/javascript/api/office-scripts/excelscript/excelscript.range#getSpecialCells_cellType__cellValueType_) para direcionar células específicas em vez de intervalos grandes.
+Se você estiver encontrando erros ao lidar com conjuntos de dados grandes, tente usar vários intervalos menores em vez de intervalos maiores. Por exemplo, consulte o exemplo [Gravar um grande conjuntos de](../resources/samples/write-large-dataset.md) dados. Você também pode usar APIs como [Range.getSpecialCells](/javascript/api/office-scripts/excelscript/excelscript.range#excelscript-excelscript-range-getspecialcells-member(1)) para direcionar células específicas em vez de intervalos grandes.
 
 ### <a name="power-automate"></a>Power Automate
 
-Ao usar Office scripts com Power Automate, cada usuário é limitado a **800** chamadas para a ação Executar Script por dia . Esse limite é redefinido às 00:00 UTC.
+Ao usar Office scripts com Power Automate, cada usuário é limitado a **1.600 chamadas para a ação Executar Script por dia**. Esse limite é redefinido às 00:00 UTC.
 
 A Power Automate plataforma também tem limitações de uso, que podem ser encontradas nos artigos a seguir.
 
@@ -57,7 +57,7 @@ A Power Automate plataforma também tem limitações de uso, que podem ser encon
 - [Problemas conhecidos e limitações para o conector Excel Online (Business)](/connectors/excelonlinebusiness/#known-issues-and-limitations)
 
 > [!NOTE]
-> Se você tiver um script de longa duração, esteja ciente do tempo de tempo de 120 segundos para operações [Power Automate síncronas.](/power-automate/limits-and-config#timeout) Você precisará otimizar seu [script ou](../develop/web-client-performance.md) dividir sua Excel em vários scripts.
+> Se você tiver um script de longa duração, esteja ciente do tempo de [120 segundos para operações Power Automate síncronas](/power-automate/limits-and-config#timeout). Você precisará otimizar seu [script ou](../develop/web-client-performance.md) dividir sua Excel em vários scripts.
 
 ## <a name="see-also"></a>Confira também
 
