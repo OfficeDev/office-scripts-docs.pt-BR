@@ -1,2 +1,0 @@
-> [!NOTE]
-> Este recurso está atualmente no modo de visualização. Os recursos de visualização estão sujeitos a alterações com base nos comentários. Eles podem não estar disponíveis para todos os usuários Office antes da versão.
