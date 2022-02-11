@@ -2,14 +2,14 @@
 title: Scripts do Office no Excel na Web
 description: Uma breve introdução ao Gravador de ação e ao Editor de códigos de scripts do Office.
 ms.topic: overview
-ms.date: 02/04/2022
+ms.date: 02/08/2022
 ms.localizationpriority: high
-ms.openlocfilehash: b4222d4f3d99ccd26dde534659681a5919088450
-ms.sourcegitcommit: b84d4c8dd31335e4e39b0da6ad25fd528cb9d8f3
+ms.openlocfilehash: 7c6027386bf8953d6bd260979ad96e7195a2b786
+ms.sourcegitcommit: fce857e91be769c62685d90290acf75cc54d3ef9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62462528"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62517878"
 ---
 # <a name="office-scripts-in-excel-on-the-web"></a>Scripts do Office no Excel na Web
 
@@ -79,8 +79,6 @@ Para obter mais detalhes sobre como compartilhar e cancelar o compartilhamento d
 
 ### <a name="create-script-buttons"></a>Criar botões de script
 
-[!INCLUDE [Rollout information](../includes/rollout-note.md)]
-
 :::image type="content" source="../images/run-from-button.png" alt-text="Um botão na planilha que executa um script quando clicado.":::
 
 Ajude seus colegas a encontrar e executar seus scripts adicionando botões de script a uma pasta de trabalho. Com qualquer script, vá para o menu Mais opções **(...)** na página Detalhes do script ou no painel de tarefas do Editor de Código e selecione **Adicionar botão**. Isso cria um botão na guia de trabalho que executa o script associado quando selecionado. Ele também compartilha o script com a pasta de trabalho, para que todos com permissões de gravação para a pasta de trabalho possam usar sua automação útil.
@@ -92,7 +90,7 @@ A captura de tela a seguir mostra a página Detalhes do script de um script inti
 Esses botões de script também funcionam no Windows. Crie o botão no Excel na Web e os usuários no Windows podem executar o script pressionando um botão. Observe que só há suporte para a execução do botão no Windows. Se você precisar editar o script, precisará fazer isso por meio do aplicativo Web.
 
 > [!NOTE]
-> Para usar esse recurso no Windows, você precisa de uma cópia do Excel conectada a uma Microsoft 365 assinatura. Plataformas sem suporte ou versões mais antigas do Office exibem a forma usada para o botão de script, mas não é clicável.
+> Esse recurso está sendo lançado para usuários com uma assinatura do Microsoft 365 e não está disponível para todos. É liberado lentamente para um número maior de usuários para garantir que está funcionando conforme o esperado. Esse recurso está sujeito a alterações com base em seus comentários. Plataformas sem suporte ou versões do Office sem o recurso exibirão a forma usada para o botão de script, mas o botão não poderá ser clicado.
 
 Para parar de compartilhar um script por meio de um botão, vá para o menu Mais opções **(...)** na página Detalhes do script e selecione **Parar de Compartilhar**. Isso remove todos os botões que executem o script. A exclusão de um único botão remove o script desse botão, mesmo que a operação seja desfeita ou o botão seja cortado e passado.
 
