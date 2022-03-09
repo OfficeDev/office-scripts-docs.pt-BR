@@ -2,14 +2,14 @@
 title: Scripts do Office no Excel na Web
 description: Uma breve introdução ao Gravador de ação e ao Editor de códigos de scripts do Office.
 ms.topic: overview
-ms.date: 02/08/2022
+ms.date: 02/25/2022
 ms.localizationpriority: high
-ms.openlocfilehash: 7c6027386bf8953d6bd260979ad96e7195a2b786
-ms.sourcegitcommit: fce857e91be769c62685d90290acf75cc54d3ef9
+ms.openlocfilehash: 88c5c6179b1f459e2e20e6dd0dcd80d71829c714
+ms.sourcegitcommit: 49f527a7f54aba00e843ad4a92385af59c1d7bfa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62517878"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63352137"
 ---
 # <a name="office-scripts-in-excel-on-the-web"></a>Scripts do Office no Excel na Web
 
@@ -66,33 +66,18 @@ Todos os scripts gravados com o Gravador de ações podem ser editados através 
 
 Nossos [tutoriais](../tutorials/excel-tutorial.md) fornecem uma maneira orientada e estruturada de aprender as funcionalidades dos Scripts do Office. Depois de concluir os tutoriais, leia [Fundamentos de script para os Scripts do Office no Excel na Web](../develop/scripting-fundamentals.md) para saber mais sobre o Editor de Código e como escrever e editar seus próprios scripts. Para informações adicionais sobre o Editor de Código e como seu código de script é interpretado, leia [Ambiente do Editor de Código de Scripts do Office](code-editor-environment.md).
 
-## <a name="share-scripts"></a>Compartilhar scripts
+## <a name="share-office-scripts"></a>Compartilhar Scripts do Office
+
+Os scripts do Office podem ser compartilhados com outros usuários de uma pasta de trabalho do Excel. Quando você compartilha um script em uma pasta de trabalho compartilhada, todos com acesso à pasta de trabalho também podem visualizar e executar seu script. Para obter mais detalhes sobre como compartilhar e cancelar o compartilhamento de scripts, confira [Compartilhando Scripts do Office no Excel para a Web](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b).
 
 :::image type="content" source="../images/script-sharing.png" alt-text="A página de detalhes do script mostrando a opção &quot;Compartilhar com outras pessoas nesta pasta de trabalho&quot;.":::
 
-Os scripts do Office podem ser compartilhados com outros usuários de uma pasta de trabalho do Excel. Quando você compartilha um script em uma pasta de trabalho compartilhada, todos com acesso à pasta de trabalho também podem visualizar e executar seu script.
+Adicione botões que executam scripts para ajudar seus colegas a descobrirem suas valiosas soluções. Saiba mais sobre os botões de script em [Executar Scripts do Office com botões](../develop/script-buttons.md).
 
-Para obter mais detalhes sobre como compartilhar e cancelar o compartilhamento de scripts, confira [Compartilhando Scripts do Office no Excel para a Web](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b).
+:::image type="content" source="../images/add-button.png" alt-text="Um botão na planilha que executa um script quando clicado.":::
 
 > [!NOTE]
 > Saiba mais sobre como os scripts são armazenados no seu OneDrive em [Armazenamento de arquivos e propriedade de Scripts do Office](script-storage.md).
-
-### <a name="create-script-buttons"></a>Criar botões de script
-
-:::image type="content" source="../images/run-from-button.png" alt-text="Um botão na planilha que executa um script quando clicado.":::
-
-Ajude seus colegas a encontrar e executar seus scripts adicionando botões de script a uma pasta de trabalho. Com qualquer script, vá para o menu Mais opções **(...)** na página Detalhes do script ou no painel de tarefas do Editor de Código e selecione **Adicionar botão**. Isso cria um botão na guia de trabalho que executa o script associado quando selecionado. Ele também compartilha o script com a pasta de trabalho, para que todos com permissões de gravação para a pasta de trabalho possam usar sua automação útil.
-
-A captura de tela a seguir mostra a página Detalhes do script de um script intitulado **Criar Relatório** e tem a opção **Adicionar botão** no menu **Mais opções** (...) realçada.
-
-:::image type="content" source="../images/add-button.png" alt-text="A opção 'Adicionar botão' no menu da página Detalhes do script.":::
-
-Esses botões de script também funcionam no Windows. Crie o botão no Excel na Web e os usuários no Windows podem executar o script pressionando um botão. Observe que só há suporte para a execução do botão no Windows. Se você precisar editar o script, precisará fazer isso por meio do aplicativo Web.
-
-> [!NOTE]
-> Esse recurso está sendo lançado para usuários com uma assinatura do Microsoft 365 e não está disponível para todos. É liberado lentamente para um número maior de usuários para garantir que está funcionando conforme o esperado. Esse recurso está sujeito a alterações com base em seus comentários. Plataformas sem suporte ou versões do Office sem o recurso exibirão a forma usada para o botão de script, mas o botão não poderá ser clicado.
-
-Para parar de compartilhar um script por meio de um botão, vá para o menu Mais opções **(...)** na página Detalhes do script e selecione **Parar de Compartilhar**. Isso remove todos os botões que executem o script. A exclusão de um único botão remove o script desse botão, mesmo que a operação seja desfeita ou o botão seja cortado e passado.
 
 ## <a name="connect-office-scripts-to-power-automate"></a>Conectar Scripts do Office com o Power Automate
 
