@@ -1,14 +1,14 @@
 ---
 title: Filtrar Excel tabela e obter intervalo visível
 description: Saiba como usar Office Scripts para filtrar uma tabela Excel e obter o intervalo visível como uma matriz de objetos.
-ms.date: 06/29/2021
+ms.date: 03/10/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 35c769ff1d5a088b652833826d41ecad2c317465
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: 752566aae1f5e64748e9a7a4c33447129905be22
+ms.sourcegitcommit: 79ce4fad6d284b1aa71f5ad6d2938d9ad6a09fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59333059"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63459651"
 ---
 # <a name="filter-excel-table-and-get-visible-range-as-a-json-object"></a>Filtrar Excel tabela e obter intervalo visível como um objeto JSON
 
@@ -18,7 +18,7 @@ Este exemplo filtra uma Excel e retorna o intervalo visível como um objeto JSON
 
 * Aplique um filtro a uma coluna de tabela.
 * Extraia o intervalo visível após a filtragem.
-* Montar e retornar um objeto com uma [estrutura JSON específica.](#sample-json)
+* Montar e retornar um objeto com uma [estrutura JSON específica](#sample-json).
 
 ## <a name="sample-excel-file"></a>Exemplo Excel arquivo
 
@@ -60,7 +60,7 @@ function main(workbook: ExcelScript.Workbook): ReturnTemplate {
 
 // This function converts a 2D-array of values into a generic JSON object.
 function returnObjectFromValues(values: string[][]): BasicObject[] {
-  let objectArray = [];
+  let objectArray: BasicObject[] = [];
   let objectKeys: string[] = [];
   for (let i = 0; i < values.length; i++) {
     if (i === 0) {

@@ -1001,9 +1001,9 @@ Seção 8 - Interpretação.
 
 =======================================================================
 
-O Creative Commons não faz parte de suas licenças públicas. Não obstante, o Creative Commons pode optar por aplicar uma de suas licenças públicas ao material publicado e, nessas instâncias, será considerado o "Licenciador". O texto das licenças públicas do Creative Commons é dedicado ao domínio público sob a Dedicação de Domínio Público CC0. Com exceção da finalidade limitada de indicar que o material é compartilhado sob uma licença pública do Creative Commons ou conforme permitido de outra forma pelas políticas do Creative Commons publicadas no creativecommons.org/policies, o Creative Commons não autoriza o uso da marca "Creative Commons" ou qualquer outra marca comercial ou logotipo do Creative Commons sem seu consentimento escrito anterior, incluindo,  sem limitação, em conexão com quaisquer modificações não autorizadas em qualquer uma de suas licenças públicas ou quaisquer outros acordos, entendimentos ou acordos referentes ao uso de material licenciado. Para evitar dúvidas, este parágrafo não faz parte das licenças públicas.
+O Creative Commons não faz parte de suas licenças públicas. Não obstante, o Creative Commons pode optar por aplicar uma de suas licenças públicas ao material publicado e, nessas instâncias, será considerado o "Licenciador". O texto das licenças públicas do Creative Commons é dedicado ao domínio público sob a Dedicação de Domínio Público CC0. Exceto pela finalidade limitada de indicar que o material é compartilhado sob uma licença pública do Creative Commons ou conforme permitido de outra forma pelas políticas do Creative Commons publicadas no creativecommons.org/policies, o Creative Commons não autoriza o uso da marca "Creative Commons" ou qualquer outra marca comercial ou logotipo do Creative Commons sem seu consentimento escrito anterior, incluindo,  sem limitação, em conexão com quaisquer modificações não autorizadas em qualquer uma de suas licenças públicas ou quaisquer outros acordos, entendimentos ou acordos referentes ao uso de material licenciado. Para evitar dúvidas, este parágrafo não faz parte das licenças públicas.
 
-O Creative Commons pode ser contatado em creativecommons.org.
+O Creative Commons pode ser contatado creativecommons.org.
 
 
 ---------------------------------------------------------
@@ -1705,7 +1705,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 @fluentui/date-time-utilities 8.2.2 - MIT https://github.com/microsoft/fluentui#readme
 
 
-@fluentui/utilitários de data e hora
+@fluentui/date-time-utilities
 
 Copyright (c) Microsoft Corporation
 
@@ -1719,7 +1719,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -1744,7 +1744,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -1768,7 +1768,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -1792,7 +1792,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -1816,7 +1816,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -1841,7 +1841,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -1866,7 +1866,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -1891,7 +1891,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -1917,7 +1917,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fabric-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fabric-assets-license
 
 
 ---------------------------------------------------------
@@ -1941,7 +1941,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -1966,7 +1966,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -1991,7 +1991,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -2016,7 +2016,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -2040,7 +2040,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -2065,7 +2065,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -2090,7 +2090,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -2115,7 +2115,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -2181,7 +2181,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 ---------------------------------------------------------
 
-@redux-saga/núcleo 1.1.3 - MIT https://redux-saga.js.org/
+@redux-saga/core 1.1.3 - MIT https://redux-saga.js.org/
 
 Copyright (c) 2015 Yassine Elouafi
 
@@ -2337,7 +2337,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -2362,7 +2362,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -2387,7 +2387,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -2412,7 +2412,7 @@ O aviso de direitos autorais acima e este aviso de permissão devem ser incluíd
 
 O SOFTWARE É FORNECIDO COMO *ESTÁ, SEM* GARANTIA DE QUALQUER TIPO, EXPRESSO OU IMPLÍCITO, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NONINFRINGEMENT. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS DEVEM SER RESPONSÁVEIS POR QUALQUER DECLARAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, TORT OU DE OUTRA FORMA, PROVENIENTES DE, FORA OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS RELAÇÕES NO SOFTWARE.
 
-Observação: o uso das fontes e ícones referenciados Fluent interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
+Observação: o uso das fontes e ícones referenciados no Fluent da interface do usuário React está sujeito aos termos listados emhttps://aka.ms/fluentui-assets-license
 
 
 ---------------------------------------------------------
@@ -3129,7 +3129,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 chokidar 2.1.8 - MIT https://github.com/paulmillr/chokidar
 
-Copyright (c) 2012-2019 Paul Miller ( &https://paulmillr.com) Elan Shanker
+Copyright (c) 2012-2019 Paul Miller (https://paulmillr.com) & Elan Shanker
 
 Licença do MIT
 
@@ -5268,7 +5268,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 lodash 4.17.15 - MIT https://lodash.com/
 
-Copyright OpenJS Foundation e <https://openjsf.org/> outros colaboradores Copyright Jeremy Ashkenas, DocumentCloud e Investigative Reporters & Editores copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editores <http://underscorejs.org/>
+Copyright OpenJS Foundation e <https://openjsf.org/> outros colaboradores Copyright Jeremy Ashkenas, DocumentCloud e Repórters Investigativos & Editores copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editores <http://underscorejs.org/>
 
 Copyright OpenJS Foundation e outros colaboradores <https://openjsf.org/>
 
@@ -5294,7 +5294,7 @@ CC0: http://creativecommons.org/publicdomain/zero/1.0/
 
 ====
 
-Os arquivos localizados nos diretórios de node_modules e do fornecedor são bibliotecas externamente mantidas usadas por esse software que têm suas próprias licenças; recomendamos que você os leia, pois seus termos podem ser diferentes dos termos acima.
+Arquivos localizados no node_modules e diretórios de fornecedores são bibliotecas externamente mantidas usadas por esse software que têm suas próprias licenças; recomendamos que você os leia, pois seus termos podem ser diferentes dos termos acima.
 
 
 ---------------------------------------------------------
@@ -8188,4 +8188,3 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSO OU
 
 
 ---------------------------------------------------------
-
