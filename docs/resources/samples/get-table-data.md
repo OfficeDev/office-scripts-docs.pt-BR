@@ -1,41 +1,35 @@
 ---
 title: Saída Excel dados como JSON
 description: Saiba como Excel dados de tabela como JSON a ser usado Power Automate.
-ms.date: 07/22/2021
+ms.date: 03/18/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 2b613f41618594f6f38634e4126ab8f616f1f3f4
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: d6f15b9b59a2dfe1c74caa11c748f5f52c4ef35e
+ms.sourcegitcommit: 62a62351a0a15a658f93336269f3f50767ca6b62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59332105"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63746353"
 ---
 # <a name="output-excel-table-data-as-json-for-usage-in-power-automate"></a>Dados Excel de tabela de saída como JSON para uso em Power Automate
 
 Excel dados de tabela podem ser representados como uma matriz de objetos na forma de JSON. Cada objeto representa uma linha na tabela. Isso ajuda a extrair os dados Excel em um formato consistente que é visível para o usuário. Em seguida, os dados podem ser dados a outros sistemas por meio Power Automate fluxos.
 
-_Dados da tabela de entrada_
+## <a name="sample-excel-file"></a>Exemplo Excel arquivo
+
+Baixe o arquivo <a href="table-data-with-hyperlinks.xlsx">table-data-with-hyperlinks.xlsx</a> para uma pasta de trabalho pronta para uso.
 
 :::image type="content" source="../../images/table-input.png" alt-text="Uma planilha mostrando dados da tabela de entrada.":::
 
 Uma variação desse exemplo também inclui os hiperlinks em uma das colunas da tabela. Isso permite que níveis adicionais de dados de células sejam a superfície no JSON.
 
-_Dados da tabela de entrada que incluem hiperlinks_
-
 :::image type="content" source="../../images/table-hyperlink-view.png" alt-text="Uma planilha mostrando uma coluna de dados de tabela formatados como hiperlinks.":::
-
-_Caixa de diálogo para editar hiperlink_
-
-:::image type="content" source="../../images/table-hyperlink-edit.png" alt-text="A caixa de diálogo Editar Hiperlink exibe opções para alterar hiperlinks.":::
-
-## <a name="sample-excel-file"></a>Exemplo Excel arquivo
-
-Baixe o arquivo <a href="table-data-with-hyperlinks.xlsx">table-data-with-hyperlinks.xlsx</a> para uma pasta de trabalho pronta para uso. Adicione o seguinte script para experimentar o exemplo você mesmo!
 
 ## <a name="sample-code-return-table-data-as-json"></a>Código de exemplo: Retornar dados da tabela como JSON
 
+Adicione o seguinte script para experimentar o exemplo você mesmo!
+
 > [!NOTE]
-> Você pode alterar a `interface TableData` estrutura para corresponder às colunas da tabela. Observe que, para nomes de coluna com espaços, certifique-se de colocar sua chave entre aspas, como com `"Event ID"` no exemplo.
+> Você pode alterar a estrutura `interface TableData` para corresponder às colunas da tabela. Observe que, para nomes de coluna com espaços, certifique-se de colocar sua chave entre aspas, como com `"Event ID"` no exemplo.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook): TableData[] {
