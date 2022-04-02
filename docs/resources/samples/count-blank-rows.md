@@ -3,18 +3,18 @@ title: Contar linhas em branco em planilhas
 description: Saiba como usar Office Scripts para detectar se há linhas em branco em vez de dados em planilhas e, em seguida, relatar a contagem de linhas em branco a ser usada em um fluxo Power Automate.
 ms.date: 06/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 103d2f96c1780b47363dcb6caab82553dd556b80
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: 1ae513928b885994dc7f6d1b8ad66d694b61e7b7
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59332210"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585559"
 ---
 # <a name="count-blank-rows-on-sheets"></a>Contar linhas em branco em planilhas
 
 Este projeto inclui dois scripts:
 
-* [Contar linhas em branco em uma determinada planilha:](#sample-code-count-blank-rows-on-a-given-sheet)percorre o intervalo usado em uma determinada planilha e retorna uma contagem de linhas em branco.
+* [Contar linhas em branco em uma determinada planilha](#sample-code-count-blank-rows-on-a-given-sheet): percorre o intervalo usado em uma determinada planilha e retorna uma contagem de linhas em branco.
 * [Contar linhas em branco em todas as planilhas](#sample-code-count-blank-rows-on-all-sheets): percorre o intervalo usado em todas as _planilhas_ e retorna uma contagem de linhas em branco.
 
 > [!NOTE]

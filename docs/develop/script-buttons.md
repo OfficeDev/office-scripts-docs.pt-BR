@@ -4,12 +4,12 @@ description: Adicione botões a guias de trabalho que controlam Office scripts e
 ms.topic: overview
 ms.date: 02/25/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 0d88a6bcd928e6b4931b2374313cc17f4161ebf7
-ms.sourcegitcommit: 49f527a7f54aba00e843ad4a92385af59c1d7bfa
+ms.openlocfilehash: c41194c627e5c3fb912a3a7c186e12f5cb374187
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63352193"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585713"
 ---
 # <a name="run-office-scripts-in-excel-with-buttons"></a>Executar Office scripts em Excel com botões
 

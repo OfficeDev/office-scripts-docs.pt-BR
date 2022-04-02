@@ -1,20 +1,20 @@
 ---
 title: Mover linhas entre tabelas usando Office Scripts
-description: Saiba como mover linhas entre tabelas salvando filtros e, em seguida, processamento e reaplicação dos filtros.
+description: Saiba como mover linhas entre tabelas salvando filtros e, em seguida,  processamento e reaplicação dos filtros.
 ms.date: 06/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: bffdb17516016d159e61586c116d764f7bb8f3fc
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: 9780cd79a55dcb5cd2e039b5198232358b3b1413
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59334966"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585475"
 ---
 # <a name="move-rows-across-tables"></a>Mover linhas entre tabelas
 
 Esse script faz o seguinte:
 
-* Seleciona linhas da tabela de origem onde o valor em uma coluna é igual a algum valor ( `FILTER_VALUE` no script).
+* Seleciona linhas da tabela de origem onde o valor em uma coluna é igual a algum valor (`FILTER_VALUE` no script).
 * Move todas as linhas selecionadas para a tabela de destino em outra planilha.
 * Reaplica os filtros relevantes à tabela de origem.
 

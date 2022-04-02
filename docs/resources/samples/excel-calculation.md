@@ -1,24 +1,24 @@
 ---
 title: Gerenciar o modo de cálculo Excel
-description: Saiba como usar Office scripts para gerenciar o modo de cálculo em Excel na Web.
+description: Saiba como usar Office Scripts para gerenciar o modo de cálculo em Excel na Web.
 ms.date: 05/06/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 32ed55f47106c7ff2dadb21aca7fce71ff7d2b3d
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: fec88c904d95bfdab1514d44921f7fb1c6e9dd35
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59326839"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585510"
 ---
 # <a name="manage-calculation-mode-in-excel"></a>Gerenciar o modo de cálculo Excel
 
-Este exemplo mostra como [](/javascript/api/office-scripts/excelscript/excelscript.calculationmode) usar o modo de cálculo e calcular métodos em Excel na Web usando Office Scripts. Você pode experimentar o script em qualquer arquivo Excel arquivo.
+Este exemplo mostra como usar o modo [](/javascript/api/office-scripts/excelscript/excelscript.calculationmode) de cálculo e calcular métodos em Excel na Web usando Office Scripts. Você pode experimentar o script em qualquer arquivo Excel arquivo.
 
 ## <a name="scenario"></a>Cenário
 
-As guias de trabalho com um grande número de fórmulas podem demorar um pouco para recalcular. Em vez de Excel controle quando os cálculos ocorrem, você pode gerenciá-los como parte do seu script. Isso ajudará no desempenho em determinados cenários.
+As guias de trabalho com um grande número de fórmulas podem demorar um pouco para recalcular. Em vez de Excel controle quando os cálculos ocorrem, você pode gerenciá-los como parte do script. Isso ajudará no desempenho em determinados cenários.
 
-O script de exemplo define o modo de cálculo como manual. Isso significa que a workbook só recalculará fórmulas quando o script diz a ela (ou você [calcula manualmente](https://support.microsoft.com/office/73fc7dac-91cf-4d36-86e8-67124f6bcce4)por meio da interface do usuário ). Em seguida, o script exibe o modo de cálculo atual e recalcula totalmente toda a workbook.
+O script de exemplo define o modo de cálculo como manual. Isso significa que a workbook só recalculará fórmulas quando o script diz a ela (ou você [calcula manualmente por meio da interface do usuário](https://support.microsoft.com/office/73fc7dac-91cf-4d36-86e8-67124f6bcce4)). Em seguida, o script exibe o modo de cálculo atual e recalcula totalmente toda a workbook.
 
 ## <a name="sample-code-control-calculation-mode"></a>Código de exemplo: Modo de cálculo de controle
 

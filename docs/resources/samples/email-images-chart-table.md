@@ -1,14 +1,14 @@
 ---
 title: Envie por email as imagens de um Excel gráfico e tabela
-description: Saiba como usar Office scripts e Power Automate extrair e enviar por email as imagens de um gráfico Excel e tabela.
+description: Saiba como usar Office scripts e Power Automate para extrair e enviar por email as imagens de um Excel gráfico e tabela.
 ms.date: 06/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 63a4bdb16bdf5923bf49f26fcba163fc3f0b7354
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: 2930a70a5bed4eb49f33f315460ae32f40b5a2f2
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59335064"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585503"
 ---
 # <a name="use-office-scripts-and-power-automate-to-email-images-of-a-chart-and-table"></a>Use Office scripts e Power Automate para enviar imagens de email de um gráfico e tabela
 
@@ -93,19 +93,19 @@ interface ReportImages {
 
 Esse fluxo executa o script e envia emails para as imagens retornadas.
 
-1. Criar um novo **fluxo de nuvem instantânea.**
+1. Crie um novo **fluxo de nuvem instantâneo**.
 1. Escolha **Disparar manualmente um fluxo e** selecione **Criar**.
-1. Adicione uma **nova etapa** que usa o conector Excel **Online (Business)** com a **ação Executar script.** Use os seguintes valores para a ação.
+1. Adicione uma **nova etapa** que usa o **conector Excel Online (Business)** com a **ação Executar script**. Use os seguintes valores para a ação.
     * **Localização**: OneDrive for Business
     * **Biblioteca de Documentos**: OneDrive
     * **Arquivo**: sua pasta de trabalho ([selecionada com o seledor de arquivos](../../testing/power-automate-troubleshooting.md#select-workbooks-with-the-file-browser-control))
-    * **Script**: Seu nome de script
+    * **Script**: seu nome de script
 
-    :::image type="content" source="../../images/email-chart-sample-flow-1.png" alt-text="O conector Excel online (Business) concluído Power Automate.":::
-1. Este exemplo usa Outlook como cliente de email. Você pode usar qualquer conector de email Power Automate suporte, mas o restante das etapas supõe que você Outlook. Adicione uma **nova etapa que** usa o conector **Office 365 Outlook** e a ação Enviar e **email (V2).** Use os seguintes valores para a ação.
+    :::image type="content" source="../../images/email-chart-sample-flow-1.png" alt-text="O conector Excel Online (Business) concluído Power Automate.":::
+1. Este exemplo usa Outlook como cliente de email. Você pode usar qualquer conector de email Power Automate suporte, mas o restante das etapas supõe que você Outlook. Adicione uma **nova etapa que** usa o **conector Office 365 Outlook** e a ação **Enviar e email (V2**). Use os seguintes valores para a ação.
     * **Para**: sua conta de email de teste (ou email pessoal)
-    * **Assunto**: Revise dados do relatório
-    * Para o **campo Corpo,** selecione "Exibição de Código" ( `</>` ) e insira o seguinte:
+    * **Assunto**: Revise os dados do relatório
+    * Para o **campo Corpo** , selecione "Exibição de Código" () e`</>` insira o seguinte:
 
     ```HTML
     <p>Please review the following report data:<br>
@@ -122,7 +122,7 @@ Esse fluxo executa o script e envia emails para as imagens retornadas.
     ```
 
     :::image type="content" source="../../images/email-chart-sample-flow-2.png" alt-text="O conector Office 365 Outlook no Power Automate.":::
-1. Salve o fluxo e experimente-o. Use o **botão Testar** na página do editor de fluxo ou execute o fluxo através da guia **Meus fluxos.** Certifique-se de permitir o acesso quando solicitado.
+1. Salve o fluxo e experimente-o. Use o **botão Testar** na página do editor de fluxo ou execute o fluxo através da **guia Meus fluxos** . Certifique-se de permitir o acesso quando solicitado.
 
 ## <a name="training-video-extract-and-email-images-of-chart-and-table"></a>Vídeo de treinamento: Extrair e enviar imagens de email de gráfico e tabela
 

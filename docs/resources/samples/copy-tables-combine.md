@@ -1,14 +1,14 @@
 ---
 title: Combinar dados de várias Excel tabelas em uma única tabela
-description: Saiba como usar Office Scripts para combinar dados de várias Excel tabelas em uma única tabela.
+description: Saiba como usar scripts Office para combinar dados de várias Excel tabelas em uma única tabela.
 ms.date: 06/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 490727f39a497dd1d2e31f2fac938b6d518012a5
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: bfe2f4af579e5ee59d20e12fe4850dd9c41bcc56
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59330769"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585888"
 ---
 # <a name="combine-data-from-multiple-excel-tables-into-a-single-table"></a>Combinar dados de várias Excel tabelas em uma única tabela
 

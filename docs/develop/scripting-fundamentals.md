@@ -3,12 +3,12 @@ title: Fundamentos de script para scripts do Office no Excel na Web
 description: Informações sobre o modelo de objeto e outros fundamentos para saber mais antes de escrever scripts do Office.
 ms.date: 05/24/2021
 ms.localizationpriority: high
-ms.openlocfilehash: 090b5b71a9becf76186e852198fdee0e5c040866
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: e2ba7eaa956f2009c9017bbfd1f390f56eb9008e
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59326888"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585720"
 ---
 # <a name="scripting-fundamentals-for-office-scripts-in-excel-on-the-web"></a>Fundamentos de script para Scripts do Office no Excel na Web
 
@@ -63,7 +63,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 ## <a name="ranges"></a>Intervalos
 
-Um intervalo é um grupo de células contíguas na pasta de trabalho. Os scripts costumam usar uma notação estilo A1 (por ex.: **B3** para a única célula na coluna **B** e linha **3** ou **C2:F4** para as células das colunas **C** a **F** e linhas **2** a **4**) para definir intervalos.
+Um intervalo é um grupo de células contíguas na pasta de trabalho. Os suplementos normalmente usam notação no estilo A1 (por exemplo, **B3** para a única célula na coluna **B** e linha **3** ou **C2:F4** para as células das colunas **C** pelas linhas **F** e **2** através do **4**) para definir os intervalos.
 
 Os intervalos têm três propriedades principais: valores, fórmulas e formato. Essas propriedades recebem ou definem os valores da célula, as fórmulas a serem avaliadas e a formatação visual das células. Eles são acessados através de `getValues`, `getFormulas` e `getFormat`. Os valores e fórmulas podem ser alterados com `setValues` e `setFormulas`, enquanto o formato é um objeto `RangeFormat` composto de vários objetos menores que são configurados individualmente.
 
@@ -240,7 +240,7 @@ function main(workbook: ExcelScript.Workbook) {
 ```
 
 > [!TIP]
-> A maioria dos objetos do Excel possui um método `setName`. Isso fornece uma maneira fácil de acessar objetos do Excel posteriormente no script ou em outros scripts para a mesma pasta de trabalho.
+> A maioria dos objetos do Excel tem um método `setName`. Isto lhe dá uma maneira fácil de acessar objetos do Excel posteriormente no script ou em outros scripts para a mesma pasta de trabalho.
 
 ### <a name="verify-an-object-exists-in-the-collection"></a>Verifique se existe um objeto na coleção
 

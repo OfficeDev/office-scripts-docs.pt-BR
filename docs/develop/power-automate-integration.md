@@ -3,12 +3,12 @@ title: Executar Office scripts com Power Automate
 description: Como obter Office scripts para Excel na Web trabalhando com um fluxo de trabalho Power Automate de usuário.
 ms.date: 03/08/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: f7358b79248974ddb548b54437422670a37531bf
-ms.sourcegitcommit: 79ce4fad6d284b1aa71f5ad6d2938d9ad6a09fee
+ms.openlocfilehash: dbf65086e564b20ca0fc3a4dc1c527188540be6b
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63459617"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585748"
 ---
 # <a name="run-office-scripts-with-power-automate"></a>Executar Office scripts com Power Automate
 
@@ -16,7 +16,7 @@ ms.locfileid: "63459617"
 
 ## <a name="get-started"></a>Introdução
 
-Se você é novo no Power Automate, recomendamos visitar [Começar a Power Automate](/power-automate/getting-started). Lá, você pode saber mais sobre todas as possibilidades de automação disponíveis para você. Os documentos aqui se concentram em como Office scripts funcionam com Power Automate e como isso pode ajudar a melhorar sua Excel experiência.
+Se você for novo no Power Automate, recomendamos visitar Introdução [com Power Automate](/power-automate/getting-started). Lá, você pode saber mais sobre todas as possibilidades de automação disponíveis para você. Os documentos aqui se concentram em como Office scripts funcionam com Power Automate e como isso pode ajudar a melhorar sua Excel experiência.
 
 Para começar a combinar Power Automate e Office scripts, siga o tutorial [Iniciar usando scripts com Power Automate](../tutorials/excel-power-automate-manual.md). Isso ensinará como criar um fluxo que chama um script simples. Depois de concluir esse tutorial e o Passar dados para [scripts](../tutorials/excel-power-automate-trigger.md) em um tutorial de fluxo de Power Automate executado automaticamente, retorne aqui para obter informações detalhadas sobre como conectar Office Scripts a fluxos Power Automate.
 
@@ -116,7 +116,7 @@ function main(
 
 - [Execute Office scripts em Excel na Web com Power Automate](../tutorials/excel-power-automate-manual.md)
 - [Passar dados para scripts numa execução automática do fluxo no Power Automate.](../tutorials/excel-power-automate-trigger.md)
-- [Retornar os dados de um script para um fluxo do Power Automate executado automaticamente](../tutorials/excel-power-automate-returns.md)
+- [Retorna dados de um script para um fluxo do Power Automate executado automaticamente](../tutorials/excel-power-automate-returns.md)
 - [Solução de problemas de informações para Power Automate com Office Scripts](../testing/power-automate-troubleshooting.md)
 - [Começar a usar o Power Automate](/power-automate/getting-started)
 - [Excel de referência do conector Online (Business)](/connectors/excelonlinebusiness/)

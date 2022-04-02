@@ -1,14 +1,14 @@
 ---
 title: Converter arquivos CSV em Excel de trabalho
 description: Saiba como usar Office scripts e Power Automate para criar .xlsx arquivos .csv arquivos.
-ms.date: 02/25/2022
+ms.date: 03/28/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 5e501368015840d4181c5565662638b65e213fed
-ms.sourcegitcommit: 49f527a7f54aba00e843ad4a92385af59c1d7bfa
+ms.openlocfilehash: 52619c1867b654fae3fce1a383a612f81f80d868
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63352122"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585587"
 ---
 # <a name="convert-csv-files-to-excel-workbooks"></a>Converter arquivos CSV em Excel de trabalho
 
@@ -29,38 +29,46 @@ Adicione o script a seguir e crie um fluxo usando as etapas fornecidas para expe
 ## <a name="sample-code-insert-comma-separated-values-into-a-workbook"></a>Código de exemplo: inserir valores separados por vírgulas em uma workbook
 
 ```TypeScript
+/**
+ * Convert incoming CSV data into a range and add it to the workbook.
+ */
 function main(workbook: ExcelScript.Workbook, csv: string) {
-  /* Convert the CSV data into a 2D array. */
-  // Trim the trailing new line.
-  csv = csv.trim();
+  let sheet = workbook.getWorksheet("Sheet1");
+
+  // Remove any Windows \r characters.
+  csv = csv.replace(/\r/g, "");
 
   // Split each line into a row.
-  let rows = csv.split("\r\n");
-  let data : string[][] = [];
-  rows.forEach((value) => {
-    /*
-     * For each row, match the comma-separated sections.
-     * For more information on how to use regular expressions to parse CSV files,
-     * see this Stack Overflow post: https://stackoverflow.com/a/48806378/9227753
-     */
-    let row = value.match(/(?:,|\n|^)("(?:(?:"")*[^"]*)*"|[^",\n]*|(?:\n|$))/g);
-
-    // Check for blanks at the start of the row.
-    if (row[0].charAt(0) === ',') {
-      row.unshift("");
-    }
+  let rows = csv.split("\n");
+  /*
+   * For each row, match the comma-separated sections.
+   * For more information on how to use regular expressions to parse CSV files,
+   * see this Stack Overflow post: https://stackoverflow.com/a/48806378/9227753
+   */
+  const csvMatchRegex = /(?:,|\n|^)("(?:(?:"")*[^"]*)*"|[^",\n]*|(?:\n|$))/g
+  rows.forEach((value, index) => {
+    if (value.length > 0) {
+        let row = value.match(csvMatchRegex);
     
-    // Remove the preceding comma.
-    row.forEach((cell, index) => {
-      row[index] = cell.indexOf(",") === 0 ? cell.substr(1) : cell;
-    });
-    data.push(row);
+        // Check for blanks at the start of the row.
+        if (row[0].charAt(0) === ',') {
+          row.unshift("");
+        }
+    
+        // Remove the preceding comma.
+        row.forEach((cell, index) => {
+          row[index] = cell.indexOf(",") === 0 ? cell.substr(1) : cell;
+        });
+    
+        // Create a 2D array with one row.
+        let data: string[][] = [];
+        data.push(row);
+    
+        // Put the data in the worksheet.
+        let range = sheet.getRangeByIndexes(index, 0, 1, data[0].length);
+        range.setValues(data);
+    }
   });
-
-  // Put the data in the worksheet.
-  let sheet = workbook.getWorksheet("Sheet1");
-  let range = sheet.getRangeByIndexes(0, 0, data.length, data[0].length);
-  range.setValues(data);
 
   // Add any formatting or table creation that you want.
 }
@@ -107,45 +115,59 @@ function main(workbook: ExcelScript.Workbook, csv: string) {
 
 ## <a name="troubleshooting"></a>Solução de problemas
 
-O script espera que os valores separados por vírgulas façam um intervalo retangular. Se o arquivo .csv contiver linhas com diferentes números de colunas, você receberá um erro que diz: "O número de linhas ou colunas na matriz de entrada não corresponderá ao tamanho ou dimensões do intervalo." Se os dados não puderem ser feitos para estar em conformidade com uma forma retangular, use o script a seguir. Este script adiciona os dados uma linha por vez, em vez de como um intervalo único. Esse script é menos eficiente e é visivelmente mais lento com conjuntos de dados grandes.
+### <a name="script-testing"></a>Teste de script
+
+Para testar o script sem usar Power Automate, atribua um valor `csv` antes de usá-lo. Tente adicionar o código a seguir como a primeira linha da função `main` e pressione **Executar**.
 
 ```TypeScript
-function main(workbook: ExcelScript.Workbook, csv: string) {
-  let sheet = workbook.getWorksheet("Sheet1");
-
-  /* Convert the CSV data into a 2D array. */
-  // Trim the trailing new line.
-  csv = csv.trim();
-
-  // Split each line into a row.
-  let rows = csv.split("\r\n");
-  rows.forEach((value, index) => {
-    /*
-     * For each row, match the comma-separated sections.
-     * For more information on how to use regular expressions to parse CSV files,
-     * see this Stack Overflow post: https://stackoverflow.com/a/48806378/9227753
-     */
-    let row = value.match(/(?:,|\n|^)("(?:(?:"")*[^"]*)*"|[^",\n]*|(?:\n|$))/g);
-
-    // Check for blanks at the start of the row.
-    if (row[0].charAt(0) === ',') {
-      row.unshift("");
-    }
-
-    // Remove the preceding comma.
-    row.forEach((cell, index) => {
-      row[index] = cell.indexOf(",") === 0 ? cell.substr(1) : cell;
-    });
-
-    // Create a 2D-array with one row.
-    let data: string[][] = [];
-    data.push(row);
-
-    // Put the data in the worksheet.
-    let range = sheet.getRangeByIndexes(index, 0, 1, data[0].length);
-    range.setValues(data);
-  });
-
-  // Add any formatting or table creation that you want.
-}
+  csv = `1, 2, 3
+         4, 5, 6
+         7, 8, 9`;
 ```
+
+### <a name="semicolon-separated-files-and-other-alternative-separators"></a>Arquivos separados por ponto-e-vírgula e outros separadores alternativos
+
+Algumas regiões usam ponto-e-vírgula para (';') separar valores de células em vez de vírgulas. Nesse caso, você precisa alterar as seguintes linhas no script.
+
+1. Substitua as vírgulas por ponto-e-vírgula na instrução de expressão regular. Isso começa com `let row = value.match`.
+
+    ```TypeScript
+    let row = value.match(/(?:;|\n|^)("(?:(?:"")*[^"]*)*"|[^";\n]*|(?:\n|$))/g);
+    ```
+
+1. Substitua a vírgula por um ponto e vírgula na verificação da primeira célula em branco. Isso começa com `if (row[0].charAt(0)`.
+
+    ```TypeScript
+    if (row[0].charAt(0) === ';') {
+    ```
+
+1. Substitua a vírgula por um ponto e vírgula na linha que remove o caractere de separação do texto exibido. Isso começa com `row[index] = cell.indexOf`.
+
+   ```TypeScript
+      row[index] = cell.indexOf(";") === 0 ? cell.substr(1) : cell;
+    ```
+
+> [!NOTE]
+> Se o arquivo usar guias ou qualquer outro caractere para separar os valores, `;` `\t` substitua as substituições acima por ou qualquer caractere que estiver sendo usado.
+
+### <a name="large-csv-files"></a>Arquivos CSV grandes
+
+Se seu arquivo tiver centenas de milhares de células, você poderá alcançar o limite Excel [de transferência de dados](../../testing/platform-limits.md#excel). Você precisará forçar o script a sincronizar com Excel periodicamente. A maneira mais fácil de fazer isso é chamar `console.log` depois que um lote de linhas for processado. Adicione as seguintes linhas de código para fazer isso acontecer.
+
+1. Antes `rows.forEach((value, index) => {`, adicione a seguinte linha.
+
+    ```TypeScript
+      let rowCount = 0;
+    ```
+
+1. Depois `range.setValues(data);`, adicione o código a seguir. Observe que, dependendo do número de colunas, talvez seja necessário reduzir `5000` para um número menor.
+
+    ```TypeScript
+      rowCount++;
+      if (rowCount % 5000 === 0) {
+        console.log("Syncing 5000 rows.");
+      }
+    ```
+
+> [!WARNING]
+> Se seu arquivo CSV for muito grande, você poderá ter problemas no [tempo Power Automate](../../testing/platform-limits.md#power-automate). Você precisará dividir os dados CSV em vários arquivos antes de convertê-los em Excel de trabalho.

@@ -3,12 +3,12 @@ title: Restrições typeScript em Office Scripts
 description: As especificações do compilador TypeScript e do linter usados pelo editor de código Office Scripts.
 ms.date: 03/08/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: ef050e83dc954e9e508f7aea2b49c2d7637ffa3b
-ms.sourcegitcommit: 79ce4fad6d284b1aa71f5ad6d2938d9ad6a09fee
+ms.openlocfilehash: b5ba0dfe60081a0bb65dec4e694c7d534cb8df63
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63459624"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585678"
 ---
 # <a name="typescript-restrictions-in-office-scripts"></a>Restrições typeScript em Office Scripts
 

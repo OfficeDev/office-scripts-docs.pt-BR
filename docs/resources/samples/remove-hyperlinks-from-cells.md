@@ -3,12 +3,12 @@ title: Remover hiperlinks de cada célula em uma Excel de trabalho
 description: Saiba como usar Office Scripts para remover hiperlinks de cada célula em uma Excel de trabalho.
 ms.date: 06/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: a738833c9542e74b88dc2cd44751513c4d61dae9
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: c318fc9b413f31c1c75c2b4b4bfd31312a7810b5
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59327844"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585790"
 ---
 # <a name="remove-hyperlinks-from-each-cell-in-an-excel-worksheet"></a>Remover hiperlinks de cada célula em uma Excel de trabalho
 

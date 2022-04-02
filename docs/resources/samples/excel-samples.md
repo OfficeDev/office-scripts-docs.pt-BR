@@ -1,18 +1,18 @@
 ---
 title: Scripts básicos para Office scripts no Excel na Web
-description: Uma coleção de exemplos de código a ser usado com Office Scripts no Excel na Web.
-ms.date: 06/29/2021
+description: Uma coleção de exemplos de código a ser usado com Office scripts em Excel na Web.
+ms.date: 03/24/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: c0e852ba2afcc37f5921ff0b2256df0769535f6e
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: 853b00349b246e74765eb2959b4926fad42f07c5
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59330734"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585867"
 ---
 # <a name="basic-scripts-for-office-scripts-in-excel-on-the-web"></a>Scripts básicos para Office scripts no Excel na Web
 
-Os exemplos a seguir são scripts simples para você experimentar suas próprias workbooks. Para usá-los em Excel na Web:
+Os exemplos a seguir são scripts simples para você experimentar suas próprias workbooks. Para usá-los Excel na Web:
 
 1. Abra a guia **Automação**.
 1. Selecione **Novo Script**.
@@ -233,7 +233,7 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-O próximo exemplo lê uma data armazenada no Excel e a converte em um objeto Data JavaScript. Ele usa o [número de série](https://support.office.com/article/now-function-3337fd29-145a-4347-b2e6-20c904739c46) numérico da data como entrada para a Data JavaScript.
+O próximo exemplo lê uma data armazenada no Excel e a converte em um objeto Data JavaScript. Ele usa o número de série numérico da data como entrada para a Data JavaScript. Esse número de série é descrito no [artigo da função NOW](https://support.office.com/article/now-function-3337fd29-145a-4347-b2e6-20c904739c46) ().
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -383,7 +383,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 ### <a name="handle-a-spill-error-returned-from-a-formula"></a>Manipular um `#SPILL!` erro retornado de uma fórmula
 
-Esse script transpõe o intervalo "A1:D2" para "A4:B7" usando a função TRANSPOSE. Se a transposição resulta em um erro, limpa o intervalo de destino e `#SPILL` aplica a fórmula novamente.
+Esse script transpõe o intervalo "A1:D2" para "A4:B7" usando a função TRANSPOSE. Se a transposição resulta em um `#SPILL` erro, limpa o intervalo de destino e aplica a fórmula novamente.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -422,5 +422,5 @@ Recebemos sugestões de novos exemplos. Se houver um cenário comum que ajude ou
 ## <a name="see-also"></a>Confira também
 
 * ["Noções básicas de intervalo" de Sudhi Ramamurthy no YouTube](https://youtu.be/4emjkOFdLBA)
-* [Office Exemplos e cenários de scripts](samples-overview.md)
+* [Office scripts e cenários](samples-overview.md)
 * [Grave, edite e crie Scripts do Office no Excel na web](../../tutorials/excel-tutorial.md)

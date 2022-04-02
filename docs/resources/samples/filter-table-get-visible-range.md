@@ -3,12 +3,12 @@ title: Filtrar Excel tabela e obter intervalo visível
 description: Saiba como usar Office Scripts para filtrar uma tabela Excel e obter o intervalo visível como uma matriz de objetos.
 ms.date: 03/10/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 752566aae1f5e64748e9a7a4c33447129905be22
-ms.sourcegitcommit: 79ce4fad6d284b1aa71f5ad6d2938d9ad6a09fee
+ms.openlocfilehash: 09adbdabb64f9cf15b8219cfd3ef2dfa35d30fe2
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63459651"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585832"
 ---
 # <a name="filter-excel-table-and-get-visible-range-as-a-json-object"></a>Filtrar Excel tabela e obter intervalo visível como um objeto JSON
 

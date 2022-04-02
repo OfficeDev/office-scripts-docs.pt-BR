@@ -3,12 +3,12 @@ title: Comece a usar scripts de um fluxo manual do Power Automate
 description: Um tutorial sobre o uso de Scripts do Office no Power Automate por meio de um acionamento manual.
 ms.date: 06/29/2021
 ms.localizationpriority: high
-ms.openlocfilehash: 506481c8b5ee1ae94a4e0a7fc926abc62ba7c5f9
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: e926540976dc066b3f07620c1e710dfa3abc7660
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59330860"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585937"
 ---
 # <a name="call-scripts-from-a-manual-power-automate-flow"></a>Scripts de chamada a partir de um fluxo manual do Power Automate
 
@@ -100,7 +100,7 @@ O Power Automate não pode usar[referências relativas](../testing/power-automat
 
 9. Selecione **Salvar**.
 
-Seu fluxo agora está pronto para ser executado por meio do Power Automate. Você pode testá-lo usando o botão **Testar** no editor de fluxo ou seguir as etapas restantes do tutorial para executar o fluxo a partir da sua coleção de fluxos.
+Seu fluxo agora está pronto para ser executado no Power Automate. Você pode testá-lo usando o botão **Teste** no editor de fluxo ou seguir as etapas restantes do tutorial para executar o fluxo a partir de sua coleção de fluxos.
 
 ## <a name="run-the-script-through-power-automate"></a>Executar o script por meio da automação
 
@@ -116,9 +116,9 @@ Seu fluxo agora está pronto para ser executado por meio do Power Automate. Voc�
 
 4. Um painel de tarefas irá aparecer para executar o fluxo. Se você for solicitado a **Entrar** no Excel Online, entre selecionando **Continuar**.
 
-5. Selecione **Executar fluxo**. Isso executará o fluxo, que, por sua vez, executará o Script do Office relacionado.
+5. Selecione **Executar fluxo**. Isso executa o fluxo, que executa o Script do Office relacionado.
 
-6. Selecione **Concluído**. Você deverá ver a seção **Executar** ser atualizada de acordo.
+6. Selecione **Concluído**. Você deverá ver a atualização da seção **Execuções** adequadamente.
 
 7. Atualize a página para ver os resultados do Power Automate. Se o script tiver sido bem-sucedido, vá para a pasta de trabalho para ver as células atualizadas. Se tiver falhado, verifique as configurações do fluxo e execute-o novamente.
 

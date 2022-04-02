@@ -3,25 +3,25 @@ title: Escrever um grande conjuntos de dados
 description: Saiba como dividir um grande conjuntos de dados em operações de gravação menores Office Scripts.
 ms.date: 05/13/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 1b37c5892c3b5f9ba26bfc2cdf8b30db321751d3
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: 0702ae5465caf91f5581cbdb79ca75a65e83adbc
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59330580"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585923"
 ---
 # <a name="write-a-large-dataset"></a>Escrever um grande conjuntos de dados
 
 A `Range.setValues()` API coloca dados em um intervalo. Essa API tem limitações dependendo de vários fatores, como tamanho de dados e configurações de rede. Isso significa que, se você tentar gravar uma grande quantidade de informações em uma área de trabalho como uma única operação, precisará gravar os dados em lotes menores para atualizar com confiança um intervalo [grande.](../../testing/platform-limits.md)
 
-Para noções básicas de desempenho Office scripts, leia Melhorar o desempenho do seu Office [Scripts](../../develop/web-client-performance.md).
+Para noções básicas de desempenho Office scripts, leia [Melhorar o desempenho do seu Office Scripts](../../develop/web-client-performance.md).
 
 ## <a name="sample-code-write-a-large-dataset"></a>Código de exemplo: Gravar um grande conjuntos de dados
 
 Este script grava linhas de um intervalo em partes menores. Ele seleciona 1.000 células para gravar por vez. Execute o script em uma planilha em branco para ver os lotes de atualização em ação. A saída do console fornece mais informações sobre o que está acontecendo.
 
 > [!NOTE]
-> Você pode alterar o número total de linhas que estão sendo escritas alterando o valor de `SAMPLE_ROWS` . Você pode alterar o número de células para gravar como uma única ação alterando o valor de `CELLS_IN_BATCH` .
+> Você pode alterar o número total de linhas que estão sendo escritas alterando o valor de `SAMPLE_ROWS`. Você pode alterar o número de células para gravar como uma única ação alterando o valor de `CELLS_IN_BATCH`.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {

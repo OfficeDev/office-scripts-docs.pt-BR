@@ -3,12 +3,12 @@ title: Práticas recomendadas no Scripts do Office
 description: Como evitar problemas comuns e gravar scripts robustos Office que podem manipular entradas ou dados inesperados.
 ms.date: 12/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 19b10cf6ea778f109edeb74fa5995628bb8bf632
-ms.sourcegitcommit: c62567dc1188527511e4618d3e04e26580d4bb44
+ms.openlocfilehash: 689196e1a0ca70c999ec8048de64190cbfe75581
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "61659191"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585762"
 ---
 # <a name="best-practices-in-office-scripts"></a>Práticas recomendadas no Scripts do Office
 
@@ -16,9 +16,9 @@ Esses padrões e práticas são projetados para ajudar seus scripts a executar c
 
 ## <a name="use-the-action-recorder-to-learn-new-features"></a>Usar o Gravador de Ações para aprender novos recursos
 
-Excel faz muitas coisas. A maioria deles pode ser escrita em script. O Gravador de Ações registra suas Excel e as converte em código. Esta é a maneira mais fácil de aprender sobre como diferentes recursos funcionam com Office Scripts. Se você precisar de código para uma ação específica, alternar para o Gravador de Ações, executar as ações, selecione **Copiar** como código e colar o código resultante em seu script.
+Excel faz muitas coisas. A maioria deles pode ser escrita em script. O Gravador de Ações registra suas Excel e as converte em código. Essa é a maneira mais fácil de saber como diferentes recursos funcionam com Office Scripts. Se você precisar de código para uma ação específica, alternar para o Gravador de Ações, executar as ações, selecionar **Copiar** como código e colar o código resultante em seu script.
 
-:::image type="content" source="../images/action-recorder-copy-code.png" alt-text="O painel de tarefas Do Gravador de Ações com o botão 'Copiar como código' realçado.":::
+:::image type="content" source="../images/action-recorder-copy-code.png" alt-text="O painel de tarefas do Gravador de Ações com o botão 'Copiar como código' destacado.":::
 
 ## <a name="verify-an-object-is-present"></a>Verificar se um objeto está presente
 
@@ -48,7 +48,7 @@ workbook.getWorksheet('Index')?.delete();
 
 Certifique-se de que todas as planilhas, tabelas, formas e outros objetos estão presentes antes de trabalhar nos dados. Usando o padrão anterior, verifique se tudo está na caixa de trabalho e corresponde às suas expectativas. Fazer isso antes que qualquer dado seja gravado garante que o script não deixe a workbook em um estado parcial.
 
-O script a seguir exige que duas tabelas chamadas "Table1" e "Table2" sejam presentes. O script primeiro verifica se as tabelas estão presentes e termina com a instrução e `return` uma mensagem apropriada, se não estiver.
+O script a seguir exige que duas tabelas chamadas "Table1" e "Table2" sejam presentes. O script primeiro verifica se as tabelas estão presentes `return` e termina com a instrução e uma mensagem apropriada, se não estiver.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -70,9 +70,9 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-Se a verificação estiver ocorrendo em uma função separada, você ainda deve encerrar o script em emissão da `return` instrução da `main` função. Retornar da subfunção não termina o script.
+Se a verificação estiver ocorrendo em uma função separada, você ainda deve encerrar o script em emissão `return` da instrução da `main` função. Retornar da subfunção não termina o script.
 
-O script a seguir tem o mesmo comportamento do anterior. A diferença é que a `main` função chama a função para verificar `inputPresent` tudo. `inputPresent` retorna um booleano ( `true` ou ) para indicar se todas as entradas necessárias estão `false` presentes. A `main` função usa esse booleano para decidir sobre continuar ou encerrar o script.
+O script a seguir tem o mesmo comportamento do anterior. A diferença é que a função `main` chama a `inputPresent` função para verificar tudo. `inputPresent` retorna um booleano (`true` ou `false`) para indicar se todas as entradas necessárias estão presentes. A `main` função usa esse booleano para decidir sobre continuar ou encerrar o script.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -104,13 +104,13 @@ function inputPresent(workbook: ExcelScript.Workbook): boolean {
 }
 ```
 
-## <a name="when-to-use-a-throw-statement"></a>Quando usar uma `throw` instrução
+## <a name="when-to-use-a-throw-statement"></a>Quando usar uma instrução `throw`
 
-Uma [`throw`](https://developer.mozilla.org/docs/web/javascript/reference/statements/throw) instrução indica que ocorreu um erro inesperado. Ele termina o código imediatamente. Na maior parte, você não precisa fazer `throw` isso no script. Normalmente, o script informa automaticamente ao usuário que o script não foi executado devido a um problema. Na maioria dos casos, é suficiente terminar o script com uma mensagem de erro e `return` uma instrução da `main` função.
+Uma [`throw`](https://developer.mozilla.org/docs/web/javascript/reference/statements/throw) instrução indica que ocorreu um erro inesperado. Ele termina o código imediatamente. Na maior parte, você não precisa fazer isso no `throw` script. Normalmente, o script informa automaticamente ao usuário que o script não foi executado devido a um problema. Na maioria dos casos, é suficiente terminar o script com uma mensagem de erro e uma `return` instrução da `main` função.
 
 No entanto, se o script estiver sendo executado como parte de um fluxo Power Automate, talvez você queira impedir que o fluxo continue. Uma `throw` instrução interrompe o script e diz ao fluxo para parar também.
 
-O script a seguir mostra como usar a `throw` instrução em nosso exemplo de verificação de tabela.
+O script a seguir mostra como usar a instrução `throw` em nosso exemplo de verificação de tabela.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -130,7 +130,7 @@ function main(workbook: ExcelScript.Workbook) {
   
 ```
 
-## <a name="when-to-use-a-trycatch-statement"></a>Quando usar uma `try...catch` instrução
+## <a name="when-to-use-a-trycatch-statement"></a>Quando usar uma instrução `try...catch`
 
 A [`try...catch`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/try...catch) instrução é uma maneira de detectar se uma chamada de API falhará e continuará executando o script.
 
@@ -140,9 +140,9 @@ Considere o trecho a seguir que executa uma grande atualização de dados em um 
 range.setValues(someLargeValues);
 ```
 
-Se `someLargeValues` for maior do que Excel para a Web possa manipular, a chamada `setValues()` falhará. Em seguida, o script também falha com um [erro de tempo de execução.](../testing/troubleshooting.md#runtime-errors) A `try...catch` instrução permite que seu script reconheça essa condição, sem encerrar imediatamente o script e mostrar o erro padrão.
+Se `someLargeValues` for maior do que Excel para a Web possa manipular, a `setValues()` chamada falhará. Em seguida, o script também falha com um [erro de tempo de execução](../testing/troubleshooting.md#runtime-errors). A `try...catch` instrução permite que seu script reconheça essa condição, sem encerrar imediatamente o script e mostrar o erro padrão.
 
-Uma abordagem para dar ao usuário de script uma experiência melhor é apresentar uma mensagem de erro personalizada. O trecho a seguir mostra uma `try...catch` instrução registrando mais informações de erro para ajudar melhor o leitor.
+Uma abordagem para dar ao usuário de script uma experiência melhor é apresentar uma mensagem de erro personalizada. O trecho a seguir mostra uma instrução `try...catch` registrando mais informações de erro para ajudar melhor o leitor.
 
 ```TypeScript
 try {
@@ -154,7 +154,7 @@ try {
 }
 ```
 
-Outra abordagem para lidar com erros é ter comportamento de fallback que lida com o caso de erro. O trecho a seguir usa o bloco para tentar um método alternativo separar a atualização `catch` em partes menores e evitar o erro.
+Outra abordagem para lidar com erros é ter comportamento de fallback que lida com o caso de erro. O trecho a seguir usa o bloco `catch` para tentar um método alternativo separar a atualização em partes menores e evitar o erro.
 
 > [!TIP]
 > Para ver um exemplo completo sobre como atualizar um intervalo grande, consulte [Write a large dataset](../resources/samples/write-large-dataset.md).
@@ -172,7 +172,7 @@ try {
 ```
 
 > [!NOTE]
-> Usar `try...catch` dentro ou ao redor de um loop retarda seu script. Para obter mais informações de desempenho, consulte [Evite usar `try...catch` blocos](web-client-performance.md#avoid-using-trycatch-blocks-in-or-surrounding-loops).
+> Usar `try...catch` dentro ou ao redor de um loop retarda seu script. Para obter mais informações de desempenho, consulte [Evite usar blocos`try...catch`](web-client-performance.md#avoid-using-trycatch-blocks-in-or-surrounding-loops).
 
 ## <a name="see-also"></a>Confira também
 

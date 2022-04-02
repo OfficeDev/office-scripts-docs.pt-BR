@@ -1,20 +1,22 @@
 ---
-title: Usar os arquivos de macro em fluxos do Power Automate
-description: Saiba como usar arquivos de macro ou arquivos xlsm Power Automate fluxos.
-ms.date: 09/01/2021
+title: Usar arquivos habilitados para macro em Power Automate fluxos
+description: Saiba como usar arquivos habilitados para macro ou arquivos .xlsm em Power Automate fluxos.
+ms.date: 03/24/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: ab83c62d219ec215497e02d6cfe5718c628ec1bf
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: 9f2ecefe9fb97d1c5514ddb52c3cbcd0596df426
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59326902"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585741"
 ---
-# <a name="how-to-use-macro-files-in-power-automate-flows"></a>Como usar arquivos de macro em fluxos Power Automate fluxos
+# <a name="how-to-use-macro-enabled-files-in-power-automate-flows"></a>Como usar arquivos habilitados para macro em Power Automate fluxos
 
-O [conector Excel Online (Business)](https://flow.microsoft.com/connectors/shared_excelonlinebusiness/excel-online-business/) no Power Automate normalmente funciona apenas com arquivos no formato Microsoft Excel Open XML Spreadsheet (.xlsx). [](https://flow.microsoft.com/) O navegador de arquivos limita sua seleção .xlsx arquivos dentro do conector. No entanto, os arquivos de macro são compatíveis com a ação de script Executar do **conector** se os metadados do arquivo são usados.
+Você pode integrar seus arquivos .xlsm a um Power Automate fluxo. Isso permite que você comece a converter suas soluções de automação existentes em formatos baseados na Web. Observe que as macros contidas nos arquivos .xslm não podem ser Power Automate. Somente Office scripts estão habilitados lá.
 
-Em seu fluxo, use a **ação Obter metadados** de arquivo dos conectores [OneDrive for Business](https://flow.microsoft.com/connectors/shared_onedriveforbusiness/onedrive-for-business/) ou [SharePoint](https://flow.microsoft.com/connectors/shared_sharepointonline/sharepoint/) de arquivo. A **ação Executar script** aceita os metadados como um arquivo válido. Use o *conteúdo dinâmico de ID* retornado da **ação Obter metadados de** arquivo como o argumento "File" ao executar o script. A captura de tela a seguir mostra um fluxo fornecendo os metadados para um arquivo chamado "Test Macro File.xlsm" para uma ação **de script Executar.**
+O [conector Excel Online (Business)](https://flow.microsoft.com/connectors/shared_excelonlinebusiness/excel-online-business/) no Power Automate normalmente é [](https://flow.microsoft.com/) limitado a arquivos no formato Microsoft Excel Planilha Open XML (.xlsx). Seu navegador de arquivos só permite selecionar .xlsx arquivos. No entanto, os arquivos habilitados para macro são compatíveis com a ação executar **script do conector** se os metadados do arquivo são usados.
+
+Em seu fluxo, use a **ação Obter Metadados** de Arquivo [OneDrive for Business ou](https://flow.microsoft.com/connectors/shared_onedriveforbusiness/onedrive-for-business/) [SharePoint](https://flow.microsoft.com/connectors/shared_sharepointonline/sharepoint/) conectores. A **ação Executar script** aceita os metadados como um arquivo válido. Use o *conteúdo dinâmico de ID* retornado da **ação Obter metadados de** arquivo como o argumento "File" ao executar o script. A captura de tela a seguir mostra um fluxo fornecendo os metadados para um arquivo chamado "Test Macro File.xlsm" para uma ação **de script Executar** .
 
 :::image type="content" source="../images/xlsm-in-power-automate.png" alt-text="Um fluxo com uma ação Obter metadados de arquivo passando os metadados de um arquivo de macro para uma ação executar script.":::
 
@@ -23,4 +25,4 @@ Em seu fluxo, use a **ação Obter metadados** de arquivo dos conectores [OneDri
 
 ## <a name="other-resources"></a>Outros recursos
 
-Assista ao vídeo do [YouTube de Sudhi Ramamurthy](https://youtu.be/o-H9BbywJQQ)sobre como usar um arquivo .xlsm em uma ação Executar Script.
+[Assista ao vídeo do YouTube de Sudhi Ramamurthy sobre como usar um arquivo .xlsm em uma ação Executar Script](https://youtu.be/o-H9BbywJQQ).

@@ -1,21 +1,21 @@
 ---
 title: Solucionar Office scripts
-description: Dicas e técnicas de depuração para Office scripts, bem como recursos de ajuda.
+description: Dicas e técnicas de depuração para Office Scripts, bem como recursos de ajuda.
 ms.date: 11/11/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 2c43d0e4b1f4fd5675397fd79eaab1345ae39b98
-ms.sourcegitcommit: 24a6b8ae0cc57a0307fbc9b3e87432f1f4a92263
+ms.openlocfilehash: 2a4514aa55550311223cf6fa1179541a37e37f56
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064199"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64586042"
 ---
 # <a name="troubleshoot-office-scripts"></a>Solucionar Office scripts
 
-À medida que você Office scripts, você pode cometer erros. Não há problema. Você tem as ferramentas para ajudar a encontrar os problemas e fazer seus scripts funcionarem perfeitamente.
+Conforme você desenvolve Office scripts, você pode cometer erros. Não há problema. Você tem as ferramentas para ajudar a encontrar os problemas e fazer seus scripts funcionarem perfeitamente.
 
 > [!NOTE]
-> Para solucionar problemas de consultoria específicas Office scripts com Power Automate, consulte [Troubleshoot Office Scripts em](power-automate-troubleshooting.md)execução em Power Automate .
+> Para solucionar problemas de orientação específica Office scripts com Power Automate, consulte [Troubleshoot Office Scripts em execução no Power Automate](power-automate-troubleshooting.md).
 
 ## <a name="types-of-errors"></a>Tipos de erros
 
@@ -49,7 +49,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 Erros de tempo de compilação e tempo de execução exibem mensagens de erro no console quando um script é executado. Eles dão um número de linha onde o problema foi encontrado. Lembre-se de que a causa raiz de qualquer problema pode ser uma linha de código diferente da indicada no console.
 
-A imagem a seguir mostra a saída do console para [o erro explícito `any` ](../develop/typescript-restrictions.md) do compilador. Observe o texto `[5, 16]` no início da cadeia de caracteres de erro. Isso indica que o erro está na linha 5, começando no caractere 16.
+A imagem a seguir mostra a saída do console para [o erro explícito `any`](../develop/typescript-restrictions.md) do compilador. Observe o texto `[5, 16]` no início da cadeia de caracteres de erro. Isso indica que o erro está na linha 5, começando no caractere 16.
 :::image type="content" source="../images/explicit-any-error-message.png" alt-text="O console do Editor de Código exibindo uma mensagem de erro &quot;qualquer&quot; explícita.":::
 
 A imagem a seguir mostra a saída do console para um erro de tempo de execução. Aqui, o script tenta adicionar uma planilha com o nome de uma planilha existente. Novamente, observe a "Linha 2" anterior ao erro para mostrar qual linha investigar.
@@ -64,24 +64,24 @@ console.log("Logging myRange's address.");
 console.log(myRange.getAddress());
 ```
 
-As cadeias de caracteres passadas para são exibidas no console de registro em log do Editor de Código, na `console.log` parte inferior do painel de tarefas. Os logs são encontrados na guia **Saída,** embora a guia automaticamente obtém o foco quando um log é gravado.
+As cadeias de caracteres `console.log` passadas para são exibidas no console de registro em log do Editor de Código, na parte inferior do painel de tarefas. Os logs são encontrados na guia **Saída** , embora a guia automaticamente obtém o foco quando um log é gravado.
 
 Os logs não afetam a agenda de trabalho.
 
 ## <a name="automate-tab-not-appearing-or-office-scripts-unavailable"></a>Guia Automatizar não aparecendo ou Office Scripts indisponíveis
 
-As etapas a seguir devem ajudar a solucionar problemas relacionados à guia **Automatizar** que não aparecem no Excel na Web.
+As etapas a seguir devem ajudar a solucionar problemas relacionados à guia **Automatizar** que não aparece no Excel na Web.
 
-1. [Certifique-se de Microsoft 365 sua licença de Office Scripts](../overview/excel.md#requirements).
+1. [Certifique-se de Microsoft 365 sua licença de Office scripts](../overview/excel.md#requirements).
 1. [Verifique se o navegador tem suporte](platform-limits.md#browser-support).
-1. [Verifique se os cookies de terceiros estão habilitados.](platform-limits.md#third-party-cookies)
-1. [Verifique se o administrador não desabilitou Office scripts no Centro de administração do Microsoft 365](/microsoft-365/admin/manage/manage-office-scripts-settings).
+1. [Verifique se cookies de terceiros estão habilitados](platform-limits.md#third-party-cookies).
+1. [Verifique se o administrador não Office scripts no Centro de administração do Microsoft 365](/microsoft-365/admin/manage/manage-office-scripts-settings).
 
 [!INCLUDE [Teams support note](../includes/teams-support-note.md)]
 
 ## <a name="help-resources"></a>Recursos de ajuda
 
-[Stack Overflow](https://stackoverflow.com/questions/tagged/office-scripts) é uma comunidade de desenvolvedores dispostos a ajudar com problemas de codificação. Muitas vezes, você poderá encontrar a solução para seu problema por meio de uma pesquisa rápida de Estouro de Pilha. Se não, faça sua pergunta e marque-a com a marca "office-scripts". Certifique-se de mencionar que você está criando um *script* de Office , não um Office *Desem.*
+[Stack Overflow](https://stackoverflow.com/questions/tagged/office-scripts) é uma comunidade de desenvolvedores dispostos a ajudar com problemas de codificação. Muitas vezes, você poderá encontrar a solução para seu problema por meio de uma pesquisa rápida de Estouro de Pilha. Se não, faça sua pergunta e marque-a com a marca "office-scripts". Não se esqueça de mencionar que você está criando um *script* Office, não um Office *Dem.*
 
 ## <a name="see-also"></a>Confira também
 

@@ -3,22 +3,22 @@ title: Usar chamadas de busca externa em Scripts do Office
 description: Saiba como fazer chamadas de API externas Office Scripts.
 ms.date: 05/14/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: d957e0536e8574681f2ec752f23f9e6ba07f5fd2
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: feff9d49f9f50f14fd83b1864568df8dab02d417
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59335745"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585524"
 ---
 # <a name="use-external-fetch-calls-in-office-scripts"></a>Usar chamadas de busca externa em Scripts do Office
 
-Este script obtém informações básicas sobre os repositórios de GitHub do usuário. Ele mostra como usar `fetch` em um cenário simples. Para obter mais informações sobre como `fetch` usar ou outras chamadas [externas,](../../develop/external-calls.md) leia Suporte a chamadas de API externa em Office Scripts
+Este script obtém informações básicas sobre os repositórios de GitHub do usuário. Ele mostra como usar em `fetch` um cenário simples. Para obter mais informações sobre como usar `fetch` ou outras chamadas externas, leia Suporte a chamadas [de API externa em Office Scripts](../../develop/external-calls.md)
 
-Você pode saber mais sobre as APIs GItHub que estão sendo usadas na [referência GitHub API.](https://docs.github.com/rest/reference/repos#list-repositories-for-a-user) Você também pode ver a saída de chamada de API bruta visitando um navegador da Web (certifique-se de substituir o espaço reservado {USERNAME} pelo seu `https://api.github.com/users/{USERNAME}/repos` ID GitHub de usuário).
+Você pode saber mais sobre as APIs GItHub que estão sendo usadas na [referência GitHub API.](https://docs.github.com/rest/reference/repos#list-repositories-for-a-user) Você também pode ver a saída de chamada de API `https://api.github.com/users/{USERNAME}/repos` bruta visitando em um navegador da Web (certifique-se de substituir o espaço reservado {USERNAME} pela sua ID GitHub ID).
 
 ![Obter exemplo de informações de repositórios](../../images/git.png)
 
-## <a name="sample-code-get-basic-information-about-users-github-repositories"></a>Código de exemplo: obter informações básicas sobre os repositórios GitHub do usuário
+## <a name="sample-code-get-basic-information-about-users-github-repositories"></a>Código de exemplo: obter informações básicas sobre os repositórios de GitHub do usuário
 
 ```TypeScript
 async function main(workbook: ExcelScript.Workbook) {

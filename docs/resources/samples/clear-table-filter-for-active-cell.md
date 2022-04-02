@@ -3,18 +3,18 @@ title: Limpar filtro de coluna de tabela com base no local ativo da célula
 description: Saiba como limpar o filtro de coluna de tabela com base no local ativo da célula.
 ms.date: 06/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: bb01292017a027e41230d786337b5bf53293a20c
-ms.sourcegitcommit: d3ed4bdeeba805d97c930394e172e8306a0cf484
+ms.openlocfilehash: c52f1a3501318a479744abc6f2aa15cfaf3f9ded
+ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59332982"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64585580"
 ---
 # <a name="clear-table-column-filter-based-on-active-cell-location"></a>Limpar filtro de coluna de tabela com base no local ativo da célula
 
 Este exemplo limpa o filtro de coluna de tabela com base no local da célula ativa. O script detecta se a célula faz parte de uma tabela, determina a coluna da tabela e limpa qualquer filtro aplicado a ela.
 
-Se você quiser saber mais sobre como salvar o filtro antes de desmatá-lo (e reaplicação posterior), consulte Mover linhas entre tabelas salvando [filtros](move-rows-across-tables.md), um exemplo mais avançado.
+Se quiser saber mais sobre como salvar o filtro antes de desmarrá-lo (e reaplicação posterior), consulte Mover linhas entre [tabelas salvando filtros](move-rows-across-tables.md), um exemplo mais avançado.
 
 _Antes de limpar o filtro de coluna (observe a célula ativa)_
 
