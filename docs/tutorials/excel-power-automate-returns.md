@@ -1,14 +1,14 @@
 ---
 title: Retorna dados de um script para um fluxo do Power Automate executado automaticamente
 description: Um tutorial que mostra como enviar emails de lembrete executando Scripts do Office para o Excel na web através do Power Automate.
-ms.date: 06/29/2021
+ms.date: 04/12/2022
 ms.localizationpriority: high
-ms.openlocfilehash: e100fac263dee8f1f39529bd83610576e68eb2e6
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 7d232b4688132532dd2bc029588d6244a4a64ef8
+ms.sourcegitcommit: 8bcd743bebfacafa548b936ca99ad6d4918e7bcd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64586049"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64826685"
 ---
 # <a name="return-data-from-a-script-to-an-automatically-run-power-automate-flow"></a>Retornar os dados de um script para um fluxo do Power Automate executado automaticamente
 
@@ -135,10 +135,10 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
 
     :::image type="content" source="../images/power-automate-return-tutorial-2.png" alt-text="O botão Fluxo de nuvem agendado no Power Automate":::
 
-1. Agora precisamos definir o cronograma para esse fluxo. Nossa planilha tem uma nova atribuição de plantão começando toda segunda-feira no primeiro semestre de 2021. Vamos definir o fluxo para começar nas manhãs de segunda-feira. Use as seguintes opções para configurar o fluxo a ser executado na segunda-feira de cada semana.
+1. Agora precisamos definir o cronograma para esse fluxo. Nossa planilha tem uma nova atribuição de plantão começando toda segunda-feira no primeiro semestre de 2022. Vamos definir o fluxo para começar nas manhãs de segunda-feira. Use as seguintes opções para configurar o fluxo a ser executado na segunda-feira de cada semana.
 
     - **Nome do fluxo**: Notificar a Pessoa de Plantão
-    - **Iniciando em**: 4/1/21 à 1h00
+    - **Iniciando em**: 3/1/22 à 1h00
     - **Repetir a cada**: 1 Semana
     - **Nesses dias**: M
 
