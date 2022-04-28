@@ -37,6 +37,8 @@ items:
             href: develop/power-automate-integration.md
           - name: Use arquivos .xlsm em fluxos do Power Automate
             href: develop/macros-power-automate.md
+          - name: Trabalhar com Tabelas Dinâmicas
+            href: develop/pivottables.md
       - name: Solução de problemas
         items:
           - name: Noções básicas de solução de problemas
