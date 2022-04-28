@@ -111,6 +111,8 @@ items:
                 href: resources/scenarios/task-reminders.md
           - name: Contribuições da comunidade
             items:
+              - name: Botão Relógio do Sistema
+                href: resources/scenarios/punch-clock.md
               - name: Saudações de estação
                 href: resources/samples/community-seasons-greetings.md
       - name: Scripts do Office e outras plataformas
