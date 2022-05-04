@@ -4,12 +4,12 @@ description: Uma breve introdução ao Gravador de ação e ao Editor de código
 ms.topic: overview
 ms.date: 02/25/2022
 ms.localizationpriority: high
-ms.openlocfilehash: 6e2370d71d7452490243ab492705b8bf037b7115
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 3c5423344bb1d0f619ea1933a2681dc7e5fd8ba1
+ms.sourcegitcommit: f1550e457c220a2d1498907e925768aba0c36dc3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585650"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187228"
 ---
 # <a name="office-scripts-in-excel-on-the-web"></a>Scripts do Office no Excel na Web
 
@@ -70,7 +70,7 @@ Nossos [tutoriais](../tutorials/excel-tutorial.md) fornecem uma maneira orientad
 
 Os scripts do Office podem ser compartilhados com outros usuários de uma pasta de trabalho do Excel. Quando você compartilha um script em uma pasta de trabalho compartilhada, todos com acesso à pasta de trabalho também podem visualizar e executar seu script. Para obter mais detalhes sobre como compartilhar e cancelar o compartilhamento de scripts, confira [Compartilhando Scripts do Office no Excel para a Web](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b).
 
-:::image type="content" source="../images/script-sharing.png" alt-text="A página de detalhes do script mostrando a opção &quot;Compartilhar com outras pessoas nesta pasta de trabalho&quot;.":::
+:::image type="content" source="../images/script-sharing.png" alt-text="A página de detalhes do script mostrando a opção 'Compartilhar com outras pessoas nesta pasta de trabalho'.":::
 
 Adicione botões que executam scripts para ajudar seus colegas a descobrirem suas valiosas soluções. Saiba mais sobre os botões de script em [Executar Scripts do Office com botões](../develop/script-buttons.md).
 
