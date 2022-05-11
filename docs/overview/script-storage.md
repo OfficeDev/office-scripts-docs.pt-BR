@@ -1,49 +1,46 @@
 ---
-title: Office armazenamento e propriedade de arquivos scripts
+title: Office armazenamento e propriedade de arquivos de scripts
 description: Informações sobre como Office scripts são armazenados em Microsoft OneDrive e transferidos entre proprietários.
-ms.date: 06/04/2021
+ms.date: 05/10/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 3f9e0f93c598816417a4ce920d3d481085fa8a20
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 5e2bc89db54ee5520c3b911ebd0f182777a78e2b
+ms.sourcegitcommit: 8ae932e8b4e521fec8576ab16126eb9fe22a8dd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585909"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65310754"
 ---
-# <a name="office-scripts-file-storage-and-ownership"></a>Office armazenamento e propriedade de arquivos scripts
+# <a name="office-scripts-file-storage-and-ownership"></a>Office armazenamento e propriedade de arquivos de scripts
 
-Office scripts são armazenados como **arquivos .osts** em seu Microsoft OneDrive. Eles são armazenados separadamente de uma workbook. Para dar acesso a outras pessoas, [compartilhe o script com uma Excel de trabalho](excel.md#share-office-scripts). Isso significa que você está vinculando o script com o arquivo, não anexando-o. Quem tiver acesso ao arquivo Excel também poderá exibir, executar ou fazer uma cópia do script.
+Office scripts são armazenados como **arquivos .osts** em seu Microsoft OneDrive. Eles são armazenados separadamente de uma pasta de trabalho. Para dar acesso a outras pessoas, [compartilhe o script com uma Excel de trabalho](excel.md#share-office-scripts). Isso significa que você está vinculando o script ao arquivo, não anexando-o. Quem tiver acesso ao arquivo Excel também poderá exibir, executar ou fazer uma cópia do script.
 
-A menos que você compartilhe seus scripts, ninguém mais poderá acessá-los. Suas OneDrive controlam o acesso compartilhado e as permissões para todos os arquivos **.osts** de script, independentemente de qualquer configuração Excel de script. Os scripts não podem ser vinculados a partir de um disco local ou locais de nuvem personalizados. Office Scripts só reconhece e executa um script se ele estiver em sua pasta OneDrive ou compartilhado com a pasta de trabalho.
+A menos que você compartilhe seus scripts, ninguém mais poderá accessá-los. Suas OneDrive configurações controlam o acesso compartilhado e as permissões para todos os arquivos **.osts** de script, independentemente de Excel configurações. Os scripts não podem ser vinculados de um disco local ou locais de nuvem personalizados. Office scripts só reconhecerão e executarão um script se ele estiver em sua pasta OneDrive ou compartilhado com a pasta de trabalho.
 
 ## <a name="file-storage"></a>Armazenamento de arquivos
 
-Você Office scripts são armazenados em seu OneDrive. Os **arquivos .osts** são encontrados na **pasta /Documents/Office Scripts/**. Todas as edições feitas nesses **arquivos .osts** , como renomeação ou exclusão de arquivos, serão refletidas no Editor de Código e na Galeria de Scripts.
+Você Office scripts são armazenados em seu OneDrive. Os **arquivos .osts** são encontrados na **pasta /Documents/Office Scripts/**. Todas as edições feitas nesses arquivos **.osts** , como renomear ou excluir arquivos, serão refletidas no Editor de Códigos e na Galeria de Scripts.
 
-Os scripts compartilhados com uma de suas guias de trabalho permanecem no OneDrive. Eles não são copiados para nenhuma pasta local ou OneDrive quando você executar o script compartilhado em Excel. O **botão Fazer uma Cópia** do Editor de Código salva uma cópia separada do script em seu OneDrive. As alterações na cópia não afetam o script original.
+Os scripts que são compartilhados com uma de suas pastas de trabalho permanecem na conta do criador do script OneDrive. Eles não são copiados para nenhuma das pastas locais ou OneDrive quando você executa o script compartilhado em Excel. O **botão Fazer uma Cópia** do Editor de Códigos salva uma cópia separada do script em seu OneDrive. As alterações na cópia não afetam o script original.
 
 ### <a name="restore-deleted-scripts"></a>Restaurar scripts excluídos
 
-Quando você exclui um script no Excel, ele vai para sua OneDrive de reciclagem. Para restaurar um script excluído, siga as etapas listadas em [Restaurar arquivos ou pastas excluídos em OneDrive](https://support.microsoft.com/office/949ada80-0026-4db3-a953-c99083e6a84f). Restaurar um **arquivo .osts** retorna-o à **lista Todos os scripts** .
+Quando você exclui um script no Excel, ele vai para sua OneDrive lixeira. Para restaurar um script excluído, siga as etapas listadas em Restaurar arquivos [ou pastas excluídos no OneDrive](https://support.microsoft.com/office/949ada80-0026-4db3-a953-c99083e6a84f). Restaurar um **arquivo .osts** o retorna para a **lista Todos os scripts** .
 
-Um script excluído não é compartilhada com a workbook. Quando você restaura um script, ele **não mantém** seu acesso de script. Você precisará compartilhar o script novamente.
+Um script excluído é descompartilhado com a pasta de trabalho. Quando você restaura um script, ele **não retém** o acesso ao script. Você precisará compartilhar o script novamente.
 
-Os scripts restaurados ainda funcionam conforme o esperado com Power Automate fluxos. Não é necessário recriar o conector de fluxo.
+Os scripts restaurados ainda funcionam conforme o esperado com Power Automate fluxos. Você não precisa recriar o conector de fluxo.
 
-## <a name="file-ownership-and-retention"></a>Propriedade e retenção de arquivos
+## <a name="file-ownership-and-retention"></a>Propriedade e retenção do arquivo
 
-Office scripts são armazenados no OneDrive. Eles seguem as políticas de retenção e exclusão especificadas por Microsoft OneDrive. Para saber como lidar com os scripts criados e compartilhados por um usuário que está sendo removido da sua organização, confira [retenção e exclusão do OneDrive](/onedrive/retention-and-deletion).
+Office scripts são armazenados no banco de dados OneDrive. Eles seguem as políticas de retenção e exclusão especificadas pelo Microsoft OneDrive. Para saber como lidar com os scripts criados e compartilhados por um usuário que está sendo removido da sua organização, confira [retenção e exclusão do OneDrive](/onedrive/retention-and-deletion).
 
-Durante a edição, os arquivos são temporariamente armazenados no navegador. Você deve salvar o script antes de fechar a Excel para salvá-lo no OneDrive local. Não se esqueça de salvar o arquivo após edições, ou essas edições só estarão na versão do arquivo do navegador.
+Durante a edição, os arquivos são armazenados temporariamente no navegador. Você deve salvar o script antes de fechar Excel janela para salvá-lo no OneDrive local. Não se esqueça de salvar o arquivo após as edições, caso contrário, essas edições só estarão na versão do navegador do arquivo.
 
-## <a name="audit-office-scripts-usage-at-the-admin-level"></a>Auditar Office uso de Scripts no nível de administrador
+## <a name="audit-office-scripts-usage-at-the-admin-level"></a>Auditar Office uso de scripts no nível de administrador
 
-Descubra quais locatários estão usando Office scripts com o log de auditoria no centro de conformidade. Para saber como usar essa ferramenta, visite [Pesquisar o log de auditoria no Centro de Conformidade & Segurança](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide&preserve-view=true#search-the-audit-log).
+Descubra quais locatários estão usando Office Scripts com o log de auditoria no centro de conformidade. Para saber como usar essa ferramenta, visite [Pesquisar o log de auditoria no Centro de Conformidade & Segurança](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide&preserve-view=true#search-the-audit-log).
 
-Para descobrir quem está usando Office scripts com a ferramenta de pesquisa, adicione `.osts` o **campo Arquivo, pasta ou site**. Isso pesquisa todos os arquivos com a extensão de arquivo Office Scripts. Se alguém em sua organização tiver usado o recurso scripts Office, a atividade do usuário será a que aparece nos resultados da pesquisa de log de auditoria.
-
-> [!NOTE]
-> No momento, a execução de um script não está registrada. Somente as ações criar, exibir e modificar são registradas.
+Para localizar quem está usando Office scripts com a ferramenta de pesquisa, `.osts` adicione o campo Arquivo **, pasta ou site**. Isso pesquisa todos os arquivos com a extensão Office arquivo Scripts. Se alguém em sua organização tiver usado o Office scripts, a atividade do usuário será exibida nos resultados da pesquisa de log de auditoria.
 
 ## <a name="see-also"></a>Confira também
 
