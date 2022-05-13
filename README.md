@@ -1,30 +1,30 @@
-# <a name="office-scripts-in-excel-on-the-web-documentation"></a>Office scripts em Excel na Web documentação
+# <a name="office-scripts-documentation"></a>Documentação de scripts do Office
 
-Bem-vindo ao repositório de documentação Office Scripts. Neste repo, você pode encontrar os arquivos de origem da documentação para Office tutoriais de Scripts e guias de como fazer. Para a melhor experiência, recomendamos que você veja esse conteúdo em [docs.microsoft.com](https://docs.microsoft.com/office/dev/scripts).
+Bem-vindo ao repositório de documentação Office Scripts. Neste repositório, você pode encontrar os arquivos de origem da documentação Office tutoriais de scripts e guias de instruções. Para obter a melhor experiência, recomendamos que você exiba esse conteúdo [docs.microsoft.com](https://docs.microsoft.com/office/dev/scripts).
 
-> **Observação**: você pode encontrar os arquivos de origem da documentação de referência para a API Office Scripts no [repositório office-scripts-docs-reference.](https://github.com/OfficeDev/office-scripts-docs-reference) Essas APIs contêm todas as operações Excel possíveis para seus scripts.
+> **Observação**: você pode encontrar os arquivos de origem da documentação de referência para a API Office Scripts no repositório [office-scripts-docs-reference](https://github.com/OfficeDev/office-scripts-docs-reference). Essas APIs contêm todas as operações potenciais para seus scripts.
 
 ## <a name="give-us-your-feedback"></a>Envie seus comentários
 
-O objetivo do repo é fornecer educação do desenvolvedor sobre Office Scripts. Dessa forma, os problemas devem pertencer a esse conteúdo educacional. Envie [um problema para](https://github.com/OfficeDev/office-scripts-docs/issues) os seguintes cenários:
+O objetivo do repositório é fornecer educação para desenvolvedores sobre Office Scripts. Dessa forma, os problemas devem pertencer a esse conteúdo educacional. Envie [um problema para](https://github.com/OfficeDev/office-scripts-docs/issues) os seguintes cenários:
 
-- As informações necessárias para o desenvolvimento de Office scripts estão ausentes ou incompletos.
+- As informações necessárias para o sucesso no desenvolvimento Office scripts estão ausentes ou incompletos.
 - As informações são imprecisas ou obsoletas.
 - Você encontra erros de digitação, erros gramaticais ou outros problemas com os artigos.
-- Os artigos são organizados de maneira confusa ou não intuitiva.
+- Os artigos são organizados de maneira confusa ou nãointuitiva.
 
-Se você estiver vendo o comportamento do produto que difere da documentação, forneça a maior parte das seguintes informações possíveis e relevantes:
+Se você estiver vendo o comportamento do produto que difere da documentação, forneça o máximo possível e relevante das seguintes informações:
 
-- A versão e o número de com build do cliente que você está usando.
+- A versão e o número de build do cliente que você está usando.
 - Etapas para reproduzir o problema.
-- Console output and error messages.
+- Mensagens de erro e saída do console.
 
 Recomendamos que você faça a bifurcação, a correção e uma solicitação de recebimento das suas alterações propostas. Para mais detalhes, confira [Contribuir para este artigo](Contributing.md).
 
-Se seu problema não estiver relacionado à documentação Office Scripts, poste-o em um dos seguintes canais:
+Se o problema não estiver relacionado à documentação Office scripts, poste-o em um dos seguintes canais:
 
-- Para fazer uma pergunta sobre como projetar Office Scripts ou a API Office.js que executa Office Scripts, poste sua pergunta em Stack Overflow e marque-a com a marca "office-scripts" ( https://stackoverflow.com/questions/tagged/office-scripts) .
-- Para relatar um problema com a API Office.js, crie o problema no repositório [officeDev/office-js](https://github.com/OfficeDev/office-js), que membros da equipe do produto monitoram para problemas relatados pelo cliente.
+- Para fazer uma pergunta sobre como criar scripts Office ou a API do Office.js que executa scripts do Office, poste sua pergunta no Stack Overflow e marque-a com a marca "office-scripts" (https://stackoverflow.com/questions/tagged/office-scripts).
+- Para relatar um problema com a API Office.js, crie o problema no repositório [OfficeDev/office-js](https://github.com/OfficeDev/office-js), que os membros da equipe de produto monitoram para problemas relatados pelo cliente.
 
 ## <a name="copyright"></a>Direitos autorais
 

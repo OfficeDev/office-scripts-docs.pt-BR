@@ -1,9 +1,9 @@
 items:
   - name: Documentação de scripts do Office
     href: index.md
-  - name: Scripts do Office no Excel na Web
+  - name: Scripts do Office no Excel
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview/excel.md
       - name: Tutoriais
         items:

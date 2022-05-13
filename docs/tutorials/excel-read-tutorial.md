@@ -3,12 +3,12 @@ title: Ler os dados da pasta de trabalho com scripts do Office no Excel na Web.
 description: Um tutorial de scripts do Office sobre a leitura de dados de pastas de trabalho e avaliação desses dados no script.
 ms.date: 01/06/2021
 ms.localizationpriority: high
-ms.openlocfilehash: c1bc867b6df91a7dedde4020177ed87682d060f9
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: d4378e1b4c851a1a2cf072b0eabb3d3d765bc234
+ms.sourcegitcommit: 34c7740c9bff0e4c7426e01029f967724bfee566
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64586035"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393639"
 ---
 # <a name="read-workbook-data-with-office-scripts-in-excel-on-the-web"></a>Ler os dados da pasta de trabalho com scripts do Office no Excel na Web.
 
@@ -147,6 +147,6 @@ Agora que sabemos ler e escrever em uma única célula, vamos generalizar o scri
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Abra o Editor de códigos e experimente alguns dos [Scripts de exemplo para scripts do Office no Excel na Web](../resources/samples/excel-samples.md). Visite também [Fundamentos de Scripts do Office no Excel na Web](../develop/scripting-fundamentals.md) para saber mais sobre como criar scripts do Office.
+Abra o Editor de Código e experimente alguns dos nossos [Scripts de exemplo para Scripts do Office no Excel](../resources/samples/excel-samples.md). Visite também [Fundamentos de Scripts do Office no Excel na Web](../develop/scripting-fundamentals.md) para saber mais sobre como criar scripts do Office.
 
 A próxima série de tutoriais de Scripts do Office se concentra no uso de Scripts do Office com Power Automate. Saiba mais sobre as vantagens de combinar as duas plataformas em [Executar Scripts do Office com o Power Automate](../develop/power-automate-integration.md) ou experimente o tutorial [Scripts de chamada a partir de um fluxo manual do Power Automate](excel-power-automate-manual.md) para criar um fluxo do Power Automate que usa um Script do Office.

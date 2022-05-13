@@ -2,19 +2,19 @@
 layout: LandingPage
 ms.topic: landing-page
 title: Documentação de scripts do Office
-description: Recursos para aprender sobre os scripts do Office no Excel na web, incluindo tutoriais, artigos conceituais e exemplos de código.
+description: Recursos para aprender Scripts do Office no Excel, incluindo tutoriais, artigos conceituais e exemplos de código.
 ms.date: 05/24/2021
 ms.localizationpriority: high
-ms.openlocfilehash: 2f9a380408a2df793886093c10b685f918483489
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: b98c746ec89b61f05c3a6ded04100c0a1efc20bc
+ms.sourcegitcommit: 34c7740c9bff0e4c7426e01029f967724bfee566
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585664"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393688"
 ---
-# <a name="office-scripts-documentation"></a>Documentação de Scripts do Office
+# <a name="office-scripts-documentation"></a>Documentação de scripts do Office
 
-Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias. Explore os artigos a seguir para aprender como criar e editar scripts do Office, e comece a automatizar ainda hoje.
+Use Scripts do Office no Excel para automatizar suas tarefas comuns. Explore os artigos a seguir para aprender como criar e editar scripts do Office, e comece a automatizar ainda hoje.
 
 <ul class="panelContent cardsF cols cols3 rows2">
     <li>
@@ -73,7 +73,7 @@ Use os scripts do Office no Excel na Web para automatizar suas tarefas diárias.
 ---
 
 <h2>Outros recursos</h2>
-<p>Use os seguintes recursos para saber mais sobre as APIs que os scripts do Office usam para interagir com as pastas de trabalho no Excel na Web; faça perguntas sobre os scripts do Office no Excel na Web ou solicite recursos para eles.</p>
+<p>Use os seguintes recursos para saber mais sobre as APIs que os Scripts do Office usam, faça perguntas sobre os Scripts do Office ou solicite recursos para eles.</p>
 <ul class="panelContent cardsF cols cols3 rows2">
     <li>
         <div class="cardSize">

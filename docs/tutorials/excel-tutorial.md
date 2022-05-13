@@ -3,12 +3,12 @@ title: Grave, edite e crie scripts do Office no Excel na Web
 description: Um tutorial sobre o básico dos scripts do Office, incluindo a gravação de scripts com o Gravador de ações e a gravação de dados em uma pasta de trabalho.
 ms.date: 05/23/2021
 ms.localizationpriority: high
-ms.openlocfilehash: 15f55eff0d042f862d6607099882ad123369e676
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 30caa66787bce9c4341069461ea54ef3c63d9601
+ms.sourcegitcommit: 34c7740c9bff0e4c7426e01029f967724bfee566
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585818"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393625"
 ---
 # <a name="record-edit-and-create-office-scripts-in-excel-on-the-web"></a>Grave, edite e crie scripts do Office no Excel na Web
 
@@ -61,7 +61,7 @@ O script anterior coloriu a linha "Laranjas" para ficar laranja. Vamos adicionar
 
     Este código recebe a planilha atual da pasta de trabalho. Depois, defina a cor de preenchimento do intervalo **A2:C2**.
 
-    Os intervalos são parte fundamental dos scripts do Office no Excel na Web. Um intervalo é um bloco retangular e contíguo de células que contém valores, fórmula e formatação. Eles são a estrutura básica das células através da qual você executará a maioria das tarefas de script.
+    Os intervalos são parte fundamental dos Scripts do Office no Excel. Um intervalo é um bloco retangular e contíguo de células que contém valores, fórmula e formatação. Eles são a estrutura básica das células através da qual você executará a maioria das tarefas de script.
 
 3. Adicione a seguinte linha no final do script (entre onde `color` está definido e o encerramento `}`):
 

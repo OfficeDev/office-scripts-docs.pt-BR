@@ -1,31 +1,32 @@
 ---
-title: Scripts básicos para Office scripts no Excel na Web
-description: Uma coleção de exemplos de código a ser usado com Office scripts em Excel na Web.
+title: Scripts básicos para Office scripts no Excel
+description: Uma coleção de exemplos de código a serem usadas com Office scripts em Excel.
 ms.date: 03/24/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 853b00349b246e74765eb2959b4926fad42f07c5
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 8e28026b7a3498d477cce8b6dc5940da33a30f53
+ms.sourcegitcommit: 34c7740c9bff0e4c7426e01029f967724bfee566
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585867"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393653"
 ---
-# <a name="basic-scripts-for-office-scripts-in-excel-on-the-web"></a>Scripts básicos para Office scripts no Excel na Web
+# <a name="basic-scripts-for-office-scripts-in-excel"></a>Scripts básicos para Office scripts no Excel
 
-Os exemplos a seguir são scripts simples para você experimentar suas próprias workbooks. Para usá-los Excel na Web:
+Os exemplos a seguir são scripts simples para você experimentar suas próprias pastas de trabalho. Para usá-los Excel:
 
+1. Abra uma pasta de trabalho Excel na Web.
 1. Abra a guia **Automação**.
 1. Selecione **Novo Script**.
-1. Substitua o script inteiro pelo exemplo de sua escolha.
-1. Selecione **Executar** no painel de tarefas do Editor de Código.
+1. Substitua todo o script pelo exemplo de sua escolha.
+1. Selecione **Executar** no painel de tarefas do Editor de Códigos.
 
 ## <a name="script-basics"></a>Noções básicas de script
 
 Esses exemplos demonstram blocos de construção fundamentais para Office Scripts. Expanda esses scripts para estender sua solução e resolver problemas comuns.
 
-### <a name="read-and-log-one-cell"></a>Ler e registrar uma célula
+### <a name="read-and-log-one-cell"></a>Ler e registrar em log uma célula
 
-Este exemplo lê o valor **de A1** e o imprime no console.
+Este exemplo lê o valor de **A1** e o imprime no console.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -42,7 +43,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 ### <a name="read-the-active-cell"></a>Ler a célula ativa
 
-Esse script registra o valor da célula ativa atual. Se várias células forem selecionadas, a célula mais à esquerda será registrada.
+Esse script registra o valor da célula ativa atual. Se várias células forem selecionadas, a célula superior esquerda será registrada.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -56,7 +57,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 ### <a name="change-an-adjacent-cell"></a>Alterar uma célula adjacente
 
-Esse script obtém células adjacentes usando referências relativas. Observe que, se a célula ativa estiver na linha superior, parte do script falhará, pois faz referência à célula acima da selecionada no momento.
+Esse script obtém células adjacentes usando referências relativas. Observe que, se a célula ativa estiver na linha superior, parte do script falhará, pois ela referencia a célula acima da selecionada no momento.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -83,7 +84,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 ### <a name="change-all-adjacent-cells"></a>Alterar todas as células adjacentes
 
-Esse script copia a formatação na célula ativa para as células vizinhas. Observe que esse script só funciona quando a célula ativa não está na borda da planilha.
+Esse script copia a formatação na célula ativa para as células vizinhas. Observe que esse script só funciona quando a célula ativa não está em uma borda da planilha.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -106,7 +107,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 ### <a name="change-each-individual-cell-in-a-range"></a>Alterar cada célula individual em um intervalo
 
-Esse script loops sobre o intervalo de seleção no momento. Ele limpa a formatação atual e define a cor de preenchimento em cada célula como uma cor aleatória.
+Esse script executa um loop no intervalo selecionado no momento. Ele limpa a formatação atual e define a cor de preenchimento em cada célula como uma cor aleatória.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -135,7 +136,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 ### <a name="get-groups-of-cells-based-on-special-criteria"></a>Obter grupos de células com base em critérios especiais
 
-Esse script obtém todas as células em branco no intervalo usado da planilha atual. Em seguida, realça todas as células com um plano de fundo amarelo.
+Esse script obtém todas as células em branco no intervalo usado da planilha atual. Em seguida, ele realça todas as células com um plano de fundo amarelo.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -152,9 +153,9 @@ function main(workbook: ExcelScript.Workbook) {
 
 ## <a name="collections"></a>Coleções
 
-Esses exemplos funcionam com coleções de objetos na workbook.
+Esses exemplos funcionam com coleções de objetos na pasta de trabalho.
 
-### <a name="iterate-over-collections"></a>Iterar sobre coleções
+### <a name="iterate-over-collections"></a>Iterar em coleções
 
 Esse script obtém e registra os nomes de todas as planilhas na pasta de trabalho. Ele também define as cores da guia como uma cor aleatória.
 
@@ -183,7 +184,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 ### <a name="query-and-delete-from-a-collection"></a>Consultar e excluir de uma coleção
 
-Este script cria uma nova planilha. Ele verifica uma cópia existente da planilha e a exclui antes de criar uma nova planilha.
+Esse script cria uma nova planilha. Ele verifica uma cópia existente da planilha e a exclui antes de criar uma nova planilha.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -212,7 +213,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 ## <a name="dates"></a>Datas
 
-Os exemplos nesta seção mostram como usar o objeto Data de [JavaScript.](https://developer.mozilla.org/docs/web/javascript/reference/global_objects/date)
+Os exemplos nesta seção mostram como usar o objeto Data do [JavaScript.](https://developer.mozilla.org/docs/web/javascript/reference/global_objects/date)
 
 O exemplo a seguir obtém a data e a hora atuais e grava esses valores em duas células na planilha ativa.
 
@@ -233,7 +234,7 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-O próximo exemplo lê uma data armazenada no Excel e a converte em um objeto Data JavaScript. Ele usa o número de série numérico da data como entrada para a Data JavaScript. Esse número de série é descrito no [artigo da função NOW](https://support.office.com/article/now-function-3337fd29-145a-4347-b2e6-20c904739c46) ().
+O próximo exemplo lê uma data armazenada no Excel e a converte em um objeto Data javaScript. Ele usa o número de série numérico da data como entrada para a Data do JavaScript. Esse número de série é descrito no [artigo da função NOW](https://support.office.com/article/now-function-3337fd29-145a-4347-b2e6-20c904739c46) ().
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -253,7 +254,7 @@ Esses exemplos demonstram como trabalhar com dados de planilha e fornecer aos us
 
 ### <a name="apply-conditional-formatting"></a>Aplicar formatação condicional
 
-Este exemplo aplica formatação condicional ao intervalo usado atualmente na planilha. A formatação condicional é um preenchimento verde para os 10% principais dos valores.
+Este exemplo aplica formatação condicional ao intervalo usado no momento na planilha. A formatação condicional é um preenchimento verde para os 10% principais dos valores.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -273,9 +274,9 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-### <a name="create-a-sorted-table"></a>Criar uma tabela classificação
+### <a name="create-a-sorted-table"></a>Criar uma tabela classificada
 
-Este exemplo cria uma tabela do intervalo usado da planilha atual e classifica-a com base na primeira coluna.
+Este exemplo cria uma tabela do intervalo usado da planilha atual e, em seguida, classifica-a com base na primeira coluna.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -291,11 +292,11 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-### <a name="log-the-grand-total-values-from-a-pivottable"></a>Registrar os valores "Grande Total" de uma tabela dinâmica
+### <a name="log-the-grand-total-values-from-a-pivottable"></a>Registrar os valores de "Total Geral" de uma Tabela Dinâmica
 
-Este exemplo localiza a primeira Tabela Dinâmica na lista de trabalho e registra os valores nas células "Grand Total" (conforme realçado em verde na imagem abaixo).
+Este exemplo localiza a primeira Tabela Dinâmica na pasta de trabalho e registra os valores nas células "Total Geral" (conforme realçado em verde na imagem abaixo).
 
-:::image type="content" source="../../images/sample-pivottable-grand-total-row.png" alt-text="Uma tabela dinâmica mostrando vendas de frutas com a linha Grand Total realçada verde.":::
+:::image type="content" source="../../images/sample-pivottable-grand-total-row.png" alt-text="Uma Tabela Dinâmica mostrando as vendas de frutas com a linha Total Geral realçada verde.":::
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -319,11 +320,11 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-### <a name="create-a-drop-down-list-using-data-validation"></a>Criar uma lista lista listada usando a validação de dados
+### <a name="create-a-drop-down-list-using-data-validation"></a>Criar uma lista suspensa usando a validação de dados
 
-Esse script cria uma lista de seleção listada para uma célula. Ele usa os valores existentes do intervalo selecionado como as opções da lista.
+Esse script cria uma lista suspensa de seleção para uma célula. Ele usa os valores existentes do intervalo selecionado como as opções para a lista.
 
-:::image type="content" source="../../images/sample-data-validation.png" alt-text="Uma planilha mostrando um intervalo de três células que contêm opções de cores &quot;vermelho, azul, verde&quot; e ao lado dela, as mesmas opções mostradas em uma lista lista listada.":::
+:::image type="content" source="../../images/sample-data-validation.png" alt-text="Uma planilha mostrando um intervalo de três células que contém as opções de cor 'vermelho, azul, verde' e ao lado dela, as mesmas opções mostradas em uma lista suspensa.":::
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -362,7 +363,7 @@ Esses exemplos usam Excel fórmulas e mostram como trabalhar com elas em scripts
 
 ### <a name="single-formula"></a>Fórmula única
 
-Esse script define a fórmula de uma célula e exibe como Excel armazena a fórmula e o valor da célula separadamente.
+Esse script define a fórmula de uma célula e exibe como Excel a fórmula e o valor da célula separadamente.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -381,9 +382,9 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-### <a name="handle-a-spill-error-returned-from-a-formula"></a>Manipular um `#SPILL!` erro retornado de uma fórmula
+### <a name="handle-a-spill-error-returned-from-a-formula"></a>Tratar um `#SPILL!` erro retornado de uma fórmula
 
-Esse script transpõe o intervalo "A1:D2" para "A4:B7" usando a função TRANSPOSE. Se a transposição resulta em um `#SPILL` erro, limpa o intervalo de destino e aplica a fórmula novamente.
+Esse script transpõe o intervalo "A1:D2" para "A4:B7" usando a função TRANSPOR. Se a transposição resultar em um `#SPILL` erro, ela limpará o intervalo de destino e aplicará a fórmula novamente.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -417,10 +418,10 @@ function main(workbook: ExcelScript.Workbook) {
 
 ## <a name="suggest-new-samples"></a>Sugerir novos exemplos
 
-Recebemos sugestões de novos exemplos. Se houver um cenário comum que ajude outros desenvolvedores de scripts, conte-nos na seção comentários na parte inferior da página.
+Demos boas-vindas a sugestões para novos exemplos. Se houver um cenário comum que ajudaria outros desenvolvedores de scripts, informe-nos na seção de comentários na parte inferior da página.
 
 ## <a name="see-also"></a>Confira também
 
-* ["Noções básicas de intervalo" de Sudhi Ramamurthy no YouTube](https://youtu.be/4emjkOFdLBA)
-* [Office scripts e cenários](samples-overview.md)
+* ["Noções básicas do intervalo" de Sudhi Ramamurthy no YouTube](https://youtu.be/4emjkOFdLBA)
+* [Office exemplos e cenários de scripts](samples-overview.md)
 * [Grave, edite e crie Scripts do Office no Excel na web](../../tutorials/excel-tutorial.md)
