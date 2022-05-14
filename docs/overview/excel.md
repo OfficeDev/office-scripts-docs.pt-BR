@@ -1,19 +1,19 @@
 ---
-title: Scripts do Office no Excel na Web
+title: Scripts do Office no Excel
 description: Uma breve introdução ao Gravador de ação e ao Editor de códigos de scripts do Office.
 ms.topic: overview
 ms.date: 02/25/2022
 ms.localizationpriority: high
-ms.openlocfilehash: 3c5423344bb1d0f619ea1933a2681dc7e5fd8ba1
-ms.sourcegitcommit: f1550e457c220a2d1498907e925768aba0c36dc3
+ms.openlocfilehash: a85e8dad8d6e99ee3b4c5558cd2c1b8417956fb3
+ms.sourcegitcommit: 34c7740c9bff0e4c7426e01029f967724bfee566
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187228"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393632"
 ---
-# <a name="office-scripts-in-excel-on-the-web"></a>Scripts do Office no Excel na Web
+# <a name="office-scripts-in-excel"></a>Scripts do Office no Excel
 
-Os scripts do Office no Excel na Web permitem automatizar suas tarefas diárias. Você pode gravar suas ações do Excel com o Gravador de Ações, que cria um script de linguagem TypeScript. Você também pode criar e editar scripts com o Editor de códigos. Os scripts podem ser compartilhados com toda a organização, para que seus colegas possam automatizar os fluxos de trabalho.
+Os Scripts do Office no Excel permitem automatizar suas tarefas diárias. No Excel na Web, você pode gravar suas ações com o Gravador de ações. Isso cria um script de linguagem TypeScript que pode ser executado novamente a qualquer momento. Você também pode criar e editar scripts com o Editor de códigos. Os scripts podem ser compartilhados com toda a organização, para que seus colegas possam automatizar os fluxos de trabalho.
 
 Esta série de documentos ensina como usar essas ferramentas. Você será apresentado ao Gravador de ações e verá como gravar suas ações frequentes do Excel. Você também aprenderá a criar ou atualizar seus próprios scripts com o Editor de códigos.
 
@@ -25,7 +25,7 @@ Esta série de documentos ensina como usar essas ferramentas. Você será aprese
 
 Para utilizar os Scripts do Office, você precisará do seguinte.
 
-1. [Excel na web](https://www.office.com/launch/excel) (outras plataformas, como para desktop, não são suportadas).
+1. [Excel na Web](https://www.office.com/launch/excel) (o Excel para Windows só pode usar Scripts do Office com [botões de script](../develop/script-buttons.md)).
 1. OneDrive for Business.
 1. Qualquer licença comercial ou educacional do Microsoft 365 com acesso aos aplicativos para desktop do Microsoft Office 365, como:
 
@@ -72,7 +72,7 @@ Os scripts do Office podem ser compartilhados com outros usuários de uma pasta 
 
 :::image type="content" source="../images/script-sharing.png" alt-text="A página de detalhes do script mostrando a opção 'Compartilhar com outras pessoas nesta pasta de trabalho'.":::
 
-Adicione botões que executam scripts para ajudar seus colegas a descobrirem suas valiosas soluções. Saiba mais sobre os botões de script em [Executar Scripts do Office com botões](../develop/script-buttons.md).
+Adicione botões que executam scripts para ajudar seus colegas a descobrir suas soluções valiosas e permitir que eles executem scripts no Excel na Área de Trabalho. Saiba mais sobre os botões de script em [Executar Scripts do Office com botões](../develop/script-buttons.md).
 
 :::image type="content" source="../images/add-button.png" alt-text="Um botão na planilha que executa um script quando clicado.":::
 
@@ -81,7 +81,7 @@ Adicione botões que executam scripts para ajudar seus colegas a descobrirem sua
 
 ## <a name="connect-office-scripts-to-power-automate"></a>Conectar Scripts do Office com o Power Automate
 
-[O Power Automate](https://flow.microsoft.com/) é um serviço que ajuda você a criar fluxos de trabalho automatizados entre vários aplicativos e serviços. Os scripts do Office podem ser usados nesses fluxos de trabalho, permitindo que você controle seus scripts fora da pasta de trabalho. Você pode executar seus scripts em um cronograma, dispará-los em resposta a emails e muito mais. Visite o [Executar scripts do Office no Excel na Web com o tutorial do Power Automate](../tutorials/excel-power-automate-manual.md) para aprender como se conectar a esses serviços de automação.
+[O Power Automate](https://flow.microsoft.com/) é um serviço que ajuda você a criar fluxos de trabalho automatizados entre vários aplicativos e serviços. Os scripts do Office podem ser usados nesses fluxos de trabalho, permitindo que você controle seus scripts fora da pasta de trabalho. Você pode executar seus scripts em um cronograma, dispará-los em resposta a emails e muito mais. Visite o tutorial [Executar Scripts do Office com o Power Automate](../tutorials/excel-power-automate-manual.md) para aprender como se conectar a esses serviços de automação.
 
 ## <a name="next-steps"></a>Próximas etapas
 
