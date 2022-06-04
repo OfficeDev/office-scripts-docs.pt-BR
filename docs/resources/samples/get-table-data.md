@@ -1,35 +1,35 @@
 ---
-title: Saída Excel dados como JSON
-description: Saiba como Excel dados de tabela como JSON a ser usado Power Automate.
-ms.date: 03/18/2022
+title: Saída de dados do Excel como JSON
+description: Saiba como gerar dados de tabela do Excel como JSON para usar no Power Automate.
+ms.date: 06/02/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: d6f15b9b59a2dfe1c74caa11c748f5f52c4ef35e
-ms.sourcegitcommit: 62a62351a0a15a658f93336269f3f50767ca6b62
+ms.openlocfilehash: 2d316a7f1a3def869b59e0ff2b2e64284f0d2022
+ms.sourcegitcommit: 4a28220decc2f25b2ecd0ebaf52a5de68f7b7a83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63746353"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65895038"
 ---
-# <a name="output-excel-table-data-as-json-for-usage-in-power-automate"></a>Dados Excel de tabela de saída como JSON para uso em Power Automate
+# <a name="output-excel-table-data-as-json-for-usage-in-power-automate"></a>Saída de dados da tabela do Excel como JSON para uso no Power Automate
 
-Excel dados de tabela podem ser representados como uma matriz de objetos na forma de JSON. Cada objeto representa uma linha na tabela. Isso ajuda a extrair os dados Excel em um formato consistente que é visível para o usuário. Em seguida, os dados podem ser dados a outros sistemas por meio Power Automate fluxos.
+Os dados da tabela do Excel podem ser representados como uma matriz de objetos na forma de JSON. Cada objeto representa uma linha na tabela. Isso ajuda a extrair os dados do Excel em um formato consistente que é visível para o usuário. Os dados podem ser fornecidos a outros sistemas por meio de fluxos do Power Automate.
 
-## <a name="sample-excel-file"></a>Exemplo Excel arquivo
+## <a name="sample-excel-file"></a>Arquivo de exemplo do Excel
 
 Baixe o arquivo <a href="table-data-with-hyperlinks.xlsx">table-data-with-hyperlinks.xlsx</a> para uma pasta de trabalho pronta para uso.
 
-:::image type="content" source="../../images/table-input.png" alt-text="Uma planilha mostrando dados da tabela de entrada.":::
+:::image type="content" source="../../images/table-input.png" alt-text="Uma planilha mostrando os dados da tabela de entrada.":::
 
-Uma variação desse exemplo também inclui os hiperlinks em uma das colunas da tabela. Isso permite que níveis adicionais de dados de células sejam a superfície no JSON.
+Uma variação desse exemplo também inclui os hiperlinks em uma das colunas da tabela. Isso permite que níveis adicionais de dados de célula sejam exibidos no JSON.
 
 :::image type="content" source="../../images/table-hyperlink-view.png" alt-text="Uma planilha mostrando uma coluna de dados de tabela formatados como hiperlinks.":::
 
-## <a name="sample-code-return-table-data-as-json"></a>Código de exemplo: Retornar dados da tabela como JSON
+## <a name="sample-code-return-table-data-as-json"></a>Código de exemplo: retornar dados da tabela como JSON
 
-Adicione o seguinte script para experimentar o exemplo você mesmo!
+Adicione o script a seguir para experimentar o exemplo por conta própria!
 
 > [!NOTE]
-> Você pode alterar a estrutura `interface TableData` para corresponder às colunas da tabela. Observe que, para nomes de coluna com espaços, certifique-se de colocar sua chave entre aspas, como com `"Event ID"` no exemplo.
+> Você pode alterar a estrutura `interface TableData` para corresponder às colunas da tabela. Observe que, para nomes de coluna com espaços, coloque sua chave entre aspas, como no `"Event ID"` exemplo.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook): TableData[] {
@@ -62,12 +62,12 @@ function returnObjectFromValues(values: string[][]): TableData[] {
       continue;
     }
 
-    let object = {}
+    let object: {[key: string]: string} = {}
     for (let j = 0; j < values[i].length; j++) {
       object[objectKeys[j]] = values[i][j]
     }
 
-    objectArray.push(object as TableData);
+    objectArray.push(object as unknown as TableData);
   }
 
   return objectArray;
@@ -82,7 +82,7 @@ interface TableData {
 }
 ```
 
-### <a name="sample-output-from-the-plaintable-worksheet"></a>Saída de exemplo da planilha "PlainTable"
+### <a name="sample-output-from-the-plaintable-worksheet"></a>Exemplo de saída da planilha "PlainTable"
 
 ```json
 [{
@@ -136,10 +136,10 @@ interface TableData {
 }]
 ```
 
-## <a name="sample-code-return-table-data-as-json-with-hyperlink-text"></a>Código de exemplo: Retornar dados da tabela como JSON com texto de hiperlink
+## <a name="sample-code-return-table-data-as-json-with-hyperlink-text"></a>Código de exemplo: retornar dados da tabela como JSON com texto de hiperlink
 
 > [!NOTE]
-> O script sempre extrai hiperlinks da 4ª coluna (índice 0) da tabela. Você pode alterar essa ordem ou incluir várias colunas como dados de hiperlink modificando o código no comentário `// For the 4th column (0 index), extract the hyperlink and use that instead of text.`
+> O script sempre extrai hiperlinks da 4ª coluna (índice 0) da tabela. Você pode alterar essa ordem ou incluir várias colunas como dados de hiperlink modificando o código sob o comentário `// For the 4th column (0 index), extract the hyperlink and use that instead of text.`
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook): TableData[] {
@@ -196,7 +196,7 @@ interface TableData {
 }
 ```
 
-### <a name="sample-output-from-the-withhyperlink-worksheet"></a>Exemplo de saída da planilha "WithHyperLink"
+### <a name="sample-output-from-the-withhyperlink-worksheet"></a>Saída de exemplo da planilha "WithHyperLink"
 
 ```json
 [{
@@ -260,4 +260,4 @@ interface TableData {
 
 ## <a name="use-in-power-automate"></a>Usar no Power Automate
 
-Para saber como usar esse script em Power Automate, consulte [Create a automated workflow with Power Automate](../../tutorials/excel-power-automate-returns.md#create-an-automated-workflow-with-power-automate).
+Para saber como usar esse script no Power Automate, consulte [Criar um fluxo de trabalho automatizado com o Power Automate](../../tutorials/excel-power-automate-returns.md#create-an-automated-workflow-with-power-automate).
