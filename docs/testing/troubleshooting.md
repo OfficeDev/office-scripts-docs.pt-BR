@@ -1,40 +1,40 @@
 ---
 title: Solucionar Office scripts
-description: Dicas e técnicas de depuração para Office Scripts, bem como recursos de ajuda.
+description: Dicas e técnicas de depuração para Office scripts, bem como recursos de ajuda.
 ms.date: 11/11/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 2a4514aa55550311223cf6fa1179541a37e37f56
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 8e673d39b6249ccc7598b832d6478cc8dc0751f6
+ms.sourcegitcommit: f5fc9146d5c096e3a580a3fa8f9714147c548df4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64586042"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66038676"
 ---
 # <a name="troubleshoot-office-scripts"></a>Solucionar Office scripts
 
-Conforme você desenvolve Office scripts, você pode cometer erros. Não há problema. Você tem as ferramentas para ajudar a encontrar os problemas e fazer seus scripts funcionarem perfeitamente.
+À medida que Office scripts, você pode cometer erros. Não faz mal. Você tem as ferramentas para ajudar a encontrar os problemas e fazer com que seus scripts funcionem perfeitamente.
 
 > [!NOTE]
-> Para solucionar problemas de orientação específica Office scripts com Power Automate, consulte [Troubleshoot Office Scripts em execução no Power Automate](power-automate-troubleshooting.md).
+> Para obter conselhos de solução de problemas específicos Office scripts com Power Automate, consulte Solucionar problemas Office [scripts](power-automate-troubleshooting.md) em execução Power Automate.
 
 ## <a name="types-of-errors"></a>Tipos de erros
 
 Office erros de scripts se enquadram em uma das duas categorias:
 
-* Erros ou avisos em tempo de compilação
-* Erros de tempo de execução
+* Erros ou avisos de tempo de compilação
+* Erros de runtime
 
-### <a name="compile-time-errors"></a>Erros em tempo de compilação
+### <a name="compile-time-errors"></a>Erros de tempo de compilação
 
-Erros e avisos de tempo de compilação são mostrados inicialmente no Editor de Código. Eles são mostrados pelos sublinhados vermelho ondulados no editor. Eles também são exibidos na guia **Problemas** na parte inferior do painel de tarefas Editor de Código. Selecionar o erro dará mais detalhes sobre o problema e sugerirá soluções. Erros em tempo de compilação devem ser resolvidos antes de executar o script.
+Erros e avisos em tempo de compilação são inicialmente mostrados no Editor de Códigos. Eles são mostrados pelos sublinhados vermelhos ondulados no editor. Eles também são exibidos na guia **Problemas** na parte inferior do painel de tarefas do Editor de Códigos. Selecionar o erro fornecerá mais detalhes sobre o problema e sugerirá soluções. Erros de tempo de compilação devem ser resolvidos antes de executar o script.
 
-:::image type="content" source="../images/explicit-any-editor-message.png" alt-text="Um erro de compilador mostrado no texto de foco do Editor de Código.":::
+:::image type="content" source="../images/explicit-any-editor-message.png" alt-text="Um erro do compilador mostrado no texto de foco do Editor de Códigos.":::
 
-Você também pode ver sublinhados de aviso laranja e mensagens informativas cinzas. Elas indicam sugestões de desempenho ou outras possibilidades em que o script pode ter efeitos não intencional. Esses avisos devem ser examinados de perto antes de descartá-los.
+Você também pode ver sublinhados de aviso laranja e mensagens informativas cinza. Isso indica sugestões de desempenho ou outras possibilidades em que o script pode ter efeitos não intencionais. Esses avisos devem ser examinados de perto antes de descartá-los.
 
-### <a name="runtime-errors"></a>Erros de tempo de execução
+### <a name="runtime-errors"></a>Erros de runtime
 
-Erros de tempo de execução ocorrem devido a problemas de lógica no script. Isso pode ser porque um objeto usado no script não está na guia de trabalho, uma tabela é formatada de forma diferente do previsto ou alguma outra pequena discrepância entre os requisitos do script e a atual. O script a seguir gera um erro quando uma planilha chamada "TestSheet" não está presente.
+Erros de runtime ocorrem devido a problemas lógicos no script. Isso pode ocorrer porque um objeto usado no script não está na pasta de trabalho, uma tabela é formatada de forma diferente do previsto ou alguma outra pequena discrepância entre os requisitos do script e a pasta de trabalho atual. O script a seguir gera um erro quando uma planilha chamada "TestSheet" não está presente.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -45,48 +45,49 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-### <a name="console-messages"></a>Mensagens de console
+### <a name="console-messages"></a>Mensagens do console
 
-Erros de tempo de compilação e tempo de execução exibem mensagens de erro no console quando um script é executado. Eles dão um número de linha onde o problema foi encontrado. Lembre-se de que a causa raiz de qualquer problema pode ser uma linha de código diferente da indicada no console.
+Os erros de tempo de compilação e de runtime exibem mensagens de erro no console quando um script é executado. Eles fornecem um número de linha onde o problema foi encontrado. Tenha em mente que a causa raiz de qualquer problema pode ser uma linha de código diferente da indicada no console.
 
 A imagem a seguir mostra a saída do console para [o erro explícito `any`](../develop/typescript-restrictions.md) do compilador. Observe o texto `[5, 16]` no início da cadeia de caracteres de erro. Isso indica que o erro está na linha 5, começando no caractere 16.
-:::image type="content" source="../images/explicit-any-error-message.png" alt-text="O console do Editor de Código exibindo uma mensagem de erro &quot;qualquer&quot; explícita.":::
+:::image type="content" source="../images/explicit-any-error-message.png" alt-text="O console do Editor de Códigos exibindo uma mensagem de erro explícita 'any'.":::
 
-A imagem a seguir mostra a saída do console para um erro de tempo de execução. Aqui, o script tenta adicionar uma planilha com o nome de uma planilha existente. Novamente, observe a "Linha 2" anterior ao erro para mostrar qual linha investigar.
-:::image type="content" source="../images/runtime-error-console.png" alt-text="O console do Editor de Código exibindo um erro da chamada 'addWorksheet'.":::
+A imagem a seguir mostra a saída do console para um erro de runtime. Aqui, o script tenta adicionar uma planilha com o nome de uma planilha existente. Novamente, observe a "Linha 2" que precede o erro para mostrar qual linha investigar.
+:::image type="content" source="../images/runtime-error-console.png" alt-text="O console do Editor de Códigos exibindo um erro da chamada 'addWorksheet'.":::
 
-## <a name="console-logs"></a>Logs de console
+## <a name="console-logs"></a>Logs do console
 
-Imprimir mensagens na tela com a `console.log` instrução. Esses logs podem mostrar o valor atual das variáveis ou quais caminhos de código estão sendo disparados. Para fazer isso, chame `console.log` qualquer objeto como parâmetro. Normalmente, um `string` é o tipo mais fácil de ler no console.
+Imprima mensagens na tela com a instrução `console.log` . Esses logs podem mostrar o valor atual das variáveis ou quais caminhos de código estão sendo disparados. Para fazer isso, chame `console.log` qualquer objeto como um parâmetro. Normalmente, um `string` é o tipo mais fácil de ler no console.
 
 ```TypeScript
 console.log("Logging myRange's address.");
 console.log(myRange.getAddress());
 ```
 
-As cadeias de caracteres `console.log` passadas para são exibidas no console de registro em log do Editor de Código, na parte inferior do painel de tarefas. Os logs são encontrados na guia **Saída** , embora a guia automaticamente obtém o foco quando um log é gravado.
+As cadeias de caracteres `console.log` passadas são exibidas no console de log do Editor de Códigos, na parte inferior do painel de tarefas. Os logs são encontrados na **guia** Saída, embora a guia ganhe automaticamente o foco quando um log é gravado.
 
-Os logs não afetam a agenda de trabalho.
+Os logs não afetam a pasta de trabalho.
 
-## <a name="automate-tab-not-appearing-or-office-scripts-unavailable"></a>Guia Automatizar não aparecendo ou Office Scripts indisponíveis
+## <a name="automate-tab-not-appearing-or-office-scripts-unavailable"></a>A guia Automatizar não aparece ou Office scripts indisponíveis
 
-As etapas a seguir devem ajudar a solucionar problemas relacionados à guia **Automatizar** que não aparece no Excel na Web.
+As etapas a seguir devem ajudar a solucionar problemas relacionados à guia **Automatizar** que não aparecem Excel na Web.
 
 1. [Certifique-se de Microsoft 365 sua licença de Office scripts](../overview/excel.md#requirements).
 1. [Verifique se o navegador tem suporte](platform-limits.md#browser-support).
-1. [Verifique se cookies de terceiros estão habilitados](platform-limits.md#third-party-cookies).
-1. [Verifique se o administrador não Office scripts no Centro de administração do Microsoft 365](/microsoft-365/admin/manage/manage-office-scripts-settings).
+1. [Verifique se os cookies de terceiros estão habilitados](platform-limits.md#third-party-cookies).
+1. [Verifique se o administrador não desabilitou Office scripts no Centro de administração do Microsoft 365](/microsoft-365/admin/manage/manage-office-scripts-settings).
+1. Verifique se você não está conectado como um usuário externo ou convidado ao seu locatário.
 
 [!INCLUDE [Teams support note](../includes/teams-support-note.md)]
 
 ## <a name="help-resources"></a>Recursos de ajuda
 
-[Stack Overflow](https://stackoverflow.com/questions/tagged/office-scripts) é uma comunidade de desenvolvedores dispostos a ajudar com problemas de codificação. Muitas vezes, você poderá encontrar a solução para seu problema por meio de uma pesquisa rápida de Estouro de Pilha. Se não, faça sua pergunta e marque-a com a marca "office-scripts". Não se esqueça de mencionar que você está criando um *script* Office, não um Office *Dem.*
+[O Stack Overflow](https://stackoverflow.com/questions/tagged/office-scripts) é uma comunidade de desenvolvedores dispostos a ajudar com problemas de codificação. Muitas vezes, você poderá encontrar a solução para o problema por meio de uma pesquisa rápida do Stack Overflow. Caso contrário, faça sua pergunta e marque-a com a marca "office-scripts". Lembre-se de mencionar que você está criando um *script* Office, não um Office *suplemento*.
 
 ## <a name="see-also"></a>Confira também
 
 - [Práticas recomendadas nos Scripts do Office ](../develop/best-practices.md)
-- [Limites da plataforma com Office Scripts](platform-limits.md)
-- [Melhorar o desempenho de seus Office Scripts](../develop/web-client-performance.md)
+- [Limites de plataforma com Office Scripts](platform-limits.md)
+- [Melhorar o desempenho dos scripts Office dados](../develop/web-client-performance.md)
 - [Solucionar Office scripts em execução no PowerAutomate](power-automate-troubleshooting.md)
 - [Desfazer os efeitos do Scripts do Office](undo.md)
