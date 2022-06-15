@@ -1,30 +1,30 @@
 ---
 title: Filtrar Excel tabela e obter intervalo visível
-description: Saiba como usar Office Scripts para filtrar uma tabela Excel e obter o intervalo visível como uma matriz de objetos.
+description: Saiba como usar scripts Office para filtrar uma tabela Excel e obter o intervalo visível como uma matriz de objetos.
 ms.date: 03/10/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 09adbdabb64f9cf15b8219cfd3ef2dfa35d30fe2
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 103ec97111720ab872c0be843aa0573781d98c44
+ms.sourcegitcommit: dd01979d34b3499360d2f79a56f8a8f24f480eed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585832"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66088082"
 ---
-# <a name="filter-excel-table-and-get-visible-range-as-a-json-object"></a>Filtrar Excel tabela e obter intervalo visível como um objeto JSON
+# <a name="filter-excel-table-and-get-visible-range-as-a-json-object"></a>Filtrar Excel tabela e obter um intervalo visível como um objeto JSON
 
-Este exemplo filtra uma Excel e retorna o intervalo visível como um objeto JSON. Esse JSON poderia ser fornecido para um fluxo Power Automate como parte de uma solução maior.
+Este exemplo filtra uma Excel e retorna o intervalo visível como um [objeto JSON](https://www.w3schools.com/whatis/whatis_json.asp). Esse JSON pode ser fornecido a um fluxo Power Automate como parte de uma solução maior.
 
 ## <a name="example-scenario"></a>Cenário de exemplo
 
-* Aplique um filtro a uma coluna de tabela.
+* Aplicar um filtro a uma coluna de tabela.
 * Extraia o intervalo visível após a filtragem.
 * Montar e retornar um objeto com uma [estrutura JSON específica](#sample-json).
 
-## <a name="sample-excel-file"></a>Exemplo Excel arquivo
+## <a name="sample-excel-file"></a>Arquivo Excel exemplo
 
-Baixe <a href="table-filter.xlsx">table-filter.xlsx</a> para uma workbook pronta para uso. Adicione o seguinte script para experimentar o exemplo você mesmo!
+Baixe <a href="table-filter.xlsx">table-filter.xlsx</a> para uma pasta de trabalho pronta para uso. Adicione o script a seguir para experimentar o exemplo por conta própria!
 
-## <a name="sample-code-filter-a-table-and-get-visible-range"></a>Código de exemplo: filtrar uma tabela e obter intervalo visível
+## <a name="sample-code-filter-a-table-and-get-visible-range"></a>Código de exemplo: filtrar uma tabela e obter um intervalo visível
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook): ReturnTemplate {
@@ -88,9 +88,9 @@ interface ReturnTemplate {
 }
 ```
 
-### <a name="sample-json"></a>Exemplo JSON
+### <a name="sample-json"></a>JSON de exemplo
 
-Cada chave representa um valor exclusivo de uma tabela. Cada instância de matriz representa a linha que fica visível quando o filtro correspondente é aplicado.
+Cada chave representa um valor exclusivo de uma tabela. Cada instância de matriz representa a linha visível quando o filtro correspondente é aplicado. Para obter mais informações sobre como trabalhar com JSON, [leia Usar JSON](../../develop/use-json.md) para passar dados de e para Office Scripts.
 
 ```json
 {
@@ -99,43 +99,43 @@ Cada chave representa um valor exclusivo de uma tabela. Cada instância de matri
     "Shift": "Morning",
     "Date": "27-Oct-20",
     "Responsible": "Debra Berger",
-    "Reason&quot;: &quot;"
+    "Reason": ""
   }, {
     "Station": "Station-1",
     "Shift": "Afternoon",
     "Date": "27-Oct-20",
     "Responsible": "Delia Dennis",
-    "Reason&quot;: &quot;"
+    "Reason": ""
   }, {
     "Station": "Station-1",
     "Shift": "Afternoon",
     "Date": "28-Oct-20",
     "Responsible": "Lidia Holloway",
-    "Reason&quot;: &quot;"
+    "Reason": ""
   }],
   "Station-2": [{
     "Station": "Station-2",
     "Shift": "Morning",
     "Date": "27-Oct-20",
     "Responsible": "Gerhart Moller",
-    "Reason&quot;: &quot;"
+    "Reason": ""
   }, {
     "Station": "Station-2",
     "Shift": "Afternoon",
     "Date": "28-Oct-20",
     "Responsible": "Grady Archie",
-    "Reason&quot;: &quot;"
+    "Reason": ""
   }],
   "Station-3": [{
     "Station": "Station-3",
     "Shift": "Morning",
     "Date": "27-Oct-20",
     "Responsible": "Isaiah Langer",
-    "Reason&quot;: &quot;"
+    "Reason": ""
   }]
 }
 ```
 
-## <a name="training-video-filter-an-excel-table-and-get-the-visible-range"></a>Vídeo de treinamento: filtrar uma Excel e obter o intervalo visível
+## <a name="training-video-filter-an-excel-table-and-get-the-visible-range"></a>Vídeo de treinamento: Filtrar Excel tabela e obter o intervalo visível
 
-[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/Mv7BrvPq84A).
+[Veja Sudhi Ramamurthy percorrer este exemplo no YouTube](https://youtu.be/Mv7BrvPq84A).

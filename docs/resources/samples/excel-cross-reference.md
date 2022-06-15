@@ -3,16 +3,18 @@ title: Arquivos de referência cruzada Excel com Power Automate
 description: Saiba como usar scripts Office e Power Automate para fazer referência cruzada e formatar um Excel arquivo.
 ms.date: 06/06/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 02c06b6376d3726b3e1b44255df14aa64be196ea
-ms.sourcegitcommit: f5fc9146d5c096e3a580a3fa8f9714147c548df4
+ms.openlocfilehash: a470ee4c59d0fc0a5612a54326a0dec3ab3a59d6
+ms.sourcegitcommit: dd01979d34b3499360d2f79a56f8a8f24f480eed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66038669"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66088117"
 ---
 # <a name="cross-reference-excel-files-with-power-automate"></a>Arquivos de referência cruzada Excel com Power Automate
 
 Essa solução mostra como comparar dados entre dois arquivos Excel para encontrar discrepâncias. Ele usa Office Scripts para analisar dados e Power Automate para se comunicar entre as pastas de trabalho.
+
+Este exemplo passa dados entre pastas de trabalho usando [objetos JSON](https://www.w3schools.com/whatis/whatis_json.asp) . Para obter mais informações sobre como trabalhar com JSON, [leia Usar JSON](../../develop/use-json.md) para passar dados de e para Office Scripts.
 
 ## <a name="example-scenario"></a>Cenário de exemplo
 

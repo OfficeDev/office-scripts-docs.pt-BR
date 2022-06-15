@@ -1,20 +1,20 @@
 ---
-title: Saída de dados do Excel como JSON
-description: Saiba como gerar dados de tabela do Excel como JSON para usar no Power Automate.
+title: Saída Excel dados como JSON
+description: Saiba como gerar Excel dados da tabela como JSON a serem Power Automate.
 ms.date: 06/02/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 2d316a7f1a3def869b59e0ff2b2e64284f0d2022
-ms.sourcegitcommit: 4a28220decc2f25b2ecd0ebaf52a5de68f7b7a83
+ms.openlocfilehash: bf7e8ceb7bec5a7362b1894cdfe13d9e01576a66
+ms.sourcegitcommit: dd01979d34b3499360d2f79a56f8a8f24f480eed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65895038"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66088103"
 ---
-# <a name="output-excel-table-data-as-json-for-usage-in-power-automate"></a>Saída de dados da tabela do Excel como JSON para uso no Power Automate
+# <a name="output-excel-table-data-as-json-for-usage-in-power-automate"></a>Saída Excel dados da tabela como JSON para uso no Power Automate
 
-Os dados da tabela do Excel podem ser representados como uma matriz de objetos na forma de JSON. Cada objeto representa uma linha na tabela. Isso ajuda a extrair os dados do Excel em um formato consistente que é visível para o usuário. Os dados podem ser fornecidos a outros sistemas por meio de fluxos do Power Automate.
+Excel dados da tabela podem ser representados como uma matriz de objetos na forma de [JSON](https://www.w3schools.com/whatis/whatis_json.asp). Cada objeto representa uma linha na tabela. Isso ajuda a extrair os dados Excel em um formato consistente visível para o usuário. Os dados podem ser fornecidos a outros sistemas por meio de Power Automate fluxos. 
 
-## <a name="sample-excel-file"></a>Arquivo de exemplo do Excel
+## <a name="sample-excel-file"></a>Arquivo Excel exemplo
 
 Baixe o arquivo <a href="table-data-with-hyperlinks.xlsx">table-data-with-hyperlinks.xlsx</a> para uma pasta de trabalho pronta para uso.
 
@@ -29,7 +29,7 @@ Uma variação desse exemplo também inclui os hiperlinks em uma das colunas da 
 Adicione o script a seguir para experimentar o exemplo por conta própria!
 
 > [!NOTE]
-> Você pode alterar a estrutura `interface TableData` para corresponder às colunas da tabela. Observe que, para nomes de coluna com espaços, coloque sua chave entre aspas, como no `"Event ID"` exemplo.
+> Você pode alterar a estrutura `interface TableData` para corresponder às colunas da tabela. Observe que, para nomes de coluna com espaços, coloque sua chave entre aspas, como no `"Event ID"` exemplo. Para obter mais informações sobre como trabalhar com JSON, [leia Usar JSON](../../develop/use-json.md) para passar dados de e para Office Scripts.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook): TableData[] {
@@ -258,6 +258,6 @@ interface TableData {
 }]
 ```
 
-## <a name="use-in-power-automate"></a>Usar no Power Automate
+## <a name="use-in-power-automate"></a>Usar em Power Automate
 
-Para saber como usar esse script no Power Automate, consulte [Criar um fluxo de trabalho automatizado com o Power Automate](../../tutorials/excel-power-automate-returns.md#create-an-automated-workflow-with-power-automate).
+Para saber como usar esse script no Power Automate, consulte [Criar um fluxo de trabalho automatizado com Power Automate](../../tutorials/excel-power-automate-returns.md#create-an-automated-workflow-with-power-automate).

@@ -1,14 +1,14 @@
 ---
 title: Office exemplos de scripts
 description: Exemplos Office scripts e cenários disponíveis.
-ms.date: 04/26/2022
+ms.date: 06/14/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 7c9bbe9b6f7eb8abad2995dac72ccf636d585d69
-ms.sourcegitcommit: e6428a5214fa38aef036a952a0e3c09dbf6e4d3e
+ms.openlocfilehash: 059a21711f36273207f1e65ba844ba23c502ffe0
+ms.sourcegitcommit: dd01979d34b3499360d2f79a56f8a8f24f480eed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65109152"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66088047"
 ---
 # <a name="office-scripts-samples-and-scenarios"></a>Office exemplos e cenários de scripts
 
@@ -18,7 +18,10 @@ Para cada um dos projetos em [Noções Básicas](#basics) e Além dos [conceitos
 
 Em [Cenários](#scenarios), incluímos alguns exemplos de cenários maiores que demonstram casos de uso do mundo real.
 
-Também damos [boas-vindas às contribuições da comunidade](#community-contributions-and-fun-samples).
+Também damos [boas-vindas às contribuições da comunidade](#community-contributions-and-fun-samples). Esses exemplos são código aberto.
+
+> [!IMPORTANT]
+> Certifique-se de atender aos pré-requisitos para Office scripts antes de experimentar os exemplos. Os requisitos para sua assinatura Microsoft 365 conta são [encontrados na seção "Requisitos" Office scripts do Excel visão geral](../../overview/excel.md#requirements).
 
 ## <a name="basics"></a>Noções básicas
 
@@ -69,12 +72,8 @@ Damos [as boas-vindas](https://github.com/OfficeDev/office-scripts-docs/blob/mas
 | Project | Detalhes |
 |---------|---------|
 | [Jogo da Vida](https://techcommunity.microsoft.com/t5/excel-blog/ready-player-zero/ba-p/2246208) | O blog "Ready Player Zero", de Yutao Huang no Excel Tech Community, inclui um script para o modelo De Vida de John [*Classes.*](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) |
-| [Botão Do relógio de ponche](../scenarios/punch-clock.md) | Este script foi contribuido por [Brian Gonzalez](https://github.com/b-gonzalez). O cenário apresenta um script e um botão de script que registra a hora atual. |
+| [Botão Relógio do Sistema](../scenarios/punch-clock.md) | Este script foi contribuido por [Brian Gonzalez](https://github.com/b-gonzalez). O cenário apresenta um script e um botão de script que registra a hora atual. |
 | [Animação de saudações de estações](community-seasons-greetings.md) | Este roteiro foi contribuido [por Leslie Black](https://www.linkedin.com/in/lesblackconsultant/) no espírito da temporada de feriados! É um script divertido que mostra uma árvore de Natal cantando em Excel na Web usando Office Scripts. |
-
-## <a name="try-it-out"></a>Experimente
-
-Esses exemplos são código aberto. Experimente você mesmo. Você precisará de uma conta corporativa ou de estudante da Microsoft do trabalho ou da escola com uma licença para Microsoft 365 assinatura (E3 ou superior). Basta ir para entrar https://office.com em sua conta e começar.
 
 ## <a name="leave-a-comment"></a>Deixe um comentário
 
