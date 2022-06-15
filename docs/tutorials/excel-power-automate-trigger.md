@@ -1,14 +1,14 @@
 ---
 title: Passar dados para scripts numa execução automática do fluxo no Power Automate.
 description: Tutorial sobre executar os Scripts do Office para Excel na Web por meio do Power Automate quando emails são recebidos e transmitidos para o script.
-ms.date: 06/29/2021
+ms.date: 06/10/2022
 ms.localizationpriority: high
-ms.openlocfilehash: ae57bb52b07df0822f1fac8c931c90de8614a770
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 73a551df09eadba1f6e75de35e17e1c5a93498e9
+ms.sourcegitcommit: dd01979d34b3499360d2f79a56f8a8f24f480eed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64586056"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66088126"
 ---
 # <a name="pass-data-to-scripts-in-an-automatically-run-power-automate-flow"></a>Passar dados para scripts numa execução automática do fluxo no Power Automate.
 
@@ -210,6 +210,18 @@ Quando o fluxo é acionado e executa seu script com sucesso, você deverá ver a
 :::image type="content" source="../images/power-automate-params-tutorial-4.png" alt-text="Uma planilha mostrando a tabela de email depois que o fluxo foi executado três vezes.":::
 
 :::image type="content" source="../images/power-automate-params-tutorial-5.png" alt-text="Uma planilha mostrando o PivotTable depois que o fluxo foi executado três vezes.":::
+
+## <a name="troubleshooting"></a>Solução de problemas
+
+Receber vários emails ao mesmo tempo pode causar conflitos de mesclagem no Excel. Esse risco é mitigado configurando o conector de email para atuar apenas em um email por vez. Para fazer isso:
+
+1. Selecione o botão **Menu (...)** no conector de email e selecione **Configurações**.
+
+    :::image type="content" source="../images/outlook-connector-settings-1.png" alt-text="A opção de configurações realçada no menu do conector.":::
+
+1. Nas opções **Configurações** que aparecem, consulte o **Controle de Simultaneidade** como **Ativado**. Em seguida, consulte o **Grau de Paralelismo** como **1**.
+
+    :::image type="content" source="../images/outlook-connector-settings-2.png" alt-text="As opções de simultaneidade no menu de configurações.":::
 
 ## <a name="next-steps"></a>Próximas etapas
 
