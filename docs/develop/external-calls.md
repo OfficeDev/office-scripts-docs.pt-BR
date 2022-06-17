@@ -3,12 +3,12 @@ title: Chamada de API externa nos scripts do Office
 description: Suporte e diretrizes para fazer chamadas de API externas em um Office Script.
 ms.date: 06/10/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: b847400893184533c250ab99b640563ff0cbdb3e
-ms.sourcegitcommit: dd01979d34b3499360d2f79a56f8a8f24f480eed
+ms.openlocfilehash: 472b2e1b4aa38366b68b573fa959deee616b9dbe
+ms.sourcegitcommit: aecbd5baf1e2122d836c3eef3b15649e132bc68e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66088040"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128220"
 ---
 # <a name="external-api-call-support-in-office-scripts"></a>Chamada de API externa nos scripts do Office
 
@@ -18,7 +18,7 @@ Os scripts dão suporte a chamadas para serviços externos. Use esses serviços 
 > Chamadas externas podem fazer com que dados confidenciais sejam expostos a pontos de extremidade indesejáveis. O administrador pode estabelecer proteção de firewall contra essas chamadas.
 
 > [!IMPORTANT]
-> As chamadas para APIs externas só podem ser feitas por meio do aplicativo Excel, não por meio Power Automate [em circunstâncias normais](#external-calls-from-power-automate).
+> As chamadas para APIs externas só podem ser feitas por meio do aplicativo Excel, não por meio Power Automate [em circunstâncias normais](#external-calls-from-power-automate). Também não há suporte para chamadas externas para scripts armazenados em SharePoint site.
 
 ## <a name="configure-your-script-for-external-calls"></a>Configurar o script para chamadas externas
 

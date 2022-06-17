@@ -4,12 +4,12 @@ description: Adicione botões a pastas de trabalho que controlam Office scripts 
 ms.topic: overview
 ms.date: 05/09/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: fde34d62f9abe897a8b93195ab37a75cfc73f619
-ms.sourcegitcommit: 34c7740c9bff0e4c7426e01029f967724bfee566
+ms.openlocfilehash: cc19a13a97d4d11f73cb91bc46b70afff3eadf03
+ms.sourcegitcommit: aecbd5baf1e2122d836c3eef3b15649e132bc68e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393681"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128213"
 ---
 # <a name="run-office-scripts-in-excel-with-buttons"></a>Executar Office scripts em Excel com botões
 
@@ -36,4 +36,4 @@ Esses botões de script também funcionam no Windows. Crie o botão no Excel na 
 Algumas Office APIs de Scripts podem não ter suporte Excel em Windows, especialmente builds mais antigos. Elas incluem APIs e APIs mais recentes para recursos somente da Web. Se um script contiver APIs sem suporte, o script não será executado e, em vez disso, o painel de tarefas Status de Execução de **Script** exibirá uma mensagem de aviso informando: "Este script deve ser executado no momento Excel para a Web. Abra a pasta de trabalho no navegador e tente novamente ou entre em contato com o proprietário do script para obter ajuda."  
 
 > [!IMPORTANT]
-> Os botões de script [exigem que o WebView2](/deployoffice/webview2-install) funcione com Excel no Windows. Isso é instalado por padrão com as versões mais recentes do Excel na Área de Trabalho, mas se você não conseguir clicar em botões de scripts, visite Baixar o [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section) e baixe o mecanismo do navegador.
+> Os botões de script [exigem que o WebView2](/deployoffice/webview2-install) funcione com Excel no Windows. Isso é instalado por padrão com as versões mais recentes do Excel na Área de Trabalho, mas se você não conseguir clicar em botões de scripts, visite Baixar o [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section) e baixe o mecanismo do navegador.

@@ -1,14 +1,14 @@
 ---
 title: Executar Office scripts com Power Automate
 description: Como obter scripts Office para Excel na Web trabalho com um fluxo Power Automate trabalho.
-ms.date: 03/08/2022
+ms.date: 05/16/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 67e48d297a8db16661ce394a11f2e425bc0a33be
-ms.sourcegitcommit: 34c7740c9bff0e4c7426e01029f967724bfee566
+ms.openlocfilehash: 85c335eeb736ec544eccb2fbdbe819bdbef6848c
+ms.sourcegitcommit: aecbd5baf1e2122d836c3eef3b15649e132bc68e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393674"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128227"
 ---
 # <a name="run-office-scripts-with-power-automate"></a>Executar Office scripts com Power Automate
 
@@ -26,6 +26,9 @@ Para começar a combinar scripts Power Automate e Office, siga o tutorial Começ
 
 > [!IMPORTANT]
 > A ação "Executar script" fornece às pessoas que usam o conector Excel acesso significativo à sua pasta de trabalho e seus dados. Além disso, há riscos de segurança com scripts que fazem chamadas de API externas, conforme explicado em chamadas externas [de Power Automate](external-calls.md). Se o administrador estiver preocupado com a exposição de dados altamente confidenciais, ele poderá desativar o conector do Excel Online ou restringir o acesso aos Scripts do Office por meio dos controles de administrador do [Office Scripts](/microsoft-365/admin/manage/manage-office-scripts-settings).
+
+> [!IMPORTANT]
+> Power Automate **não dá** suporte a scripts armazenados SharePoint no momento.
 
 ## <a name="data-transfer-in-flows-for-scripts"></a>Transferência de dados em fluxos para scripts
 
@@ -116,7 +119,7 @@ function main(
 
 - [Ligue scripts de um fluxo manual do Power Automate](../tutorials/excel-power-automate-manual.md)
 - [Passar dados para scripts numa execução automática do fluxo no Power Automate.](../tutorials/excel-power-automate-trigger.md)
-- [Retorna dados de um script para um fluxo do Power Automate executado automaticamente](../tutorials/excel-power-automate-returns.md)
+- [Retornar os dados de um script para um fluxo do Power Automate executado automaticamente](../tutorials/excel-power-automate-returns.md)
 - [Informações de solução de problemas para Power Automate com Office Scripts](../testing/power-automate-troubleshooting.md)
 - [Começar a usar o Power Automate](/power-automate/getting-started)
 - [documentação de referência do conector do Excel Online (Business)](/connectors/excelonlinebusiness/)
