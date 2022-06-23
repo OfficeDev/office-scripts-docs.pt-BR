@@ -1,14 +1,14 @@
 ---
 title: Office armazenamento e propriedade de arquivos de scripts
 description: Informações sobre como Office scripts são armazenados em Microsoft OneDrive e transferidos entre proprietários.
-ms.date: 06/01/2022
+ms.date: 06/21/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 17603660bcafa41f898b15b1226d11fa0d51b0a5
-ms.sourcegitcommit: aecbd5baf1e2122d836c3eef3b15649e132bc68e
+ms.openlocfilehash: 9dbf53292cb16b0be32afe3cdb93409f3dbb2612
+ms.sourcegitcommit: 4f2164ac4dd61d123ea5442a4c446be2d139e8ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128206"
+ms.lasthandoff: 06/23/2022
+ms.locfileid: "66211293"
 ---
 # <a name="office-scripts-file-storage-and-ownership"></a>Office armazenamento e propriedade de arquivos de scripts
 
@@ -27,7 +27,7 @@ Os scripts que são compartilhados com uma de suas pastas de trabalho permanecem
 
 A menos que você compartilhe seus scripts pessoais, ninguém mais poderá accessá-los. Suas OneDrive configurações controlam o acesso compartilhado e as permissões para todos os arquivos **.osts** de script, independentemente de Excel configurações. Os scripts não podem ser vinculados de um disco local ou locais de nuvem personalizados.
 
-## <a name="sharepoint"></a>Microsoft Office SharePoint Online
+## <a name="sharepoint"></a>SharePoint
 
 Office scripts salvos em um site SharePoint são de propriedade de sua equipe. Você e os membros da sua organização com o acesso apropriado podem executar e editar scripts SharePoint. Você também verá esses scripts aparecerem na Galeria **de** Scripts da guia Automatizar.
 
@@ -57,9 +57,20 @@ Durante a edição, os arquivos são armazenados temporariamente no navegador. V
 
 ## <a name="audit-office-scripts-usage-at-the-admin-level"></a>Auditar Office uso de scripts no nível de administrador
 
-Descubra quais locatários estão usando Office Scripts com o log de auditoria no centro de conformidade. Para saber como usar essa ferramenta, visite [Pesquisar o log de auditoria no Centro de Conformidade & Segurança](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide&preserve-view=true#search-the-audit-log).
+Descubra quem está usando Office scripts em sua organização com o log de auditoria do centro de conformidade. Detalhes sobre o log de auditoria são encontrados em [Pesquisar o log de auditoria no Centro de Conformidade do & Segurança](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide&preserve-view=true#search-the-audit-log).
 
-Para localizar quem está usando Office scripts com a ferramenta de pesquisa, `.osts` adicione o campo Arquivo **, pasta ou site**. Isso pesquisa todos os arquivos com a extensão Office arquivo Scripts. Se alguém em sua organização tiver usado o Office scripts, a atividade do usuário será exibida nos resultados da pesquisa de log de auditoria.
+Para auditar especificamente Office de scripts relacionados como administrador, execute as etapas a seguir.
+
+1. Em uma janela do navegador InPrivate (ou Incognito ou outro modo de acompanhamento limitado específico do navegador), abra e faça logon no [Centro de conformidade](https://compliance.microsoft.com/).
+1. Vá para a **página Auditoria** .
+1. *(Somente uma vez)* Na guia **Pesquisar** , selecione **Iniciar gravação de atividade de usuário e administrador**.
+
+    > [!IMPORTANT]
+    > Pode levar uma ou duas horas depois de ativar a gravação antes que todas as atividades no locatário sejam gravadas.
+
+1. Defina as opções de pesquisa desejadas e pressione **Pesquisar**. **Filtre atividades** para **o script Executado na pasta de** trabalho para ver sempre que um script foi executado. Você também pode filtrar **o campo Arquivo, pasta ou site** para `.osts`. Isso revela quem em sua organização está criando ou modificando scripts.
+
+    :::image type="content" source="../images/audit-log-example.png" alt-text="Algumas linhas de resultados da pesquisa de log de auditoria, incluindo a ação 'Executar script na pasta de trabalho' e o upload e a modificação de um arquivo .osts.":::
 
 ## <a name="see-also"></a>Confira também
 
