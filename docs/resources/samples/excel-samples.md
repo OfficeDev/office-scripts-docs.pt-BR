@@ -1,18 +1,18 @@
 ---
-title: Scripts básicos para Office scripts no Excel
-description: Uma coleção de exemplos de código a serem usadas com Office scripts em Excel.
-ms.date: 03/24/2022
+title: Scripts básicos para scripts do Office no Excel
+description: Uma coleção de exemplos de código a serem usadas com scripts do Office no Excel.
+ms.date: 06/24/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 8e28026b7a3498d477cce8b6dc5940da33a30f53
-ms.sourcegitcommit: 34c7740c9bff0e4c7426e01029f967724bfee566
+ms.openlocfilehash: 071329e35a1a3fe6197896afe3acaf11d3a53fd5
+ms.sourcegitcommit: c5ffe0a95b962936ee92e7ffe17388bef6d4fad8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393653"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66241834"
 ---
-# <a name="basic-scripts-for-office-scripts-in-excel"></a>Scripts básicos para Office scripts no Excel
+# <a name="basic-scripts-for-office-scripts-in-excel"></a>Scripts básicos para scripts do Office no Excel
 
-Os exemplos a seguir são scripts simples para você experimentar suas próprias pastas de trabalho. Para usá-los Excel:
+Os exemplos a seguir são scripts simples para você experimentar suas próprias pastas de trabalho. Para usá-los no Excel:
 
 1. Abra uma pasta de trabalho Excel na Web.
 1. Abra a guia **Automação**.
@@ -22,7 +22,7 @@ Os exemplos a seguir são scripts simples para você experimentar suas próprias
 
 ## <a name="script-basics"></a>Noções básicas de script
 
-Esses exemplos demonstram blocos de construção fundamentais para Office Scripts. Expanda esses scripts para estender sua solução e resolver problemas comuns.
+Esses exemplos demonstram blocos de construção fundamentais para Scripts do Office. Expanda esses scripts para estender sua solução e resolver problemas comuns.
 
 ### <a name="read-and-log-one-cell"></a>Ler e registrar em log uma célula
 
@@ -234,7 +234,7 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-O próximo exemplo lê uma data armazenada no Excel e a converte em um objeto Data javaScript. Ele usa o número de série numérico da data como entrada para a Data do JavaScript. Esse número de série é descrito no [artigo da função NOW](https://support.office.com/article/now-function-3337fd29-145a-4347-b2e6-20c904739c46) ().
+O próximo exemplo lê uma data armazenada no Excel e a converte em um objeto De data do JavaScript. Ele usa o número de série numérico da data como entrada para a Data do JavaScript. Esse número de série é descrito no [artigo da função NOW](https://support.office.com/article/now-function-3337fd29-145a-4347-b2e6-20c904739c46) ().
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -359,11 +359,11 @@ function main(workbook: ExcelScript.Workbook) {
 
 ## <a name="formulas"></a>Fórmulas
 
-Esses exemplos usam Excel fórmulas e mostram como trabalhar com elas em scripts.
+Esses exemplos usam fórmulas do Excel e mostram como trabalhar com elas em scripts.
 
 ### <a name="single-formula"></a>Fórmula única
 
-Esse script define a fórmula de uma célula e exibe como Excel a fórmula e o valor da célula separadamente.
+Esse script define a fórmula de uma célula e, em seguida, exibe como o Excel armazena a fórmula e o valor da célula separadamente.
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -416,6 +416,27 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
+### <a name="replace-all-formulas-with-their-result-values"></a>Substituir todas as fórmulas por seus valores de resultado
+
+Esse script substitui todas as células da planilha atual que contém uma fórmula com o resultado dessa fórmula. Isso significa que não haverá fórmulas depois que o script for executado, somente valores.
+
+```TypeScript
+function main(workbook: ExcelScript.Workbook) {
+    // Get the ranges with formulas.
+    let sheet = workbook.getActiveWorksheet();
+    let usedRange = sheet.getUsedRange();
+    let formulaCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas);
+
+    // In each formula range: get the current value, clear the contents, and set the value as the old one.
+    // This removes the formula but keeps the result.
+    formulaCells.getAreas().forEach((range) => {
+      let currentValues = range.getValues();
+      range.clear(ExcelScript.ClearApplyTo.contents);
+      range.setValues(currentValues);
+    });
+}
+```
+
 ## <a name="suggest-new-samples"></a>Sugerir novos exemplos
 
 Demos boas-vindas a sugestões para novos exemplos. Se houver um cenário comum que ajudaria outros desenvolvedores de scripts, informe-nos na seção de comentários na parte inferior da página.
@@ -423,5 +444,5 @@ Demos boas-vindas a sugestões para novos exemplos. Se houver um cenário comum 
 ## <a name="see-also"></a>Confira também
 
 * ["Noções básicas do intervalo" de Sudhi Ramamurthy no YouTube](https://youtu.be/4emjkOFdLBA)
-* [Office exemplos e cenários de scripts](samples-overview.md)
+* [Exemplos e cenários de Scripts do Office](samples-overview.md)
 * [Grave, edite e crie Scripts do Office no Excel na web](../../tutorials/excel-tutorial.md)
