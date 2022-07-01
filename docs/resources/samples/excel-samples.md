@@ -3,12 +3,12 @@ title: Scripts básicos para scripts do Office no Excel
 description: Uma coleção de exemplos de código a serem usadas com scripts do Office no Excel.
 ms.date: 06/24/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 071329e35a1a3fe6197896afe3acaf11d3a53fd5
-ms.sourcegitcommit: c5ffe0a95b962936ee92e7ffe17388bef6d4fad8
+ms.openlocfilehash: b6588dc4109799a7d615d0bee38c82a2bcd16743
+ms.sourcegitcommit: 82fb78e6907b7c3b95c5c53cfc83af4ea1067a78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66241834"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66572346"
 ---
 # <a name="basic-scripts-for-office-scripts-in-excel"></a>Scripts básicos para scripts do Office no Excel
 
@@ -291,6 +291,31 @@ function main(workbook: ExcelScript.Workbook) {
   newTable.getSort().apply([{ key: 0, ascending: true }]);
 }
 ```
+
+### <a name="filter-a-table"></a>Filtrar uma tabela
+
+Este exemplo filtra uma tabela existente usando os valores em uma das colunas.
+
+```TypeScript
+function main(workbook: ExcelScript.Workbook) {
+  // Get the table in the workbook named "StationTable".
+  const table = workbook.getTable("StationTable");
+
+  // Get the "Station" table column for the filter.
+  const stationColumn = table.getColumnByName("Station");
+
+  // Apply a filter to the table that will only show rows 
+  // with a value of "Station-1" in the "Station" column.
+  stationColumn.getFilter().applyValuesFilter(["Station-1"]);
+}
+```
+
+> [!TIP]
+> Copie as informações filtradas na pasta de trabalho usando `Range.copyFrom`. Adicione a linha a seguir ao final do script para criar uma nova planilha com os dados filtrados.
+>
+> ```typescript
+>   workbook.addWorksheet().getRange("A1").copyFrom(table.getRange());
+> ```
 
 ### <a name="log-the-grand-total-values-from-a-pivottable"></a>Registrar os valores de "Total Geral" de uma Tabela Dinâmica
 

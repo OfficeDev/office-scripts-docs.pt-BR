@@ -83,8 +83,6 @@ items:
                 href: resources/samples/count-blank-rows.md
               - name: Imagens de email de gráfico e tabela
                 href: resources/samples/email-images-chart-table.md
-              - name: Filtrar tabela e obter um intervalo visível
-                href: resources/samples/filter-table-get-visible-range.md
               - name: Configurar o modo de cálculo
                 href: resources/samples/excel-calculation.md
               - name: Mover as linhas selecionadas entre tabelas
