@@ -3,12 +3,12 @@ title: Exemplos de Scripts do Office
 description: Exemplos e cenários de Scripts do Office disponíveis.
 ms.date: 06/14/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: c9b16272c893bf048f45d7f3256906c7d550d089
-ms.sourcegitcommit: 82fb78e6907b7c3b95c5c53cfc83af4ea1067a78
+ms.openlocfilehash: 5959bc472dbec04526dcf912a8bd67e2554aa251
+ms.sourcegitcommit: dd632402cb46ec8407a1c98456f1bc9ab96ffa46
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66572332"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918822"
 ---
 # <a name="office-scripts-samples-and-scenarios"></a>Exemplos e cenários de Scripts do Office
 
@@ -32,6 +32,7 @@ Também damos [boas-vindas às contribuições da comunidade](#community-contrib
 | [Adicionar imagens a uma pasta de trabalho](add-image-to-workbook.md) | Este exemplo adiciona uma imagem a uma pasta de trabalho e copia uma imagem entre planilhas.|
 | [Copiar várias tabelas do Excel em uma única tabela](copy-tables-combine.md) | Este exemplo combina dados de várias tabelas do Excel em uma única tabela que inclui todas as linhas. |
 | [Criar um sumário da pasta de trabalho](table-of-contents.md) | Este exemplo cria um sumário com links para cada planilha. |
+| [Remover filtros de coluna de tabela](clear-table-filter-for-active-cell.md) | Este exemplo limpa todos os filtros de uma coluna de tabela. |
 
 ## <a name="beyond-the-basics"></a>Além do básico
 
@@ -43,7 +44,7 @@ Confira o projeto de ponta a ponta a seguir que automatiza cenários de exemplo 
 | [Converter arquivos CSV em pastas de trabalho do Excel](convert-csv.md) | Este exemplo usa Scripts do Office e o Power Automate para criar .xlsx arquivos .csv arquivos. |
 | [Pastas de trabalho de referência cruzada](excel-cross-reference.md) | Este exemplo usa Scripts do Office e o Power Automate para fazer referência cruzada e validar informações em pastas de trabalho diferentes. |
 | [Contar linhas em branco em uma planilha específica ou em todas as planilhas](count-blank-rows.md) | Este exemplo detecta se há linhas em branco em planilhas em que você prevê que os dados estejam presentes e, em seguida, relata a contagem de linhas em branco para uso em um fluxo do Power Automate. |
-| [Imagens de tabela e gráfico de email](email-images-chart-table.md) | Este exemplo usa scripts do Office e ações do Power Automate para criar um gráfico e enviar esse gráfico como uma imagem por email. |
+| [Email imagens de tabela e gráfico](email-images-chart-table.md) | Este exemplo usa scripts do Office e ações do Power Automate para criar um gráfico e enviar esse gráfico como uma imagem por email. |
 | [Chamadas de busca externas](external-fetch-calls.md) | Este exemplo usa `fetch` para obter informações do GitHub para o script. |
 | [Gerenciar o modo de cálculo no Excel](excel-calculation.md) | Este exemplo mostra como usar o modo de cálculo e calcular métodos em Excel na Web usando scripts do Office. |
 | [Mover linhas entre tabelas](move-rows-across-tables.md) | Este exemplo mostra como mover linhas entre tabelas salvando filtros e, em seguida, processando e reaplicação dos filtros. |
