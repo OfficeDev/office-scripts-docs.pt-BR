@@ -3,12 +3,12 @@ title: Ler os dados da pasta de trabalho com scripts do Office no Excel na Web.
 description: Um tutorial de scripts do Office sobre a leitura de dados de pastas de trabalho e avaliação desses dados no script.
 ms.date: 01/06/2021
 ms.localizationpriority: high
-ms.openlocfilehash: d4378e1b4c851a1a2cf072b0eabb3d3d765bc234
-ms.sourcegitcommit: 34c7740c9bff0e4c7426e01029f967724bfee566
+ms.openlocfilehash: 341bee17c22234e187377d84eb4983438bf52ad8
+ms.sourcegitcommit: 33fe0f6807daefb16b148fd73c863de101f47cea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393639"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281914"
 ---
 # <a name="read-workbook-data-with-office-scripts-in-excel-on-the-web"></a>Ler os dados da pasta de trabalho com scripts do Office no Excel na Web.
 
@@ -82,7 +82,7 @@ Agora que podemos ler os dados, usaremos eles para modificar a pasta de trabalho
 1. Usaremos os métodos `getValue` e `setValue` para alterar o valor da célula. Esses métodos funcionam em uma única célula. Ao lidar com intervalos de várias células, use `getValues` e `setValues`. Adicione o seguinte código ao final do script:
 
     ```TypeScript
-    // Run the `Math.abs` function with the value at D2 and apply that value back to D2.
+    // Run the `Math.abs` method with the value at D2 and apply that value back to D2.
     let positiveValue = Math.abs(range.getValue() as number);
     range.setValue(positiveValue);
     ```

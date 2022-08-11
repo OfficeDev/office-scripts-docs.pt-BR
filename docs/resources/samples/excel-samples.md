@@ -3,12 +3,12 @@ title: Scripts básicos para scripts do Office no Excel
 description: Uma coleção de exemplos de código a serem usadas com scripts do Office no Excel.
 ms.date: 06/24/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: eea455cbaa2cbc96556e71deec1a9fbd4cdbeea7
-ms.sourcegitcommit: dd632402cb46ec8407a1c98456f1bc9ab96ffa46
+ms.openlocfilehash: 3d17e2cf2314ccd6c07d81e53337fcd63a474fd8
+ms.sourcegitcommit: 33fe0f6807daefb16b148fd73c863de101f47cea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66918815"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281900"
 ---
 # <a name="basic-scripts-for-office-scripts-in-excel"></a>Scripts básicos para scripts do Office no Excel
 
@@ -183,12 +183,13 @@ function main(workbook: ExcelScript.Workbook) {
       range.setRowHidden(false);
     }
 }
+```
 
-### Freeze Currently Selected Cells
+### <a name="freeze-currently-selected-cells"></a>Congelar células selecionadas no momento
 
-This script checks what cells are currently selected and freezes that selection, so those cells are always visible.
+Esse script verifica quais células estão selecionadas no momento e congela essa seleção, para que essas células estejam sempre visíveis.
 
-```Typescript
+```TypeScript
 function main(workbook: ExcelScript.Workbook) {
     // Get the currently selected sheet.
     const selectedSheet = workbook.getActiveWorksheet();
