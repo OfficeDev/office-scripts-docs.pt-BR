@@ -1,14 +1,14 @@
 ---
 title: Comece a usar scripts de um fluxo manual do Power Automate
 description: Um tutorial sobre o uso de Scripts do Office no Power Automate por meio de um acionamento manual.
-ms.date: 06/29/2021
+ms.date: 08/22/2022
 ms.localizationpriority: high
-ms.openlocfilehash: e926540976dc066b3f07620c1e710dfa3abc7660
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
-ms.translationtype: HT
+ms.openlocfilehash: c7d7df926ac00f4f9ee5ad47ae52089e5c46d2cc
+ms.sourcegitcommit: 4a26aa16a9c8cbedb2bb9f482235ea52a88cf08f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585937"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67424265"
 ---
 # <a name="call-scripts-from-a-manual-power-automate-flow"></a>Scripts de chamada a partir de um fluxo manual do Power Automate
 
@@ -87,7 +87,7 @@ O Power Automate não pode usar[referências relativas](../testing/power-automat
 
 7. Em **Ações**, selecione **Executar script**.
 
-    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Executar a opção de ação de script no Power Automate.":::
+    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Executar a opção de ação do script no Power Automate":::
 
 8. Depois, você selecionará a pasta de trabalho e o script que será utilizado na etapa do fluxo. Para o tutorial, você fará o uso da pasta de trabalho criada no seu OneDrive, mas é possível usar qualquer pasta de trabalho em um site OneDrive ou no Microsoft Office SharePoint Online. Especifique as seguintes configurações para o conector **Executar Script**:
 
@@ -120,9 +120,13 @@ Seu fluxo agora está pronto para ser executado no Power Automate. Você pode te
 
 6. Selecione **Concluído**. Você deverá ver a atualização da seção **Execuções** adequadamente.
 
-7. Atualize a página para ver os resultados do Power Automate. Se o script tiver sido bem-sucedido, vá para a pasta de trabalho para ver as células atualizadas. Se tiver falhado, verifique as configurações do fluxo e execute-o novamente.
+7. Atualize a página para ver os resultados do Power Automate. Se tiver falhado, verifique as configurações do fluxo e execute-o novamente.
 
     :::image type="content" source="../images/power-automate-tutorial-9.png" alt-text="Resultado do Power Automate mostrando um fluxo executado com sucesso.":::
+
+8. Abra a pasta de trabalho para ver as células atualizadas. Você deverá ver a data atual na célula **A1** e a hora atual na célula **B1**. O Power Automate usa o UTC (Tempo Universal Coordenado), portanto, o tempo provavelmente será deslocado do fuso horário atual.
+
+    :::image type="content" source="../images/power-automate-tutorial-10.png" alt-text="A pasta de trabalho mostrando valores de data e hora nas células A1 e B1.":::
 
 ## <a name="next-steps"></a>Próximas etapas
 
