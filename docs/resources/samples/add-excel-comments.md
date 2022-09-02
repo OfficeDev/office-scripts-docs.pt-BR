@@ -1,34 +1,34 @@
 ---
-title: Adicionar comentários em Excel
-description: Saiba como usar Office scripts para adicionar comentários em uma planilha.
+title: Adicionar comentários no Excel
+description: Saiba como usar scripts do Office para adicionar comentários em uma planilha.
 ms.date: 06/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 101f07fd2f1abcd4120585162dc2b77b8aece91a
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 90f072805e6798a4f9d6e74889ccca15610c87bd
+ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585594"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572490"
 ---
-# <a name="add-comments-in-excel"></a>Adicionar comentários em Excel
+# <a name="add-comments-in-excel"></a>Adicionar comentários no Excel
 
 Este exemplo mostra como adicionar comentários a uma célula, [incluindo @mentioning](https://support.microsoft.com/office/90701709-5dc1-41c7-aa48-b01d4a46e8c7) um colega.
 
 ## <a name="example-scenario"></a>Cenário de exemplo
 
-* O líder da equipe mantém o cronograma de turnos. O líder da equipe atribui uma ID de funcionário ao registro de turno.
-* O líder da equipe deseja notificar o funcionário. Adicionando um comentário que @mentions o funcionário, o funcionário é enviado por email com uma mensagem personalizada da planilha.
-* Posteriormente, o funcionário pode exibir a guia de trabalho e responder ao comentário por conveniência.
+* O líder da equipe mantém a agenda de turnos. O líder da equipe atribui uma ID de funcionário ao registro de turno.
+* O líder da equipe deseja notificar o funcionário. Ao adicionar um comentário que @mentions o funcionário, o funcionário é enviado por email com uma mensagem personalizada da planilha.
+* Posteriormente, o funcionário pode exibir a pasta de trabalho e responder ao comentário de acordo com sua conveniência.
 
 ## <a name="solution"></a>Solução
 
 1. O script extrai informações dos funcionários da planilha do funcionário.
-1. Em seguida, o script adiciona um comentário (incluindo o email de funcionário relevante) à célula apropriada no registro de turno.
+1. Em seguida, o script adiciona um comentário (incluindo o email do funcionário relevante) à célula apropriada no registro de turno.
 1. Os comentários existentes na célula são removidos antes de adicionar o novo comentário.
 
-## <a name="sample-excel-file"></a>Exemplo Excel arquivo
+## <a name="sample-excel-file"></a>Arquivo de exemplo do Excel
 
-Baixe <a href="excel-comments.xlsx">excel-comments.xlsx</a> para uma workbook pronta para uso. Adicione o seguinte script para experimentar o exemplo você mesmo!
+Baixe [excel-comments.xlsx](excel-comments.xlsx) para uma pasta de trabalho pronta para uso. Adicione o script a seguir para experimentar o exemplo por conta própria!
 
 ## <a name="sample-code-add-comments"></a>Código de exemplo: Adicionar comentários
 
@@ -79,4 +79,4 @@ function main(workbook: ExcelScript.Workbook) {
 
 ## <a name="training-video-add-comments"></a>Vídeo de treinamento: Adicionar comentários
 
-[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/CpR78nkaOFw).
+[Veja Sudhi Ramamurthy percorrer este exemplo no YouTube](https://youtu.be/CpR78nkaOFw).

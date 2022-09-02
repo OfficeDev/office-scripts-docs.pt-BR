@@ -3,12 +3,12 @@ title: Remover filtros de coluna de tabela
 description: Saiba como limpar o filtro de coluna de tabela com base no local da célula ativa.
 ms.date: 07/15/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 21a79abfdd4aeac79af4a0f9ea4a581d45b9706b
-ms.sourcegitcommit: dd632402cb46ec8407a1c98456f1bc9ab96ffa46
+ms.openlocfilehash: e016f7f2af9e7553229f3b3b19007e011879de8e
+ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66918808"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572518"
 ---
 # <a name="remove-table-column-filters"></a>Remover filtros de coluna de tabela
 
@@ -18,7 +18,7 @@ Se você quiser saber mais sobre como salvar o filtro antes de desmarcar (e apli
 
 ## <a name="sample-excel-file"></a>Arquivo de exemplo do Excel
 
-Baixe <a href="table-with-filter.xlsx">table-with-filter.xlsx</a> para uma pasta de trabalho pronta para uso. Adicione o script a seguir para experimentar o exemplo por conta própria!
+Baixe [table-with-filter.xlsx](table-with-filter.xlsx) para uma pasta de trabalho pronta para uso. Adicione o script a seguir para experimentar o exemplo por conta própria!
 
 ## <a name="sample-code-clear-table-column-filter-based-on-active-cell"></a>Código de exemplo: limpar o filtro de coluna de tabela com base na célula ativa
 

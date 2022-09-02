@@ -1,26 +1,26 @@
 ---
-title: 'Office de exemplo de scripts: botão Socar relógio'
+title: 'Cenário de exemplo de Scripts do Office: botão Depurar relógio'
 description: Este exemplo adiciona um botão de relógio de ponche e permite que um usuário entre e saia usando a hora atual.
 ms.date: 04/26/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: de56fb651d6f6088620678cfd72ce662875eafa7
-ms.sourcegitcommit: e6428a5214fa38aef036a952a0e3c09dbf6e4d3e
+ms.openlocfilehash: ac128a33b653506b6168bd4acfe1713bf6d26759
+ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65109285"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572679"
 ---
-# <a name="office-scripts-sample-scenario-punch-clock-button"></a>Office de exemplo de scripts: botão Socar relógio
+# <a name="office-scripts-sample-scenario-punch-clock-button"></a>Cenário de exemplo de Scripts do Office: botão Depurar relógio
 
-A ideia de cenário e o script usados neste exemplo foram contribuídos pelo membro da comunidade Office Scripts[, Brian Gonzalez](https://github.com/b-gonzalez).
+A ideia de cenário e o script usados neste exemplo foram contribuição do membro da comunidade scripts do Office [Brian Gonzalez](https://github.com/b-gonzalez).
 
-Nesse cenário, você criará uma folha de horários para um funcionário que permite que ele registre seus horários de início e término com a pressionamento de um [botão](../../develop/script-buttons.md). Com base no que foi gravado anteriormente, pressionar o botão iniciará o dia (entrada do relógio) ou terminará o dia (saída do relógio). O exemplo funciona para Excel na Web e em Windows.
+Nesse cenário, você criará uma folha de horários para um funcionário que permite que ele registre seus horários de início e término com a pressionamento de um [botão](../../develop/script-buttons.md). Com base no que foi gravado anteriormente, pressionar o botão iniciará o dia (entrada do relógio) ou terminará o dia (saída do relógio). O exemplo funciona para o Excel na Web e no Windows.
 
 :::image type="content" source="../../images/punch-clock-sample-3.png" alt-text="Uma tabela com três colunas ('Clock In', 'Clock Out' e 'Duration') e um botão rotulado 'Punch clock' na pasta de trabalho.":::
 
 ## <a name="setup-instructions"></a>Instruções de instalação
 
-1. Baixe <a href="punch-clock-sample.xlsx">punch-clock-sample.xlsx</a> para seu OneDrive.
+1. Baixe [punch-clock-sample.xlsx](punch-clock-sample.xlsx) para o OneDrive.
 
     :::image type="content" source="../../images/punch-clock-sample-1.png" alt-text="Uma tabela com três colunas: 'Clock In', 'Clock Out' e 'Duration'.":::
 

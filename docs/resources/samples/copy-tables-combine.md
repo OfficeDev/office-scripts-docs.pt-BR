@@ -1,29 +1,29 @@
 ---
-title: Combinar dados de várias Excel tabelas em uma única tabela
-description: Saiba como usar scripts Office para combinar dados de várias Excel tabelas em uma única tabela.
+title: Combinar dados de várias tabelas do Excel em uma única tabela
+description: Saiba como usar Scripts do Office para combinar dados de várias tabelas do Excel em uma única tabela.
 ms.date: 06/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: bfe2f4af579e5ee59d20e12fe4850dd9c41bcc56
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 3db510514c676b9012fd47abc2a7e92492a9cf87
+ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585888"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572448"
 ---
-# <a name="combine-data-from-multiple-excel-tables-into-a-single-table"></a>Combinar dados de várias Excel tabelas em uma única tabela
+# <a name="combine-data-from-multiple-excel-tables-into-a-single-table"></a>Combinar dados de várias tabelas do Excel em uma única tabela
 
-Este exemplo combina dados de várias Excel tabelas em uma única tabela que inclui todas as linhas. Supõe que todas as tabelas que estão sendo usadas tenham a mesma estrutura.
+Este exemplo combina dados de várias tabelas do Excel em uma única tabela que inclui todas as linhas. Ele pressupõe que todas as tabelas que estão sendo usadas tenham a mesma estrutura.
 
-Há duas variações deste script:
+Há duas variações desse script:
 
-1. O [primeiro script](#sample-code-combine-data-from-multiple-excel-tables-into-a-single-table) combina todas as tabelas no arquivo Excel.
-1. O [segundo script](#sample-code-combine-data-from-multiple-excel-tables-in-select-worksheets-into-a-single-table) obtém tabelas seletivamente em um conjunto de planilhas.
+1. O [primeiro script](#sample-code-combine-data-from-multiple-excel-tables-into-a-single-table) combina todas as tabelas no arquivo do Excel.
+1. O [segundo script](#sample-code-combine-data-from-multiple-excel-tables-in-select-worksheets-into-a-single-table) obtém seletivamente tabelas dentro de um conjunto de planilhas.
 
-## <a name="sample-excel-file"></a>Exemplo Excel arquivo
+## <a name="sample-excel-file"></a>Arquivo de exemplo do Excel
 
-Baixe <a href="tables-copy.xlsx">tables-copy.xlsx</a> para uma workbook pronta para uso. Adicione os scripts a seguir para experimentar o exemplo você mesmo!
+Baixe [tables-copy.xlsx](tables-copy.xlsx) para uma pasta de trabalho pronta para uso. Adicione os scripts a seguir para experimentar o exemplo por conta própria!
 
-## <a name="sample-code-combine-data-from-multiple-excel-tables-into-a-single-table"></a>Código de exemplo: combinar dados de várias Excel tabelas em uma única tabela
+## <a name="sample-code-combine-data-from-multiple-excel-tables-into-a-single-table"></a>Código de exemplo: combinar dados de várias tabelas do Excel em uma única tabela
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -57,9 +57,9 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-## <a name="sample-code-combine-data-from-multiple-excel-tables-in-select-worksheets-into-a-single-table"></a>Código de exemplo: combinar dados de várias Excel tabelas em selecionar planilhas em uma única tabela
+## <a name="sample-code-combine-data-from-multiple-excel-tables-in-select-worksheets-into-a-single-table"></a>Código de exemplo: combinar dados de várias tabelas do Excel em planilhas selecionadas em uma única tabela
 
-Baixe o arquivo de <a href="tables-select-copy.xlsx"> exemplotables-select-copy.xlsx</a> e use-o com o script a seguir para experimentar você mesmo!
+Baixe o arquivo de [tables-select-copy.xlsx](tables-select-copy.xlsx) e use-o com o script a seguir para experimentá-lo por conta própria!
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -95,6 +95,6 @@ function main(workbook: ExcelScript.Workbook) {
 }
 ```
 
-## <a name="training-video-combine-data-from-multiple-excel-tables-into-a-single-table"></a>Vídeo de treinamento: Combinar dados de várias Excel tabelas em uma única tabela
+## <a name="training-video-combine-data-from-multiple-excel-tables-into-a-single-table"></a>Vídeo de treinamento: Combinar dados de várias tabelas do Excel em uma única tabela
 
-[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/di-8JukK3Lc).
+[Veja Sudhi Ramamurthy percorrer este exemplo no YouTube](https://youtu.be/di-8JukK3Lc).

@@ -1,28 +1,28 @@
 ---
-title: Mover linhas entre tabelas usando Office Scripts
-description: Saiba como mover linhas entre tabelas salvando filtros e, em seguida,  processamento e reaplicação dos filtros.
+title: Mover linhas entre tabelas usando Scripts do Office
+description: Saiba como mover linhas entre tabelas salvando filtros e, em seguida, processando e reaplicação dos filtros.
 ms.date: 06/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 9780cd79a55dcb5cd2e039b5198232358b3b1413
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: a7c28c4fef91402b8889d749a03f3aab5e615521
+ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585475"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572616"
 ---
 # <a name="move-rows-across-tables"></a>Mover linhas entre tabelas
 
 Esse script faz o seguinte:
 
-* Seleciona linhas da tabela de origem onde o valor em uma coluna é igual a algum valor (`FILTER_VALUE` no script).
+* Seleciona linhas da tabela de origem em que o valor em uma coluna é igual a algum valor (`FILTER_VALUE` no script).
 * Move todas as linhas selecionadas para a tabela de destino em outra planilha.
 * Reaplica os filtros relevantes à tabela de origem.
 
-## <a name="sample-excel-file"></a>Exemplo Excel arquivo
+## <a name="sample-excel-file"></a>Arquivo de exemplo do Excel
 
-Baixe o arquivo <a href="input-table-filters.xlsx">input-table-filters.xlsx</a> para uma pasta de trabalho pronta para uso. Adicione o seguinte script para experimentar o exemplo você mesmo!
+Baixe o arquivo [input-table-filters.xlsx](input-table-filters.xlsx) para uma pasta de trabalho pronta para uso. Adicione o script a seguir para experimentar o exemplo por conta própria!
 
-## <a name="sample-code-move-rows-using-range-values"></a>Código de exemplo: Mover linhas usando valores de intervalo
+## <a name="sample-code-move-rows-using-range-values"></a>Código de exemplo: mover linhas usando valores de intervalo
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {
@@ -107,7 +107,7 @@ function main(workbook: ExcelScript.Workbook) {
 
 ## <a name="training-video-move-rows-across-tables"></a>Vídeo de treinamento: Mover linhas entre tabelas
 
-[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/_3t3Pk4i2L0). Há dois scripts mostrados na solução do vídeo. A principal diferença é como as linhas são selecionadas.
+[Veja Sudhi Ramamurthy percorrer este exemplo no YouTube](https://youtu.be/_3t3Pk4i2L0). Há dois scripts mostrados na solução do vídeo. A principal diferença é como as linhas são selecionadas.
 
 * Na primeira variante, as linhas são selecionadas aplicando o filtro de tabela e lendo o intervalo visível.
-* No segundo, as linhas são selecionadas lendo os valores e extraindo os valores da linha (que é o que o exemplo nesta página usa).
+* No segundo, as linhas são selecionadas lendo os valores e extraindo os valores de linha (que é o que o exemplo nesta página usa).

@@ -3,12 +3,12 @@ title: Retorna dados de um script para um fluxo do Power Automate executado auto
 description: Um tutorial que mostra como enviar emails de lembrete executando Scripts do Office para o Excel na web através do Power Automate.
 ms.date: 04/12/2022
 ms.localizationpriority: high
-ms.openlocfilehash: 7d232b4688132532dd2bc029588d6244a4a64ef8
-ms.sourcegitcommit: 8bcd743bebfacafa548b936ca99ad6d4918e7bcd
-ms.translationtype: HT
+ms.openlocfilehash: c35e3c0e005c7d64c9a0d860f1f6eafd2e26e13f
+ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64826685"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572595"
 ---
 # <a name="return-data-from-a-script-to-an-automatically-run-power-automate-flow"></a>Retornar os dados de um script para um fluxo do Power Automate executado automaticamente
 
@@ -27,7 +27,7 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
 
 ## <a name="prepare-the-workbook"></a>Preparar a pasta de trabalho
 
-1. Baixe a pasta de trabalho <a href="on-call-rotation.xlsx">on-call-rotation.xlsx</a> para o seu OneDrive.
+1. Baixe a pasta de trabalho [on-call-rotation.xlsx](on-call-rotation.xlsx) para o seu OneDrive.
 
 1. Abra **on-call-rotation.xlsx** no Excel na web.
 
@@ -154,7 +154,7 @@ Este tutorial ensina como retornar informações de um Script do Office para o E
 
 1. Em **Ações**, selecione **Executar script**.
 
-    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Executar a opção de ação de script no Power Automate.":::
+    :::image type="content" source="../images/power-automate-tutorial-5.png" alt-text="Executar a opção de ação do script no Power Automate":::
 
 1. Em seguida, você selecionará a pasta de trabalho e o script que será utilizado na etapa do fluxo. Use a pasta de trabalho **on-call-rotation.xlsx** que você criou em seu OneDrive. Especifique as seguintes configurações para o conector **Executar Script**:
 

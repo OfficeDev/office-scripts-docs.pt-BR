@@ -1,37 +1,37 @@
 ---
-title: Trabalhar com Tabelas Dinâmicas Office Scripts
-description: Saiba mais sobre o modelo de objeto para Tabelas Dinâmicas na API JavaScript Office Scripts.
+title: Trabalhar com Tabelas Dinâmicas no Office Scripts
+description: Saiba mais sobre o modelo de objeto para Tabelas Dinâmicas na API JavaScript de Scripts do Office.
 ms.date: 04/20/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 579f94140214674912c9610e707123924e4aef18
-ms.sourcegitcommit: 4e3d3aa25fe4e604b806fbe72310b7a84ee72624
+ms.openlocfilehash: a457c41bd1205f4e17636c43d7ba78addc80d0e4
+ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077050"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572581"
 ---
-# <a name="work-with-pivottables-in-office-scripts"></a>Trabalhar com Tabelas Dinâmicas Office Scripts
+# <a name="work-with-pivottables-in-office-scripts"></a>Trabalhar com Tabelas Dinâmicas no Office Scripts
 
-As Tabelas Dinâmicas permitem que você analise grandes coleções de dados rapidamente. Com o poder deles vem a complexidade. As apIs Office scripts permitem que você personalize uma Tabela Dinâmica para atender às suas necessidades, mas o escopo do conjunto de APIs torna a introdução um desafio. Este artigo demonstra como executar tarefas comuns de Tabela Dinâmica e explica classes e métodos importantes.
+As Tabelas Dinâmicas permitem que você analise grandes coleções de dados rapidamente. Com o poder deles vem a complexidade. As APIs de Scripts do Office permitem que você personalize uma Tabela Dinâmica para atender às suas necessidades, mas o escopo do conjunto de APIs torna a introdução um desafio. Este artigo demonstra como executar tarefas comuns de Tabela Dinâmica e explica classes e métodos importantes.
 
 > [!NOTE]
-> Para entender melhor o contexto dos termos usados pelas APIs, leia Excel documentação da Tabela Dinâmica. Comece com [Criar uma Tabela Dinâmica para analisar dados da planilha](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576).
+> Para entender melhor o contexto dos termos usados pelas APIs, leia primeiro a documentação da Tabela Dinâmica do Excel. Comece com [Criar uma Tabela Dinâmica para analisar dados da planilha](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576).
 
 ## <a name="object-model"></a>Modelo de objetos
 
 :::image type="content" source="../images/pivottable-object-model.png" alt-text="Uma imagem simplificada das classes, métodos e propriedades usadas ao trabalhar com Tabelas Dinâmicas.":::
 
-A [Tabela Dinâmica é](/javascript/api/office-scripts/excelscript/excelscript.pivottable) o objeto central para Tabelas Dinâmicas na API Office Scripts.
+A [Tabela Dinâmica é](/javascript/api/office-scripts/excelscript/excelscript.pivottable) o objeto central para Tabelas Dinâmicas na API de Scripts do Office.
 
 - O [objeto Workbook](/javascript/api/office-scripts/excelscript/excelscript.workbook) tem uma coleção de todas as [Tabelas Dinâmicas](/javascript/api/office-scripts/excelscript/excelscript.pivottable). Cada [Planilha também](/javascript/api/office-scripts/excelscript/excelscript.worksheet) contém uma coleção de Tabela Dinâmica que é local para essa planilha.
 - Uma [Tabela Dinâmica](/javascript/api/office-scripts/excelscript/excelscript.pivottable) contém [PivotHierarchies](/javascript/api/office-scripts/excelscript/excelscript.pivothierarchy). Uma hierarquia pode ser considerada uma coluna em uma tabela.
 - [PivotHierarchies](/javascript/api/office-scripts/excelscript/excelscript.pivothierarchy) podem ser adicionados como linhas ou colunas ([RowColumnPivotHierarchy](/javascript/api/office-scripts/excelscript/excelscript.rowcolumnpivothierarchy)), dados ([DataPivotHierarchy](/javascript/api/office-scripts/excelscript/excelscript.datapivothierarchy)) ou filtros ([FilterPivotHierarchy](/javascript/api/office-scripts/excelscript/excelscript.filterpivothierarchy)).
-- Cada [PivotHierarchy](/javascript/api/office-scripts/excelscript/excelscript.pivothierarchy) contém exatamente um [PivotField](/javascript/api/office-scripts/excelscript/excelscript.pivotfield). Estruturas de Tabela Dinâmica fora Excel podem conter vários campos por hierarquia, portanto, esse design existe para dar suporte a opções futuras. Para Office scripts, campos e hierarquias são mapeados para as mesmas informações.
+- Cada [PivotHierarchy](/javascript/api/office-scripts/excelscript/excelscript.pivothierarchy) contém exatamente um [PivotField](/javascript/api/office-scripts/excelscript/excelscript.pivotfield). Estruturas de Tabela Dinâmica fora do Excel podem conter vários campos por hierarquia, portanto, esse design existe para dar suporte a opções futuras. Para Scripts do Office, campos e hierarquias são mapeados para as mesmas informações.
 - Um [PivotField](/javascript/api/office-scripts/excelscript/excelscript.pivotfield) contém vários [PivotItems](/javascript/api/office-scripts/excelscript/excelscript.pivotitem). Cada PivotItem é um valor exclusivo no campo. Pense em cada item como um valor na coluna da tabela. Os itens também podem ser valores agregados, como somas, se o campo estiver sendo usado para dados.
 - O [PivotLayout](/javascript/api/office-scripts/excelscript/excelscript.pivotlayout) define como os [PivotFields](/javascript/api/office-scripts/excelscript/excelscript.pivotfield) e [PivotItems](/javascript/api/office-scripts/excelscript/excelscript.pivotitem) são exibidos.
 - [Os PivotFilters](/javascript/api/office-scripts/excelscript/excelscript.pivotfilters) filtram dados da [Tabela Dinâmica](/javascript/api/office-scripts/excelscript/excelscript.pivottable) usando critérios diferentes.
 
-Veja como essas relações funcionam na prática. Os dados a seguir descrevem as vendas de frutas de várias fazendas. É a base para todos os exemplos neste artigo. Use <a href="pivottable-sample.xlsx">pivottable-sample.xlsx</a> para acompanhar.
+Veja como essas relações funcionam na prática. Os dados a seguir descrevem as vendas de frutas de várias fazendas. É a base para todos os exemplos neste artigo. Use [pivottable-sample.xlsx](pivottable-sample.xlsx) para acompanhar.
 
 :::image type="content" source="../images/pivottable-raw-data.png" alt-text="Uma coleção de vendas de frutas de diferentes tipos de fazendas diferentes.":::
 
@@ -75,7 +75,7 @@ Uma Tabela Dinâmica pode ter tantos ou poucos campos atribuídos a essas hierar
 
 ## <a name="layout-ranges"></a>Intervalos de layout
 
-Cada parte da Tabela Dinâmica é mapeada para um intervalo. Isso permite que o script obtenha dados da Tabela Dinâmica para uso posterior no script ou para serem retornados em um fluxo [Power Automate dados](power-automate-integration.md). Esses intervalos são acessados por meio [do objeto PivotLayout](/javascript/api/office-scripts/excelscript/excelscript.pivotlayout) adquirido de `PivotTable.getLayout()`. O diagrama a seguir mostra os intervalos retornados pelos métodos em `PivotLayout`.
+Cada parte da Tabela Dinâmica é mapeada para um intervalo. Isso permite que o script obtenha dados da Tabela Dinâmica para uso posterior no script ou para serem retornados em um [fluxo do Power Automate](power-automate-integration.md). Esses intervalos são acessados por meio [do objeto PivotLayout](/javascript/api/office-scripts/excelscript/excelscript.pivotlayout) adquirido de `PivotTable.getLayout()`. O diagrama a seguir mostra os intervalos retornados pelos métodos em `PivotLayout`.
 
 :::image type="content" source="../images/pivottable-layout-breakdown.png" alt-text="Um diagrama que mostra quais seções de uma Tabela Dinâmica são retornadas pelas funções de intervalo get do layout.":::
 

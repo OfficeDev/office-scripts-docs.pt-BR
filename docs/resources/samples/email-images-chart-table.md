@@ -1,25 +1,25 @@
 ---
-title: Envie por email as imagens de um Excel gráfico e tabela
-description: Saiba como usar Office scripts e Power Automate para extrair e enviar por email as imagens de um Excel gráfico e tabela.
+title: Email imagens de um gráfico e tabela do Excel
+description: Saiba como usar os Scripts do Office e o Power Automate para extrair e enviar por email as imagens de um gráfico e tabela do Excel.
 ms.date: 06/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 2930a70a5bed4eb49f33f315460ae32f40b5a2f2
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: dbf9135723a735321c99991d94f4b4387d800702
+ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585503"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572462"
 ---
-# <a name="use-office-scripts-and-power-automate-to-email-images-of-a-chart-and-table"></a>Use Office scripts e Power Automate para enviar imagens de email de um gráfico e tabela
+# <a name="use-office-scripts-and-power-automate-to-email-images-of-a-chart-and-table"></a>Usar scripts do Office e o Power Automate para enviar imagens por email de um gráfico e tabela
 
-Este exemplo usa Office scripts e Power Automate para criar um gráfico. Em seguida, envia em email imagens do gráfico e de sua tabela base.
+Este exemplo usa Scripts do Office e o Power Automate para criar um gráfico. Em seguida, ele envia por email imagens do gráfico e sua tabela base.
 
 ## <a name="example-scenario"></a>Cenário de exemplo
 
 * Calcule para obter os resultados mais recentes.
 * Criar gráfico.
 * Obter imagens de gráfico e tabela.
-* Envie um email para as imagens Power Automate.
+* Email as imagens com o Power Automate.
 
 _Dados de entrada_
 
@@ -27,24 +27,24 @@ _Dados de entrada_
 
 _Gráfico de saída_
 
-:::image type="content" source="../../images/chart-created.png" alt-text="O gráfico de coluna criado mostrando o valor devido pelo cliente.":::
+:::image type="content" source="../../images/chart-created.png" alt-text="O gráfico de colunas criado mostrando o valor devido pelo cliente.":::
 
-_Email recebido por meio de Power Automate fluxo_
+_Email que foi recebido por meio do fluxo do Power Automate_
 
-:::image type="content" source="../../images/email-received.png" alt-text="O email enviado pelo fluxo mostrando o gráfico Excel incorporado no corpo.":::
+:::image type="content" source="../../images/email-received.png" alt-text="O email enviado pelo fluxo mostrando o gráfico do Excel inserido no corpo.":::
 
 ## <a name="solution"></a>Solução
 
-Esta solução tem duas partes:
+Essa solução tem duas partes:
 
-1. [Um Office script para calcular e extrair Excel gráfico e tabela](#sample-code-calculate-and-extract-excel-chart-and-table)
-1. Um Power Automate fluxo para invocar o script e enviar por email os resultados. Para ver um exemplo sobre como fazer isso, consulte [Create a automated workflow with Power Automate](../../tutorials/excel-power-automate-returns.md#create-an-automated-workflow-with-power-automate).
+1. [Um Script do Office para calcular e extrair o gráfico e a tabela do Excel](#sample-code-calculate-and-extract-excel-chart-and-table)
+1. Um fluxo do Power Automate para invocar o script e enviar por email os resultados. Para obter um exemplo de como fazer isso, consulte [Criar um fluxo de trabalho automatizado com o Power Automate](../../tutorials/excel-power-automate-returns.md#create-an-automated-workflow-with-power-automate).
 
-## <a name="sample-excel-file"></a>Exemplo Excel arquivo
+## <a name="sample-excel-file"></a>Arquivo de exemplo do Excel
 
-Baixe <a href="email-chart-table.xlsx">email-chart-table.xlsx</a> para uma workbook pronta para uso. Adicione o seguinte script para experimentar o exemplo você mesmo!
+Baixe [email-chart-table.xlsx](email-chart-table.xlsx) para uma pasta de trabalho pronta para uso. Adicione o script a seguir para experimentar o exemplo por conta própria!
 
-## <a name="sample-code-calculate-and-extract-excel-chart-and-table"></a>Código de exemplo: Calcular e extrair Excel gráfico e tabela
+## <a name="sample-code-calculate-and-extract-excel-chart-and-table"></a>Código de exemplo: calcular e extrair gráfico e tabela do Excel
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook): ReportImages {
@@ -89,23 +89,23 @@ interface ReportImages {
 }
 ```
 
-## <a name="power-automate-flow-email-the-chart-and-table-images"></a>Power Automate fluxo: envie por email as imagens do gráfico e da tabela
+## <a name="power-automate-flow-email-the-chart-and-table-images"></a>Fluxo do Power Automate: Email imagens do gráfico e da tabela
 
-Esse fluxo executa o script e envia emails para as imagens retornadas.
+Esse fluxo executa o script e envia por email as imagens retornadas.
 
-1. Crie um novo **fluxo de nuvem instantâneo**.
-1. Escolha **Disparar manualmente um fluxo e** selecione **Criar**.
-1. Adicione uma **nova etapa** que usa o **conector Excel Online (Business)** com a **ação Executar script**. Use os seguintes valores para a ação.
+1. Crie um fluxo **de nuvem instantâneo**.
+1. Escolha **Disparar um fluxo manualmente e** selecione **Criar**.
+1. Adicione uma **nova etapa que** usa o conector **do Excel Online (Business)** com a **ação Executar script** . Use os valores a seguir para a ação.
     * **Localização**: OneDrive for Business
     * **Biblioteca de Documentos**: OneDrive
-    * **Arquivo**: sua pasta de trabalho ([selecionada com o seledor de arquivos](../../testing/power-automate-troubleshooting.md#select-workbooks-with-the-file-browser-control))
+    * **Arquivo**: sua pasta de trabalho ([selecionada com o seletor de arquivos](../../testing/power-automate-troubleshooting.md#select-workbooks-with-the-file-browser-control))
     * **Script**: seu nome de script
 
-    :::image type="content" source="../../images/email-chart-sample-flow-1.png" alt-text="O conector Excel Online (Business) concluído Power Automate.":::
-1. Este exemplo usa Outlook como cliente de email. Você pode usar qualquer conector de email Power Automate suporte, mas o restante das etapas supõe que você Outlook. Adicione uma **nova etapa que** usa o **conector Office 365 Outlook** e a ação **Enviar e email (V2**). Use os seguintes valores para a ação.
+    :::image type="content" source="../../images/email-chart-sample-flow-1.png" alt-text="O conector completo do Excel Online (Business) no Power Automate.":::
+1. Este exemplo usa o Outlook como o cliente de email. Você pode usar qualquer conector de email compatível com o Power Automate, mas o restante das etapas pressupõe que você escolheu o Outlook. Adicione uma **nova etapa que** usa o **Office 365 outlook** e a ação **Enviar e email (V2**). Use os valores a seguir para a ação.
     * **Para**: sua conta de email de teste (ou email pessoal)
-    * **Assunto**: Revise os dados do relatório
-    * Para o **campo Corpo** , selecione "Exibição de Código" () e`</>` insira o seguinte:
+    * **Assunto**: Examine os dados do relatório
+    * Para o **campo Corpo** , selecione "Modo de Exibição de Código" (`</>`) e insira o seguinte:
 
     ```HTML
     <p>Please review the following report data:<br>
@@ -121,9 +121,9 @@ Esse fluxo executa o script e envia emails para as imagens retornadas.
     </p>
     ```
 
-    :::image type="content" source="../../images/email-chart-sample-flow-2.png" alt-text="O conector Office 365 Outlook no Power Automate.":::
-1. Salve o fluxo e experimente-o. Use o **botão Testar** na página do editor de fluxo ou execute o fluxo através da **guia Meus fluxos** . Certifique-se de permitir o acesso quando solicitado.
+    :::image type="content" source="../../images/email-chart-sample-flow-2.png" alt-text="O conector Office 365 Outlook completo no Power Automate.":::
+1. Salve o fluxo e experimente-o. Use o **botão Testar** na página do editor de fluxo ou execute o fluxo por meio da **guia Meus fluxos** . Certifique-se de permitir o acesso quando solicitado.
 
-## <a name="training-video-extract-and-email-images-of-chart-and-table"></a>Vídeo de treinamento: Extrair e enviar imagens de email de gráfico e tabela
+## <a name="training-video-extract-and-email-images-of-chart-and-table"></a>Vídeo de treinamento: Extrair e enviar por email imagens de gráfico e tabela
 
-[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/152GJyqc-Kw).
+[Veja Sudhi Ramamurthy percorrer este exemplo no YouTube](https://youtu.be/152GJyqc-Kw).

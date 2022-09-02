@@ -73,6 +73,8 @@ items:
                 href: resources/samples/table-of-contents.md
               - name: Remover filtros de coluna de tabela
                 href: resources/samples/clear-table-filter-for-active-cell.md
+              - name: Relatar alterações diárias no Power Automate
+                href: resources/samples/report-day-to-day-changes.md
           - name: Além do básico
             items:
               - name: Combinar planilhas em uma única pasta de trabalho

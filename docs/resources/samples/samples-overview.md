@@ -1,14 +1,14 @@
 ---
 title: Exemplos de Scripts do Office
 description: Exemplos e cenários de Scripts do Office disponíveis.
-ms.date: 06/14/2022
+ms.date: 08/25/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 5959bc472dbec04526dcf912a8bd67e2554aa251
-ms.sourcegitcommit: dd632402cb46ec8407a1c98456f1bc9ab96ffa46
+ms.openlocfilehash: 5798da37bd4166d18b41c005c4d8cc8a4b6c401d
+ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66918822"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572483"
 ---
 # <a name="office-scripts-samples-and-scenarios"></a>Exemplos e cenários de Scripts do Office
 
@@ -33,6 +33,7 @@ Também damos [boas-vindas às contribuições da comunidade](#community-contrib
 | [Copiar várias tabelas do Excel em uma única tabela](copy-tables-combine.md) | Este exemplo combina dados de várias tabelas do Excel em uma única tabela que inclui todas as linhas. |
 | [Criar um sumário da pasta de trabalho](table-of-contents.md) | Este exemplo cria um sumário com links para cada planilha. |
 | [Remover filtros de coluna de tabela](clear-table-filter-for-active-cell.md) | Este exemplo limpa todos os filtros de uma coluna de tabela. |
+| [Registrar alterações diárias no Excel e reportá-las com um fluxo do Power Automate](report-day-to-day-changes.md) | Este exemplo usa um fluxo agendado do Power Automate para registrar leituras diárias e relatar as alterações. |
 
 ## <a name="beyond-the-basics"></a>Além do básico
 

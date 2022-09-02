@@ -1,30 +1,30 @@
 ---
 title: Adicionar imagens a uma pasta de trabalho
-description: Saiba como usar Office Scripts para adicionar uma imagem a uma planilha e copiá-la entre planilhas.
+description: Saiba como usar scripts do Office para adicionar uma imagem a uma pasta de trabalho e copiá-la entre planilhas.
 ms.date: 07/12/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: b827ebe4050fa8e260ed640a73d583264955b597
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 78c7779cf4d524ed62bf8d419135863228b23d33
+ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585860"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572602"
 ---
 # <a name="add-images-to-a-workbook"></a>Adicionar imagens a uma pasta de trabalho
 
-Este exemplo mostra como trabalhar com imagens usando um script Office no Excel.
+Este exemplo mostra como trabalhar com imagens usando um Script do Office no Excel.
 
 ## <a name="scenario"></a>Cenário
 
-As imagens ajudam com identidade visual, identidade visual e modelos. Eles ajudam a tornar uma workbook mais do que apenas uma tabela enorme.
+As imagens ajudam com identidade visual, identidade visual e modelos. Eles ajudam a fazer uma pasta de trabalho mais do que apenas uma mesa gigante.
 
 O primeiro exemplo copia uma imagem de uma planilha para outra. Isso pode ser usado para colocar o logotipo da sua empresa na mesma posição em cada planilha.
 
 O segundo exemplo copia uma imagem de uma URL. Isso pode ser usado para copiar fotos que um colega armazenou em uma pasta compartilhada para uma pasta de trabalho relacionada.
 
-## <a name="sample-excel-file"></a>Exemplo Excel arquivo
+## <a name="sample-excel-file"></a>Arquivo de exemplo do Excel
 
-Baixe <a href="add-images.xlsx">add-images.xlsx</a> para uma workbook pronta para uso. Adicione os scripts a seguir e experimente o exemplo você mesmo!
+Baixe [add-images.xlsx](add-images.xlsx) para uma pasta de trabalho pronta para uso. Adicione os scripts a seguir e experimente o exemplo por conta própria!
 
 ## <a name="sample-code-copy-an-image-across-worksheets"></a>Código de exemplo: copiar uma imagem entre planilhas
 
@@ -52,7 +52,7 @@ function main(workbook: ExcelScript.Workbook)
 }
 ```
 
-## <a name="sample-code-add-an-image-from-a-url-to-a-workbook"></a>Código de exemplo: adicionar uma imagem de uma URL a uma workbook
+## <a name="sample-code-add-an-image-from-a-url-to-a-workbook"></a>Código de exemplo: adicionar uma imagem de uma URL a uma pasta de trabalho
 
 ```TypeScript
 async function main(workbook: ExcelScript.Workbook) {

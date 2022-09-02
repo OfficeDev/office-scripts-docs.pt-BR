@@ -1,27 +1,27 @@
 ---
-title: Remover hiperlinks de cada célula em uma Excel de trabalho
-description: Saiba como usar Office Scripts para remover hiperlinks de cada célula em uma Excel de trabalho.
+title: Remover hiperlinks de cada célula em uma planilha do Excel
+description: Saiba como usar Scripts do Office para remover hiperlinks de cada célula em uma planilha do Excel.
 ms.date: 06/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: c318fc9b413f31c1c75c2b4b4bfd31312a7810b5
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 1445988b1e6a85fcab8914ffeaaef80a07a52f5e
+ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585790"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572623"
 ---
-# <a name="remove-hyperlinks-from-each-cell-in-an-excel-worksheet"></a>Remover hiperlinks de cada célula em uma Excel de trabalho
+# <a name="remove-hyperlinks-from-each-cell-in-an-excel-worksheet"></a>Remover hiperlinks de cada célula em uma planilha do Excel
 
- Este exemplo limpa todos os hiperlinks da planilha atual. Ele percorre a planilha e, se houver algum hiperlink associado à célula, ele limpará o hiperlink e ainda manterá o valor da célula como está. Também registra o tempo necessário para concluir a transição.
+ Este exemplo limpa todos os hiperlinks da planilha atual. Ele atravessa a planilha e, se houver algum hiperlink associado à célula, ele limpará o hiperlink e ainda manterá o valor da célula como está. Também registra o tempo necessário para concluir a passagem.
 
 > [!NOTE]
-> Isso só funcionará se a contagem de células for < 10k.
+> Isso só funcionará se a contagem de células for < 10 mil.
 
-## <a name="sample-excel-file"></a>Exemplo Excel arquivo
+## <a name="sample-excel-file"></a>Arquivo de exemplo do Excel
 
-Baixe o arquivo <a href="remove-hyperlinks.xlsx">remove-hyperlinks.xlsx</a> para uma pasta de trabalho pronta para uso. Adicione o seguinte script para experimentar o exemplo você mesmo!
+Baixe o arquivo [remove-hyperlinks.xlsx](remove-hyperlinks.xlsx) para uma pasta de trabalho pronta para uso. Adicione o script a seguir para experimentar o exemplo por conta própria!
 
-## <a name="sample-code-remove-hyperlinks"></a>Código de exemplo: Remover hiperlinks
+## <a name="sample-code-remove-hyperlinks"></a>Código de exemplo: remover hiperlinks
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook, sheetName: string = 'Sheet1') {
@@ -57,6 +57,6 @@ function main(workbook: ExcelScript.Workbook, sheetName: string = 'Sheet1') {
 }
 ```
 
-## <a name="training-video-remove-hyperlinks-from-each-cell-in-an-excel-worksheet"></a>Vídeo de treinamento: Remover hiperlinks de cada célula em uma Excel de trabalho
+## <a name="training-video-remove-hyperlinks-from-each-cell-in-an-excel-worksheet"></a>Vídeo de treinamento: Remover hiperlinks de cada célula em uma planilha do Excel
 
-[Assista a Sudhi Ramamurthy passar por este exemplo no YouTube](https://youtu.be/v20fdinxpHU).
+[Veja Sudhi Ramamurthy percorrer este exemplo no YouTube](https://youtu.be/v20fdinxpHU).

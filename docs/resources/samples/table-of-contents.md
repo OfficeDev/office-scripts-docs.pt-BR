@@ -1,26 +1,26 @@
 ---
 title: Criar um sumário da pasta de trabalho
-description: Saiba como criar um índice de conteúdo com links para cada planilha.
+description: Saiba como criar um sumário com links para cada planilha.
 ms.date: 01/20/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: b2d69609514c2e1e87f9c0590ea10152fc7d5e7d
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 5b158160ecb9ac29df547c6da6552e21c9875be3
+ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585517"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572511"
 ---
 # <a name="create-a-workbook-table-of-contents"></a>Criar um sumário da pasta de trabalho
 
-Este exemplo mostra como criar um índice de conteúdo para a workbook. Cada entrada no índice de conteúdo é um hiperlink para uma das planilhas da pasta de trabalho.
+Este exemplo mostra como criar um sumário para a pasta de trabalho. Cada entrada no sumário é um hiperlink para uma das planilhas na pasta de trabalho.
 
-:::image type="content" source="../../images/table-of-contents-sample.png" alt-text="A planilha de conteúdo mostrando links para as outras planilhas.":::
+:::image type="content" source="../../images/table-of-contents-sample.png" alt-text="A planilha de sumário mostrando links para as outras planilhas.":::
 
-## <a name="sample-excel-file"></a>Exemplo Excel arquivo
+## <a name="sample-excel-file"></a>Arquivo de exemplo do Excel
 
-Baixe <a href="table-of-contents.xlsx">table-of-contents.xlsx</a> para uma workbook pronta para uso. Adicione o script a seguir e experimente o exemplo você mesmo!
+Baixe [table-of-contents.xlsx](table-of-contents.xlsx) para uma pasta de trabalho pronta para uso. Adicione o script a seguir e experimente o exemplo por conta própria!
 
-## <a name="sample-code-create-a-workbook-table-of-contents"></a>Código de exemplo: Criar um índice de conteúdo de uma área de trabalho
+## <a name="sample-code-create-a-workbook-table-of-contents"></a>Código de exemplo: Criar um sumário da pasta de trabalho
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook) {

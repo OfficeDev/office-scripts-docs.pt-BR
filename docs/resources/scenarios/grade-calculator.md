@@ -1,35 +1,35 @@
 ---
-title: 'Office de exemplo scripts: calculadora de notas'
-description: Um exemplo que determina a porcentagem e as notas de carta para uma classe de alunos.
+title: 'Cenário de exemplo de Scripts do Office: calculadora de notas'
+description: Um exemplo que determina o percentual e as notas de letra de uma classe de alunos.
 ms.date: 06/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: fd9009633e4a89e3b236f765543123b3995b9f47
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 7dda3ebe84dc3edd10998cbe2c4cd0806da11411
+ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585440"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572525"
 ---
-# <a name="office-scripts-sample-scenario-grade-calculator"></a>Office de exemplo scripts: calculadora de notas
+# <a name="office-scripts-sample-scenario-grade-calculator"></a>Cenário de exemplo de Scripts do Office: calculadora de notas
 
-Nesse cenário, você é um instrutor que depende das notas de fim de semestre de cada aluno. Você está inserindo as pontuações para suas atribuições e testes à medida que vai. Agora, é hora de determinar os destinos dos alunos.
+Nesse cenário, você é um instrutor que confia nas notas de fim de período de cada aluno. Você está inserindo as pontuações para suas tarefas e testes à medida que vai. Agora, é hora de determinar o destino dos alunos.
 
-Você desenvolverá um script que totaliza as notas para cada categoria de ponto. Em seguida, ele atribuirá uma nota de carta a cada aluno com base no total. Para ajudar a garantir a precisão, você adicionará algumas verificações para ver se as pontuações individuais são muito baixas ou altas. Se a pontuação de um aluno for menor que zero ou mais do que o valor de ponto possível, o script sinaliza a célula com um preenchimento vermelho e não totaliza os pontos do aluno. Isso será uma indicação clara de quais registros você precisa verificar duas vezes. Você também adicionará algumas formatações básicas às notas para poder exibir rapidamente a parte superior e inferior da classe.
+Você desenvolverá um script que totaliza as notas para cada categoria de ponto. Em seguida, ele atribuirá uma nota de carta a cada aluno com base no total. Para ajudar a garantir a precisão, você adicionará algumas verificações para ver se as pontuações individuais são muito baixas ou altas. Se a pontuação de um aluno for menor que zero ou mais do que o valor de ponto possível, o script sinalizará a célula com um preenchimento vermelho e não totalize os pontos do aluno. Isso será uma indicação clara de quais registros você precisa verificar duas vezes. Você também adicionará algumas formatação básicas às notas para que possa exibir rapidamente a parte superior e inferior da classe.
 
-## <a name="scripting-skills-covered"></a>Habilidades de script abordadas
+## <a name="scripting-skills-covered"></a>Habilidades de script cobertas
 
-- Formatação de células
+- Formatação de célula
 - Verificação de erros
 - Expressões regulares
 - Formatação condicional
 
 ## <a name="setup-instructions"></a>Instruções de instalação
 
-1. Baixe <a href="grade-calculator.xlsx">grade-calculator.xlsx</a> seu OneDrive.
+1. Baixe [grade-calculator.xlsx](grade-calculator.xlsx) para o OneDrive.
 
-1. Abra a workbook com Excel para a Web.
+1. Abra a pasta de trabalho com Excel para a Web.
 
-1. Na guia **Automatizar** , selecione **Novo Script** e colar o seguinte script no editor.
+1. Na guia **Automatizar** , selecione **Novo Script** e cole o script a seguir no editor.
 
     ```TypeScript
     function main(workbook: ExcelScript.Workbook) {
@@ -172,11 +172,11 @@ Você desenvolverá um script que totaliza as notas para cada categoria de ponto
     }
     ```
 
-1. Renomeie o script para **Calculadora de Notas** e salve-o.
+1. Renomeie o script para Calculadora **de Notas** e salve-o.
 
 ## <a name="running-the-script"></a>Executando o script
 
-Execute o **script Calculadora** de Notas na única planilha. O script totaliza as notas e atribui a cada aluno uma nota de carta. Se qualquer nota individual tiver mais pontos do que a atribuição ou teste valerá, a nota ofensiva será marcada em vermelho e o total não será calculado. Além disso, todas as notas 'A' são realçadas em verde, enquanto as notas 'D' e 'F' são realçadas em amarelo.
+Execute o script **calculadora de** notas na única planilha. O script somará as notas e atribuirá a cada aluno uma nota de carta. Se qualquer nota individual tiver mais pontos do que o valor da tarefa ou do teste, a nota ofensivo será marcada como vermelha e o total não será calculado. Além disso, todas as notas 'A' são realçadas em verde, enquanto as notas 'D' e 'F' são realçadas em amarelo.
 
 ### <a name="before-running-the-script"></a>Antes de executar o script
 

@@ -1,24 +1,24 @@
 ---
-title: 'Office exemplo de scripts: analisar downloads da Web'
-description: Um exemplo que coleta dados brutos de tráfego da Internet em uma Excel de trabalho e determina o local de origem, antes de organizar essas informações em uma tabela.
+title: 'Cenário de exemplo de Scripts do Office: Analisar downloads da Web'
+description: Um exemplo que usa dados brutos de tráfego da Internet em uma pasta de trabalho do Excel e determina o local de origem, antes de organizar essas informações em uma tabela.
 ms.date: 06/29/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 9d2d0ba302c72d4ca1f1aaad5e9cee5ba40d64e9
-ms.sourcegitcommit: 7023b9e23499806901a5ecf8ebc460b76887cca6
+ms.openlocfilehash: 0ef368c5193fe65c0a01676aa2a8b3a2c5cf3bdc
+ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64585486"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572420"
 ---
-# <a name="office-scripts-sample-scenario-analyze-web-downloads"></a>Office exemplo de scripts: analisar downloads da Web
+# <a name="office-scripts-sample-scenario-analyze-web-downloads"></a>Cenário de exemplo de Scripts do Office: Analisar downloads da Web
 
-Nesse cenário, você tem a tarefa de analisar relatórios de download do site da sua empresa. O objetivo dessa análise é determinar se o tráfego da Web está vindo do Estados Unidos ou em outro lugar do mundo.
+Nesse cenário, você tem a tarefa de analisar relatórios de download do site da sua empresa. O objetivo dessa análise é determinar se o tráfego da Web está vindo da Estados Unidos ou de outro lugar do mundo.
 
-Seus colegas carregam os dados brutos na sua workbook. O conjunto de dados de cada semana tem sua própria planilha. Há também a planilha **Resumo** com uma tabela e um gráfico que mostra tendências semana após semana.
+Seus colegas carregam os dados brutos em sua pasta de trabalho. O conjunto de dados de cada semana tem sua própria planilha. Há também a planilha **Resumo** com uma tabela e um gráfico que mostra tendências semana a semana.
 
-Você desenvolverá um script que analisa os dados de downloads semanais na planilha ativa. Ele analisará o endereço IP associado a cada download e determinará se ele veio ou não dos EUA. A resposta será inserida na planilha como um valor booleano ("TRUE" ou "FALSE") e a formatação condicional será aplicada a essas células. Os resultados do local do endereço IP serão totalados na planilha e copiados para a tabela de resumo.
+Você desenvolverá um script que analisa os dados de downloads semanais na planilha ativa. Ele analisará o endereço IP associado a cada download e determinará se ele veio ou não dos EUA. A resposta será inserida na planilha como um valor booliano ("TRUE" ou "FALSE") e a formatação condicional será aplicada a essas células. Os resultados do local do endereço IP serão totalados na planilha e copiados para a tabela de resumo.
 
-## <a name="scripting-skills-covered"></a>Habilidades de script abordadas
+## <a name="scripting-skills-covered"></a>Habilidades de script cobertas
 
 - Análise de texto
 - Subfunções em scripts
@@ -27,11 +27,11 @@ Você desenvolverá um script que analisa os dados de downloads semanais na plan
 
 ## <a name="setup-instructions"></a>Instruções de instalação
 
-1. Baixe <a href="analyze-web-downloads.xlsx">analyze-web-downloads.xlsx</a> seu OneDrive.
+1. Baixe [analyze-web-downloads.xlsx](analyze-web-downloads.xlsx) para o OneDrive.
 
-1. Abra a workbook com Excel para a Web.
+1. Abra a pasta de trabalho com Excel para a Web.
 
-1. Na guia **Automatizar** , selecione **Novo Script** e colar o seguinte script no editor.
+1. Na guia **Automatizar** , selecione **Novo Script** e cole o script a seguir no editor.
 
     ```TypeScript
     function main(workbook: ExcelScript.Workbook) {
@@ -211,7 +211,7 @@ Você desenvolverá um script que analisa os dados de downloads semanais na plan
 
 ## <a name="running-the-script"></a>Executando o script
 
-Navegue até qualquer uma **das planilhas semanais\*\*** e execute o script **Analisar Downloads da Web** . O script aplicará a formatação condicional e a rotulagem de local na planilha atual. Ele também atualizará **a planilha Resumo** .
+Navegue até qualquer uma das **planilhas\*\*** semanais e execute o script Analisar **Downloads da** Web. O script aplicará a formatação condicional e a rotulagem de local na planilha atual. Ele também atualizará **a planilha** Resumo.
 
 ### <a name="before-running-the-script"></a>Antes de executar o script
 
@@ -219,6 +219,6 @@ Navegue até qualquer uma **das planilhas semanais\*\*** e execute o script **An
 
 ### <a name="after-running-the-script"></a>Depois de executar o script
 
-:::image type="content" source="../../images/scenario-analyze-web-downloads-after.png" alt-text="Uma planilha que mostra informações de localização IP formatada com as linhas de tráfego da Web anteriores.":::
+:::image type="content" source="../../images/scenario-analyze-web-downloads-after.png" alt-text="Uma planilha que mostra informações de localização de IP formatada com as linhas de tráfego da Web anteriores.":::
 
 :::image type="content" source="../../images/scenario-analyze-web-downloads-table.png" alt-text="A tabela de resumo e o gráfico que resume as planilhas nas quais o script foi executado.":::
