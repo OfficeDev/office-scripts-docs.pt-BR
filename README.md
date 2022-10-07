@@ -1,6 +1,6 @@
 # <a name="office-scripts-documentation"></a>Documentação de scripts do Office
 
-Bem-vindo ao repositório de documentação dos Scripts do Office. Neste repositório, você pode encontrar os arquivos de origem da documentação para tutoriais de Scripts do Office e guias de instruções. Para obter a melhor experiência, recomendamos que você exiba esse conteúdo [Microsoft Docs](https://docs.microsoft.com/office/dev/scripts).
+Bem-vindo ao repositório de documentação dos Scripts do Office. Neste repositório, você pode encontrar os arquivos de origem da documentação para tutoriais de Scripts do Office e guias de instruções. Para obter a melhor experiência, recomendamos que você exiba esse conteúdo no [Microsoft Learn](https://learn.microsoft.com/office/dev/scripts).
 
 > **OBSERVAÇÃO**: você pode encontrar os arquivos de origem da documentação de referência para a API de Scripts do Office no repositório [office-scripts-docs-reference](https://github.com/OfficeDev/office-scripts-docs-reference) . Essas APIs contêm todas as operações potenciais para seus scripts.
 
@@ -19,7 +19,7 @@ Se você estiver vendo o comportamento do produto que difere da documentação, 
 - Etapas para reproduzir o problema.
 - Mensagens de erro e saída do console.
 
-Recomendamos que você faça a bifurcação, a correção e uma solicitação de recebimento das suas alterações propostas. Para mais detalhes, confira [Contribuir para este artigo](Contributing.md).
+We also encourage you to fork, make the fix, and do a pull request of your proposed changes. For details, see [Contribute to this documentation](Contributing.md).
 
 Se o problema não estiver relacionado à documentação dos Scripts do Office, poste-o em um dos seguintes canais:
 
@@ -30,6 +30,7 @@ Se o problema não estiver relacionado à documentação dos Scripts do Office, 
 
 Copyright (c) 2019 Microsoft Corporation. Todos os direitos reservados.
 
-## <a name="microsoft-open-source-code-of-conduct"></a>Código de Conduta de software livre da Microsoft
+## <a name="microsoft-open-source-code-of-conduct"></a>Código Aberto de Conduta da Microsoft
 
-Este projeto adotou o [Código de Conduta do Código Aberto da Microsoft](https://opensource.microsoft.com/codeofconduct/). Para saber mais, confira as [Perguntas frequentes do Código de Conduta](https://opensource.microsoft.com/codeofconduct/faq/) ou contate [opencode@microsoft.com](mailto:opencode@microsoft.com) se tiver outras dúvidas ou comentários.
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
