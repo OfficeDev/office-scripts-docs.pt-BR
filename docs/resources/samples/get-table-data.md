@@ -1,35 +1,35 @@
 ---
 title: Saída de dados do Excel como JSON
-description: Saiba como gerar dados de tabela do Excel como JSON para usar no Power Automate.
-ms.date: 06/27/2022
+description: Saiba como gerar dados de tabela do Excel como JSON a serem usados no Power Automate.
+ms.date: 11/04/2022
 ms.localizationpriority: medium
-ms.openlocfilehash: 5078d2d86c92aacb0c0c2438b7298a523c132522
-ms.sourcegitcommit: a6504f8b0d6b717457c6e0b5306c35ad3900914e
+ms.openlocfilehash: 96883bb1f74f66065e8f45760858e960ece90e30
+ms.sourcegitcommit: 7cadf2b637bf62874e43b6e595286101816662aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67572665"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "68891236"
 ---
-# <a name="output-excel-table-data-as-json-for-usage-in-power-automate"></a>Saída de dados da tabela do Excel como JSON para uso no Power Automate
+# <a name="output-excel-table-data-as-json-for-usage-in-power-automate"></a>Saída de dados de tabela do Excel como JSON para uso no Power Automate
 
-Os dados da tabela do Excel podem ser representados como uma matriz de objetos na forma [de JSON](https://www.w3schools.com/whatis/whatis_json.asp). Cada objeto representa uma linha na tabela. Isso ajuda a extrair os dados do Excel em um formato consistente que é visível para o usuário. Os dados podem ser fornecidos a outros sistemas por meio de fluxos do Power Automate.
+Os dados da tabela do Excel podem ser representados como uma matriz de objetos na forma de [JSON](https://www.w3schools.com/whatis/whatis_json.asp). Cada objeto representa uma linha na tabela. Isso ajuda a extrair os dados do Excel em um formato consistente que está visível para o usuário. Em seguida, os dados podem ser dados a outros sistemas por meio de fluxos do Power Automate.
 
-## <a name="sample-excel-file"></a>Arquivo de exemplo do Excel
+## <a name="sample-excel-file"></a>Exemplo de arquivo do Excel
 
-Baixe o arquivo [table-data-with-hyperlinks.xlsx](table-data-with-hyperlinks.xlsx) para uma pasta de trabalho pronta para uso.
+Baixe o [ arquivotable-data-with-hyperlinks.xlsx](table-data-with-hyperlinks.xlsx) para uma pasta de trabalho pronta para uso.
 
-:::image type="content" source="../../images/table-input.png" alt-text="Uma planilha mostrando os dados da tabela de entrada.":::
+:::image type="content" source="../../images/table-input.png" alt-text="Uma planilha mostrando dados da tabela de entrada.":::
 
-Uma variação desse exemplo também inclui os hiperlinks em uma das colunas da tabela. Isso permite que níveis adicionais de dados de célula sejam exibidos no JSON.
+Uma variação desse exemplo também inclui os hiperlinks em uma das colunas de tabela. Isso permite que níveis adicionais de dados celulares sejam exibidos no JSON.
 
-:::image type="content" source="../../images/table-hyperlink-view.png" alt-text="Uma planilha mostrando uma coluna de dados de tabela formatados como hiperlinks.":::
+:::image type="content" source="../../images/table-hyperlink-view.png" alt-text="Uma planilha mostrando uma coluna de dados de tabela formatada como hiperlinks.":::
 
-## <a name="sample-code-return-table-data-as-json"></a>Código de exemplo: retornar dados da tabela como JSON
+## <a name="sample-code-return-table-data-as-json"></a>Código de exemplo: retornar dados de tabela como JSON
 
 Adicione o script a seguir para experimentar o exemplo por conta própria!
 
 > [!NOTE]
-> Você pode alterar a estrutura `interface TableData` para corresponder às colunas da tabela. Observe que, para nomes de coluna com espaços, coloque sua chave entre aspas, como no `"Event ID"` exemplo. Para obter mais informações sobre como trabalhar com JSON, [leia Usar JSON para passar dados de e para scripts do Office](../../develop/use-json.md).
+> Você pode alterar a `interface TableData` estrutura para corresponder às colunas da tabela. Observe que, para nomes de coluna com espaços, coloque sua chave entre aspas, como com `"Event ID"` no exemplo. Para obter mais informações sobre como trabalhar com JSON, leia [Usar JSON para passar dados de e para scripts do Office](../../develop/use-json.md).
 
 ```TypeScript
 function main(workbook: ExcelScript.Workbook): TableData[] {
@@ -82,7 +82,7 @@ interface TableData {
 }
 ```
 
-### <a name="sample-output-from-the-plaintable-worksheet"></a>Exemplo de saída da planilha "PlainTable"
+### <a name="sample-output-from-the-plaintable-worksheet"></a>Saída de exemplo da planilha "PlainTable"
 
 ```json
 [{
@@ -136,7 +136,7 @@ interface TableData {
 }]
 ```
 
-## <a name="sample-code-return-table-data-as-json-with-hyperlink-text"></a>Código de exemplo: retornar dados da tabela como JSON com texto de hiperlink
+## <a name="sample-code-return-table-data-as-json-with-hyperlink-text"></a>Código de exemplo: retornar dados de tabela como JSON com texto de hiperlink
 
 > [!NOTE]
 > O script sempre extrai hiperlinks da 4ª coluna (índice 0) da tabela. Você pode alterar essa ordem ou incluir várias colunas como dados de hiperlink modificando o código sob o comentário `// For the 4th column (0 index), extract the hyperlink and use that instead of text.`

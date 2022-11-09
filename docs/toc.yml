@@ -39,6 +39,8 @@ items:
             href: develop/use-json.md
           - name: Use arquivos .xlsm em fluxos do Power Automate
             href: develop/macros-power-automate.md
+          - name: VS Code para Scripts do Office (versão prévia)
+            href: develop/vscode-for-scripts.md
           - name: Trabalhar com Tabelas Dinâmicas
             href: develop/pivottables.md
       - name: Solução de problemas
